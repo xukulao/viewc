@@ -1,19 +1,23 @@
 #ifndef __DEMO_DATA_TYPE__
 #define __DEMO_DATA_TYPE__
 
-//Êý¾ÝÀàÐÍ-ÕûÐÍ²âÊÔ
 void demo1();
 
 void demo2();
 
-/**
- * ²âÊÔÕûÊýÔÚÄÚ´æµÄ¼ÆËã·½Ê½
- */
 void demo3();
 
-//Ð¡Êý²¿·Ö
 void demo4();
 
-//×Ö·û´¦Àí
 void demo5();
+
+//ASCIIå­—ç¬¦
+void char_demo6();
+//å®½å­—ç¬¦
+void wchar();
+
+//è½¬ä¹‰å­—ç¬¦
+//å­—ç¬¦é›†ã€å­—ç¬¦-ç¼–ç å€¼ã€‘
+//http://c.biancheng.net/cpp/html/2890.html
+void escchar();
 #endif

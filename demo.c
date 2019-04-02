@@ -17,6 +17,9 @@ int main()
     //demo2();
 //    demo3();
     //demo4();
-    demo5();
+   // demo5();
+  // char_demo6();
+  //wchar();
+  escchar();
     return 0;
 }

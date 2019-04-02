@@ -88,6 +88,9 @@
 		<Unit filename="E:/c/demo/demo_data_type.c">
 			<Option target="demo1"/>
 		</Unit>
+		<Unit filename="E:/c/demo/demo_data_type.h">
+			<Option target="demo1"/>
+		</Unit>
 		<Unit filename="E:/c/demo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
