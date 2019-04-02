@@ -31,7 +31,8 @@ int main()
    //getchar_test();
    //getche_test();
    //getch_test();
-   gets_test();
+   //gets_test();
    //address();
+   cache_test();
     return 0;
 }

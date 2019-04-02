@@ -12,11 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e30f648d-7728-46ff-9671-14892c70e745" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/demo.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/demo.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/demo_data_type.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/demo_data_type.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo.c" beforeDir="false" afterPath="$PROJECT_DIR$/demo.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_data_type.c" beforeDir="false" afterPath="$PROJECT_DIR$/demo_data_type.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_data_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/demo_data_type.h" afterDir="false" />
@@ -31,11 +26,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo_data_type.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="521" column="40" lean-forward="true" selection-start-line="521" selection-start-column="40" selection-end-line="521" selection-end-column="40" />
+            <state relative-caret-position="355">
+              <caret line="530" column="76" selection-start-line="530" selection-start-column="76" selection-end-line="530" selection-end-column="76" />
               <folding>
                 <element signature="e#4615#4633#0" expanded="true" />
               </folding>
@@ -46,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="389">
-              <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+            <state relative-caret-position="493">
+              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
             </state>
           </provider>
         </entry>
@@ -61,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo_data_type.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
+            <state relative-caret-position="399">
+              <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
             </state>
           </provider>
         </entry>
@@ -79,9 +74,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/demo_data_type.c" />
-        <option value="$PROJECT_DIR$/demo.c" />
         <option value="$PROJECT_DIR$/demo_data_type.h" />
+        <option value="$PROJECT_DIR$/demo.c" />
+        <option value="$PROJECT_DIR$/demo_data_type.c" />
       </list>
     </option>
   </component>
@@ -150,12 +145,12 @@
       <workItem from="1554097036767" duration="19000" />
       <workItem from="1554097064552" duration="13000" />
       <workItem from="1554097084142" duration="3430000" />
-      <workItem from="1554171606451" duration="15875000" />
+      <workItem from="1554171606451" duration="18931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19661000" />
+    <option name="totallyTimeSpent" value="22717000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -175,7 +170,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38828632" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26138827" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -204,27 +199,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/demo_data_type.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="67" column="49" lean-forward="true" selection-start-line="67" selection-start-column="49" selection-end-line="67" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        <state relative-caret-position="493">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo_data_type.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="521" column="40" lean-forward="true" selection-start-line="521" selection-start-column="40" selection-end-line="521" selection-end-column="40" />
+        <state relative-caret-position="355">
+          <caret line="530" column="76" selection-start-line="530" selection-start-column="76" selection-end-line="530" selection-end-column="76" />
           <folding>
             <element signature="e#4615#4633#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_data_type.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="63" column="17" selection-start-line="63" selection-start-column="17" selection-end-line="63" selection-end-column="17" />
         </state>
       </provider>
     </entry>

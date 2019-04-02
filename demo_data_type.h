@@ -64,4 +64,7 @@ void getch_test();
  * scanf 遇到空格结束输入
  */
 void gets_test();
+
+//缓冲区测试 http://c.biancheng.net/cpp/html/2413.html
+void cache_test();
 #endif
