@@ -20,6 +20,18 @@ int main()
    // demo5();
   // char_demo6();
   //wchar();
-  escchar();
+  //escchar();
+   //base_operator();
+   //plusminus();
+   //variable_positaion();
+   //var_init_value();
+   //printf_function();
+   //snake();
+   //scanf_function();
+   //getchar_test();
+   //getche_test();
+   //getch_test();
+   gets_test();
+   //address();
     return 0;
 }

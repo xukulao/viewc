@@ -278,3 +278,246 @@ void escchar()
     printf("d1=%s,d2=%s\n",d1,d2);
     printf("\x31\x32\x33\x61\x62\x63");
 }
+
+//四则运行测试
+void base_operator()
+{
+
+    int a = 100;
+    short b = 10;
+    long c = 9325;
+
+    float d = 12.43;
+    double d1 = 1.0921;
+
+    printf("a+b=%d\n",a+b);
+    printf("a+c=%ld\n",a+c);
+    printf("d+d1=%lf\n",d+d1);
+
+    printf("a+d=%d\n",a+d);
+    printf("a+d=%lf\n",a+d);
+
+}
+
+void plusminus()
+{
+    int a = 10;
+    int b = 10;
+    --a;
+    --b;
+    printf("a=%d,b=%d\n",a,b);
+
+    int c = 10;
+    int d = 10;
+    c++;
+    d++;
+    printf("c=%d,d=%d\n",c,d);
+
+    //
+    int a1 = 20,b1=20,c1=20,d1=20;
+    int a2 = ++a1;//21 a1先自增得21，再赋值
+    int b2 = --b1;//19 b1先自减得19，再赋值
+    int c2 = c1++;//20 c1先赋值给c2,再自增得21
+    int d2 = d1--;//20 d1先赋值给d2,再自减得19
+
+    printf("a1=%d,b1=%d,c1=%d,d1=%d\n",a1,b1,c1,d1);
+    printf("a2=%d,b2=%d,c2=%d,d2=%d\n",a2,b2,c2,d2);
+}
+
+int variable_position_i = 100;
+void variable_positaion()
+{
+    float a = 89.01;
+    char *c = "我们转圈圈";
+    printf("variable_position_i=%d,a=%hf,c=%s\n",variable_position_i,a,c);
+}
+
+int var_init_value_i;
+void var_init_value()
+{
+
+    float a;
+    int b;
+    long c;
+
+    printf("var_init_value_i=%d,a=%hf,b=%d,c=%ld\n",var_init_value_i,a,b,c);
+}
+
+#include <unistd.h>
+void printf_function()
+{
+    char *name1 = "tony";
+    int age1 = 100;
+    int height1 = 190;
+
+    char *name2 = "jack";
+    int age2 = 23;
+    int height2 = 170;
+
+    char *name3 = "lucy";
+    int age3 = 32;
+    int height3 = 160;
+
+    printf("%-9s%-9s%-9s\n","name","age","height");
+    printf("%-9s%-9d%-9d\n",name1,age1,height1);
+    printf("%-9s%-9d%-9d\n",name2,age2,height2);
+    printf("%-9s%-9d%-9d\n",name3,age3,height3);
+
+
+
+   /* int n = 234;
+    float f = 9.8;
+    char c = '@';
+    char *str = "http://www.baidu.com";
+
+    //[flag][width][.precision][type]
+    //width 不够被空格，超过原样输出
+    printf("%10d%12f%4c%8s",n,f,c,str);
+*/
+
+    //.precision 整数不够左边加0  超过原样输出
+    //小数 够就照样输出，不够就在右边加0
+    //字符 够就照样输出，超出原样输出
+    /*
+    int n = 123456;
+    double f = 882.923672;
+    char *str = "abcdefghi";
+    printf("n: %.9d  %.4d\n", n, n);
+    printf("f: %.2lf  %.4lf  %.10lf\n", f, f, f);
+    printf("str: %.5s  %.15s\n", str, str);
+     */
+
+
+    /*int n = 123;
+    float f = 123.654;
+    char *str = "hello";
+
+    printf("%.5d,%.2d\n",n,n);//00123 123
+    printf("%.5f,%.1f\n",f,f);//123.65400 123.65
+
+    printf("%.10s,%.3s",str,str);//hello,hel*/
+
+    /*
+    int m = 192, n = -943;
+    float f = 84.342;
+    printf("m=%10d, m=%-10d\n", m, m);  //演示 - 的用法
+    printf("m=%+d, n=%+d\n", m, n);  //演示 + 的用法
+    printf("m=% d, n=% d\n", m, n);  //演示空格的用法
+    printf("f=%.0f, f=%#.0f\n", f, f);  //演示#的用法
+
+
+     */
+
+    printf("baidu.com\n");
+
+    sleep(5);
+
+    printf("http://www.baidu.com\n");
+}
+
+#include <windows.h>
+void snake()
+{
+
+    COORD coord;
+    coord.X = 3;
+    coord.Y = 3;
+
+    HANDLE ConsoleHandler = GetStdHandle(STD_OUTPUT_HANDLE);
+
+    SetConsoleCursorPosition(ConsoleHandler,coord);
+
+    printf("123");
+    getchar();
+}
+
+void scanf_function()
+{
+    int a = 0;
+    int b = 0;
+    int c = 0;
+//    int d = 0;
+//    printf("please enter your data:\n");
+//    scanf("%d\n",&a);
+//    scanf("%d\n",&b);
+//
+//    printf("a+b=%d\n",a+b);
+//
+//    scanf("%d %d\n",&c,&d);
+//    printf("c+d=%d\n",c+d);
+//
+//      scanf("%d %d",&a,&b);
+//      printf("a+b=%d\n",a+b);
+//      scanf("%d     %d",&a,&b);
+//      printf("a+b=%d\n",a+b);
+//
+//      scanf("%d,%d,%d",&a,&b,&c);
+//      printf("a+b+c=%d\n",a+b+c);
+//
+//      scanf("%d is bigger than %d",&a,&b);
+//      printf("a-b=%d\n",a-b);
+
+//        float age = 0;
+//        char name[] = "";
+//
+//        scanf("%f",&age);
+//        scanf("%s",name);
+//        printf("your name is %s,and your age is %.2f\n",name,age);
+
+        char author[30];
+        char language[30];
+        char url[100];
+        scanf("%s %s",author,language);
+        printf("author=%s,language=%s\n",author,language);
+        scanf("%s",url);
+        printf("url=%s\n",url);
+
+}
+
+void address()
+{
+    short int a = 1;//占2个字节
+    short int b = 2;
+    short int c = 3;
+
+    printf("a=%p,b=%p,c=%p\n",&a,&b,&c);
+
+    //62FDEA 62FDEB 62FDEC 62FDED 62FDEE 62FDEF
+}
+
+void getchar_test()
+{
+    char a;
+    a = getchar();
+    if (a){
+        printf("c=%c\n",a);
+    }else{
+        printf("please enter a character!");
+    }
+}
+
+#include <conio.h>
+void getche_test()
+{
+    char a;
+    a = getche();
+    printf("%c\n",a);
+}
+
+void getch_test()
+{
+    char a;
+    a = getch();
+    printf("%c\n",a);
+}
+
+void gets_test()
+{
+    char name[30];
+    char url[100];
+
+    gets(name);
+    gets(url);
+
+    printf("name=%s,url=%s\n",name,url);
+}
