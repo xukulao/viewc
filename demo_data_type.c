@@ -533,7 +533,91 @@ void gets_test()
  */
 void cache_test()
 {
-    printf("hello,php");//理论上是输出到缓冲区【内存】
-    sleep(5);
-    printf("nihao,php\n");//遇到换行后一起输出到显示器【硬件】
+//    printf("hello,php");//理论上是输出到缓冲区【内存】
+//    sleep(5);
+//    printf("nihao,php\n");//遇到换行后一起输出到显示器【硬件】
+
+    printf("%d\n",220*3);
+}
+
+void scanf_advance_test()
+{
+
+//    int n;
+//    float f;
+//    char str[23];
+//
+//    scanf("%2d",&n);//读取指定长度的数字
+//    scanf("%*[^\n]");scanf("%*c");//清空缓冲区
+//    scanf("%5f",&f);
+//    scanf("%*[^\n]");scanf("%*c");
+//    scanf("%22s",str);
+//
+//    printf("n=%10d,f=%10f,str=%s\n",n,f,str);
+
+//      char str[30];
+//      char str1[10];
+//      scanf("%[abcd]",str);//只读取含有abcd的数据
+//      scanf("%*[\n]");scanf("%*c");
+//      scanf("%*[^0123456789]",str1);
+//      printf("%s\n",str);
+//      printf("%s\n",str1);
+
+//    char str[30];
+//    int n=0;
+//    scanf("%[a-zA-Z]",str);//类似正则  只匹配以小写字母或大写字母
+//
+//    //scanf("%*[^\n]");scanf("%*c");
+//    scanf("%[0-9]",&n);
+//    printf("str=%s\n",str);
+//    printf("n=%d\n",n);
+
+    //char str1[30];char str2[30];
+   // int n;
+    //scanf("%[^0-9]",str1);//匹配非数字
+    //scanf("%*[^\n]");scanf("%*c");
+    //scanf("%[^\n]",str2);//匹配非换行符号
+    //scanf("%*[^\n]");scanf("%*c");
+    //scanf("%[0-9]",str2);//匹配非换行符号
+
+    //printf("str1=%s,str2=%s\n",str1,str2);
+
+    //scanf("%30[^0-9]",str1);
+    //printf("str1=%s\n",str1);
+
+//    scanf("%*d %d",&n);//第一个读取的数字全丢弃  第二个给变量n
+//    scanf("%*[a-z]");//所有字母全丢弃清空
+//    scanf("%[^\n]",str1);//不是换行符的全部清空丢弃
+//
+//    printf("n=%d,str1=%s\n",n,str1);
+
+
+
+     char str[30];
+     char str2[30];
+     int n = 0;
+
+//     scanf("%[a-zA-Z]",str);//先从输入缓冲区开始匹配大小写字母
+//     scanf("%*[0-9]");//再从缓冲区【指定的位置】开始匹配所有数字
+//     scanf("%[a-z]",str2);//再匹配小写字母
+//
+//     printf("str=%s,str2=%s,n=%d\n",str,str2,n);
+
+//     scanf("%[a-zA-Z]",str);
+//     scanf("%*[^\n]");
+//     scanf("%[0-9]",&n);
+//     printf("your name is %s,and your age is %d\n",str,n);
+
+
+      char name[10];
+      int age;
+      char url[100];
+      //printf("your name is:\n");
+      scanf("%10[a-z]",name);
+      //printf("your age is:\n");
+      scanf("%d",&age);
+      //printf("your url is:\n",url);
+      scanf("%[a-z.]",url);
+
+      printf("ok,your info of name is %s,age is %d,url is %s\n",name,age,url);
 }

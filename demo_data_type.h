@@ -67,4 +67,7 @@ void gets_test();
 
 //缓冲区测试 http://c.biancheng.net/cpp/html/2413.html
 void cache_test();
+
+//scanf advance test
+void scanf_advance_test();
 #endif

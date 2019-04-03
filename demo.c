@@ -33,6 +33,7 @@ int main()
    //getch_test();
    //gets_test();
    //address();
-   cache_test();
+   //cache_test();
+   scanf_advance_test();
     return 0;
 }
