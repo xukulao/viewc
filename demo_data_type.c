@@ -809,3 +809,134 @@ void memory_test()
         malloc(1024);
     }
 }
+
+void array_test1()
+{
+    int i[5];
+    int k;
+    for(k=0;k<5;k++){
+        i[k] = (k+1);
+    }
+
+    for(int j=0;j<5;j++){
+        printf("i[%d]=%d\n",j,i[j]);
+    }
+}
+
+void array_test2()
+{
+//    int i[5];
+//    int k;
+//    for(k=0;k<5;k++){
+//        scanf("%d",&i[k]);
+//    }
+//
+//    for(int j=0;j<5;j++){
+//        printf("i[%d]=%d,i[%d]=%p\n",j,i[j],j,&i[j]);
+//    }
+
+     //int k[5] = {1,2,3,4,5};
+     //int k[5] = {1,2,4,5};
+
+//     int k[5] = {1,2,3};
+//     long int m[5] = {1,2,3};
+//     float n[5] = {1.23,1.23};
+//     char s[5] = {'d','o'};
+//     printf("%d\n",k[4]);
+//     printf("%d\n",m[4]);
+//     printf("%f\n",n[4]);
+//     printf("%c\n",s[4]);
+
+       //int k[] = {1,2,3,4,5,6,7,8};
+
+       //printf("k[5]=%d\n",k[5]);
+
+       int num[2][3] = {{1,2,3},{4,5,6}};
+       for(int j=0;j<2;j++){
+           for(int k=0;k<3;k++){
+                printf("num[%d][%d]=%d,num[%d][%d]=%p\n",j,k,num[j][k],j,k,&num[j][k]);
+           }
+       }
+}
+
+void array_test3()
+{
+    int n,m;
+    int v[3];
+    int total;
+    //int a[5][3];
+    int a[5][3] = {{34,21,66},{87,54,66},{43,65,75},{87,99,100},{100,55,99}};
+    int sum;
+    int average;
+
+    for(n=0;n<3;n++){
+        for(m=0;m<5;m++){
+            //scanf("%d",&a[m][n]);//00 10 20 30 40  01 11 21 31 41 02 12 22 32 42
+            sum+=a[m][n];//得到每个人的第一个元素
+        }
+        v[n] = sum/5;
+        sum = 0;
+    }
+
+    average = (v[0]+v[1]+v[2])/3;
+    printf("english is %d,chinese is %d,c language is %d\n",v[0],v[1],v[2]);
+    printf("average is %d\n",average);
+}
+
+void array_search()
+{
+
+    int people[] = {100,200,300,400,500};
+    int index;
+    scanf("%d",&index);
+    int location;
+    for(int k=0;k< sizeof(people)/ sizeof(int);k++){
+        if (people[k] == index){
+            location = k;
+            break;
+        }
+    }
+
+    if (location>0){
+        printf("search a people index is %d,and value is %d\n",location,people[location]);
+    }else{
+        printf("can not search anything!");
+    }
+}
+
+void array_search1()
+{
+    int people[] = {100,200,300,400,500};
+    int index;
+    scanf("%d",&index);
+    int location;
+    for(int k=0;k< sizeof(people)/ sizeof(int);k++){
+        if (people[k] == index){
+            location = k;
+            break;
+        }else if(people[k] >index){
+            break;//循环的数值超过键入的值时终止循环  一般用于从小到大有序的数组
+        }
+    }
+
+    if (location>0){
+        printf("search a people index is %d,and value is %d\n",location,people[location]);
+    }else{
+        printf("can not search anything!");
+    }
+
+}
+
+void char_array()
+{
+
+    char name[] = {"小明"};
+    char address[] = "china bejing";
+    printf("name=%s,address=%s,address[0]=%c\n",name,address,address[0]);
+    for(int i=0;i< sizeof(address)/ sizeof(char);i++){
+        printf("address[%d]=%c,address[%d]=%p\n",i,address[i],i,&address[i]);
+    }
+
+    address[1] = 'u';
+    printf("address=%s\n",address);
+}

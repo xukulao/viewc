@@ -84,4 +84,17 @@ void countCharAndNumAndOther();
 void square();
 
 void memory_test();
+
+void array_test1();
+
+void array_test2();
+
+void array_test3();
+
+void array_search();
+
+void array_search1();
+
+//字符数组
+void char_array();
 #endif

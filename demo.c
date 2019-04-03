@@ -48,5 +48,11 @@ int main()
      //ninetonine();
      //square();
      //memory_test();
+     //array_test1();
+     //array_test2();
+     //array_test3();
+     //array_search();
+     //array_search1();
+     char_array();
     return 0;
 }
