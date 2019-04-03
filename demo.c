@@ -36,12 +36,17 @@ int main()
    //cache_test();
    //scanf_advance_test();
 
-   char pwd[21];
-   int pwdlenght = 20;
+//   char pwd[21];
+//   int pwdlenght = 20;
+//
+//   printf("enter your pwd:\n");
+//   pwd_test(pwd,pwdlenght);
+//   printf("your pwd is：%s\n",pwd);
+//   getchar();
 
-   printf("enter your pwd:\n");
-   pwd_test(pwd,pwdlenght);
-   printf("your pwd is：%s\n",pwd);
-   getchar();
+     //if_test();
+     //ninetonine();
+     //square();
+     //memory_test();
     return 0;
 }

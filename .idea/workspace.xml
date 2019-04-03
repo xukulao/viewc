@@ -13,6 +13,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e30f648d-7728-46ff-9671-14892c70e745" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/demo.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/demo.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/demo_data_type.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/demo_data_type.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo.c" beforeDir="false" afterPath="$PROJECT_DIR$/demo.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_data_type.c" beforeDir="false" afterPath="$PROJECT_DIR$/demo_data_type.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_data_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/demo_data_type.h" afterDir="false" />
@@ -30,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo_data_type.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="642" column="24" lean-forward="true" selection-start-line="642" selection-start-column="24" selection-end-line="642" selection-end-column="24" />
+            <state relative-caret-position="551">
+              <caret line="803" column="12" lean-forward="true" selection-start-line="803" selection-start-column="12" selection-end-line="803" selection-end-column="12" />
               <folding>
                 <element signature="e#48#66#0" expanded="true" />
               </folding>
@@ -42,8 +46,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+            <state relative-caret-position="665">
+              <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -60,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo_data_type.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="74" column="13" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="13" />
+            <state relative-caret-position="1955">
+              <caret line="85" column="16" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -152,12 +156,13 @@
       <workItem from="1554097064552" duration="13000" />
       <workItem from="1554097084142" duration="3430000" />
       <workItem from="1554171606451" duration="18931000" />
-      <workItem from="1554253984555" duration="11267000" />
+      <workItem from="1554253984555" duration="21336000" />
+      <workItem from="1554280361351" duration="443000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33984000" />
+    <option name="totallyTimeSpent" value="44496000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -172,12 +177,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18176973" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18336888" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29392624" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48698482" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -199,6 +204,23 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo_char_type.c" />
+    <entry file="file://C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdlib.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2845">
+          <caret line="447" column="16" selection-start-line="447" selection-start-column="16" selection-end-line="447" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_data_type.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="803" column="12" lean-forward="true" selection-start-line="803" selection-start-column="12" selection-end-line="803" selection-end-column="12" />
+          <folding>
+            <element signature="e#48#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -208,25 +230,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo_data_type.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_data_type.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="642" column="24" lean-forward="true" selection-start-line="642" selection-start-column="24" selection-end-line="642" selection-end-column="24" />
-          <folding>
-            <element signature="e#48#66#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1955">
+          <caret line="85" column="16" selection-start-line="85" selection-start-column="5" selection-end-line="85" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/demo.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="44" column="13" selection-start-line="44" selection-start-column="13" selection-end-line="44" selection-end-column="13" />
+        <state relative-caret-position="665">
+          <caret line="49" column="7" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
         </state>
       </provider>
     </entry>

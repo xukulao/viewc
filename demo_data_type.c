@@ -8,6 +8,7 @@
 #include <unistd.h>
 #include <conio.h>
 #include <ctype.h>
+#include <stdlib.h>
 void demo1()
 {
     //2?????=16λ ??Чλ??15λ 32 768
@@ -654,4 +655,157 @@ void pwd_test(char *pwd,int pwdlength)
     }
 
     pwd[i] = 0;//最后一位
+}
+
+void if_test()
+{
+//    char age = 0;
+//    printf("please enter your age");
+//    scanf("%d",&age);
+//    if (age > 18){
+//        printf("ok");
+//    }else{
+//        printf("no");
+//    }
+
+//    int a,b,max;
+//    printf("please enter some data:\n");
+//    scanf("%d %d",&a,&b);
+////    if (a>b)max=a;
+////    else max=b;
+//
+//    //max = (a>b)?a:b;
+//    max = b;
+//    if(a>b)max=a;
+//    printf("max is %d\n",max);
+
+      //int age,score;
+     // printf("please enter your age and your score:\n");
+      //scanf("%d %d",&age,&score);
+//      if (age >18){
+//          if (score >=60){
+//              printf("ok,u can do it");
+//          }else{
+//              printf("sorry,u can't do it!");
+//          }
+//      }else{
+//          printf("sorry,u can't use it");
+//      }
+//     if(age>18 && score >=60){
+//         printf("u can do it!");
+//     }else{
+//         printf("u can not do it!");
+//     }
+       //if(age>=18&&score>=60)printf("u can do it!");
+      // else printf("u can not do it!");
+
+//      int day;
+//      while (1){
+//          scanf("%d",&day);
+//          switch (day){
+//              case 1:
+//                  printf("Monday!\n");
+//                  //scanf("%d",&day);
+//                  break;
+//              case 2:
+//                  printf("Tuesday!\n");
+//                  //scanf("%d",&day);
+//                  break;
+//              case 3:
+//                  printf("Wednesday!\n");
+//                  //scanf("%d",&day);
+//                  break;
+//              case 4:
+//                  printf("Thurday!\n");
+//                  scanf("%d",&day);
+//                  break;
+//              case 5:
+//                  printf("Friday!\n");
+//                  //scanf("%d",&day);
+//                  break;
+//              case 6:
+//                  printf("Saturday!\n");
+//                  //scanf("%d",&day);
+//                  break;
+//              case 7:
+//                  printf("Sunday!\n");
+//                  scanf("%d",&day);
+//                  break;
+//              default:
+//                  printf("no!\n");
+//                  //scanf("%d",&day);
+//                  break;
+//          }
+//      }
+
+      long int i=0;
+      while(1){
+
+          printf("%d\n",++i);
+          if (i == 100000000){
+              break;
+          }
+      }
+}
+
+void ninetonine()
+{
+    int i;
+    int j;
+    for(i=1;i<=9;i++){
+        for(j=1;j<=9;j++){
+
+            if ((i-j)<=0){
+                printf("%2dx%2d=%2d",i,j,i*j);
+            }
+
+        }
+        printf("\n");
+    }
+    getchar();
+}
+
+void countCharAndNumAndOther()
+{
+    printf("please enter some data:\n");
+    char str[50];
+    scanf("%[a-z]",str);
+    scanf("%[A-Z]",str);
+    scanf("%[0-9]",str);
+
+}
+
+void square()
+{
+    int num;
+    scanf("%d",&num);
+    for(int j=1;j<num;j++){
+        if (num/2==j){
+            for(int m=num-j;m>0;m--){
+
+               for(int k=m;k>=0;k--){
+                   printf(" ");printf("*");
+               }
+               printf("\n");
+
+
+            }
+        }else if(j<=num/2){
+
+            for(int n=0;n<j;n++){
+                printf(" ");printf("*");
+            }
+            printf("\n");
+        }
+    }
+
+}
+
+//内存测试  分配内存
+void memory_test()
+{
+    while (1){
+
+        malloc(1024);
+    }
 }

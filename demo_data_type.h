@@ -73,4 +73,15 @@ void scanf_advance_test();
 
 //pwd
 void pwd_test();
+
+
+//if
+void if_test();
+
+void ninetonine();
+
+void countCharAndNumAndOther();
+void square();
+
+void memory_test();
 #endif
