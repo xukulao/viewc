@@ -34,6 +34,14 @@ int main()
    //gets_test();
    //address();
    //cache_test();
-   scanf_advance_test();
+   //scanf_advance_test();
+
+   char pwd[21];
+   int pwdlenght = 20;
+
+   printf("enter your pwd:\n");
+   pwd_test(pwd,pwdlenght);
+   printf("your pwd is：%s\n",pwd);
+   getchar();
     return 0;
 }

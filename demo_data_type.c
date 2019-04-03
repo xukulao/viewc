@@ -2,6 +2,12 @@
 // Created by Administrator on 2019/3/30.
 //
 #include <stdio.h>
+#include <windows.h>
+#include <wchar.h>
+#include <locale.h>
+#include <unistd.h>
+#include <conio.h>
+#include <ctype.h>
 void demo1()
 {
     //2?????=16λ ??Чλ??15λ 32 768
@@ -247,8 +253,7 @@ void char_demo6()
 }
 
 //宽字符测试
-#include <wchar.h>
-#include <locale.h>
+
 void wchar()
 {
     wchar_t a = L'中';
@@ -343,7 +348,7 @@ void var_init_value()
     printf("var_init_value_i=%d,a=%hf,b=%d,c=%ld\n",var_init_value_i,a,b,c);
 }
 
-#include <unistd.h>
+
 void printf_function()
 {
     char *name1 = "tony";
@@ -415,7 +420,7 @@ void printf_function()
     printf("http://www.baidu.com\n");
 }
 
-#include <windows.h>
+
 void snake()
 {
 
@@ -496,7 +501,7 @@ void getchar_test()
     }
 }
 
-#include <conio.h>
+
 void getche_test()
 {
     char a;
@@ -620,4 +625,33 @@ void scanf_advance_test()
       scanf("%[a-z.]",url);
 
       printf("ok,your info of name is %s,age is %d,url is %s\n",name,age,url);
+}
+
+/**
+ * 模拟密码输入
+ * @param pwd
+ * @param pwdlength
+ */
+void pwd_test(char *pwd,int pwdlength)
+{
+    char ch = 0;
+    int i = 0;
+
+    while(i<pwdlength){
+
+        ch = getche();
+        if (ch == '\r'){
+            printf("\n");
+            break;
+        }else if(ch == '\b' && i>0){
+            printf("\b \b");
+            i--;
+        }else if(isprint(ch)){
+            pwd[i] = ch;
+            printf("*");
+            i++;
+        }
+    }
+
+    pwd[i] = 0;//最后一位
 }

@@ -70,4 +70,7 @@ void cache_test();
 
 //scanf advance test
 void scanf_advance_test();
+
+//pwd
+void pwd_test();
 #endif
