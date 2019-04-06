@@ -930,13 +930,80 @@ void array_search1()
 void char_array()
 {
 
-    char name[] = {"小明"};
-    char address[] = "china bejing";
-    printf("name=%s,address=%s,address[0]=%c\n",name,address,address[0]);
-    for(int i=0;i< sizeof(address)/ sizeof(char);i++){
-        printf("address[%d]=%c,address[%d]=%p\n",i,address[i],i,&address[i]);
+//    char name[] = {"小明"};
+//    char address[] = "china bejing";
+//    printf("name=%s,address=%s,address[0]=%c\n",name,address,address[0]);
+//    for(int i=0;i< sizeof(address)/ sizeof(char);i++){
+//        printf("address[%d]=%c,address[%d]=%p\n",i,address[i],i,&address[i]);
+//    }
+//
+//    address[1] = 'u';
+//    printf("address=%s\n",address);
+
+      char a[6] = "china";//字符串默认会加一个结束标志\0即空字符NULL
+      printf("a=%s,a of strlen %d\n",a,strlen(a));
+}
+
+void strcat_test()
+{
+    char str1[100] = "the your website is ";
+    char str2[40];
+
+    printf("please enter your website\n");
+    gets(str2);
+    strcat(str1,str2);
+    puts(str1);
+
+}
+
+void strcopy_test()
+{
+    char str1[100];
+
+    strcpy(str1,"hello,world");
+    puts(str1);
+
+}
+
+void insertOrDeleteArray()
+{
+    int num[10];
+    int num1[9];
+    int num2[11];
+
+    for(int i=0;i<=10;i++){
+        num[i] = i;
     }
 
-    address[1] = 'u';
-    printf("address=%s\n",address);
+    //删除
+    for(int j=0;j<=10;j++){
+        if (j<6){
+            num1[j] = num[j];
+        }else if(j>6){
+            num1[j-1] = num[j];
+        }
+    }
+
+    //增加
+    for(int k=0;k<=10;k++){
+        if (k<7){
+            num2[k] = num[k];//0 1 2 3 4 5 6
+        }else if(k>7){
+            num2[k+1] = num[k];//8
+        }else{
+            num2[k] = 888;//7
+            num2[k+1] = num[k];//8
+        }
+    }
+
+    //
+   for(int n=0;n< sizeof(num)/ sizeof(int);n++){
+       printf("num[%d]=%d\n",n,num[n]);
+   }
+   for(int m=0;m< sizeof(num1)/sizeof(int);m++){
+       printf("num1[%d]=%d\n",m,num1[m]);
+   }
+   for(int z=0;z< sizeof(num2)/sizeof(int);z++){
+       printf("num2[%d]=%d\n",z,num2[z]);
+   }
 }

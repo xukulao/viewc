@@ -53,6 +53,9 @@ int main()
      //array_test3();
      //array_search();
      //array_search1();
-     char_array();
+     //char_array();
+     //strcat_test();
+     //strcopy_test();
+    insertOrDeleteArray();
     return 0;
 }

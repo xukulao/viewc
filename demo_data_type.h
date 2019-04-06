@@ -97,4 +97,12 @@ void array_search1();
 
 //字符数组
 void char_array();
+
+//字符串处理
+void strcat_test();
+void strcopy_test();
+
+//数组删除，增加
+void insertOrDeleteArray();
+
 #endif
