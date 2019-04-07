@@ -105,4 +105,14 @@ void strcopy_test();
 //数组删除，增加
 void insertOrDeleteArray();
 
+//数组溢出和越界
+void outOfArray();
+
+//冒泡算法
+void BubbleArray();
+
+//二分查找算法
+int array_search2(int key);
+
+void array_search_test1();
 #endif

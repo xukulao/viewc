@@ -1007,3 +1007,67 @@ void insertOrDeleteArray()
        printf("num2[%d]=%d\n",z,num2[z]);
    }
 }
+
+void outOfArray()
+{
+    int a[1] = {100};
+    //printf("a=%c\n",a[100]);
+    //char b[5] = "chinaandhe";
+
+    //printf("b=%s\n",b);
+}
+
+//冒泡算法排序
+void BubbleArray()
+{
+    int a[10] = {23,43,76,100,32,54,21,11,98,65};
+    int i,j;
+    int temp;
+    for(i=0;i<10-1;i++){
+        for(j=0;j<10-1-i;j++){
+            if (a[j]>a[j+1]){
+                temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+
+            }
+        }
+    }
+
+    for(int k=0;k<10;k++){
+        printf("a[%d]=%d\n",k,a[k]);
+    }
+}
+
+void array_search_test1()
+{
+    int a[10] = {12,-98,87,12,34,67,33,66,32,99};
+    printf("a[%d]=%d\n",(0+9)/2,a[(0+9)/2]);
+}
+//二分查找法，要求数据必须是顺序排列的
+int array_search2(int key)
+{
+    int a[10] = {10,30,60,65,70,80,85,88,90,99};
+    int low = 0;
+    int high = 10-1;
+    int mid;
+    int midValue;
+//    for(int i=0;i<10;i++){
+//        printf("%2d",a[i]);
+//    }
+
+    while(low<=high){
+        mid = (low+high)/2;
+        midValue = a[mid];
+        if (midValue>key){
+            //low = mid+1;
+            high = mid-1;
+        }else if(midValue<key){
+           // high = mid-1;
+           low = mid+1;
+        }else{
+            return mid;
+        }
+    }
+    return -1;
+}

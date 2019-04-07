@@ -56,6 +56,23 @@ int main()
      //char_array();
      //strcat_test();
      //strcopy_test();
-    insertOrDeleteArray();
+    //insertOrDeleteArray();
+    //outOfArray();
+   // BubbleArray();
+   // array_search_test1();
+    int a[10] = {10,30,60,65,70,80,85,88,90,99};
+    int key;
+    for(int i=0;i<10;i++){
+        printf("%d\t",a[i]);
+    }
+    printf("\n");
+    scanf("%d",&key);
+    int ret;
+     ret=array_search2(key);
+    if (ret == -1){
+        printf("no result");
+    }else{
+        printf("ok,find it!");
+    }
     return 0;
 }
