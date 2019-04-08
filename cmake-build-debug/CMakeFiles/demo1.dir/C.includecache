@@ -7,12 +7,12 @@
 #IncludeRegexTransform: 
 
 E:/c/viewc/demo.c
+stdio.h
+-
 demo_data_type.h
 E:/c/viewc/demo_data_type.h
 
 E:/c/viewc/demo_data_type.c
-stdio.h
--
 windows.h
 -
 wchar.h
@@ -26,6 +26,8 @@ conio.h
 ctype.h
 -
 stdlib.h
+-
+string.h
 -
 
 E:/c/viewc/demo_data_type.h

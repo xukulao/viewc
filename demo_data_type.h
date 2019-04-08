@@ -120,4 +120,11 @@ void array_search_test1();
 int sum_test();
 
 int sum_test1();
+
+long factoria1(int n);
+long sum_test2(int n);
+
+long factoria2(int n);
+
+char *reverse(char *str);
 #endif

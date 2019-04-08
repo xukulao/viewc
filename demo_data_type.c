@@ -1,7 +1,7 @@
 //
 // Created by Administrator on 2019/3/30.
 //
-#include <stdio.h>
+//#include <stdio.h>
 #include <windows.h>
 #include <wchar.h>
 #include <locale.h>
@@ -9,6 +9,7 @@
 #include <conio.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <string.h>
 void demo1()
 {
     //2?????=16λ ??Чλ??15λ 32 768
@@ -1083,8 +1084,63 @@ int sum_test()
 
 int sum_test1(int m,int n){
     int i,sum=0;
-    for(i=m;i<n;i++){
+    for(i=m;i<=n;i++){
         sum+=i;
     }
     return sum;
+}
+
+long factoria1(int n){
+    int i;
+    long int result=1;
+    for(i=1;i<=n;i++){
+        result*=i;
+    }
+    return result;
+}
+
+long sum_test2(int n)
+{
+    int i;
+    long int result=1;
+    for(i=1;i<=n;i++){
+        result+=factoria1(i);
+    }
+    return result;
+}
+
+long factoria2(int n)
+{
+    if (n==0||n==1){
+        return 1;
+    }else{
+        return factoria2(n-1)*n;
+    }
+}
+
+/**
+ * 字符串反转 中间递归
+ * @param str
+ * @return
+ */
+char *reverse(char *str)
+{
+
+    /**
+     * 123456789
+     * 1、先取第1位放入临时变量
+     * 2、将最后一位strlen(123456789)-1放入第1位,同时最后一位len-1=0
+     * 3、移到第二位str+1 此时得2345678
+     * 4、将前面的第一位放入最后一位
+     */
+
+     int len = strlen(str);
+     if(len>1){
+         char ctemp = str[0];
+         str[0] = str[len-1];
+         str[len-1] = '\0';
+         reverse(str+1);
+         str[len-1] = ctemp;
+     }
+     return str;
 }
