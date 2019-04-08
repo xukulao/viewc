@@ -115,4 +115,9 @@ void BubbleArray();
 int array_search2(int key);
 
 void array_search_test1();
+
+//function test
+int sum_test();
+
+int sum_test1();
 #endif

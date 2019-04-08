@@ -1071,3 +1071,20 @@ int array_search2(int key)
     }
     return -1;
 }
+
+int sum_test()
+{
+    int i,num=0;
+    for(i=1;i<=100;i++){
+        num+=i;
+    }
+    return num;
+}
+
+int sum_test1(int m,int n){
+    int i,sum=0;
+    for(i=m;i<n;i++){
+        sum+=i;
+    }
+    return sum;
+}

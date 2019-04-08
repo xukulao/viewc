@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+E:/c/viewc/demo.c
+demo_data_type.h
+E:/c/viewc/demo_data_type.h
+
 E:/c/viewc/demo_data_type.c
 stdio.h
 -
@@ -23,4 +27,6 @@ ctype.h
 -
 stdlib.h
 -
+
+E:/c/viewc/demo_data_type.h
 
