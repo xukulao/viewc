@@ -127,4 +127,8 @@ long sum_test2(int n);
 long factoria2(int n);
 
 char *reverse(char *str);
+
+//
+int sqt(int y);
+void test_sqt();
 #endif

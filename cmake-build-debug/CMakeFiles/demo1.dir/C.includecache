@@ -6,29 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/c/viewc/demo.c
+E:/c/demo/demo.c
 stdio.h
 -
 demo_data_type.h
-E:/c/viewc/demo_data_type.h
+E:/c/demo/demo_data_type.h
 
-E:/c/viewc/demo_data_type.c
-windows.h
--
-wchar.h
--
-locale.h
--
-unistd.h
--
-conio.h
--
-ctype.h
--
-stdlib.h
--
-string.h
--
-
-E:/c/viewc/demo_data_type.h
+E:/c/demo/demo_data_type.h
 

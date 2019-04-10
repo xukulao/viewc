@@ -1144,3 +1144,16 @@ char *reverse(char *str)
      }
      return str;
 }
+
+int sqt(int y)
+{
+    return ((y)*(y));
+}
+
+void test_sqt()
+{
+    int i=1;
+    while(i<=5){
+        printf("%d^2=%d\n",(i-1),sqt(i++));
+    }
+}

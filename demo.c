@@ -5,6 +5,25 @@
 #include "demo_data_type.h"
 int age = 99999;
 char name[100] = "jackchensm";
+
+/********************define******************************/
+
+#define M 120
+//#define 打印 printf("hello")
+#define PI 3.1415926
+#define S PI+100
+#define UINT unsigned int
+#define PIN int *
+typedef int *PINT2;
+
+#define J(y) y+100
+#define MAX(a,b) a>b?a:b
+
+#define SQ(y) ((y)*(y))
+#define CON(a,b) a##b##100
+
+/********************define******************************/
+
 int main()
 {
 //    puts("php is best language in the world2");
@@ -97,7 +116,49 @@ int main()
     //printf("age=%d,name=%s\n",age,name);
     //printf("sum=%d\n",factoria2(5));
 
-    char str[20] = "123456789";
-    printf("str=%s\n",reverse(str));
+    //char str[20] = "123456789";
+    //printf("str=%s\n",reverse(str));
+//    printf("m=%d\n",M);
+//    printf("m=%d\n",M);
+//    printf("m=%d\n",M);
+//      printf("S=%f\n",S);
+//
+//      UINT i;
+//      i=100;
+//      printf("i=%d\n",i);
+
+//    PIN a,b;//int *a,b
+//    b = 100;
+//    a = &b;
+//
+//    PINT2 c,d;//int *c,int *d
+//    c = a;
+//    d = a;
+//    //printf("a=%d,b=%d,c=%d,d=%d\n",*a,b,*c,*d);
+//    printf("%s\n","hello");
+//    printf("c=%d\n",*c);
+
+    //printf("J=%d\n",J(100));
+//    int a,b;
+//    //scanf("%d,%d",&a,&b);
+//    scanf("/[0-9]+/",&a);
+//
+//    scanf("/[0-9]+/",&b);
+//    printf("a>b=%d\n",MAX(a,b));
+
+       // test_sqt();
+//       int i=0;
+//       while(i<=5){
+//           printf("%d^2=%d\n",i,SQ(i++));
+//       }
+
+//预定义宏
+//    printf("con=%d\n",CON(100,200));
+//    printf("date=%s\n",__DATE__);
+//    printf("time=%s\n",__TIME__);
+//    printf("line=%s\n",__LINE__);
+//    printf("file=%s\n",__FILE__);
+//    printf("func=%s\n",__FUNCTION__);
+//    system("pause");
     return 0;
 }
