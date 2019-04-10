@@ -191,8 +191,37 @@ int main()
 //#endif
 
 //#undef M
-#ifdef M
-printf("m=%d\n",M);
-#endif
-    return 0;
+//#ifdef M
+//printf("m=%d\n",M);
+//#endif
+//    return 0;
+
+int a=10;
+/***
+ * 变量类型 int
+ * 变量名称 a
+ * 变量内存大小  4b
+ * 变量内存编号【地址】【指针】  0X62FE1C
+ */
+
+char name[] = "chinese";
+/**
+ * 变量类型 char
+ * 变量名称 name
+ * 变量内存大小 1b
+ * 变量内存编号【地址】【指针】 0X62FE10
+ */
+
+int *p;
+/**
+ * 变量类型  指针int
+ * 变量名称 p
+ * 变量内容 变量a的内存地址【指针】 0X62FE1C
+ * 变量内存大小  4b
+ * 变量内存编号【地址】【指针】0X62FE08
+ */
+p = &a;
+printf("%#X,%#X\n",&a,name);
+printf("%d,%d,p=%d,p=%#X\n",*&a,name[0],*p,&p);
+return 0;
 }
