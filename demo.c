@@ -1,8 +1,10 @@
 //
 // Created by Administrator on 2019/3/29.
 //
-
+#include <stdio.h>
 #include "demo_data_type.h"
+int age = 99999;
+char name[100] = "jackchensm";
 int main()
 {
 //    puts("php is best language in the world2");
@@ -53,6 +55,49 @@ int main()
      //array_test3();
      //array_search();
      //array_search1();
-     char_array();
+     //char_array();
+     //strcat_test();
+     //strcopy_test();
+    //insertOrDeleteArray();
+    //outOfArray();
+   // BubbleArray();
+   // array_search_test1();
+//    int a[10] = {10,30,60,65,70,80,85,88,90,99};
+//    int key;
+//    for(int i=0;i<10;i++){
+//        printf("%d\t",a[i]);
+//    }
+//    printf("\n");
+//    scanf("%d",&key);
+//    int ret;
+//     ret=array_search2(key);
+//    if (ret == -1){
+//        printf("no result");
+//    }else{
+//        printf("ok,find it!");
+//    }
+
+    //int ret = sum_test();
+    //int ret = sum_test1(1,10);
+//    int ret = 0;
+//    int m = 0;
+//    int n = 0;
+//    while(1){
+//        printf("enter some data\n");
+//        scanf("%d,%d",&m,&n);
+//        if (m>0&&n>0){
+//            ret = sum_test1(m,n);
+//            printf("ret=%d\n",ret);
+//        }else {
+//            break;
+//        }
+//    }
+
+    //printf("sum_test2() = %d\n",sum_test2(10));
+    //printf("age=%d,name=%s\n",age,name);
+    //printf("sum=%d\n",factoria2(5));
+
+    char str[20] = "123456789";
+    printf("str=%s\n",reverse(str));
     return 0;
 }

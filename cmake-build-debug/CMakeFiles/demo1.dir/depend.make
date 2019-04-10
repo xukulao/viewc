@@ -4,4 +4,5 @@
 CMakeFiles/demo1.dir/demo.c.obj: ../demo.c
 CMakeFiles/demo1.dir/demo.c.obj: ../demo_data_type.h
 
+CMakeFiles/demo1.dir/demo_data_type.c.obj: ../demo_data_type.c
 

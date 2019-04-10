@@ -1,7 +1,7 @@
 //
 // Created by Administrator on 2019/3/30.
 //
-#include <stdio.h>
+//#include <stdio.h>
 #include <windows.h>
 #include <wchar.h>
 #include <locale.h>
@@ -9,6 +9,7 @@
 #include <conio.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include <string.h>
 void demo1()
 {
     //2?????=16λ ??Чλ??15λ 32 768
@@ -930,13 +931,216 @@ void array_search1()
 void char_array()
 {
 
-    char name[] = {"小明"};
-    char address[] = "china bejing";
-    printf("name=%s,address=%s,address[0]=%c\n",name,address,address[0]);
-    for(int i=0;i< sizeof(address)/ sizeof(char);i++){
-        printf("address[%d]=%c,address[%d]=%p\n",i,address[i],i,&address[i]);
+//    char name[] = {"小明"};
+//    char address[] = "china bejing";
+//    printf("name=%s,address=%s,address[0]=%c\n",name,address,address[0]);
+//    for(int i=0;i< sizeof(address)/ sizeof(char);i++){
+//        printf("address[%d]=%c,address[%d]=%p\n",i,address[i],i,&address[i]);
+//    }
+//
+//    address[1] = 'u';
+//    printf("address=%s\n",address);
+
+      char a[6] = "china";//字符串默认会加一个结束标志\0即空字符NULL
+      printf("a=%s,a of strlen %d\n",a,strlen(a));
+}
+
+void strcat_test()
+{
+    char str1[100] = "the your website is ";
+    char str2[40];
+
+    printf("please enter your website\n");
+    gets(str2);
+    strcat(str1,str2);
+    puts(str1);
+
+}
+
+void strcopy_test()
+{
+    char str1[100];
+
+    strcpy(str1,"hello,world");
+    puts(str1);
+
+}
+
+void insertOrDeleteArray()
+{
+    int num[10];
+    int num1[9];
+    int num2[11];
+
+    for(int i=0;i<=10;i++){
+        num[i] = i;
     }
 
-    address[1] = 'u';
-    printf("address=%s\n",address);
+    //删除
+    for(int j=0;j<=10;j++){
+        if (j<6){
+            num1[j] = num[j];
+        }else if(j>6){
+            num1[j-1] = num[j];
+        }
+    }
+
+    //增加
+    for(int k=0;k<=10;k++){
+        if (k<7){
+            num2[k] = num[k];//0 1 2 3 4 5 6
+        }else if(k>7){
+            num2[k+1] = num[k];//8
+        }else{
+            num2[k] = 888;//7
+            num2[k+1] = num[k];//8
+        }
+    }
+
+    //
+   for(int n=0;n< sizeof(num)/ sizeof(int);n++){
+       printf("num[%d]=%d\n",n,num[n]);
+   }
+   for(int m=0;m< sizeof(num1)/sizeof(int);m++){
+       printf("num1[%d]=%d\n",m,num1[m]);
+   }
+   for(int z=0;z< sizeof(num2)/sizeof(int);z++){
+       printf("num2[%d]=%d\n",z,num2[z]);
+   }
+}
+
+void outOfArray()
+{
+    int a[1] = {100};
+    //printf("a=%c\n",a[100]);
+    //char b[5] = "chinaandhe";
+
+    //printf("b=%s\n",b);
+}
+
+//冒泡算法排序
+void BubbleArray()
+{
+    int a[10] = {23,43,76,100,32,54,21,11,98,65};
+    int i,j;
+    int temp;
+    for(i=0;i<10-1;i++){
+        for(j=0;j<10-1-i;j++){
+            if (a[j]>a[j+1]){
+                temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+
+            }
+        }
+    }
+
+    for(int k=0;k<10;k++){
+        printf("a[%d]=%d\n",k,a[k]);
+    }
+}
+
+void array_search_test1()
+{
+    int a[10] = {12,-98,87,12,34,67,33,66,32,99};
+    printf("a[%d]=%d\n",(0+9)/2,a[(0+9)/2]);
+}
+//二分查找法，要求数据必须是顺序排列的
+int array_search2(int key)
+{
+    int a[10] = {10,30,60,65,70,80,85,88,90,99};
+    int low = 0;
+    int high = 10-1;
+    int mid;
+    int midValue;
+//    for(int i=0;i<10;i++){
+//        printf("%2d",a[i]);
+//    }
+
+    while(low<=high){
+        mid = (low+high)/2;
+        midValue = a[mid];
+        if (midValue>key){
+            //low = mid+1;
+            high = mid-1;
+        }else if(midValue<key){
+           // high = mid-1;
+           low = mid+1;
+        }else{
+            return mid;
+        }
+    }
+    return -1;
+}
+
+int sum_test()
+{
+    int i,num=0;
+    for(i=1;i<=100;i++){
+        num+=i;
+    }
+    return num;
+}
+
+int sum_test1(int m,int n){
+    int i,sum=0;
+    for(i=m;i<=n;i++){
+        sum+=i;
+    }
+    return sum;
+}
+
+long factoria1(int n){
+    int i;
+    long int result=1;
+    for(i=1;i<=n;i++){
+        result*=i;
+    }
+    return result;
+}
+
+long sum_test2(int n)
+{
+    int i;
+    long int result=1;
+    for(i=1;i<=n;i++){
+        result+=factoria1(i);
+    }
+    return result;
+}
+
+long factoria2(int n)
+{
+    if (n==0||n==1){
+        return 1;
+    }else{
+        return factoria2(n-1)*n;
+    }
+}
+
+/**
+ * 字符串反转 中间递归
+ * @param str
+ * @return
+ */
+char *reverse(char *str)
+{
+
+    /**
+     * 123456789
+     * 1、先取第1位放入临时变量
+     * 2、将最后一位strlen(123456789)-1放入第1位,同时最后一位len-1=0
+     * 3、移到第二位str+1 此时得2345678
+     * 4、将前面的第一位放入最后一位
+     */
+
+     int len = strlen(str);
+     if(len>1){
+         char ctemp = str[0];
+         str[0] = str[len-1];
+         str[len-1] = '\0';
+         reverse(str+1);
+         str[len-1] = ctemp;
+     }
+     return str;
 }
