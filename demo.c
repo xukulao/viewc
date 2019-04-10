@@ -160,5 +160,39 @@ int main()
 //    printf("file=%s\n",__FILE__);
 //    printf("func=%s\n",__FUNCTION__);
 //    system("pause");
+
+    //条件编译
+//#if _WIN32
+//printf("hello,windows");
+//#elif
+//printf("hello,linux")
+//#endif
+
+//是否定义了宏名
+//#ifdef M
+//printf("m=%d\n",M);
+//#endif
+
+//#ifndef CHINESE
+//#define CHINESE 10000
+//#ifdef CHINESE
+//printf("chinese=%d\n",CHINESE);
+//#endif
+//#endif
+//
+//#undef JAPANESE
+//#define JAPANESE 100
+//
+//printf("japanese=%d\n",JAPANESE);
+
+//#ifdef WIN32
+//#error not support windows!
+//printf("not support windows!");
+//#endif
+
+//#undef M
+#ifdef M
+printf("m=%d\n",M);
+#endif
     return 0;
 }
