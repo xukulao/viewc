@@ -1220,3 +1220,108 @@ void array_pointer1()
         printf("a[%d]=%d,a[%d]=%#X,a[%d]=&%#X,a=%#X\n",i,*(a+i),i,(a+i),i,&a[i],a);
     }
 }
+
+void array_pointer2()
+{
+    int a[] = {100,200,300,500,600};
+    int len = sizeof(a)/ sizeof(4);
+    int *p = a;
+    int i;
+    for(i=0;i<len;i++){
+        printf("a[%d]=%d,a[%d]=%#X,a[%d]=%d\n",i,*(p+i),i,(p+i),i,p[i]);
+    }
+}
+
+void array_pointer3()
+{
+    int a[] = {1,2,3,4,5,6};
+    int *p = a+2;//首地址+8个字节【移到数组第二个元素上的位置】
+
+    printf("%d,%d,%d,%d,%d,%d\n",*(p-2),*(p-1),*p,*(p+1),*(p+2),*(p+3));
+    printf("%d\n",(*&*&*&*&(&*&*p)[0]+1)+1);
+}
+
+void array_char_pointer1()
+{
+    char name[] = "php is the best in the world!";
+    int len = strlen(name),i;
+    for(i=0;i<len;i++){
+        printf("%c",*&name[i]);
+    }
+    printf("name=%s\n",name);
+    printf("name=%c\n",name[0]);
+}
+
+void array_char_pointer2()
+{
+    char name[] = "php is the best in the world!";
+    int len = strlen(name),i;
+    char *pname = name;
+
+    for(i=0;i<len;i++){
+        printf("%c",(pname+i));
+    }
+
+    printf("\n");
+
+    for(i=0;i<len;i++){
+        printf("%c",*(pname+i));
+    }
+    printf("\n");
+    for(i=0;i<len;i++){
+        printf("%c",pname[i]);
+    }
+    printf("\n");
+    for(i=0;i<len;i++){
+        printf("%c",(name+i));
+    }
+    printf("\n");
+    for(i=0;i<len;i++){
+        printf("%c",*(name+i));
+    }
+}
+
+
+void array_char_pointer3()
+{
+    char *str = "phpisbestlanguageintheworld!";//字符的首地址为p
+    int len = strlen(str),i;
+
+    for(i=0;i<len;i++){
+        printf("%c",*(str+i));
+    }
+
+    printf("\n");
+    for(i=0;i<len;i++){
+        printf("%c",str[i]);
+    }
+
+    printf("\n");
+    for(i=0;i<len;i++){
+        printf("%c",*&*&str[i]);
+    }
+
+    printf("\n");
+    printf("******************************************************\n");
+    char *c1 = str;//全部
+    char *c2 = str+2;//第3个字符
+
+    char c3 = *str;//第0个字符
+    char c4 = str[4];//第5个字符
+    char c5 = *(str+6);//第7个字符
+    char c6 = *&str[7];//第8个字符
+
+    char c7 = *str+8;//第0个字符+8
+
+    char c8 = (str+1)[5];//
+
+    printf("c1=%s\n",c1);
+    printf("c2=%s\n",c2);
+    printf("c3=%c\n",c3);
+    printf("c4=%c\n",c4);
+    printf("c5=%c\n",c5);
+    printf("c6=%c\n",c6);
+    printf("c7=%c\n",c7);
+    printf("c8=%c\n",c8);
+
+}

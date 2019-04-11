@@ -141,4 +141,14 @@ void pointer3();
 
 //数组指针
 void array_pointer1();
+
+void array_pointer2();
+
+void array_pointer3();
+//字符数组指针
+void array_char_pointer1();
+
+void array_char_pointer2();
+
+void array_char_pointer3();
 #endif

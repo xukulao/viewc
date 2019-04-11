@@ -227,6 +227,12 @@ int main()
 //pointer1();
 //pointer2();
 //pointer3();
-array_pointer1();
+//array_pointer1();
+//array_pointer2();
+//array_pointer3();
+
+//array_char_pointer1();
+//array_char_pointer2();
+array_char_pointer3();
 return 0;
 }
