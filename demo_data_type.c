@@ -1210,3 +1210,13 @@ void pointer3()
         printf("pa!=paa");
     }
 }
+
+void array_pointer1()
+{
+    int a[] = {100,200,300,400,500};
+    int len = sizeof(a)/ sizeof(int);
+    int i;
+    for(i=0;i<len;i++){
+        printf("a[%d]=%d,a[%d]=%#X,a[%d]=&%#X,a=%#X\n",i,*(a+i),i,(a+i),i,&a[i],a);
+    }
+}

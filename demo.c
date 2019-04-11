@@ -226,6 +226,7 @@ int main()
 
 //pointer1();
 //pointer2();
-pointer3();
+//pointer3();
+array_pointer1();
 return 0;
 }

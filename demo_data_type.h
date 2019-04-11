@@ -138,4 +138,7 @@ void pointer1();
 void pointer2();
 
 void pointer3();
+
+//数组指针
+void array_pointer1();
 #endif
