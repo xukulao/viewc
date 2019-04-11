@@ -131,4 +131,11 @@ char *reverse(char *str);
 //
 int sqt(int y);
 void test_sqt();
+
+//指针
+void pointer1();
+
+void pointer2();
+
+void pointer3();
 #endif

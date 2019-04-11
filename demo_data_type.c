@@ -1157,3 +1157,56 @@ void test_sqt()
         printf("%d^2=%d\n",(i-1),sqt(i++));
     }
 }
+
+void pointer1()
+{
+    int a=15,b=20,c=30;
+    int *p = &a;//指针变量  内存是变量a的地址
+    *p = b;//加个指针运算符=变量=b
+    c = *p;//指针运算符号获取变量b的内容
+
+    //p = c;
+
+    printf("a=%d,b=%d,c=%d,p=%d\n",a,b,c,*p);
+}
+
+void pointer2()
+{
+    int a=10,b=20,temp;
+    int *pa = &a;
+    int *pb = &b;
+
+    printf("a=%d,b=%d,pa=%d,pb=%d\n",a,b,*pa,*pb);
+
+    temp = *pa;
+    *pa = *pb;
+    *pb = temp;
+
+    printf("pa=%d,pb=%d\n",*pa,*pb);
+}
+
+/**
+ * 指针变量的值进行运算
+ */
+void pointer3()
+{
+    int a=10,*pa=&a,*paa=&a;
+    int b=20,*pb=&b;
+    int c=30,*pc=&c;
+
+    printf("a=%#X,b=%#X,c=%#X\n",&a,&b,&c);
+    printf("pa=%#X,pb=%#X,pc=%#X\n",pa,pb,pc);
+
+    //指针变量累加，以4个字节的宽带累加
+    pa++;pb++;pc++;
+    printf("pa=%#X,pb=%#X,pc=%#X\n",pa,pb,pc);
+
+    pa--;pb--;pc--;
+    printf("pa=%#X,pb=%#X,pc=%#X\n",pa,pb,pc);
+
+    if (pa == paa){
+        printf("pa==paa\n");
+    }else{
+        printf("pa!=paa");
+    }
+}
