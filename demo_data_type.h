@@ -151,4 +151,20 @@ void array_char_pointer1();
 void array_char_pointer2();
 
 void array_char_pointer3();
+
+void swap_pointer1(int *p1,int *p2);
+
+
+
+int array_max_pointer1(int *num1,int len);
+
+/**
+ * 指针函数
+ * @param str1
+ * @param str2
+ * @return
+ */
+char *longStr(char *str1,char *str2);
+
+int *func_test();
 #endif

@@ -233,6 +233,35 @@ int main()
 
 //array_char_pointer1();
 //array_char_pointer2();
-array_char_pointer3();
+//array_char_pointer3();
+//
+//int a = 10;
+//int b = 20;
+//
+//swap_pointer1(&a,&b);
+//printf("a=%d,b=%d\n",a,b);
+
+//int num[6];
+//int len = sizeof(num)/ sizeof(int);
+//int i;
+//for(i=0;i<len;i++){
+//    scanf("%d",num+i);
+//}
+//
+//printf("maxValue=%d\n",array_max_pointer1(num,len));
+//
+//char str[30],str1[30],*str2;
+//gets(str);
+//gets(str1);
+//
+//str2 = longStr(str,str1);
+//printf("longStr=%s\n",str2);
+
+int *p,n;
+p = func_test();
+    printf("test func");
+n = *p;
+
+printf("n=%d\n",n);
 return 0;
 }

@@ -1325,3 +1325,41 @@ void array_char_pointer3()
     printf("c8=%c\n",c8);
 
 }
+
+void swap_pointer1(int *p1,int *p2)
+{
+    int temp;
+    temp = *p1;
+    *p1 = *p2;
+    *p2 = temp;
+}
+
+int array_max_pointer1(int *num1,int len)
+{
+    //int maxValue = num1[0];
+    int maxValue = *num1;
+    int i;
+    for(i=1;i<len;i++){
+        if(maxValue<num1[i]){
+            maxValue = num1[i];
+        }
+    }
+    return maxValue;
+}
+
+char *longStr(char *str1,char *str2)
+{
+    if(strlen(str1) > strlen(str2)){
+        return str1;
+    }else{
+        return str2;
+    }
+}
+
+int *func_test()
+{
+    int n = 100;
+    printf("n-iner=%d,n=%#X\n",n,&n);
+    int *m = &n;
+    return m;
+}
