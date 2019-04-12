@@ -118,14 +118,8 @@ int main()
 
     //char str[20] = "123456789";
     //printf("str=%s\n",reverse(str));
-<<<<<<< HEAD
-    try{
-        printf("hello");
-    }catch(){
-        printf("nice");
-    }
-    return 0;
-=======
+
+
 //    printf("m=%d\n",M);
 //    printf("m=%d\n",M);
 //    printf("m=%d\n",M);
