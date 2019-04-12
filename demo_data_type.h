@@ -167,4 +167,6 @@ int array_max_pointer1(int *num1,int len);
 char *longStr(char *str1,char *str2);
 
 int *func_test();
+//未初始化的指针
+void null_pointer();
 #endif

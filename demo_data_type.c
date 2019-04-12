@@ -1363,3 +1363,13 @@ int *func_test()
     int *m = &n;
     return m;
 }
+
+/**
+ * 程序直接停止
+ */
+void null_pointer()
+{
+    char *str;
+    gets(str);
+    printf("str=%s\n",str);
+}

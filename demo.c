@@ -259,12 +259,17 @@ int main()
 //str2 = longStr(str,str1);
 //printf("longStr=%s\n",str2);
 
-int *p,n;
-p = func_test();
-    printf("test func");
-n = *p;
+//int *p,n;
+//p = func_test();
+//    printf("test func");
+//n = *p;
+//
+//printf("n=%d\n",n);
 
-printf("n=%d\n",n);
+//null_pointer();
+    char *str;
+    gets(str);
+    printf("str=%s\n",str);
 return 0;
 
 }
