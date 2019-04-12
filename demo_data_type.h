@@ -127,4 +127,44 @@ long sum_test2(int n);
 long factoria2(int n);
 
 char *reverse(char *str);
+
+//
+int sqt(int y);
+void test_sqt();
+
+//指针
+void pointer1();
+
+void pointer2();
+
+void pointer3();
+
+//数组指针
+void array_pointer1();
+
+void array_pointer2();
+
+void array_pointer3();
+//字符数组指针
+void array_char_pointer1();
+
+void array_char_pointer2();
+
+void array_char_pointer3();
+
+void swap_pointer1(int *p1,int *p2);
+
+
+
+int array_max_pointer1(int *num1,int len);
+
+/**
+ * 指针函数
+ * @param str1
+ * @param str2
+ * @return
+ */
+char *longStr(char *str1,char *str2);
+
+int *func_test();
 #endif

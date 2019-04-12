@@ -6,11 +6,15 @@
 
 #IncludeRegexTransform: 
 
-E:/c/viewc/demo.c
+E:/c/demo/demo.c
 stdio.h
 -
 demo_data_type.h
-E:/c/viewc/demo_data_type.h
+E:/c/demo/demo_data_type.h
 
+<<<<<<< HEAD
 E:/c/viewc/demo_data_type.h
+=======
+E:/c/demo/demo_data_type.h
+>>>>>>> 15cef79e91616df96ea612ab560df8529a9d8d2e
 
