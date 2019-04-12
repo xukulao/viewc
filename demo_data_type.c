@@ -1381,3 +1381,23 @@ void dynamic_malloc()
     printf("str=%s\n",str);
     str = NULL;
 }
+
+void array_noteq_pointer()
+{
+    int a[6] = {1,2,3,4,5,6};//元素为char类型，共有6个元素，为6个字节
+    int *p = a;//a=a[0]的地址，为1个字节
+
+    printf("a=%d\n",*a);
+    printf("a=%#X\n",a);
+    printf("a=%d\n",*(a+2));//指针加2个字节
+    int i;
+    for(i=0;i<6;i++){
+        printf("a[%d]=%d\n",i,*(a+i));
+    }
+
+    int len_a = sizeof(a)/sizeof(int);//24/4=6
+    int len_b = sizeof(p)/sizeof(int);//4/4=1
+printf("p=%d,int=%d,i=%d\n", sizeof(p), sizeof(int), sizeof(i));
+    printf("len_a=%d,len_b=%d,a=%d\n",len_a,len_b, sizeof(&a[0]));
+
+}

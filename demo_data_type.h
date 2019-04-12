@@ -172,4 +172,7 @@ void null_pointer();
 
 //动态分配内存
 void dynamic_malloc();
+
+//数据！=指针
+void array_noteq_pointer();
 #endif
