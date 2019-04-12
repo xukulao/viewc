@@ -267,9 +267,12 @@ int main()
 //printf("n=%d\n",n);
 
 //null_pointer();
-    char *str;
-    gets(str);
-    printf("str=%s\n",str);
+    //char *str; 未给初始值的指针
+//    char *str = NULL;//空指针
+//    gets(str);
+//    printf("str=%s\n",str);
+
+dynamic_malloc();
 return 0;
 
 }

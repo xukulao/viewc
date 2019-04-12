@@ -169,4 +169,7 @@ char *longStr(char *str1,char *str2);
 int *func_test();
 //未初始化的指针
 void null_pointer();
+
+//动态分配内存
+void dynamic_malloc();
 #endif

@@ -1373,3 +1373,11 @@ void null_pointer()
     gets(str);
     printf("str=%s\n",str);
 }
+
+void dynamic_malloc()
+{
+    char *str = (char *)malloc(sizeof(char)*30);
+    gets(str);
+    printf("str=%s\n",str);
+    str = NULL;
+}
