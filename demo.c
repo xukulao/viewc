@@ -97,7 +97,12 @@ int main()
     //printf("age=%d,name=%s\n",age,name);
     //printf("sum=%d\n",factoria2(5));
 
-    char str[20] = "123456789";
-    printf("str=%s\n",reverse(str));
+    //char str[20] = "123456789";
+    //printf("str=%s\n",reverse(str));
+    try{
+        printf("hello");
+    }catch(){
+        printf("nice");
+    }
     return 0;
 }
