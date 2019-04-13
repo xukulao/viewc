@@ -276,7 +276,8 @@ int main()
 //    printf("str=%s\n",str);
 
 //dynamic_malloc();
-array_noteq_pointer();
+//array_noteq_pointer();
+pointer_test();
 
 return 0;
 

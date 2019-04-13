@@ -182,4 +182,7 @@ void dynamic_malloc();
 //数据！=指针
 void array_noteq_pointer();
 
+//指针测试
+void pointer_test();
+
 #endif
