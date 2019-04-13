@@ -167,4 +167,8 @@ int array_max_pointer1(int *num1,int len);
 char *longStr(char *str1,char *str2);
 
 int *func_test();
+
+
+//多级指针
+void more_pointer1();
 #endif

@@ -257,11 +257,13 @@ int main()
 //str2 = longStr(str,str1);
 //printf("longStr=%s\n",str2);
 
-int *p,n;
-p = func_test();
-    printf("test func");
-n = *p;
+//int *p,n;
+//p = func_test();
+//    printf("test func");
+//n = *p;
+//
+//printf("n=%d\n",n);
 
-printf("n=%d\n",n);
+more_pointer1();
 return 0;
 }
