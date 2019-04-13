@@ -12,6 +12,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e30f648d-7728-46ff-9671-14892c70e745" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/demo.c" beforeDir="false" afterPath="$PROJECT_DIR$/demo.c" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
 <<<<<<< HEAD
 =======
@@ -24,6 +27,7 @@
       <change beforePath="$PROJECT_DIR$/demo_data_type.c" beforeDir="false" afterPath="$PROJECT_DIR$/demo_data_type.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo_data_type.h" beforeDir="false" afterPath="$PROJECT_DIR$/demo_data_type.h" afterDir="false" />
 >>>>>>> 65855f4ba2181c00f770b0b48c2540526ea4d9a0
+>>>>>>> 15cef79e91616df96ea612ab560df8529a9d8d2e
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,7 +39,7 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo_data_type.c">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -52,15 +56,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/demo.c">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+            <state relative-caret-position="281">
+              <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+=======
 <<<<<<< HEAD
             <state relative-caret-position="1265">
               <caret line="55" column="18" selection-start-line="55" selection-start-column="18" selection-end-line="55" selection-end-column="18" />
 =======
             <state relative-caret-position="146">
               <caret line="102" column="1" lean-forward="true" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
+>>>>>>> 15cef79e91616df96ea612ab560df8529a9d8d2e
               <folding>
                 <element signature="e#48#66#0" expanded="true" />
               </folding>
@@ -106,9 +115,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/demo.c" />
         <option value="$PROJECT_DIR$/demo_data_type.c" />
         <option value="$PROJECT_DIR$/demo_data_type.h" />
+        <option value="$PROJECT_DIR$/demo.c" />
       </list>
     </option>
   </component>
@@ -187,17 +196,25 @@
 =======
       <workItem from="1554280361351" duration="6223000" />
       <workItem from="1554546908423" duration="10484000" />
+<<<<<<< HEAD
+      <workItem from="1554727843265" duration="7229000" />
+=======
       <workItem from="1554727843265" duration="5990000" />
 >>>>>>> 65855f4ba2181c00f770b0b48c2540526ea4d9a0
+>>>>>>> 15cef79e91616df96ea612ab560df8529a9d8d2e
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
 <<<<<<< HEAD
+    <option name="totallyTimeSpent" value="67989000" />
+=======
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="52902000" />
 =======
     <option name="totallyTimeSpent" value="66750000" />
 >>>>>>> 65855f4ba2181c00f770b0b48c2540526ea4d9a0
+>>>>>>> 15cef79e91616df96ea612ab560df8529a9d8d2e
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -267,6 +284,8 @@
     </entry>
 =======
     <entry file="file://C:/TDM-GCC-64/x86_64-w64-mingw32/include/stdlib.h" />
+<<<<<<< HEAD
+=======
 >>>>>>> 65855f4ba2181c00f770b0b48c2540526ea4d9a0
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -275,6 +294,7 @@
         </state>
       </provider>
     </entry>
+>>>>>>> 15cef79e91616df96ea612ab560df8529a9d8d2e
     <entry file="file://$PROJECT_DIR$/demo_data_type.h">
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< HEAD
@@ -293,23 +313,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="102" column="1" lean-forward="true" selection-start-line="102" selection-start-column="1" selection-end-line="102" selection-end-column="1" />
-          <folding>
-            <element signature="e#48#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo_data_type.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
           <caret line="1145" column="1" lean-forward="true" selection-start-line="1145" selection-start-column="1" selection-end-line="1145" selection-end-column="1" />
->>>>>>> 65855f4ba2181c00f770b0b48c2540526ea4d9a0
           <folding>
             <element signature="e#69#89#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="104" column="23" selection-start-line="104" selection-start-column="23" selection-end-line="104" selection-end-column="23" />
+=======
+        <state relative-caret-position="258">
+          <caret line="1145" column="1" lean-forward="true" selection-start-line="1145" selection-start-column="1" selection-end-line="1145" selection-end-column="1" />
+>>>>>>> 65855f4ba2181c00f770b0b48c2540526ea4d9a0
+>>>>>>> 15cef79e91616df96ea612ab560df8529a9d8d2e
+          <folding>
+            <element signature="e#48#66#0" expanded="true" />
           </folding>
         </state>
       </provider>

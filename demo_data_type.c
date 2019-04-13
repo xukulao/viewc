@@ -1364,8 +1364,8 @@ int *func_test()
     return m;
 }
 
-void more_pointer1()
-{
+
+void more_pointer1() {
     int a = 10;
     /**
      * 变量类型  int
@@ -1402,31 +1402,67 @@ void more_pointer1()
      * 变量内存地址 0X005
      */
 
-    printf("p1=%d,p2=%d,p3=%d,p4=%d\n",*p1,**p2,***p3,****p4);
-    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n",&a,p1,p2,p3,p4);//p1=a的内存地址
-    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n",&a,&p1,p2,p3,p4);//p2=p1的内存地址
-    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n",&a,&p1,&p2,p3,p4);//p3=p2的内存地址
-    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n",&a,&p1,&p2,&p3,p4);//p4=p3的内存地址
+    printf("p1=%d,p2=%d,p3=%d,p4=%d\n", *p1, **p2, ***p3, ****p4);
+    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n", &a, p1, p2, p3, p4);//p1=a的内存地址
+    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n", &a, &p1, p2, p3, p4);//p2=p1的内存地址
+    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n", &a, &p1, &p2, p3, p4);//p3=p2的内存地址
+    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n", &a, &p1, &p2, &p3, p4);//p4=p3的内存地址
 
-    printf("p3=%#X\n",p4);//p3的机器地址
-    printf("p4=%#X\n",&p4);//p4的机器地址
+    printf("p3=%#X\n", p4);//p3的机器地址
+    printf("p4=%#X\n", &p4);//p4的机器地址
 
-    printf("p2=%#X\n",p3);//p2的机器地址
-    printf("p2=%#X\n",&p2);//p2的机器地址
+    printf("p2=%#X\n", p3);//p2的机器地址
+    printf("p2=%#X\n", &p2);//p2的机器地址
 
-    printf("p1=%#X\n",p2);//p1的机器地址
-    printf("p1=%#X\n",&p1);//p1的机器地址
+    printf("p1=%#X\n", p2);//p1的机器地址
+    printf("p1=%#X\n", &p1);//p1的机器地址
 
     printf("p4的内容是p3的机器地址，p3的内容是p2的机器地址，p2的内容是p1的机器地址，p1的内容是a的机器地址\n");
 
-    printf("p2=%#X\n",*p4);//*p4  p4=p3的机器地址【p4的内容】*p4=p3的内容  p3的内容=p2机器地址
-    printf("p1=%#x\n",**p4);//**p4=p2的内容，p2的内容=p1的机器地址
-    printf("a=%#X\n",***p4);//p1的内容=变量a的机器地址
+    printf("p2=%#X\n", *p4);//*p4  p4=p3的机器地址【p4的内容】*p4=p3的内容  p3的内容=p2机器地址
+    printf("p1=%#x\n", **p4);//**p4=p2的内容，p2的内容=p1的机器地址
+    printf("a=%#X\n", ***p4);//p1的内容=变量a的机器地址
 
-    printf("a=%d\n",****p4);//a的内容
+    printf("a=%d\n", ****p4);//a的内容
 
-    printf("a=%d\n",*&*&****p4+100);
+    printf("a=%d\n", *&*&****p4 + 100);
 
+}
 
+/**
+ * 程序直接停止
+ */
+void null_pointer()
+{
+    char *str;
+    gets(str);
+    printf("str=%s\n",str);
+}
+
+void dynamic_malloc()
+{
+    char *str = (char *)malloc(sizeof(char)*30);
+    gets(str);
+    printf("str=%s\n",str);
+    str = NULL;
+}
+
+void array_noteq_pointer()
+{
+    int a[6] = {1,2,3,4,5,6};//元素为char类型，共有6个元素，为6个字节
+    int *p = a;//a=a[0]的地址，为1个字节
+
+    printf("a=%d\n",*a);
+    printf("a=%#X\n",a);
+    printf("a=%d\n",*(a+2));//指针加2个字节
+    int i;
+    for(i=0;i<6;i++){
+        printf("a[%d]=%d\n",i,*(a+i));
+    }
+
+    int len_a = sizeof(a)/sizeof(int);//24/4=6
+    int len_b = sizeof(p)/sizeof(int);//4/4=1
+    printf("p=%d,int=%d,i=%d\n", sizeof(p), sizeof(int), sizeof(i));
+    printf("len_a=%d,len_b=%d,a=%d\n",len_a,len_b, sizeof(&a[0]));
 
 }

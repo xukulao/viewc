@@ -169,6 +169,17 @@ char *longStr(char *str1,char *str2);
 int *func_test();
 
 
+
 //多级指针
 void more_pointer1();
+
+//未初始化的指针
+void null_pointer();
+
+//动态分配内存
+void dynamic_malloc();
+
+//数据！=指针
+void array_noteq_pointer();
+
 #endif

@@ -118,6 +118,8 @@ int main()
 
     //char str[20] = "123456789";
     //printf("str=%s\n",reverse(str));
+
+
 //    printf("m=%d\n",M);
 //    printf("m=%d\n",M);
 //    printf("m=%d\n",M);
@@ -264,6 +266,18 @@ int main()
 //
 //printf("n=%d\n",n);
 
-more_pointer1();
+
+//more_pointer1();
+
+//null_pointer();
+    //char *str; 未给初始值的指针
+//    char *str = NULL;//空指针
+//    gets(str);
+//    printf("str=%s\n",str);
+
+//dynamic_malloc();
+array_noteq_pointer();
+
 return 0;
+
 }
