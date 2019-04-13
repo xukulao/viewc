@@ -1526,7 +1526,7 @@ void char_array_pointer1()
     printf("language=%c\n",*&language[4][2]);//取得japanese里的p
     printf("language=%c\n",*(*&language[4]+2));//取得japanese里的p
     printf("language=%c\n",*(&*(*&language[4]+2)+0));//取得japanese里的p
-   // printf("language=%s\n",*language[4]);//取得japanese里的p
+   //printf("language=%s\n",*language[4]);//取得japanese里的p
     printf("language12=%c\n",*&*&*&(language[4][(0b11)-(0b01)+0b00]));//取得japanese里的p
     printf("language12=%c\n",*&*&*&(language[4][(0x20)-(0x1e)+0b00]));//取得japanese里的p
     printf("language12=%c\n",*&*&*&(language[4][(002)-(000)+0b00]));//取得japanese里的p
