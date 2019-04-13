@@ -1466,3 +1466,68 @@ void array_noteq_pointer()
     printf("len_a=%d,len_b=%d,a=%d\n",len_a,len_b, sizeof(&a[0]));
 
 }
+
+/**
+ * 数组指针-字符
+ */
+void char_array_pointer()
+{
+    char *lines[5] = {
+            "COSC1283/1284",
+            "Programming",
+            "Techniques",
+            "is",
+            "great fun"
+    };
+    char *str1 = lines[1];//取得第2个元素字符串Programming
+    char *str2 = *(lines + 3);//先取第4个元素的字符串is  +3取得is
+    char c1 = *(*(lines + 4) + 6);//+4后得great fun  +6后得f
+    char c2 = (*lines + 5)[5];//先取第1个元素的字符串COSC1283/1284  ,该字符串指针+5=2从2处取5得2
+    char c3 = *lines[0] + 2;//取得第1个元素字符串COSC1283/1284 再取1个字符为C,再+2=E
+    printf("str1 = %s\n", str1);
+    printf("str2 = %s\n", str2);
+    printf("  c1 = %c\n", c1);
+    printf("  c2 = %c\n", c2);
+    printf("  c3 = %c\n", c3);
+}
+
+void char_array_pointer1()
+{
+    char *language[] = {
+            "php",
+            "java",
+            "python",
+            "chinese",
+            "japanese"
+    };
+    /***
+     * language = language[0]的地址 language[0]的内容是php
+     *
+     */
+    printf("language=%s\n",*language);//取得language[0]上的内容
+
+    printf("language=%c\n",(*language)[0]);//取得p
+
+    printf("language=%s\n",*(language+2));//取python
+
+    printf("language=%c\n",*(*(language+3)+5));//取chinese里的s
+
+    printf("language=%c\n",*(*(language+4)));//取得japanese里的j
+
+    printf("language=%c\n",*((*(language+4))+2));//取得japanese里的p
+
+    printf("language=%c\n",(*(language+4))[2]);//取得japanese里的p
+    printf("language=%c\n",(*(*(language+4)+2)));//取得japanese里的p
+    printf("language=%c\n",((language[4])[2]));//取得japanese里的p
+    printf("language=%c\n",*&((language[4])[2]));//取得japanese里的p
+    printf("language=%c\n",*(*(language+4)+2));//取得japanese里的p
+    printf("language=%c\n",(*&*&*(*(language+4)+2))+0);//取得japanese里的p
+    printf("language=%c\n",language[4][2]);//取得japanese里的p
+    printf("language=%c\n",*&language[4][2]);//取得japanese里的p
+    printf("language=%c\n",*(*&language[4]+2));//取得japanese里的p
+    printf("language=%c\n",*(&*(*&language[4]+2)+0));//取得japanese里的p
+   // printf("language=%s\n",*language[4]);//取得japanese里的p
+    printf("language12=%c\n",*&*&*&(language[4][(0b11)-(0b01)+0b00]));//取得japanese里的p
+    printf("language12=%c\n",*&*&*&(language[4][(0x20)-(0x1e)+0b00]));//取得japanese里的p
+    printf("language12=%c\n",*&*&*&(language[4][(002)-(000)+0b00]));//取得japanese里的p
+}
