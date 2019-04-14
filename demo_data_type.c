@@ -1392,12 +1392,29 @@ void array_noteq_pointer()
     printf("a=%d\n",*(a+2));//指针加2个字节
     int i;
     for(i=0;i<6;i++){
-        printf("a[%d]=%d\n",i,*(a+i));
+        printf("a[%d]=%d,a[%d]=%d,a[%d]=%d,a[%d]=%d\n",i,*(a+i),i,p[i],i,*(p+i),i,*&a[i]);
     }
 
     int len_a = sizeof(a)/sizeof(int);//24/4=6
     int len_b = sizeof(p)/sizeof(int);//4/4=1
 printf("p=%d,int=%d,i=%d\n", sizeof(p), sizeof(int), sizeof(i));
     printf("len_a=%d,len_b=%d,a=%d\n",len_a,len_b, sizeof(&a[0]));
+
+}
+
+void array_item_pointer()
+{
+    int a=10,b=20,c=30;
+    int *arr[] = {&a,&b,&c};//每个元素全是指针
+    int **parr = arr;//parr保存的是arr的内存地址 *arr保存的是&a的地址
+
+    printf("a[0]=%d\n",*arr[0]);
+    printf("parr=%d\n",**parr);
+
+    printf("&a=%#X\n",&a);
+    printf("arr=%#X\n",*arr);
+    printf("arr=%#X\n",arr);
+    printf("parr=%#X\n",parr);
+
 
 }
