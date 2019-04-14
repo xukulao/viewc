@@ -167,6 +167,12 @@ int array_max_pointer1(int *num1,int len);
 char *longStr(char *str1,char *str2);
 
 int *func_test();
+
+
+
+//多级指针
+void more_pointer1();
+
 //未初始化的指针
 void null_pointer();
 
@@ -178,4 +184,14 @@ void array_noteq_pointer();
 
 //指针数组【所有元素全是指针】
 void array_item_pointer();
+
+
+//字符串指针
+void char_array_pointer();
+
+void char_array_pointer1();
+
+//指针测试
+void pointer_test();
+
 #endif

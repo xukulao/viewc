@@ -266,6 +266,9 @@ int main()
 //
 //printf("n=%d\n",n);
 
+
+//more_pointer1();
+
 //null_pointer();
     //char *str; 未给初始值的指针
 //    char *str = NULL;//空指针
@@ -274,7 +277,16 @@ int main()
 
 //dynamic_malloc();
 //array_noteq_pointer();
+
 array_item_pointer();
+
+
+//char_array_pointer();
+//char_array_pointer1();
+
+pointer_test();
+
+
 return 0;
 
 }

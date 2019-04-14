@@ -1364,6 +1364,71 @@ int *func_test()
     return m;
 }
 
+
+void more_pointer1() {
+    int a = 10;
+    /**
+     * 变量类型  int
+     * 变量名称  a
+     * 变量内容  10
+     * 变量内存地址【机器地址】  0X001 【假设】
+     */
+    int *p1 = &a;
+    /**
+     * 变量类型 int *
+     * 变量名称 p1
+     * 变量内容 0X001
+     * 变量内存地址  0X002
+     */
+    int **p2 = &p1;
+    /**
+     * 变量类型 int *
+     * 变量名称 p2
+     * 变量内容 0X002
+     * 变量地址 0X003
+     */
+    int ***p3 = &p2;
+    /**
+     * 变量类型 int *
+     * 变量名称  p3
+     * 变量内容 0X003
+     * 变量机器地址  0X004
+     */
+    int ****p4 = &p3;
+    /**
+     * 变量类型 int *
+     * 变量名称 p4
+     * 变量内容 0X004
+     * 变量内存地址 0X005
+     */
+
+    printf("p1=%d,p2=%d,p3=%d,p4=%d\n", *p1, **p2, ***p3, ****p4);
+    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n", &a, p1, p2, p3, p4);//p1=a的内存地址
+    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n", &a, &p1, p2, p3, p4);//p2=p1的内存地址
+    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n", &a, &p1, &p2, p3, p4);//p3=p2的内存地址
+    printf("a=%#X,p1=%#X,p2=%#X,p3=%#X,p4=%#X\n", &a, &p1, &p2, &p3, p4);//p4=p3的内存地址
+
+    printf("p3=%#X\n", p4);//p3的机器地址
+    printf("p4=%#X\n", &p4);//p4的机器地址
+
+    printf("p2=%#X\n", p3);//p2的机器地址
+    printf("p2=%#X\n", &p2);//p2的机器地址
+
+    printf("p1=%#X\n", p2);//p1的机器地址
+    printf("p1=%#X\n", &p1);//p1的机器地址
+
+    printf("p4的内容是p3的机器地址，p3的内容是p2的机器地址，p2的内容是p1的机器地址，p1的内容是a的机器地址\n");
+
+    printf("p2=%#X\n", *p4);//*p4  p4=p3的机器地址【p4的内容】*p4=p3的内容  p3的内容=p2机器地址
+    printf("p1=%#x\n", **p4);//**p4=p2的内容，p2的内容=p1的机器地址
+    printf("a=%#X\n", ***p4);//p1的内容=变量a的机器地址
+
+    printf("a=%d\n", ****p4);//a的内容
+
+    printf("a=%d\n", *&*&****p4 + 100);
+
+}
+
 /**
  * 程序直接停止
  */
@@ -1397,24 +1462,254 @@ void array_noteq_pointer()
 
     int len_a = sizeof(a)/sizeof(int);//24/4=6
     int len_b = sizeof(p)/sizeof(int);//4/4=1
-printf("p=%d,int=%d,i=%d\n", sizeof(p), sizeof(int), sizeof(i));
+    printf("p=%d,int=%d,i=%d\n", sizeof(p), sizeof(int), sizeof(i));
     printf("len_a=%d,len_b=%d,a=%d\n",len_a,len_b, sizeof(&a[0]));
 
 }
 
-void array_item_pointer()
-{
-    int a=10,b=20,c=30;
-    int *arr[] = {&a,&b,&c};//每个元素全是指针
+void array_item_pointer() {
+    int a = 10, b = 20, c = 30;
+    int *arr[] = {&a, &b, &c};//每个元素全是指针
     int **parr = arr;//parr保存的是arr的内存地址 *arr保存的是&a的地址
 
-    printf("a[0]=%d\n",*arr[0]);
-    printf("parr=%d\n",**parr);
+    printf("a[0]=%d\n", *arr[0]);
+    printf("parr=%d\n", **parr);
 
-    printf("&a=%#X\n",&a);
-    printf("arr=%#X\n",*arr);
-    printf("arr=%#X\n",arr);
-    printf("parr=%#X\n",parr);
+    printf("&a=%#X\n", &a);
+    printf("arr=%#X\n", *arr);
+    printf("arr=%#X\n", arr);
+    printf("parr=%#X\n", parr);
 
+
+}
+/**
+
+ * 数组指针-字符
+ */
+void char_array_pointer()
+{
+    char *lines[5] = {
+            "COSC1283/1284",
+            "Programming",
+            "Techniques",
+            "is",
+            "great fun"
+    };
+    char *str1 = lines[1];//取得第2个元素字符串Programming
+    char *str2 = *(lines + 3);//先取第4个元素的字符串is  +3取得is
+    char c1 = *(*(lines + 4) + 6);//+4后得great fun  +6后得f
+    char c2 = (*lines + 5)[5];//先取第1个元素的字符串COSC1283/1284  ,该字符串指针+5=2从2处取5得2
+    char c3 = *lines[0] + 2;//取得第1个元素字符串COSC1283/1284 再取1个字符为C,再+2=E
+    printf("str1 = %s\n", str1);
+    printf("str2 = %s\n", str2);
+    printf("  c1 = %c\n", c1);
+    printf("  c2 = %c\n", c2);
+    printf("  c3 = %c\n", c3);
+}
+
+void char_array_pointer1() {
+    char *language[] = {
+            "php",
+            "java",
+            "python",
+            "chinese",
+            "japanese"
+    };
+    /***
+     * language = language[0]的地址 language[0]的内容是php
+     *
+     */
+    printf("language=%s\n", *language);//取得language[0]上的内容
+
+    printf("language=%c\n", (*language)[0]);//取得p
+
+    printf("language=%s\n", *(language + 2));//取python
+
+    printf("language=%c\n", *(*(language + 3) + 5));//取chinese里的s
+
+    printf("language=%c\n", *(*(language + 4)));//取得japanese里的j
+
+    printf("language=%c\n", *((*(language + 4)) + 2));//取得japanese里的p
+
+    printf("language=%c\n", (*(language + 4))[2]);//取得japanese里的p
+    printf("language=%c\n", (*(*(language + 4) + 2)));//取得japanese里的p
+    printf("language=%c\n", ((language[4])[2]));//取得japanese里的p
+    printf("language=%c\n", *&((language[4])[2]));//取得japanese里的p
+    printf("language=%c\n", *(*(language + 4) + 2));//取得japanese里的p
+    printf("language=%c\n", (*&*&*(*(language + 4) + 2)) + 0);//取得japanese里的p
+    printf("language=%c\n", language[4][2]);//取得japanese里的p
+    printf("language=%c\n", *&language[4][2]);//取得japanese里的p
+    printf("language=%c\n", *(*&language[4] + 2));//取得japanese里的p
+    printf("language=%c\n", *(&*(*&language[4] + 2) + 0));//取得japanese里的p
+    // printf("language=%s\n",*language[4]);//取得japanese里的p
+    printf("language12=%c\n", *&*&*&(language[4][(0b11) - (0b01) + 0b00]));//取得japanese里的p
+    printf("language12=%c\n", *&*&*&(language[4][(0x20) - (0x1e) + 0b00]));//取得japanese里的p
+    printf("language12=%c\n", *&*&*&(language[4][(002) - (000) + 0b00]));//取得japanese里的p
+
+}
+ * 数组名=数组首元素的地址【指针】
+ * 数组名=首地址【指针】
+ * 数组地址 = 数组名  = 数组首元素地址
+ *
+ * 数组是一块内存【地址指针】连续的存储空间
+ *
+ * 数组名=数组首元素的地址【指针】，不是首元素的内容！！！
+ */
+void pointer_test()
+{
+    int a[] = {1,2,3,4,5};
+    /**
+     * 数据类型 int
+     * 变量名称 a
+     * 变量内容 &a[0] 的地址【指针】
+     * 变量机器地址
+     */
+//     printf("a=%s\n","int");
+//     printf("a=%d\n",*a);
+//     printf("a[0]=%#X,a[0]=%#X,a[1]=%#X\n",a,&a[0],&a[1]);
+//     printf("a=%#X\n",&a);
+
+       // printf("a=%#X,a=%#X,a=%#X\n",a,&a[0],&a);
+        //int *b = &a;
+       // printf("a=%d,a=%d,a=%d\n",*a,*&a[0],*b);
+
+//     if(*&a == *a == a[0] == *&a[0]){
+//         printf("equal");
+//     }else{
+//         printf("not equal\n");
+//         printf("*&a=%d,*a=%d,a[0]=%d,*&a[0]=%d\n",*(&a),*a,a[0],*&a[0]);
+//     }
+
+        int a1 = 10,b1=20,c1=30;
+       int *b[] = {&a1,&b1,&c1};
+
+       /**
+        * *b[0] = &a1
+        * 变量名称b[0]
+        * 变量内容 &a1地址
+        * 变量类型 int
+        * 变量机器址
+        *
+        *
+        * *b[1] = &b2
+        * *b[2] = &b3
+        *
+        * b = &b[0]
+        */
+       /**
+        * 数据类型 int 8
+        * 变量名称 b
+        * 变量内容 = 首元素地址
+        * 变量机器地址 = 首元素地址
+        */
+       int **c = b;
+
+       printf("a=%#X\n",&a1);
+       printf("b=%#X,b=%#X,b=%#X,c=%#X\n",b,&b,&b[0],c);
+
+       printf("b[0]=%#X,b[0]=%#X\n",b[0],&a1);
+       int k;
+       printf("*******************************************************\n");
+       printf("a1=%d,b1=%d,c1=%d\n",a1,b1,c1);
+       printf("&a1=%#X,&b1=%#X,&c1=%#X\n",&a1,&b1,&c1);
+       //for(k=0;k<3;k++){
+           printf("b=%d,b[0]=%d,b[1]=%d,b[2]=%d\n",*b,*b[0],*b[1],*b[2]);
+           printf("&b=%#X,&b[0]=%#X,&b[1]=%#X,b[2]=%#X\n",b,b[0],b[1],b[2]);
+           printf("b=%#X,b[0]=%#X,b[1]=%#X,b[2]=%#X\n",&b,&b[0],&b[1],&b[2]);
+       //}
+
+       printf("&c=%#X,c=%#X,a1=%#X\n",c,*c,&a1);//c=b=&b[0] *(&b[0]) 取b[0]上的内容=&a1
+
+       printf("c=%#X,c=%#X,c=%#X,c=%#X\n",&c,c,b,&b[0]);
+
+       for(k=0;k<3;k++){
+           printf("c[%d]=%d\n",k,**(c+k));
+       }
+
+       printf("***********************************************************\n");
+       int d1 = 100;
+       int d2 = 200;
+       int d3 = 300;
+
+       int *d[] = {&d1,&d2,&d2};//d = &d[0] = d[0]的内容&d1
+       int **e[] = {&d[0],&d[1],&d[2]};//e = &e[0] e[0]的内容&d[0] = &d1
+       int ***f[] = {&e[0],&e[1],&e[2]};//f = &f[0] f[0]的内容&e[0] = &d[0] = &d1
+
+       printf("d=%#x,d[0]=%#X,d=%#X,d=%#X\n",d,&d[0],*e,**f);//e=e[0]的机器地址 *e获得e[0]上的内容，它的内容是d[0]的机器地址
+       //f=f[0]的机器地址 *f获取f[0]上的内容，它的内容是e[0]的机器地址 **f 则是获取e[0]的内容，它的内容是d[0]的机器地址
+
+       //获取最后一个元素的真实内容
+       printf("d[2]=%d\n",*d[2]);//d[2]得到的内容是&d2的机器地址,*d[2]获得的是d2的内容
+       printf("d[2]=%d\n",**e[2]);//e[2]的内容是d[2]的机器址，*e则是获取d[2]的内容，d[2]的内容是d2的机器址，**e[2]则是获取d2的内容
+       printf("d[2]=%d\n",***f[2]);//f[2]的内容是e[2]的机器地址 *f[2]则是获取e[2]的内容，e[2]的内容是d[2]的机器地址，**f[2]则是获取
+       //d[2]的内容，d[2]的内容是d3的机器地址，***f[2]则是获取d3上机器地址对应的内容
+
+
+       
+
+
+
+}
+
+void char_array_pointer()
+{
+    char *lines[5] = {
+            "COSC1283/1284",
+            "Programming",
+            "Techniques",
+            "is",
+            "great fun"
+    };
+    char *str1 = lines[1];//取得第2个元素字符串Programming
+    char *str2 = *(lines + 3);//先取第4个元素的字符串is  +3取得is
+    char c1 = *(*(lines + 4) + 6);//+4后得great fun  +6后得f
+    char c2 = (*lines + 5)[5];//先取第1个元素的字符串COSC1283/1284  ,该字符串指针+5=2从2处取5得2
+    char c3 = *lines[0] + 2;//取得第1个元素字符串COSC1283/1284 再取1个字符为C,再+2=E
+    printf("str1 = %s\n", str1);
+    printf("str2 = %s\n", str2);
+    printf("  c1 = %c\n", c1);
+    printf("  c2 = %c\n", c2);
+    printf("  c3 = %c\n", c3);
+}
+
+void char_array_pointer1()
+{
+    char *language[] = {
+            "php",
+            "java",
+            "python",
+            "chinese",
+            "japanese"
+    };
+    /***
+     * language = language[0]的地址 language[0]的内容是php
+     *
+     */
+    printf("language=%s\n",*language);//取得language[0]上的内容
+
+    printf("language=%c\n",(*language)[0]);//取得p
+
+    printf("language=%s\n",*(language+2));//取python
+
+    printf("language=%c\n",*(*(language+3)+5));//取chinese里的s
+
+    printf("language=%c\n",*(*(language+4)));//取得japanese里的j
+
+    printf("language=%c\n",*((*(language+4))+2));//取得japanese里的p
+
+    printf("language=%c\n",(*(language+4))[2]);//取得japanese里的p
+    printf("language=%c\n",(*(*(language+4)+2)));//取得japanese里的p
+    printf("language=%c\n",((language[4])[2]));//取得japanese里的p
+    printf("language=%c\n",*&((language[4])[2]));//取得japanese里的p
+    printf("language=%c\n",*(*(language+4)+2));//取得japanese里的p
+    printf("language=%c\n",(*&*&*(*(language+4)+2))+0);//取得japanese里的p
+    printf("language=%c\n",language[4][2]);//取得japanese里的p
+    printf("language=%c\n",*&language[4][2]);//取得japanese里的p
+    printf("language=%c\n",*(*&language[4]+2));//取得japanese里的p
+    printf("language=%c\n",*(&*(*&language[4]+2)+0));//取得japanese里的p
+    printf("language=%s\n",*language[4]);//取得japanese里的p
+    printf("language12=%c\n",*&*&*&(language[4][(0b11)-(0b01)+0b00]));//取得japanese里的p
+    printf("language12=%c\n",*&*&*&(language[4][(0x20)-(0x1e)+0b00]));//取得japanese里的p
+    printf("language12=%c\n",*&*&*&(language[4][(002)-(000)+0b00]));//取得japanese里的p
 
 }
