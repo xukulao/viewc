@@ -278,13 +278,14 @@ int main()
 //dynamic_malloc();
 //array_noteq_pointer();
 
-array_item_pointer();
+//array_item_pointer();
 
 
 //char_array_pointer();
 //char_array_pointer1();
 
-pointer_test();
+//pointer_test();
+    array_two_dimesion_pointer();
 
 
 return 0;

@@ -1486,7 +1486,7 @@ void array_item_pointer() {
 
  * 数组指针-字符
  */
-void char_array_pointer()
+void char_array_pointer2()
 {
     char *lines[5] = {
             "COSC1283/1284",
@@ -1507,7 +1507,7 @@ void char_array_pointer()
     printf("  c3 = %c\n", c3);
 }
 
-void char_array_pointer1() {
+void char_array_pointer12() {
     char *language[] = {
             "php",
             "java",
@@ -1547,6 +1547,7 @@ void char_array_pointer1() {
     printf("language12=%c\n", *&*&*&(language[4][(002) - (000) + 0b00]));//取得japanese里的p
 
 }
+/**
  * 数组名=数组首元素的地址【指针】
  * 数组名=首地址【指针】
  * 数组地址 = 数组名  = 数组首元素地址
@@ -1712,4 +1713,14 @@ void char_array_pointer1()
     printf("language12=%c\n",*&*&*&(language[4][(0x20)-(0x1e)+0b00]));//取得japanese里的p
     printf("language12=%c\n",*&*&*&(language[4][(002)-(000)+0b00]));//取得japanese里的p
 
+}
+
+void array_two_dimesion_pointer()
+{
+    int a[] = {1,2,3,4};
+    //a[0] = 1
+    //a = &a[0]
+
+    int *pa = a;
+    printf("a=%#X,pa=%#X,a=%#X\n",a,&a[0],pa);
 }
