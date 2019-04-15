@@ -1858,16 +1858,16 @@ char *testChar(int **p)
     return px;
 }
 
-int testInt1(int *a)
+int testInt1(int *b)
 {
-    printf("a=%d\n",*a);
+    printf("%d\n",*b);
+
 }
+
 int *testInt(int *b)
 {
-    int *a[5] = {
-            testInt1,
-            testInt1
-    };
-    return a;
+    int c1=10,c2=20,c3=30,c4=40,c5=50;
+    int *f[5] = {&c1,&c2,&c3,&c4,&c5};
+    //return f;
 
 }
