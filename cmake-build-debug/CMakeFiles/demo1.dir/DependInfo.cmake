@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "E:/c/viewc/demo_data_type.c" "E:/c/viewc/cmake-build-debug/CMakeFiles/demo1.dir/demo_data_type.c.obj"
   "E:/c/viewc/main.c" "E:/c/viewc/cmake-build-debug/CMakeFiles/demo1.dir/main.c.obj"
+  "E:/c/viewc/struct1.c" "E:/c/viewc/cmake-build-debug/CMakeFiles/demo1.dir/struct1.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
