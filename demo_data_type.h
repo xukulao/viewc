@@ -197,4 +197,19 @@ void pointer_test();
 //二维数组指针
 void array_two_dimesion_pointer();
 
+//函数指针
+
+int maxTest(int y,int x);
+
+//指针函数
+int *minTestN(int,int);
+
+//指针函数
+char *testChar(int **p);
+
+//指针函数
+int *testInt(int *b);
+
+int testInt1(int *a);
+
 #endif

@@ -285,7 +285,78 @@ int main()
 //char_array_pointer1();
 
 //pointer_test();
-    array_two_dimesion_pointer();
+    //array_two_dimesion_pointer();
+
+//    int (*max)(int,int) = maxTest;
+//
+//
+//    int (**maxTestN)(int,int) = &max;
+//
+//    printf("please enter some  data:\n");
+//    int x,y;
+//    scanf("%d,%d",&x,&y);
+//    printf("max is =%d\n",(**maxTestN)(x,y));
+
+
+      //int (*minTestN)(int,int) = *minTest;
+      //printf("please enter some data:\n");
+//      int x,y;
+//      int *r=NULL;
+//      int (*minTestNN)(int,int) = minTestN;
+//      scanf("%d %d\n",&x,&y);
+//
+//      //r = (*minTestNN)(x,y);
+//
+//      int (**minTN)(int,int) = &minTestNN;
+//
+//      r = (**minTN)(x,y);
+//
+//      printf("min is =%d\n",*r);
+//
+//      int (* (*(*pfunc)(int *)) [5]) (int *);
+
+      //printf("min is =%d\n",(*minTestNN)(x,y));不支持这种写法
+
+      /*****************************
+      char *(* c[10])(int **p) = {
+              testChar,
+              testChar,
+              testChar
+      };
+
+       * c[10] 是个含有10个元素的数组
+       * 每个元素都是指针【地址】
+       *
+       * 这个地址的内容 char *func(int **p) 返回值是指针的函数
+
+       int a1 = 1;
+       int *a2 =&a1;
+
+       int **a = &a2;
+      printf("%s\n",c[0](a));
+
+      **********************************************************/
+      int c = 1000;
+      int *c1 = &c;
+
+      int (*(*(*pfunc)(int *))[5])(int *) = testInt;
+      /**
+       * (*pfunc) 指针变量
+       * *(*pfunc)(int *)  指针函数，并且返回值还是指针
+       *
+       *
+       * (*(*(*pfunc)(int *))[5])
+       *
+       * int *[5] 数组，含有5个元素，每个元素都是一个返回指针的指针函数
+       *
+       * int (int *)  函数，函数的参数是个指标变量
+       *
+       * int (*[5])(int *) 整体就是一个数组指针，可容纳5个元素，每个元素都是指针
+       *
+       *  int *function(int *)[5](int *)
+       */
+
+
 
 
 return 0;

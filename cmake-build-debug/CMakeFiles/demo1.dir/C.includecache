@@ -6,21 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/demo_data_type.c
-windows.h
+E:/c/demo/demo.c
+stdio.h
 -
-wchar.h
--
-locale.h
--
-unistd.h
--
-conio.h
--
-ctype.h
--
-stdlib.h
--
-string.h
--
+demo_data_type.h
+E:/c/demo/demo_data_type.h
+
+E:/c/demo/demo_data_type.h
 
