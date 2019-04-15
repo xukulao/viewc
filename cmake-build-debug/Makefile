@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\c\demo
+CMAKE_SOURCE_DIR = E:\c\viewc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
+CMAKE_BINARY_DIR = E:\c\viewc\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -69,7 +69,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -79,9 +79,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles E:\c\demo\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\cmake-build-debug\CMakeFiles E:\c\viewc\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -122,33 +122,6 @@ demo1/fast:
 	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/build
 .PHONY : demo1/fast
 
-demo.obj: demo.c.obj
-
-.PHONY : demo.obj
-
-# target to build an object file
-demo.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/demo.c.obj
-.PHONY : demo.c.obj
-
-demo.i: demo.c.i
-
-.PHONY : demo.i
-
-# target to preprocess a source file
-demo.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/demo.c.i
-.PHONY : demo.c.i
-
-demo.s: demo.c.s
-
-.PHONY : demo.s
-
-# target to generate assembly for a file
-demo.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/demo.c.s
-.PHONY : demo.c.s
-
 demo_data_type.obj: demo_data_type.c.obj
 
 .PHONY : demo_data_type.obj
@@ -176,6 +149,33 @@ demo_data_type.c.s:
 	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/demo_data_type.c.s
 .PHONY : demo_data_type.c.s
 
+main.obj: main.c.obj
+
+.PHONY : main.obj
+
+# target to build an object file
+main.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/main.c.obj
+.PHONY : main.c.obj
+
+main.i: main.c.i
+
+.PHONY : main.i
+
+# target to preprocess a source file
+main.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/main.c.i
+.PHONY : main.c.i
+
+main.s: main.c.s
+
+.PHONY : main.s
+
+# target to generate assembly for a file
+main.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/main.c.s
+.PHONY : main.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -185,12 +185,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo1
 	@echo ... edit_cache
-	@echo ... demo.obj
-	@echo ... demo.i
-	@echo ... demo.s
 	@echo ... demo_data_type.obj
 	@echo ... demo_data_type.i
 	@echo ... demo_data_type.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
 .PHONY : help
 
 

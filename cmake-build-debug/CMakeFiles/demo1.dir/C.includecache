@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/demo.c
+E:/c/viewc/main.c
 stdio.h
 -
-demo_data_type.h
-E:/c/demo/demo_data_type.h
-
-E:/c/demo/demo_data_type.h
 
