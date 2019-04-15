@@ -1828,3 +1828,46 @@ void array_two_dimesion_pointer()
 
 
 }
+
+int maxTest(int y,int x)
+{
+    return y>x?y:x;
+}
+
+/**
+ * 指针函数
+ * @param y
+ * @param x
+ * @return
+ */
+int *minTestN(int y,int x)
+{
+    int *temp;
+    if(y<x){
+        temp = &y;
+    }else{
+        temp = &x;
+    }
+    return temp;
+}
+
+char *testChar(int **p)
+{
+    char *px;
+    px = "hello,china";
+    return px;
+}
+
+int testInt1(int *a)
+{
+    printf("a=%d\n",*a);
+}
+int *testInt(int *b)
+{
+    int *a[5] = {
+            testInt1,
+            testInt1
+    };
+    return a;
+
+}
