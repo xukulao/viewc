@@ -1,3 +1,3 @@
 #cmake_minimum_required(VERSION <specify CMake version here>)
 project(demo1)
-add_executable(demo1 demo_data_type.c main.c)
+add_executable(struct1 struct1.c)

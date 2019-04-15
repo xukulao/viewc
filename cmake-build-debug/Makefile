@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = E:\c\viewc\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,71 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named demo1
+# Target rules for targets named struct1
 
 # Build rule for target.
-demo1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 demo1
-.PHONY : demo1
+struct1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 struct1
+.PHONY : struct1
 
 # fast build rule for target.
-demo1/fast:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/build
-.PHONY : demo1/fast
+struct1/fast:
+	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/build
+.PHONY : struct1/fast
 
-demo_data_type.obj: demo_data_type.c.obj
+struct1.obj: struct1.c.obj
 
-.PHONY : demo_data_type.obj
-
-# target to build an object file
-demo_data_type.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/demo_data_type.c.obj
-.PHONY : demo_data_type.c.obj
-
-demo_data_type.i: demo_data_type.c.i
-
-.PHONY : demo_data_type.i
-
-# target to preprocess a source file
-demo_data_type.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/demo_data_type.c.i
-.PHONY : demo_data_type.c.i
-
-demo_data_type.s: demo_data_type.c.s
-
-.PHONY : demo_data_type.s
-
-# target to generate assembly for a file
-demo_data_type.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/demo_data_type.c.s
-.PHONY : demo_data_type.c.s
-
-main.obj: main.c.obj
-
-.PHONY : main.obj
+.PHONY : struct1.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/main.c.obj
-.PHONY : main.c.obj
+struct1.c.obj:
+	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/struct1.c.obj
+.PHONY : struct1.c.obj
 
-main.i: main.c.i
+struct1.i: struct1.c.i
 
-.PHONY : main.i
+.PHONY : struct1.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/main.c.i
-.PHONY : main.c.i
+struct1.c.i:
+	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/struct1.c.i
+.PHONY : struct1.c.i
 
-main.s: main.c.s
+struct1.s: struct1.c.s
 
-.PHONY : main.s
+.PHONY : struct1.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/main.c.s
-.PHONY : main.c.s
+struct1.c.s:
+	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/struct1.c.s
+.PHONY : struct1.c.s
 
 # Help Target
 help:
@@ -182,15 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... demo1
+	@echo ... struct1
 	@echo ... edit_cache
-	@echo ... demo_data_type.obj
-	@echo ... demo_data_type.i
-	@echo ... demo_data_type.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... rebuild_cache
+	@echo ... struct1.obj
+	@echo ... struct1.i
+	@echo ... struct1.s
 .PHONY : help
 
 
