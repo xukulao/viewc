@@ -69,8 +69,27 @@ int main()
     printf("students[0]=%#X,students[0]=%#X\n",students,&students[0]);
 
     printf("****************************************************************\n");
-    printf("student[1]=%#X,student[1]=%#X\n",p[1],&students);
+    printf("student[1]=%#X,student[1]=%#X\n",p[1],students);
     printf("student[1]=%#X,student[1]=%#X\n",students,&students[0]);
+
+    printf("*****************************************************************\n");
+    printf("students[0]=%s\n",(*p+1)->name);//p = &p[0]
+    printf("students[0]=%s\n",(*p+2)->name);
+    printf("students[0]=%s\n",(*p+3)->name);
+    printf("students[0]=%s\n",(*p+4)->name);
+
+    printf("*****************************************************************\n");
+    printf("students[0]=%s\n",(p[0]+1)->name);//p = &p[0]
+    printf("students[0]=%s\n",(p[0]+2)->name);
+    printf("students[0]=%s\n",(p[0]+3)->name);
+    printf("students[0]=%s\n",(p[0]+4)->name);
+
+    printf("*****************************************************************\n");
+    printf("students[0]=%s\n",(p[2]+1)->name);//p = &p[0]
+    printf("students[0]=%s\n",(p[2]+2)->name);
+    printf("students[0]=%s\n",(p[2]+3)->name);
+    printf("students[0]=%s\n",(p[2]+4)->name);
+
     return 0;
 
 }
