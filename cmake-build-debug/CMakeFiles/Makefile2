@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = E:\c\demo
 CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/struct1.dir
+# Target rules for target CMakeFiles/struct4.dir
 
 # All Build rule for target.
-CMakeFiles/struct1.dir/all:
-	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/depend
-	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target struct1"
-.PHONY : CMakeFiles/struct1.dir/all
+CMakeFiles/struct4.dir/all:
+	$(MAKE) -f CMakeFiles\struct4.dir\build.make CMakeFiles/struct4.dir/depend
+	$(MAKE) -f CMakeFiles\struct4.dir\build.make CMakeFiles/struct4.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target struct4"
+.PHONY : CMakeFiles/struct4.dir/all
 
 # Include target in all.
-all: CMakeFiles/struct1.dir/all
+all: CMakeFiles/struct4.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/struct1.dir/rule: cmake_check_build_system
+CMakeFiles/struct4.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/struct1.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/struct4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/struct1.dir/rule
+.PHONY : CMakeFiles/struct4.dir/rule
 
 # Convenience name for target.
-struct1: CMakeFiles/struct1.dir/rule
+struct4: CMakeFiles/struct4.dir/rule
 
-.PHONY : struct1
-
-# clean rule for target.
-CMakeFiles/struct1.dir/clean:
-	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/clean
-.PHONY : CMakeFiles/struct1.dir/clean
+.PHONY : struct4
 
 # clean rule for target.
-clean: CMakeFiles/struct1.dir/clean
+CMakeFiles/struct4.dir/clean:
+	$(MAKE) -f CMakeFiles\struct4.dir\build.make CMakeFiles/struct4.dir/clean
+.PHONY : CMakeFiles/struct4.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/struct4.dir/clean
 
 .PHONY : clean
 

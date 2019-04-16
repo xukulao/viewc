@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named struct1
+# Target rules for targets named struct4
 
 # Build rule for target.
-struct1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 struct1
-.PHONY : struct1
+struct4: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 struct4
+.PHONY : struct4
 
 # fast build rule for target.
-struct1/fast:
-	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/build
-.PHONY : struct1/fast
+struct4/fast:
+	$(MAKE) -f CMakeFiles\struct4.dir\build.make CMakeFiles/struct4.dir/build
+.PHONY : struct4/fast
 
-struct1.obj: struct1.c.obj
+struct4.obj: struct4.c.obj
 
-.PHONY : struct1.obj
+.PHONY : struct4.obj
 
 # target to build an object file
-struct1.c.obj:
-	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/struct1.c.obj
-.PHONY : struct1.c.obj
+struct4.c.obj:
+	$(MAKE) -f CMakeFiles\struct4.dir\build.make CMakeFiles/struct4.dir/struct4.c.obj
+.PHONY : struct4.c.obj
 
-struct1.i: struct1.c.i
+struct4.i: struct4.c.i
 
-.PHONY : struct1.i
+.PHONY : struct4.i
 
 # target to preprocess a source file
-struct1.c.i:
-	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/struct1.c.i
-.PHONY : struct1.c.i
+struct4.c.i:
+	$(MAKE) -f CMakeFiles\struct4.dir\build.make CMakeFiles/struct4.dir/struct4.c.i
+.PHONY : struct4.c.i
 
-struct1.s: struct1.c.s
+struct4.s: struct4.c.s
 
-.PHONY : struct1.s
+.PHONY : struct4.s
 
 # target to generate assembly for a file
-struct1.c.s:
-	$(MAKE) -f CMakeFiles\struct1.dir\build.make CMakeFiles/struct1.dir/struct1.c.s
-.PHONY : struct1.c.s
+struct4.c.s:
+	$(MAKE) -f CMakeFiles\struct4.dir\build.make CMakeFiles/struct4.dir/struct4.c.s
+.PHONY : struct4.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... struct1
+	@echo ... struct4
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... struct1.obj
-	@echo ... struct1.i
-	@echo ... struct1.s
+	@echo ... struct4.obj
+	@echo ... struct4.i
+	@echo ... struct4.s
 .PHONY : help
 
 
