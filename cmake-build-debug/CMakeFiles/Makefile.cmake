@@ -51,5 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/bit2.dir/DependInfo.cmake"
+  "CMakeFiles/bit3.dir/DependInfo.cmake"
   )
