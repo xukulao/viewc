@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named struct5
+# Target rules for targets named enum2
 
 # Build rule for target.
-struct5: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 struct5
-.PHONY : struct5
+enum2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 enum2
+.PHONY : enum2
 
 # fast build rule for target.
-struct5/fast:
-	$(MAKE) -f CMakeFiles\struct5.dir\build.make CMakeFiles/struct5.dir/build
-.PHONY : struct5/fast
+enum2/fast:
+	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/build
+.PHONY : enum2/fast
 
-struct5.obj: struct5.c.obj
+enum2.obj: enum2.c.obj
 
-.PHONY : struct5.obj
+.PHONY : enum2.obj
 
 # target to build an object file
-struct5.c.obj:
-	$(MAKE) -f CMakeFiles\struct5.dir\build.make CMakeFiles/struct5.dir/struct5.c.obj
-.PHONY : struct5.c.obj
+enum2.c.obj:
+	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/enum2.c.obj
+.PHONY : enum2.c.obj
 
-struct5.i: struct5.c.i
+enum2.i: enum2.c.i
 
-.PHONY : struct5.i
+.PHONY : enum2.i
 
 # target to preprocess a source file
-struct5.c.i:
-	$(MAKE) -f CMakeFiles\struct5.dir\build.make CMakeFiles/struct5.dir/struct5.c.i
-.PHONY : struct5.c.i
+enum2.c.i:
+	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/enum2.c.i
+.PHONY : enum2.c.i
 
-struct5.s: struct5.c.s
+enum2.s: enum2.c.s
 
-.PHONY : struct5.s
+.PHONY : enum2.s
 
 # target to generate assembly for a file
-struct5.c.s:
-	$(MAKE) -f CMakeFiles\struct5.dir\build.make CMakeFiles/struct5.dir/struct5.c.s
-.PHONY : struct5.c.s
+enum2.c.s:
+	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/enum2.c.s
+.PHONY : enum2.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... struct5
+	@echo ... enum2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... struct5.obj
-	@echo ... struct5.i
-	@echo ... struct5.s
+	@echo ... enum2.obj
+	@echo ... enum2.i
+	@echo ... enum2.s
 .PHONY : help
 
 
