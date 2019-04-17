@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named bit1
+# Target rules for targets named typeof
 
 # Build rule for target.
-bit1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 bit1
-.PHONY : bit1
+typeof: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 typeof
+.PHONY : typeof
 
 # fast build rule for target.
-bit1/fast:
-	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/build
-.PHONY : bit1/fast
+typeof/fast:
+	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/build
+.PHONY : typeof/fast
 
-bit.obj: bit.c.obj
+typeof.obj: typeof.c.obj
 
-.PHONY : bit.obj
+.PHONY : typeof.obj
 
 # target to build an object file
-bit.c.obj:
-	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/bit.c.obj
-.PHONY : bit.c.obj
+typeof.c.obj:
+	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/typeof.c.obj
+.PHONY : typeof.c.obj
 
-bit.i: bit.c.i
+typeof.i: typeof.c.i
 
-.PHONY : bit.i
+.PHONY : typeof.i
 
 # target to preprocess a source file
-bit.c.i:
-	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/bit.c.i
-.PHONY : bit.c.i
+typeof.c.i:
+	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/typeof.c.i
+.PHONY : typeof.c.i
 
-bit.s: bit.c.s
+typeof.s: typeof.c.s
 
-.PHONY : bit.s
+.PHONY : typeof.s
 
 # target to generate assembly for a file
-bit.c.s:
-	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/bit.c.s
-.PHONY : bit.c.s
+typeof.c.s:
+	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/typeof.c.s
+.PHONY : typeof.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... bit1
 	@echo ... edit_cache
+	@echo ... typeof
 	@echo ... rebuild_cache
-	@echo ... bit.obj
-	@echo ... bit.i
-	@echo ... bit.s
+	@echo ... typeof.obj
+	@echo ... typeof.i
+	@echo ... typeof.s
 .PHONY : help
 
 
