@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named enum2
+# Target rules for targets named bit1
 
 # Build rule for target.
-enum2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 enum2
-.PHONY : enum2
+bit1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 bit1
+.PHONY : bit1
 
 # fast build rule for target.
-enum2/fast:
-	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/build
-.PHONY : enum2/fast
+bit1/fast:
+	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/build
+.PHONY : bit1/fast
 
-enum2.obj: enum2.c.obj
+bit.obj: bit.c.obj
 
-.PHONY : enum2.obj
+.PHONY : bit.obj
 
 # target to build an object file
-enum2.c.obj:
-	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/enum2.c.obj
-.PHONY : enum2.c.obj
+bit.c.obj:
+	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/bit.c.obj
+.PHONY : bit.c.obj
 
-enum2.i: enum2.c.i
+bit.i: bit.c.i
 
-.PHONY : enum2.i
+.PHONY : bit.i
 
 # target to preprocess a source file
-enum2.c.i:
-	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/enum2.c.i
-.PHONY : enum2.c.i
+bit.c.i:
+	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/bit.c.i
+.PHONY : bit.c.i
 
-enum2.s: enum2.c.s
+bit.s: bit.c.s
 
-.PHONY : enum2.s
+.PHONY : bit.s
 
 # target to generate assembly for a file
-enum2.c.s:
-	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/enum2.c.s
-.PHONY : enum2.c.s
+bit.c.s:
+	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/bit.c.s
+.PHONY : bit.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... enum2
+	@echo ... bit1
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... enum2.obj
-	@echo ... enum2.i
-	@echo ... enum2.s
+	@echo ... bit.obj
+	@echo ... bit.i
+	@echo ... bit.s
 .PHONY : help
 
 

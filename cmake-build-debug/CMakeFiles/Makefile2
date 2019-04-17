@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = E:\c\demo
 CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/enum2.dir
+# Target rules for target CMakeFiles/bit1.dir
 
 # All Build rule for target.
-CMakeFiles/enum2.dir/all:
-	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/depend
-	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target enum2"
-.PHONY : CMakeFiles/enum2.dir/all
+CMakeFiles/bit1.dir/all:
+	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/depend
+	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target bit1"
+.PHONY : CMakeFiles/bit1.dir/all
 
 # Include target in all.
-all: CMakeFiles/enum2.dir/all
+all: CMakeFiles/bit1.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/enum2.dir/rule: cmake_check_build_system
+CMakeFiles/bit1.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/enum2.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/bit1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/enum2.dir/rule
+.PHONY : CMakeFiles/bit1.dir/rule
 
 # Convenience name for target.
-enum2: CMakeFiles/enum2.dir/rule
+bit1: CMakeFiles/bit1.dir/rule
 
-.PHONY : enum2
-
-# clean rule for target.
-CMakeFiles/enum2.dir/clean:
-	$(MAKE) -f CMakeFiles\enum2.dir\build.make CMakeFiles/enum2.dir/clean
-.PHONY : CMakeFiles/enum2.dir/clean
+.PHONY : bit1
 
 # clean rule for target.
-clean: CMakeFiles/enum2.dir/clean
+CMakeFiles/bit1.dir/clean:
+	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/clean
+.PHONY : CMakeFiles/bit1.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/bit1.dir/clean
 
 .PHONY : clean
 
