@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named bit1
+# Target rules for targets named bit2
 
 # Build rule for target.
-bit1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 bit1
-.PHONY : bit1
+bit2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 bit2
+.PHONY : bit2
 
 # fast build rule for target.
-bit1/fast:
-	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/build
-.PHONY : bit1/fast
+bit2/fast:
+	$(MAKE) -f CMakeFiles\bit2.dir\build.make CMakeFiles/bit2.dir/build
+.PHONY : bit2/fast
 
-bit.obj: bit.c.obj
+bit1.obj: bit1.c.obj
 
-.PHONY : bit.obj
+.PHONY : bit1.obj
 
 # target to build an object file
-bit.c.obj:
-	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/bit.c.obj
-.PHONY : bit.c.obj
+bit1.c.obj:
+	$(MAKE) -f CMakeFiles\bit2.dir\build.make CMakeFiles/bit2.dir/bit1.c.obj
+.PHONY : bit1.c.obj
 
-bit.i: bit.c.i
+bit1.i: bit1.c.i
 
-.PHONY : bit.i
+.PHONY : bit1.i
 
 # target to preprocess a source file
-bit.c.i:
-	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/bit.c.i
-.PHONY : bit.c.i
+bit1.c.i:
+	$(MAKE) -f CMakeFiles\bit2.dir\build.make CMakeFiles/bit2.dir/bit1.c.i
+.PHONY : bit1.c.i
 
-bit.s: bit.c.s
+bit1.s: bit1.c.s
 
-.PHONY : bit.s
+.PHONY : bit1.s
 
 # target to generate assembly for a file
-bit.c.s:
-	$(MAKE) -f CMakeFiles\bit1.dir\build.make CMakeFiles/bit1.dir/bit.c.s
-.PHONY : bit.c.s
+bit1.c.s:
+	$(MAKE) -f CMakeFiles\bit2.dir\build.make CMakeFiles/bit2.dir/bit1.c.s
+.PHONY : bit1.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... bit1
+	@echo ... bit2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... bit.obj
-	@echo ... bit.i
-	@echo ... bit.s
+	@echo ... bit1.obj
+	@echo ... bit1.i
+	@echo ... bit1.s
 .PHONY : help
 
 
