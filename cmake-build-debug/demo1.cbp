@@ -17,18 +17,8 @@
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="rebuild_cache">
-				<Option working_dir="E:/c/demo/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="file4">
-				<Option output="E:/c/demo/cmake-build-debug/file4.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="file5">
+				<Option output="E:/c/demo/cmake-build-debug/file5.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="E:/c/demo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -43,14 +33,14 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 file4"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 file5"/>
 					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="file4/fast">
-				<Option output="E:/c/demo/cmake-build-debug/file4.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="file5/fast">
+				<Option output="E:/c/demo/cmake-build-debug/file5.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="E:/c/demo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -65,7 +55,7 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 file4/fast"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 file5/fast"/>
 					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -81,9 +71,19 @@
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/c/demo/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
-		<Unit filename="E:/c/demo/file4.c">
-			<Option target="file4"/>
+		<Unit filename="E:/c/demo/file5.c">
+			<Option target="file5"/>
 		</Unit>
 		<Unit filename="E:/c/demo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
