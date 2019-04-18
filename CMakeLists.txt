@@ -1,3 +1,3 @@
 #cmake_minimum_required(VERSION <specify CMake version here>)
 project(demo1)
-add_executable(file2 file2.c)
+add_executable(file3 file3.c)
