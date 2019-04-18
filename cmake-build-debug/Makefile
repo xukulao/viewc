@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named const
+# Target rules for targets named file2
 
 # Build rule for target.
-const: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 const
-.PHONY : const
+file2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 file2
+.PHONY : file2
 
 # fast build rule for target.
-const/fast:
-	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/build
-.PHONY : const/fast
+file2/fast:
+	$(MAKE) -f CMakeFiles\file2.dir\build.make CMakeFiles/file2.dir/build
+.PHONY : file2/fast
 
-const.obj: const.c.obj
+file2.obj: file2.c.obj
 
-.PHONY : const.obj
+.PHONY : file2.obj
 
 # target to build an object file
-const.c.obj:
-	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/const.c.obj
-.PHONY : const.c.obj
+file2.c.obj:
+	$(MAKE) -f CMakeFiles\file2.dir\build.make CMakeFiles/file2.dir/file2.c.obj
+.PHONY : file2.c.obj
 
-const.i: const.c.i
+file2.i: file2.c.i
 
-.PHONY : const.i
+.PHONY : file2.i
 
 # target to preprocess a source file
-const.c.i:
-	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/const.c.i
-.PHONY : const.c.i
+file2.c.i:
+	$(MAKE) -f CMakeFiles\file2.dir\build.make CMakeFiles/file2.dir/file2.c.i
+.PHONY : file2.c.i
 
-const.s: const.c.s
+file2.s: file2.c.s
 
-.PHONY : const.s
+.PHONY : file2.s
 
 # target to generate assembly for a file
-const.c.s:
-	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/const.c.s
-.PHONY : const.c.s
+file2.c.s:
+	$(MAKE) -f CMakeFiles\file2.dir\build.make CMakeFiles/file2.dir/file2.c.s
+.PHONY : file2.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... const
+	@echo ... file2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... const.obj
-	@echo ... const.i
-	@echo ... const.s
+	@echo ... file2.obj
+	@echo ... file2.i
+	@echo ... file2.s
 .PHONY : help
 
 

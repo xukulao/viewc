@@ -1,3 +1,3 @@
 #cmake_minimum_required(VERSION <specify CMake version here>)
 project(demo1)
-add_executable(const const.c)
+add_executable(file2 file2.c)
