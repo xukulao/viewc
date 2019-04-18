@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named const
+# Target rules for targets named file11
 
 # Build rule for target.
-const: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 const
-.PHONY : const
+file11: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 file11
+.PHONY : file11
 
 # fast build rule for target.
-const/fast:
-	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/build
-.PHONY : const/fast
+file11/fast:
+	$(MAKE) -f CMakeFiles\file11.dir\build.make CMakeFiles/file11.dir/build
+.PHONY : file11/fast
 
-const.obj: const.c.obj
+file11.obj: file11.c.obj
 
-.PHONY : const.obj
+.PHONY : file11.obj
 
 # target to build an object file
-const.c.obj:
-	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/const.c.obj
-.PHONY : const.c.obj
+file11.c.obj:
+	$(MAKE) -f CMakeFiles\file11.dir\build.make CMakeFiles/file11.dir/file11.c.obj
+.PHONY : file11.c.obj
 
-const.i: const.c.i
+file11.i: file11.c.i
 
-.PHONY : const.i
+.PHONY : file11.i
 
 # target to preprocess a source file
-const.c.i:
-	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/const.c.i
-.PHONY : const.c.i
+file11.c.i:
+	$(MAKE) -f CMakeFiles\file11.dir\build.make CMakeFiles/file11.dir/file11.c.i
+.PHONY : file11.c.i
 
-const.s: const.c.s
+file11.s: file11.c.s
 
-.PHONY : const.s
+.PHONY : file11.s
 
 # target to generate assembly for a file
-const.c.s:
-	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/const.c.s
-.PHONY : const.c.s
+file11.c.s:
+	$(MAKE) -f CMakeFiles\file11.dir\build.make CMakeFiles/file11.dir/file11.c.s
+.PHONY : file11.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... const
-	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... const.obj
-	@echo ... const.i
-	@echo ... const.s
+	@echo ... file11
+	@echo ... edit_cache
+	@echo ... file11.obj
+	@echo ... file11.i
+	@echo ... file11.s
 .PHONY : help
 
 
