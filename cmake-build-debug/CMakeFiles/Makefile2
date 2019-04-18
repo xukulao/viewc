@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = E:\c\demo
 CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/typedef.dir
+# Target rules for target CMakeFiles/const.dir
 
 # All Build rule for target.
-CMakeFiles/typedef.dir/all:
-	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/depend
-	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target typedef"
-.PHONY : CMakeFiles/typedef.dir/all
+CMakeFiles/const.dir/all:
+	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/depend
+	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target const"
+.PHONY : CMakeFiles/const.dir/all
 
 # Include target in all.
-all: CMakeFiles/typedef.dir/all
+all: CMakeFiles/const.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/typedef.dir/rule: cmake_check_build_system
+CMakeFiles/const.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/typedef.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/const.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/typedef.dir/rule
+.PHONY : CMakeFiles/const.dir/rule
 
 # Convenience name for target.
-typedef: CMakeFiles/typedef.dir/rule
+const: CMakeFiles/const.dir/rule
 
-.PHONY : typedef
-
-# clean rule for target.
-CMakeFiles/typedef.dir/clean:
-	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/clean
-.PHONY : CMakeFiles/typedef.dir/clean
+.PHONY : const
 
 # clean rule for target.
-clean: CMakeFiles/typedef.dir/clean
+CMakeFiles/const.dir/clean:
+	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/clean
+.PHONY : CMakeFiles/const.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/const.dir/clean
 
 .PHONY : clean
 
