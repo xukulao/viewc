@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = E:\c\demo
 CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/file7.dir
+# Target rules for target CMakeFiles/file8.dir
 
 # All Build rule for target.
-CMakeFiles/file7.dir/all:
-	$(MAKE) -f CMakeFiles\file7.dir\build.make CMakeFiles/file7.dir/depend
-	$(MAKE) -f CMakeFiles\file7.dir\build.make CMakeFiles/file7.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target file7"
-.PHONY : CMakeFiles/file7.dir/all
+CMakeFiles/file8.dir/all:
+	$(MAKE) -f CMakeFiles\file8.dir\build.make CMakeFiles/file8.dir/depend
+	$(MAKE) -f CMakeFiles\file8.dir\build.make CMakeFiles/file8.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target file8"
+.PHONY : CMakeFiles/file8.dir/all
 
 # Include target in all.
-all: CMakeFiles/file7.dir/all
+all: CMakeFiles/file8.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/file7.dir/rule: cmake_check_build_system
+CMakeFiles/file8.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/file7.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/file8.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/file7.dir/rule
+.PHONY : CMakeFiles/file8.dir/rule
 
 # Convenience name for target.
-file7: CMakeFiles/file7.dir/rule
+file8: CMakeFiles/file8.dir/rule
 
-.PHONY : file7
-
-# clean rule for target.
-CMakeFiles/file7.dir/clean:
-	$(MAKE) -f CMakeFiles\file7.dir\build.make CMakeFiles/file7.dir/clean
-.PHONY : CMakeFiles/file7.dir/clean
+.PHONY : file8
 
 # clean rule for target.
-clean: CMakeFiles/file7.dir/clean
+CMakeFiles/file8.dir/clean:
+	$(MAKE) -f CMakeFiles\file8.dir\build.make CMakeFiles/file8.dir/clean
+.PHONY : CMakeFiles/file8.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/file8.dir/clean
 
 .PHONY : clean
 
