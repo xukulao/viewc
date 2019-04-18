@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = E:\c\demo
 CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/typeof.dir
+# Target rules for target CMakeFiles/typedef.dir
 
 # All Build rule for target.
-CMakeFiles/typeof.dir/all:
-	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/depend
-	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target typeof"
-.PHONY : CMakeFiles/typeof.dir/all
+CMakeFiles/typedef.dir/all:
+	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/depend
+	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target typedef"
+.PHONY : CMakeFiles/typedef.dir/all
 
 # Include target in all.
-all: CMakeFiles/typeof.dir/all
+all: CMakeFiles/typedef.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/typeof.dir/rule: cmake_check_build_system
+CMakeFiles/typedef.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/typeof.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/typedef.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/typeof.dir/rule
+.PHONY : CMakeFiles/typedef.dir/rule
 
 # Convenience name for target.
-typeof: CMakeFiles/typeof.dir/rule
+typedef: CMakeFiles/typedef.dir/rule
 
-.PHONY : typeof
-
-# clean rule for target.
-CMakeFiles/typeof.dir/clean:
-	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/clean
-.PHONY : CMakeFiles/typeof.dir/clean
+.PHONY : typedef
 
 # clean rule for target.
-clean: CMakeFiles/typeof.dir/clean
+CMakeFiles/typedef.dir/clean:
+	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/clean
+.PHONY : CMakeFiles/typedef.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/typedef.dir/clean
 
 .PHONY : clean
 
