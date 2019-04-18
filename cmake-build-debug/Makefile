@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named typeof
+# Target rules for targets named typedef
 
 # Build rule for target.
-typeof: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 typeof
-.PHONY : typeof
+typedef: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 typedef
+.PHONY : typedef
 
 # fast build rule for target.
-typeof/fast:
-	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/build
-.PHONY : typeof/fast
+typedef/fast:
+	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/build
+.PHONY : typedef/fast
 
-typeof.obj: typeof.c.obj
+typedef.obj: typedef.c.obj
 
-.PHONY : typeof.obj
+.PHONY : typedef.obj
 
 # target to build an object file
-typeof.c.obj:
-	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/typeof.c.obj
-.PHONY : typeof.c.obj
+typedef.c.obj:
+	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/typedef.c.obj
+.PHONY : typedef.c.obj
 
-typeof.i: typeof.c.i
+typedef.i: typedef.c.i
 
-.PHONY : typeof.i
+.PHONY : typedef.i
 
 # target to preprocess a source file
-typeof.c.i:
-	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/typeof.c.i
-.PHONY : typeof.c.i
+typedef.c.i:
+	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/typedef.c.i
+.PHONY : typedef.c.i
 
-typeof.s: typeof.c.s
+typedef.s: typedef.c.s
 
-.PHONY : typeof.s
+.PHONY : typedef.s
 
 # target to generate assembly for a file
-typeof.c.s:
-	$(MAKE) -f CMakeFiles\typeof.dir\build.make CMakeFiles/typeof.dir/typeof.c.s
-.PHONY : typeof.c.s
+typedef.c.s:
+	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/typedef.c.s
+.PHONY : typedef.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... typedef
 	@echo ... edit_cache
-	@echo ... typeof
 	@echo ... rebuild_cache
-	@echo ... typeof.obj
-	@echo ... typeof.i
-	@echo ... typeof.s
+	@echo ... typedef.obj
+	@echo ... typedef.i
+	@echo ... typedef.s
 .PHONY : help
 
 
