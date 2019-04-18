@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named typedef
+# Target rules for targets named const
 
 # Build rule for target.
-typedef: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 typedef
-.PHONY : typedef
+const: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 const
+.PHONY : const
 
 # fast build rule for target.
-typedef/fast:
-	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/build
-.PHONY : typedef/fast
+const/fast:
+	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/build
+.PHONY : const/fast
 
-typedef.obj: typedef.c.obj
+const.obj: const.c.obj
 
-.PHONY : typedef.obj
+.PHONY : const.obj
 
 # target to build an object file
-typedef.c.obj:
-	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/typedef.c.obj
-.PHONY : typedef.c.obj
+const.c.obj:
+	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/const.c.obj
+.PHONY : const.c.obj
 
-typedef.i: typedef.c.i
+const.i: const.c.i
 
-.PHONY : typedef.i
+.PHONY : const.i
 
 # target to preprocess a source file
-typedef.c.i:
-	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/typedef.c.i
-.PHONY : typedef.c.i
+const.c.i:
+	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/const.c.i
+.PHONY : const.c.i
 
-typedef.s: typedef.c.s
+const.s: const.c.s
 
-.PHONY : typedef.s
+.PHONY : const.s
 
 # target to generate assembly for a file
-typedef.c.s:
-	$(MAKE) -f CMakeFiles\typedef.dir\build.make CMakeFiles/typedef.dir/typedef.c.s
-.PHONY : typedef.c.s
+const.c.s:
+	$(MAKE) -f CMakeFiles\const.dir\build.make CMakeFiles/const.dir/const.c.s
+.PHONY : const.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... typedef
+	@echo ... const
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... typedef.obj
-	@echo ... typedef.i
-	@echo ... typedef.s
+	@echo ... const.obj
+	@echo ... const.i
+	@echo ... const.s
 .PHONY : help
 
 
