@@ -38,38 +38,27 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\c\demo
+CMAKE_SOURCE_DIR = E:\c\viewc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
+CMAKE_BINARY_DIR = E:\c\viewc\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,11 +66,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles E:\c\demo\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\cmake-build-debug\CMakeFiles E:\c\viewc\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named module
+# Target rules for targets named person
 
 # Build rule for target.
-module: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 module
-.PHONY : module
+person: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 person
+.PHONY : person
 
 # fast build rule for target.
-module/fast:
-	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/build
-.PHONY : module/fast
+person/fast:
+	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/build
+.PHONY : person/fast
 
-module1.obj: module1.c.obj
+person.obj: person.c.obj
 
-.PHONY : module1.obj
+.PHONY : person.obj
 
 # target to build an object file
-module1.c.obj:
-	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/module1.c.obj
-.PHONY : module1.c.obj
+person.c.obj:
+	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/person.c.obj
+.PHONY : person.c.obj
 
-module1.i: module1.c.i
+person.i: person.c.i
 
-.PHONY : module1.i
+.PHONY : person.i
 
 # target to preprocess a source file
-module1.c.i:
-	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/module1.c.i
-.PHONY : module1.c.i
+person.c.i:
+	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/person.c.i
+.PHONY : person.c.i
 
-module1.s: module1.c.s
+person.s: person.c.s
 
-.PHONY : module1.s
+.PHONY : person.s
 
 # target to generate assembly for a file
-module1.c.s:
-	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/module1.c.s
-.PHONY : module1.c.s
+person.c.s:
+	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/person.c.s
+.PHONY : person.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... module
 	@echo ... edit_cache
-	@echo ... module1.obj
-	@echo ... module1.i
-	@echo ... module1.s
+	@echo ... person
+	@echo ... rebuild_cache
+	@echo ... person.obj
+	@echo ... person.i
+	@echo ... person.s
 .PHONY : help
 
 

@@ -1,3 +1,3 @@
 #cmake_minimum_required(VERSION <specify CMake version here>)
 project(demo1)
-add_executable(module module1.c)
+add_executable(person person.c)
