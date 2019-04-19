@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -76,6 +65,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named mysql
+# Target rules for targets named debug
 
 # Build rule for target.
-mysql: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 mysql
-.PHONY : mysql
+debug: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 debug
+.PHONY : debug
 
 # fast build rule for target.
-mysql/fast:
-	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/build
-.PHONY : mysql/fast
+debug/fast:
+	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/build
+.PHONY : debug/fast
 
-mysql.obj: mysql.c.obj
+debug.obj: debug.c.obj
 
-.PHONY : mysql.obj
+.PHONY : debug.obj
 
 # target to build an object file
-mysql.c.obj:
-	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/mysql.c.obj
-.PHONY : mysql.c.obj
+debug.c.obj:
+	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/debug.c.obj
+.PHONY : debug.c.obj
 
-mysql.i: mysql.c.i
+debug.i: debug.c.i
 
-.PHONY : mysql.i
+.PHONY : debug.i
 
 # target to preprocess a source file
-mysql.c.i:
-	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/mysql.c.i
-.PHONY : mysql.c.i
+debug.c.i:
+	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/debug.c.i
+.PHONY : debug.c.i
 
-mysql.s: mysql.c.s
+debug.s: debug.c.s
 
-.PHONY : mysql.s
+.PHONY : debug.s
 
 # target to generate assembly for a file
-mysql.c.s:
-	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/mysql.c.s
-.PHONY : mysql.c.s
+debug.c.s:
+	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/debug.c.s
+.PHONY : debug.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... mysql
 	@echo ... edit_cache
-	@echo ... mysql.obj
-	@echo ... mysql.i
-	@echo ... mysql.s
+	@echo ... debug
+	@echo ... rebuild_cache
+	@echo ... debug.obj
+	@echo ... debug.i
+	@echo ... debug.s
 .PHONY : help
 
 
