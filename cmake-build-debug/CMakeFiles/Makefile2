@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = E:\c\demo
 CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/mysql.dir
+# Target rules for target CMakeFiles/filesize.dir
 
 # All Build rule for target.
-CMakeFiles/mysql.dir/all:
-	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/depend
-	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target mysql"
-.PHONY : CMakeFiles/mysql.dir/all
+CMakeFiles/filesize.dir/all:
+	$(MAKE) -f CMakeFiles\filesize.dir\build.make CMakeFiles/filesize.dir/depend
+	$(MAKE) -f CMakeFiles\filesize.dir\build.make CMakeFiles/filesize.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target filesize"
+.PHONY : CMakeFiles/filesize.dir/all
 
 # Include target in all.
-all: CMakeFiles/mysql.dir/all
+all: CMakeFiles/filesize.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/mysql.dir/rule: cmake_check_build_system
+CMakeFiles/filesize.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 2
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/mysql.dir/all
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/filesize.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/mysql.dir/rule
+.PHONY : CMakeFiles/filesize.dir/rule
 
 # Convenience name for target.
-mysql: CMakeFiles/mysql.dir/rule
+filesize: CMakeFiles/filesize.dir/rule
 
-.PHONY : mysql
-
-# clean rule for target.
-CMakeFiles/mysql.dir/clean:
-	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/clean
-.PHONY : CMakeFiles/mysql.dir/clean
+.PHONY : filesize
 
 # clean rule for target.
-clean: CMakeFiles/mysql.dir/clean
+CMakeFiles/filesize.dir/clean:
+	$(MAKE) -f CMakeFiles\filesize.dir\build.make CMakeFiles/filesize.dir/clean
+.PHONY : CMakeFiles/filesize.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/filesize.dir/clean
 
 .PHONY : clean
 

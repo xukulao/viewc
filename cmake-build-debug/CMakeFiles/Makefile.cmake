@@ -51,5 +51,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/mysql.dir/DependInfo.cmake"
+  "CMakeFiles/filesize.dir/DependInfo.cmake"
   )
