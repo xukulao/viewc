@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named filesize
+# Target rules for targets named debug
 
 # Build rule for target.
-filesize: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 filesize
-.PHONY : filesize
+debug: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 debug
+.PHONY : debug
 
 # fast build rule for target.
-filesize/fast:
-	$(MAKE) -f CMakeFiles\filesize.dir\build.make CMakeFiles/filesize.dir/build
-.PHONY : filesize/fast
+debug/fast:
+	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/build
+.PHONY : debug/fast
 
-filesize.obj: filesize.c.obj
+debug.obj: debug.c.obj
 
-.PHONY : filesize.obj
+.PHONY : debug.obj
 
 # target to build an object file
-filesize.c.obj:
-	$(MAKE) -f CMakeFiles\filesize.dir\build.make CMakeFiles/filesize.dir/filesize.c.obj
-.PHONY : filesize.c.obj
+debug.c.obj:
+	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/debug.c.obj
+.PHONY : debug.c.obj
 
-filesize.i: filesize.c.i
+debug.i: debug.c.i
 
-.PHONY : filesize.i
+.PHONY : debug.i
 
 # target to preprocess a source file
-filesize.c.i:
-	$(MAKE) -f CMakeFiles\filesize.dir\build.make CMakeFiles/filesize.dir/filesize.c.i
-.PHONY : filesize.c.i
+debug.c.i:
+	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/debug.c.i
+.PHONY : debug.c.i
 
-filesize.s: filesize.c.s
+debug.s: debug.c.s
 
-.PHONY : filesize.s
+.PHONY : debug.s
 
 # target to generate assembly for a file
-filesize.c.s:
-	$(MAKE) -f CMakeFiles\filesize.dir\build.make CMakeFiles/filesize.dir/filesize.c.s
-.PHONY : filesize.c.s
+debug.c.s:
+	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/debug.c.s
+.PHONY : debug.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... filesize
 	@echo ... edit_cache
+	@echo ... debug
 	@echo ... rebuild_cache
-	@echo ... filesize.obj
-	@echo ... filesize.i
-	@echo ... filesize.s
+	@echo ... debug.obj
+	@echo ... debug.i
+	@echo ... debug.s
 .PHONY : help
 
 
