@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named debug
+# Target rules for targets named module
 
 # Build rule for target.
-debug: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 debug
-.PHONY : debug
+module: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 module
+.PHONY : module
 
 # fast build rule for target.
-debug/fast:
-	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/build
-.PHONY : debug/fast
+module/fast:
+	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/build
+.PHONY : module/fast
 
-debug.obj: debug.c.obj
+module1.obj: module1.c.obj
 
-.PHONY : debug.obj
+.PHONY : module1.obj
 
 # target to build an object file
-debug.c.obj:
-	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/debug.c.obj
-.PHONY : debug.c.obj
+module1.c.obj:
+	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/module1.c.obj
+.PHONY : module1.c.obj
 
-debug.i: debug.c.i
+module1.i: module1.c.i
 
-.PHONY : debug.i
+.PHONY : module1.i
 
 # target to preprocess a source file
-debug.c.i:
-	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/debug.c.i
-.PHONY : debug.c.i
+module1.c.i:
+	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/module1.c.i
+.PHONY : module1.c.i
 
-debug.s: debug.c.s
+module1.s: module1.c.s
 
-.PHONY : debug.s
+.PHONY : module1.s
 
 # target to generate assembly for a file
-debug.c.s:
-	$(MAKE) -f CMakeFiles\debug.dir\build.make CMakeFiles/debug.dir/debug.c.s
-.PHONY : debug.c.s
+module1.c.s:
+	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/module1.c.s
+.PHONY : module1.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... edit_cache
-	@echo ... debug
 	@echo ... rebuild_cache
-	@echo ... debug.obj
-	@echo ... debug.i
-	@echo ... debug.s
+	@echo ... module
+	@echo ... edit_cache
+	@echo ... module1.obj
+	@echo ... module1.i
+	@echo ... module1.s
 .PHONY : help
 
 
