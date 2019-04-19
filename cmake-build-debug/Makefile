@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named file11
+# Target rules for targets named mysql
 
 # Build rule for target.
-file11: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 file11
-.PHONY : file11
+mysql: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 mysql
+.PHONY : mysql
 
 # fast build rule for target.
-file11/fast:
-	$(MAKE) -f CMakeFiles\file11.dir\build.make CMakeFiles/file11.dir/build
-.PHONY : file11/fast
+mysql/fast:
+	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/build
+.PHONY : mysql/fast
 
-file11.obj: file11.c.obj
+mysql.obj: mysql.c.obj
 
-.PHONY : file11.obj
+.PHONY : mysql.obj
 
 # target to build an object file
-file11.c.obj:
-	$(MAKE) -f CMakeFiles\file11.dir\build.make CMakeFiles/file11.dir/file11.c.obj
-.PHONY : file11.c.obj
+mysql.c.obj:
+	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/mysql.c.obj
+.PHONY : mysql.c.obj
 
-file11.i: file11.c.i
+mysql.i: mysql.c.i
 
-.PHONY : file11.i
+.PHONY : mysql.i
 
 # target to preprocess a source file
-file11.c.i:
-	$(MAKE) -f CMakeFiles\file11.dir\build.make CMakeFiles/file11.dir/file11.c.i
-.PHONY : file11.c.i
+mysql.c.i:
+	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/mysql.c.i
+.PHONY : mysql.c.i
 
-file11.s: file11.c.s
+mysql.s: mysql.c.s
 
-.PHONY : file11.s
+.PHONY : mysql.s
 
 # target to generate assembly for a file
-file11.c.s:
-	$(MAKE) -f CMakeFiles\file11.dir\build.make CMakeFiles/file11.dir/file11.c.s
-.PHONY : file11.c.s
+mysql.c.s:
+	$(MAKE) -f CMakeFiles\mysql.dir\build.make CMakeFiles/mysql.dir/mysql.c.s
+.PHONY : mysql.c.s
 
 # Help Target
 help:
@@ -156,11 +156,11 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... rebuild_cache
-	@echo ... file11
+	@echo ... mysql
 	@echo ... edit_cache
-	@echo ... file11.obj
-	@echo ... file11.i
-	@echo ... file11.s
+	@echo ... mysql.obj
+	@echo ... mysql.i
+	@echo ... mysql.s
 .PHONY : help
 
 
