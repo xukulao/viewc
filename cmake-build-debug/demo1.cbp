@@ -8,82 +8,84 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="E:/c/viewc/cmake-build-debug"/>
+				<Option working_dir="E:/c/demo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="E:/c/viewc/cmake-build-debug"/>
+				<Option working_dir="E:/c/demo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="person">
-				<Option output="E:/c/viewc/cmake-build-debug/person.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/c/viewc/cmake-build-debug"/>
+				<Option output="E:/c/demo/cmake-build-debug/person.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/c/demo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 person"/>
-					<CompileFile command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 person"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="person/fast">
-				<Option output="E:/c/viewc/cmake-build-debug/person.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/c/viewc/cmake-build-debug"/>
+				<Option output="E:/c/demo/cmake-build-debug/person.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/c/demo/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="D:/posix/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include/c++/backward"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../include"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/include-fixed"/>
+					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 person/fast"/>
-					<CompileFile command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 person/fast"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="E:/c/viewc/cmake-build-debug"/>
+				<Option working_dir="E:/c/demo/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="D:/posix/mingw64/bin/mingw32-make.exe -f &quot;E:/c/viewc/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/c/viewc/person.c">
+		<Unit filename="E:/c/demo/person.c">
 			<Option target="person"/>
 		</Unit>
-		<Unit filename="E:/c/viewc/CMakeLists.txt">
+		<Unit filename="E:/c/demo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
