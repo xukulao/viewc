@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = E:\c\demo\module
 CMAKE_BINARY_DIR = E:\c\demo\module\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/module.dir
+# Target rules for target CMakeFiles/demo.dir
 
 # All Build rule for target.
-CMakeFiles/module.dir/all:
-	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/depend
-	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target module"
-.PHONY : CMakeFiles/module.dir/all
+CMakeFiles/demo.dir/all:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/depend
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target demo"
+.PHONY : CMakeFiles/demo.dir/all
 
 # Include target in all.
-all: CMakeFiles/module.dir/all
+all: CMakeFiles/demo.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/module.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles 3
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/module.dir/all
+CMakeFiles/demo.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/demo.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/module.dir/rule
+.PHONY : CMakeFiles/demo.dir/rule
 
 # Convenience name for target.
-module: CMakeFiles/module.dir/rule
+demo: CMakeFiles/demo.dir/rule
 
-.PHONY : module
-
-# clean rule for target.
-CMakeFiles/module.dir/clean:
-	$(MAKE) -f CMakeFiles\module.dir\build.make CMakeFiles/module.dir/clean
-.PHONY : CMakeFiles/module.dir/clean
+.PHONY : demo
 
 # clean rule for target.
-clean: CMakeFiles/module.dir/clean
+CMakeFiles/demo.dir/clean:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/clean
+.PHONY : CMakeFiles/demo.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/demo.dir/clean
 
 .PHONY : clean
 
