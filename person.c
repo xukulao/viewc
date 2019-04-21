@@ -67,7 +67,7 @@ void listUser()
     PERSON *tmp = &tempPerson;
     int readCount = 0;
     printf("+%#5s----%5s+%5s---%5s+%5s---%5s+%5s-------%5s+\n","\x2D","\x2D","\x2D","\x2D","\x2D","\x2D","\x2D","\x2D");
-    printf("+%5sName%5s+%5sAge%5s+%5sNum%5s+%5sAddress%5s+\n","\x20","\x20","\x20","\x20","\x20","\x20","\x20","\x20");
+    printf("|%5sName%5s+%5sAge%5s+%5sNum%5s+%5sAddress%5s+\n","\x20","\x20","\x20","\x20","\x20","\x20","\x20","\x20");
     if (ftell(file)>0){
         fseek(file,0,SEEK_SET);
     }
