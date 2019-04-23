@@ -122,32 +122,59 @@ demo/fast:
 	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-demo.obj: demo.c.obj
+main.obj: main.c.obj
 
-.PHONY : demo.obj
+.PHONY : main.obj
 
 # target to build an object file
-demo.c.obj:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo.c.obj
-.PHONY : demo.c.obj
+main.c.obj:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.obj
+.PHONY : main.c.obj
 
-demo.i: demo.c.i
+main.i: main.c.i
 
-.PHONY : demo.i
+.PHONY : main.i
 
 # target to preprocess a source file
-demo.c.i:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo.c.i
-.PHONY : demo.c.i
+main.c.i:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.i
+.PHONY : main.c.i
 
-demo.s: demo.c.s
+main.s: main.c.s
 
-.PHONY : demo.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-demo.c.s:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo.c.s
-.PHONY : demo.c.s
+main.c.s:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.s
+.PHONY : main.c.s
+
+module.obj: module.c.obj
+
+.PHONY : module.obj
+
+# target to build an object file
+module.c.obj:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module.c.obj
+.PHONY : module.c.obj
+
+module.i: module.c.i
+
+.PHONY : module.i
+
+# target to preprocess a source file
+module.c.i:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module.c.i
+.PHONY : module.c.i
+
+module.s: module.c.s
+
+.PHONY : module.s
+
+# target to generate assembly for a file
+module.c.s:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module.c.s
+.PHONY : module.c.s
 
 # Help Target
 help:
@@ -158,9 +185,12 @@ help:
 	@echo ... demo
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... demo.obj
-	@echo ... demo.i
-	@echo ... demo.s
+	@echo ... main.obj
+	@echo ... main.i
+	@echo ... main.s
+	@echo ... module.obj
+	@echo ... module.i
+	@echo ... module.s
 .PHONY : help
 
 
