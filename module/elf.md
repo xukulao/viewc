@@ -12,3 +12,7 @@
  
 ELF文件段表  
 ![elf文件结构](ELF文件段表.png)  
+
+[elf header ](demo_header.txt)
+[elf section](demo_section.txt)
+[elf c source](demo.c)
