@@ -6,7 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/module/demo.c
+E:/c/demo/module/main.c
+stdio.h
+-
+
+E:/c/demo/module/module.c
 stdio.h
 -
 

@@ -1,3 +1,0 @@
-E:/c/viewc/memory/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-E:/c/viewc/memory/cmake-build-debug/CMakeFiles/memory1.dir
-E:/c/viewc/memory/cmake-build-debug/CMakeFiles/edit_cache.dir
