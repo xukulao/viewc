@@ -12,8 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d061297d-b3f0-429d-a13b-9e9072d0d6e1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../memory/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../memory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../memory/demo.c" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/demo.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/memory.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/memory.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
