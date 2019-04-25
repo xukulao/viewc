@@ -117,16 +117,19 @@ int main(void)
 //     * 程序运行时，操作系统会完成虚拟地址和物理的内存映射
 //     */
 
-     //内存地址 对齐
-     printf("%d,%d,%d,%d\n", sizeof(t.a), sizeof(t.b), sizeof(t.c), sizeof(t));
-     printf("%#X,%#X,%#X,%#X\n", &t.a, &t.b, &t.c, &t);
+//     //内存地址 对齐
+//     printf("%d,%d,%d,%d\n", sizeof(t.a), sizeof(t.b), sizeof(t.c), sizeof(t));
+//     printf("%#X,%#X,%#X,%#X\n", &t.a, &t.b, &t.c, &t);
+//
+//     //变量内存对齐测试
+//     int k=0;
+//     char m='c';
+//     int n=2;
+//     printf("%d,%d,%d\n", sizeof(k), sizeof(m), sizeof(n));
+//     printf("%#X,%#X,%#X\n",&k,&m,&n);
 
-     //变量内存对齐测试
-     int k=0;
-     char m='c';
-     int n=2;
-     printf("%d,%d,%d\n", sizeof(k), sizeof(m), sizeof(n));
-     printf("%#X,%#X,%#X\n",&k,&m,&n);
+        char *p = (char *)0XFFF00000FFF00000;//虚拟地址为0XFFF000001 cpu运行时会找到其对应的物理内存
+        printf("p=%s\n",p);//打印虚拟地址上的数据
     return 0;
 }
 
