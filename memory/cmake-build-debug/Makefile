@@ -38,38 +38,27 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\c\viewc\memory
+CMAKE_SOURCE_DIR = E:\c\demo\memory
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\c\viewc\memory\cmake-build-debug
+CMAKE_BINARY_DIR = E:\c\demo\memory\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -77,11 +66,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\memory\cmake-build-debug\CMakeFiles E:\c\viewc\memory\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\memory\cmake-build-debug\CMakeFiles E:\c\demo\memory\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\memory\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\memory\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named memory1
+# Target rules for targets named memory2
 
 # Build rule for target.
-memory1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 memory1
-.PHONY : memory1
+memory2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 memory2
+.PHONY : memory2
 
 # fast build rule for target.
-memory1/fast:
-	$(MAKE) -f CMakeFiles\memory1.dir\build.make CMakeFiles/memory1.dir/build
-.PHONY : memory1/fast
+memory2/fast:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/build
+.PHONY : memory2/fast
 
-demo.obj: demo.c.obj
+memory.obj: memory.c.obj
 
-.PHONY : demo.obj
+.PHONY : memory.obj
 
 # target to build an object file
-demo.c.obj:
-	$(MAKE) -f CMakeFiles\memory1.dir\build.make CMakeFiles/memory1.dir/demo.c.obj
-.PHONY : demo.c.obj
+memory.c.obj:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory.c.obj
+.PHONY : memory.c.obj
 
-demo.i: demo.c.i
+memory.i: memory.c.i
 
-.PHONY : demo.i
+.PHONY : memory.i
 
 # target to preprocess a source file
-demo.c.i:
-	$(MAKE) -f CMakeFiles\memory1.dir\build.make CMakeFiles/memory1.dir/demo.c.i
-.PHONY : demo.c.i
+memory.c.i:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory.c.i
+.PHONY : memory.c.i
 
-demo.s: demo.c.s
+memory.s: memory.c.s
 
-.PHONY : demo.s
+.PHONY : memory.s
 
 # target to generate assembly for a file
-demo.c.s:
-	$(MAKE) -f CMakeFiles\memory1.dir\build.make CMakeFiles/memory1.dir/demo.c.s
-.PHONY : demo.c.s
+memory.c.s:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory.c.s
+.PHONY : memory.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... rebuild_cache
-	@echo ... memory1
+	@echo ... memory2
 	@echo ... edit_cache
-	@echo ... demo.obj
-	@echo ... demo.i
-	@echo ... demo.s
+	@echo ... rebuild_cache
+	@echo ... memory.obj
+	@echo ... memory.i
+	@echo ... memory.s
 .PHONY : help
 
 
