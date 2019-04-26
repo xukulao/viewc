@@ -1,18 +1,20 @@
 "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\c\demo\memory
--- The C compiler identification is GNU 5.1.0
--- The CXX compiler identification is GNU 5.1.0
--- Check for working C compiler: C:/TDM-GCC-64/bin/gcc.exe
--- Check for working C compiler: C:/TDM-GCC-64/bin/gcc.exe -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: C:/TDM-GCC-64/bin/g++.exe
--- Check for working CXX compiler: C:/TDM-GCC-64/bin/g++.exe -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Configuring done
--- Generating done
--- Build files have been written to: E:/c/demo/memory/cmake-build-debug
+CMake Error at cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake:71:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "<<<<<<<".
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+CMake Error: Could not find cmake module file: E:/c/demo/memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake
+CMake Error at cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake:7:
+  Parse error.  Expected a command name, got unquoted argument with text
+  "<<<<<<<".
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+CMake Error: Could not find cmake module file: E:/c/demo/memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake
+-- Configuring incomplete, errors occurred!
+See also "E:/c/demo/memory/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+Cannot read project file E:\c\demo\memory\cmake-build-debug\memory.cbp
