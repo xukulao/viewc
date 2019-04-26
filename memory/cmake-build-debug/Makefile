@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named memory2
+# Target rules for targets named memory3
 
 # Build rule for target.
-memory2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 memory2
-.PHONY : memory2
+memory3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 memory3
+.PHONY : memory3
 
 # fast build rule for target.
-memory2/fast:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/build
-.PHONY : memory2/fast
+memory3/fast:
+	$(MAKE) -f CMakeFiles\memory3.dir\build.make CMakeFiles/memory3.dir/build
+.PHONY : memory3/fast
 
-memory2.obj: memory2.c.obj
+memory3.obj: memory3.c.obj
 
-.PHONY : memory2.obj
+.PHONY : memory3.obj
 
 # target to build an object file
-memory2.c.obj:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory2.c.obj
-.PHONY : memory2.c.obj
+memory3.c.obj:
+	$(MAKE) -f CMakeFiles\memory3.dir\build.make CMakeFiles/memory3.dir/memory3.c.obj
+.PHONY : memory3.c.obj
 
-memory2.i: memory2.c.i
+memory3.i: memory3.c.i
 
-.PHONY : memory2.i
+.PHONY : memory3.i
 
 # target to preprocess a source file
-memory2.c.i:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory2.c.i
-.PHONY : memory2.c.i
+memory3.c.i:
+	$(MAKE) -f CMakeFiles\memory3.dir\build.make CMakeFiles/memory3.dir/memory3.c.i
+.PHONY : memory3.c.i
 
-memory2.s: memory2.c.s
+memory3.s: memory3.c.s
 
-.PHONY : memory2.s
+.PHONY : memory3.s
 
 # target to generate assembly for a file
-memory2.c.s:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory2.c.s
-.PHONY : memory2.c.s
+memory3.c.s:
+	$(MAKE) -f CMakeFiles\memory3.dir\build.make CMakeFiles/memory3.dir/memory3.c.s
+.PHONY : memory3.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... memory2
+	@echo ... memory3
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... memory2.obj
-	@echo ... memory2.i
-	@echo ... memory2.s
+	@echo ... memory3.obj
+	@echo ... memory3.i
+	@echo ... memory3.s
 .PHONY : help
 
 
