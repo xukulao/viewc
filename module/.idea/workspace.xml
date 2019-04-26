@@ -12,6 +12,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d061297d-b3f0-429d-a13b-9e9072d0d6e1" name="Default Changelist" comment="">
+<<<<<<< HEAD
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeRCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeRCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CMakeSystem.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/demo.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/CMakeFiles/memory1.dir/objects.a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/memory.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/memory.cbp" afterDir="false" />
+=======
       <change beforePath="$PROJECT_DIR$/../memory/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../memory/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../memory/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/CMakeLists.txt" afterDir="false" />
@@ -22,6 +53,7 @@
       <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../memory/cmake-build-debug/memory.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../memory/cmake-build-debug/memory.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+>>>>>>> aedb43f2aa862f78f2d0e99c150e17b3f9ef5c03
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +81,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="247" />
     <option name="y" value="86" />
     <option name="width" value="1400" />
@@ -125,13 +157,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
+    <option name="totallyTimeSpent" value="10544000" />
+=======
     <option name="totallyTimeSpent" value="11444000" />
+>>>>>>> aedb43f2aa862f78f2d0e99c150e17b3f9ef5c03
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.110341154" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11140725" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

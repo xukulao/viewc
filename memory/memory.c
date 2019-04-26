@@ -4,7 +4,6 @@
 #include <stdio.h>
 int a = 100;//全局变量  位于全局数据区
 char *str1 = "phpisbestlanguage";//字符串常量位于常量区 str1位于全局数据区
-
 char *test()
 {
     char *hi = "hello,world";//函数内的变量都位于栈区  常量字符串位于常量区
@@ -42,5 +41,8 @@ int main(){
     int *k=(int *)0X62FDC4;
     printf("k=%d\n",*k);
 
+    //函数所在位置栈区  出栈进栈  栈溢出
+    char names[1024*1024*1024]={0};//1G个元素
+    printf("names=%d\n",names[0]);
     return 0;
 }
