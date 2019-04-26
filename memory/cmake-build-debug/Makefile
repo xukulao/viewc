@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named storage
+# Target rules for targets named register
 
 # Build rule for target.
-storage: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 storage
-.PHONY : storage
+register: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 register
+.PHONY : register
 
 # fast build rule for target.
-storage/fast:
-	$(MAKE) -f CMakeFiles\storage.dir\build.make CMakeFiles/storage.dir/build
-.PHONY : storage/fast
+register/fast:
+	$(MAKE) -f CMakeFiles\register.dir\build.make CMakeFiles/register.dir/build
+.PHONY : register/fast
 
-storage.obj: storage.c.obj
+register.obj: register.c.obj
 
-.PHONY : storage.obj
+.PHONY : register.obj
 
 # target to build an object file
-storage.c.obj:
-	$(MAKE) -f CMakeFiles\storage.dir\build.make CMakeFiles/storage.dir/storage.c.obj
-.PHONY : storage.c.obj
+register.c.obj:
+	$(MAKE) -f CMakeFiles\register.dir\build.make CMakeFiles/register.dir/register.c.obj
+.PHONY : register.c.obj
 
-storage.i: storage.c.i
+register.i: register.c.i
 
-.PHONY : storage.i
+.PHONY : register.i
 
 # target to preprocess a source file
-storage.c.i:
-	$(MAKE) -f CMakeFiles\storage.dir\build.make CMakeFiles/storage.dir/storage.c.i
-.PHONY : storage.c.i
+register.c.i:
+	$(MAKE) -f CMakeFiles\register.dir\build.make CMakeFiles/register.dir/register.c.i
+.PHONY : register.c.i
 
-storage.s: storage.c.s
+register.s: register.c.s
 
-.PHONY : storage.s
+.PHONY : register.s
 
 # target to generate assembly for a file
-storage.c.s:
-	$(MAKE) -f CMakeFiles\storage.dir\build.make CMakeFiles/storage.dir/storage.c.s
-.PHONY : storage.c.s
+register.c.s:
+	$(MAKE) -f CMakeFiles\register.dir\build.make CMakeFiles/register.dir/register.c.s
+.PHONY : register.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... storage
 	@echo ... edit_cache
+	@echo ... register
 	@echo ... rebuild_cache
-	@echo ... storage.obj
-	@echo ... storage.i
-	@echo ... storage.s
+	@echo ... register.obj
+	@echo ... register.i
+	@echo ... register.s
 .PHONY : help
 
 
