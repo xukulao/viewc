@@ -80,11 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-<<<<<<< HEAD
-		<Unit filename="E:/c/viewc/memory/memory.c">
-=======
-		<Unit filename="E:/c/demo/memory/memory1.c">
->>>>>>> 6bf31acd7096d2a31b6064a62679e1312377902a
+		<Unit filename="E:/c/viewc/memory/memory2.c">
 			<Option target="memory2"/>
 		</Unit>
 		<Unit filename="E:/c/viewc/memory/CMakeLists.txt">

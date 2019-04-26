@@ -122,32 +122,32 @@ memory2/fast:
 	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/build
 .PHONY : memory2/fast
 
-memory1.obj: memory1.c.obj
+memory2.obj: memory2.c.obj
 
-.PHONY : memory1.obj
+.PHONY : memory2.obj
 
 # target to build an object file
-memory1.c.obj:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory1.c.obj
-.PHONY : memory1.c.obj
+memory2.c.obj:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory2.c.obj
+.PHONY : memory2.c.obj
 
-memory1.i: memory1.c.i
+memory2.i: memory2.c.i
 
-.PHONY : memory1.i
+.PHONY : memory2.i
 
 # target to preprocess a source file
-memory1.c.i:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory1.c.i
-.PHONY : memory1.c.i
+memory2.c.i:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory2.c.i
+.PHONY : memory2.c.i
 
-memory1.s: memory1.c.s
+memory2.s: memory2.c.s
 
-.PHONY : memory1.s
+.PHONY : memory2.s
 
 # target to generate assembly for a file
-memory1.c.s:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory1.c.s
-.PHONY : memory1.c.s
+memory2.c.s:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory2.c.s
+.PHONY : memory2.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... memory2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... memory1.obj
-	@echo ... memory1.i
-	@echo ... memory1.s
+	@echo ... memory2.obj
+	@echo ... memory2.i
+	@echo ... memory2.s
 .PHONY : help
 
 
