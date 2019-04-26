@@ -17,8 +17,8 @@
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="readoc">
-				<Option output="E:/c/demo/memory/cmake-build-debug/readoc.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="memory2">
+				<Option output="E:/c/demo/memory/cmake-build-debug/memory2.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="E:/c/demo/memory/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -33,14 +33,14 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 readoc"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 memory2"/>
 					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="readoc/fast">
-				<Option output="E:/c/demo/memory/cmake-build-debug/readoc.exe" prefix_auto="0" extension_auto="0"/>
+			<Target title="memory2/fast">
+				<Option output="E:/c/demo/memory/cmake-build-debug/memory2.exe" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="E:/c/demo/memory/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
@@ -55,7 +55,7 @@
 					<Add directory="C:/TDM-GCC-64/bin/../lib/gcc/x86_64-w64-mingw32/5.1.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 readoc/fast"/>
+					<Build command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 memory2/fast"/>
 					<CompileFile command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
 					<Clean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 					<DistClean command="C:/TDM-GCC-64/bin/mingw32-make.exe -f &quot;E:/c/demo/memory/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
@@ -82,8 +82,8 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/c/demo/memory/readoc.c">
-			<Option target="readoc"/>
+		<Unit filename="E:/c/demo/memory/memory1.c">
+			<Option target="memory2"/>
 		</Unit>
 		<Unit filename="E:/c/demo/memory/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
