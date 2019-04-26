@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named memory2
+# Target rules for targets named readoc
 
 # Build rule for target.
-memory2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 memory2
-.PHONY : memory2
+readoc: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 readoc
+.PHONY : readoc
 
 # fast build rule for target.
-memory2/fast:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/build
-.PHONY : memory2/fast
+readoc/fast:
+	$(MAKE) -f CMakeFiles\readoc.dir\build.make CMakeFiles/readoc.dir/build
+.PHONY : readoc/fast
 
-memory.obj: memory.c.obj
+readoc.obj: readoc.c.obj
 
-.PHONY : memory.obj
+.PHONY : readoc.obj
 
 # target to build an object file
-memory.c.obj:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory.c.obj
-.PHONY : memory.c.obj
+readoc.c.obj:
+	$(MAKE) -f CMakeFiles\readoc.dir\build.make CMakeFiles/readoc.dir/readoc.c.obj
+.PHONY : readoc.c.obj
 
-memory.i: memory.c.i
+readoc.i: readoc.c.i
 
-.PHONY : memory.i
+.PHONY : readoc.i
 
 # target to preprocess a source file
-memory.c.i:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory.c.i
-.PHONY : memory.c.i
+readoc.c.i:
+	$(MAKE) -f CMakeFiles\readoc.dir\build.make CMakeFiles/readoc.dir/readoc.c.i
+.PHONY : readoc.c.i
 
-memory.s: memory.c.s
+readoc.s: readoc.c.s
 
-.PHONY : memory.s
+.PHONY : readoc.s
 
 # target to generate assembly for a file
-memory.c.s:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory.c.s
-.PHONY : memory.c.s
+readoc.c.s:
+	$(MAKE) -f CMakeFiles\readoc.dir\build.make CMakeFiles/readoc.dir/readoc.c.s
+.PHONY : readoc.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... memory2
+	@echo ... readoc
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... memory.obj
-	@echo ... memory.i
-	@echo ... memory.s
+	@echo ... readoc.obj
+	@echo ... readoc.i
+	@echo ... readoc.s
 .PHONY : help
 
 
