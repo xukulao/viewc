@@ -110,71 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named memory4
+# Target rules for targets named storage
 
 # Build rule for target.
-memory4: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 memory4
-.PHONY : memory4
+storage: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 storage
+.PHONY : storage
 
 # fast build rule for target.
-memory4/fast:
-	$(MAKE) -f CMakeFiles\memory4.dir\build.make CMakeFiles/memory4.dir/build
-.PHONY : memory4/fast
+storage/fast:
+	$(MAKE) -f CMakeFiles\storage.dir\build.make CMakeFiles/storage.dir/build
+.PHONY : storage/fast
 
-memory4.obj: memory4.c.obj
+storage.obj: storage.c.obj
 
-.PHONY : memory4.obj
-
-# target to build an object file
-memory4.c.obj:
-	$(MAKE) -f CMakeFiles\memory4.dir\build.make CMakeFiles/memory4.dir/memory4.c.obj
-.PHONY : memory4.c.obj
-
-memory4.i: memory4.c.i
-
-.PHONY : memory4.i
-
-# target to preprocess a source file
-memory4.c.i:
-	$(MAKE) -f CMakeFiles\memory4.dir\build.make CMakeFiles/memory4.dir/memory4.c.i
-.PHONY : memory4.c.i
-
-memory4.s: memory4.c.s
-
-.PHONY : memory4.s
-
-# target to generate assembly for a file
-memory4.c.s:
-	$(MAKE) -f CMakeFiles\memory4.dir\build.make CMakeFiles/memory4.dir/memory4.c.s
-.PHONY : memory4.c.s
-
-memory5.obj: memory5.c.obj
-
-.PHONY : memory5.obj
+.PHONY : storage.obj
 
 # target to build an object file
-memory5.c.obj:
-	$(MAKE) -f CMakeFiles\memory4.dir\build.make CMakeFiles/memory4.dir/memory5.c.obj
-.PHONY : memory5.c.obj
+storage.c.obj:
+	$(MAKE) -f CMakeFiles\storage.dir\build.make CMakeFiles/storage.dir/storage.c.obj
+.PHONY : storage.c.obj
 
-memory5.i: memory5.c.i
+storage.i: storage.c.i
 
-.PHONY : memory5.i
+.PHONY : storage.i
 
 # target to preprocess a source file
-memory5.c.i:
-	$(MAKE) -f CMakeFiles\memory4.dir\build.make CMakeFiles/memory4.dir/memory5.c.i
-.PHONY : memory5.c.i
+storage.c.i:
+	$(MAKE) -f CMakeFiles\storage.dir\build.make CMakeFiles/storage.dir/storage.c.i
+.PHONY : storage.c.i
 
-memory5.s: memory5.c.s
+storage.s: storage.c.s
 
-.PHONY : memory5.s
+.PHONY : storage.s
 
 # target to generate assembly for a file
-memory5.c.s:
-	$(MAKE) -f CMakeFiles\memory4.dir\build.make CMakeFiles/memory4.dir/memory5.c.s
-.PHONY : memory5.c.s
+storage.c.s:
+	$(MAKE) -f CMakeFiles\storage.dir\build.make CMakeFiles/storage.dir/storage.c.s
+.PHONY : storage.c.s
 
 # Help Target
 help:
@@ -182,15 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... memory4
+	@echo ... storage
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... memory4.obj
-	@echo ... memory4.i
-	@echo ... memory4.s
-	@echo ... memory5.obj
-	@echo ... memory5.i
-	@echo ... memory5.s
+	@echo ... storage.obj
+	@echo ... storage.i
+	@echo ... storage.s
 .PHONY : help
 
 
