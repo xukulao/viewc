@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named memory2
+# Target rules for targets named register
 
 # Build rule for target.
-memory2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 memory2
-.PHONY : memory2
+register: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 register
+.PHONY : register
 
 # fast build rule for target.
-memory2/fast:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/build
-.PHONY : memory2/fast
+register/fast:
+	$(MAKE) -f CMakeFiles\register.dir\build.make CMakeFiles/register.dir/build
+.PHONY : register/fast
 
-memory1.obj: memory1.c.obj
+register.obj: register.c.obj
 
-.PHONY : memory1.obj
+.PHONY : register.obj
 
 # target to build an object file
-memory1.c.obj:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory1.c.obj
-.PHONY : memory1.c.obj
+register.c.obj:
+	$(MAKE) -f CMakeFiles\register.dir\build.make CMakeFiles/register.dir/register.c.obj
+.PHONY : register.c.obj
 
-memory1.i: memory1.c.i
+register.i: register.c.i
 
-.PHONY : memory1.i
+.PHONY : register.i
 
 # target to preprocess a source file
-memory1.c.i:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory1.c.i
-.PHONY : memory1.c.i
+register.c.i:
+	$(MAKE) -f CMakeFiles\register.dir\build.make CMakeFiles/register.dir/register.c.i
+.PHONY : register.c.i
 
-memory1.s: memory1.c.s
+register.s: register.c.s
 
-.PHONY : memory1.s
+.PHONY : register.s
 
 # target to generate assembly for a file
-memory1.c.s:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory1.c.s
-.PHONY : memory1.c.s
+register.c.s:
+	$(MAKE) -f CMakeFiles\register.dir\build.make CMakeFiles/register.dir/register.c.s
+.PHONY : register.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... memory2
 	@echo ... edit_cache
+	@echo ... register
 	@echo ... rebuild_cache
-	@echo ... memory1.obj
-	@echo ... memory1.i
-	@echo ... memory1.s
+	@echo ... register.obj
+	@echo ... register.i
+	@echo ... register.s
 .PHONY : help
 
 
