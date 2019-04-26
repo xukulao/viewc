@@ -55,20 +55,6 @@ CMAKE_BINARY_DIR = E:\c\demo\memory\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-<<<<<<< HEAD
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-=======
->>>>>>> aedb43f2aa862f78f2d0e99c150e17b3f9ef5c03
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -136,32 +122,32 @@ memory2/fast:
 	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/build
 .PHONY : memory2/fast
 
-memory.obj: memory.c.obj
+memory1.obj: memory1.c.obj
 
-.PHONY : memory.obj
+.PHONY : memory1.obj
 
 # target to build an object file
-memory.c.obj:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory.c.obj
-.PHONY : memory.c.obj
+memory1.c.obj:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory1.c.obj
+.PHONY : memory1.c.obj
 
-memory.i: memory.c.i
+memory1.i: memory1.c.i
 
-.PHONY : memory.i
+.PHONY : memory1.i
 
 # target to preprocess a source file
-memory.c.i:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory.c.i
-.PHONY : memory.c.i
+memory1.c.i:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory1.c.i
+.PHONY : memory1.c.i
 
-memory.s: memory.c.s
+memory1.s: memory1.c.s
 
-.PHONY : memory.s
+.PHONY : memory1.s
 
 # target to generate assembly for a file
-memory.c.s:
-	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory.c.s
-.PHONY : memory.c.s
+memory1.c.s:
+	$(MAKE) -f CMakeFiles\memory2.dir\build.make CMakeFiles/memory2.dir/memory1.c.s
+.PHONY : memory1.c.s
 
 # Help Target
 help:
@@ -172,9 +158,9 @@ help:
 	@echo ... memory2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... memory.obj
-	@echo ... memory.i
-	@echo ... memory.s
+	@echo ... memory1.obj
+	@echo ... memory1.i
+	@echo ... memory1.s
 .PHONY : help
 
 
