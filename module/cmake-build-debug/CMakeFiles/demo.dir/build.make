@@ -33,19 +33,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\c\demo\module
+CMAKE_SOURCE_DIR = E:\c\viewc\module
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\c\demo\module\cmake-build-debug
+CMAKE_BINARY_DIR = E:\c\viewc\module\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/demo.dir/depend.make
@@ -58,29 +58,29 @@ include CMakeFiles/demo.dir/flags.make
 
 CMakeFiles/demo.dir/main.c.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo.dir/main.c.obj"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo.dir\main.c.obj   -c E:\c\demo\module\main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\viewc\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo.dir/main.c.obj"
+	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo.dir\main.c.obj   -c E:\c\viewc\module\main.c
 
 CMakeFiles/demo.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/main.c.i"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\module\main.c > CMakeFiles\demo.dir\main.c.i
+	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\viewc\module\main.c > CMakeFiles\demo.dir\main.c.i
 
 CMakeFiles/demo.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/main.c.s"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\module\main.c -o CMakeFiles\demo.dir\main.c.s
+	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\viewc\module\main.c -o CMakeFiles\demo.dir\main.c.s
 
 CMakeFiles/demo.dir/module.c.obj: CMakeFiles/demo.dir/flags.make
 CMakeFiles/demo.dir/module.c.obj: ../module.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/demo.dir/module.c.obj"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo.dir\module.c.obj   -c E:\c\demo\module\module.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\viewc\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/demo.dir/module.c.obj"
+	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo.dir\module.c.obj   -c E:\c\viewc\module\module.c
 
 CMakeFiles/demo.dir/module.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/module.c.i"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\module\module.c > CMakeFiles\demo.dir\module.c.i
+	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\viewc\module\module.c > CMakeFiles\demo.dir\module.c.i
 
 CMakeFiles/demo.dir/module.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/module.c.s"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\module\module.c -o CMakeFiles\demo.dir\module.c.s
+	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\viewc\module\module.c -o CMakeFiles\demo.dir\module.c.s
 
 # Object files for target demo
 demo_OBJECTS = \
@@ -96,7 +96,7 @@ demo.exe: CMakeFiles/demo.dir/build.make
 demo.exe: CMakeFiles/demo.dir/linklibs.rsp
 demo.exe: CMakeFiles/demo.dir/objects1.rsp
 demo.exe: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable demo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\c\viewc\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable demo.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\demo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -109,6 +109,6 @@ CMakeFiles/demo.dir/clean:
 .PHONY : CMakeFiles/demo.dir/clean
 
 CMakeFiles/demo.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\c\demo\module E:\c\demo\module E:\c\demo\module\cmake-build-debug E:\c\demo\module\cmake-build-debug E:\c\demo\module\cmake-build-debug\CMakeFiles\demo.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" E:\c\viewc\module E:\c\viewc\module E:\c\viewc\module\cmake-build-debug E:\c\viewc\module\cmake-build-debug E:\c\viewc\module\cmake-build-debug\CMakeFiles\demo.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/demo.dir/depend
 
