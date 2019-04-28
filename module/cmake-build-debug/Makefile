@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\c\viewc\module
+CMAKE_SOURCE_DIR = E:\c\demo\module
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\c\viewc\module\cmake-build-debug
+CMAKE_BINARY_DIR = E:\c\demo\module\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = E:\c\viewc\module\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\module\cmake-build-debug\CMakeFiles E:\c\viewc\module\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles E:\c\demo\module\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\module\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ module.c.s:
 	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module.c.s
 .PHONY : module.c.s
 
+module1.obj: module1.c.obj
+
+.PHONY : module1.obj
+
+# target to build an object file
+module1.c.obj:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module1.c.obj
+.PHONY : module1.c.obj
+
+module1.i: module1.c.i
+
+.PHONY : module1.i
+
+# target to preprocess a source file
+module1.c.i:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module1.c.i
+.PHONY : module1.c.i
+
+module1.s: module1.c.s
+
+.PHONY : module1.s
+
+# target to generate assembly for a file
+module1.c.s:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module1.c.s
+.PHONY : module1.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -191,6 +218,9 @@ help:
 	@echo ... module.obj
 	@echo ... module.i
 	@echo ... module.s
+	@echo ... module1.obj
+	@echo ... module1.i
+	@echo ... module1.s
 .PHONY : help
 
 
