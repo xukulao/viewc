@@ -56,62 +56,32 @@ include CMakeFiles/demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/demo.dir/flags.make
 
-CMakeFiles/demo.dir/main.c.obj: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/main.c.obj: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo.dir/main.c.obj"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo.dir\main.c.obj   -c E:\c\demo\module\main.c
+CMakeFiles/demo.dir/demo2.c.obj: CMakeFiles/demo.dir/flags.make
+CMakeFiles/demo.dir/demo2.c.obj: ../demo2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo.dir/demo2.c.obj"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo.dir\demo2.c.obj   -c E:\c\demo\module\demo2.c
 
-CMakeFiles/demo.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/main.c.i"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\module\main.c > CMakeFiles\demo.dir\main.c.i
+CMakeFiles/demo.dir/demo2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/demo2.c.i"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\module\demo2.c > CMakeFiles\demo.dir\demo2.c.i
 
-CMakeFiles/demo.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/main.c.s"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\module\main.c -o CMakeFiles\demo.dir\main.c.s
-
-CMakeFiles/demo.dir/module.c.obj: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/module.c.obj: ../module.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/demo.dir/module.c.obj"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo.dir\module.c.obj   -c E:\c\demo\module\module.c
-
-CMakeFiles/demo.dir/module.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/module.c.i"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\module\module.c > CMakeFiles\demo.dir\module.c.i
-
-CMakeFiles/demo.dir/module.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/module.c.s"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\module\module.c -o CMakeFiles\demo.dir\module.c.s
-
-CMakeFiles/demo.dir/module1.c.obj: CMakeFiles/demo.dir/flags.make
-CMakeFiles/demo.dir/module1.c.obj: ../module1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/demo.dir/module1.c.obj"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo.dir\module1.c.obj   -c E:\c\demo\module\module1.c
-
-CMakeFiles/demo.dir/module1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo.dir/module1.c.i"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\module\module1.c > CMakeFiles\demo.dir\module1.c.i
-
-CMakeFiles/demo.dir/module1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/module1.c.s"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\module\module1.c -o CMakeFiles\demo.dir\module1.c.s
+CMakeFiles/demo.dir/demo2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo.dir/demo2.c.s"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\module\demo2.c -o CMakeFiles\demo.dir\demo2.c.s
 
 # Object files for target demo
 demo_OBJECTS = \
-"CMakeFiles/demo.dir/main.c.obj" \
-"CMakeFiles/demo.dir/module.c.obj" \
-"CMakeFiles/demo.dir/module1.c.obj"
+"CMakeFiles/demo.dir/demo2.c.obj"
 
 # External object files for target demo
 demo_EXTERNAL_OBJECTS =
 
-demo.exe: CMakeFiles/demo.dir/main.c.obj
-demo.exe: CMakeFiles/demo.dir/module.c.obj
-demo.exe: CMakeFiles/demo.dir/module1.c.obj
+demo.exe: CMakeFiles/demo.dir/demo2.c.obj
 demo.exe: CMakeFiles/demo.dir/build.make
 demo.exe: CMakeFiles/demo.dir/linklibs.rsp
 demo.exe: CMakeFiles/demo.dir/objects1.rsp
 demo.exe: CMakeFiles/demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable demo.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable demo.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\demo.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

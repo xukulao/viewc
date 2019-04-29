@@ -122,86 +122,32 @@ demo/fast:
 	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
 .PHONY : demo/fast
 
-main.obj: main.c.obj
+demo2.obj: demo2.c.obj
 
-.PHONY : main.obj
-
-# target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.obj
-.PHONY : main.c.obj
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.s
-.PHONY : main.c.s
-
-module.obj: module.c.obj
-
-.PHONY : module.obj
+.PHONY : demo2.obj
 
 # target to build an object file
-module.c.obj:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module.c.obj
-.PHONY : module.c.obj
+demo2.c.obj:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo2.c.obj
+.PHONY : demo2.c.obj
 
-module.i: module.c.i
+demo2.i: demo2.c.i
 
-.PHONY : module.i
-
-# target to preprocess a source file
-module.c.i:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module.c.i
-.PHONY : module.c.i
-
-module.s: module.c.s
-
-.PHONY : module.s
-
-# target to generate assembly for a file
-module.c.s:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module.c.s
-.PHONY : module.c.s
-
-module1.obj: module1.c.obj
-
-.PHONY : module1.obj
-
-# target to build an object file
-module1.c.obj:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module1.c.obj
-.PHONY : module1.c.obj
-
-module1.i: module1.c.i
-
-.PHONY : module1.i
+.PHONY : demo2.i
 
 # target to preprocess a source file
-module1.c.i:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module1.c.i
-.PHONY : module1.c.i
+demo2.c.i:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo2.c.i
+.PHONY : demo2.c.i
 
-module1.s: module1.c.s
+demo2.s: demo2.c.s
 
-.PHONY : module1.s
+.PHONY : demo2.s
 
 # target to generate assembly for a file
-module1.c.s:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/module1.c.s
-.PHONY : module1.c.s
+demo2.c.s:
+	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/demo2.c.s
+.PHONY : demo2.c.s
 
 # Help Target
 help:
@@ -212,15 +158,9 @@ help:
 	@echo ... demo
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... module.obj
-	@echo ... module.i
-	@echo ... module.s
-	@echo ... module1.obj
-	@echo ... module1.i
-	@echo ... module1.s
+	@echo ... demo2.obj
+	@echo ... demo2.i
+	@echo ... demo2.s
 .PHONY : help
 
 

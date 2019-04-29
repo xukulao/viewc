@@ -82,16 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/c/demo/module/main.c">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="E:/c/demo/module/main.h">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="E:/c/demo/module/module.c">
-			<Option target="demo"/>
-		</Unit>
-		<Unit filename="E:/c/demo/module/module1.c">
+		<Unit filename="E:/c/demo/module/demo2.c">
 			<Option target="demo"/>
 		</Unit>
 		<Unit filename="E:/c/demo/module/CMakeLists.txt">

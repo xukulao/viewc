@@ -1,16 +1,4 @@
 "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" E:\c\demo\module
 -- Configuring done
-CMake Error at CMakeLists.txt:3 (add_executable):
-  Cannot find source file:
-
-    main.c
-
-  Tried extensions .c .C .c++ .cc .cpp .cxx .cu .m .M .mm .h .hh .h++ .hm
-  .hpp .hxx .in .txx
-
-
-CMake Error at CMakeLists.txt:3 (add_executable):
-  No SOURCES given to target: demo
-
-
+-- Generating done
 -- Build files have been written to: E:/c/demo/module/cmake-build-debug
