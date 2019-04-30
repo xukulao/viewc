@@ -1,3 +1,3 @@
 #cmake_minimum_required(VERSION <specify CMake version here>)
 project(module)
-add_executable(demo main.c student.c)
+add_executable(main3 main2.c)

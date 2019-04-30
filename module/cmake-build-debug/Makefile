@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\c\viewc\module
+CMAKE_SOURCE_DIR = E:\c\demo\module
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\c\viewc\module\cmake-build-debug
+CMAKE_BINARY_DIR = E:\c\demo\module\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = E:\c\viewc\module\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\module\cmake-build-debug\CMakeFiles E:\c\viewc\module\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles E:\c\demo\module\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\module\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,71 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named demo
+# Target rules for targets named main3
 
 # Build rule for target.
-demo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 demo
-.PHONY : demo
+main3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 main3
+.PHONY : main3
 
 # fast build rule for target.
-demo/fast:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
-.PHONY : demo/fast
+main3/fast:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/build
+.PHONY : main3/fast
 
-main.obj: main.c.obj
+main2.obj: main2.c.obj
 
-.PHONY : main.obj
-
-# target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.obj
-.PHONY : main.c.obj
-
-main.i: main.c.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.i
-.PHONY : main.c.i
-
-main.s: main.c.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.s
-.PHONY : main.c.s
-
-student.obj: student.c.obj
-
-.PHONY : student.obj
+.PHONY : main2.obj
 
 # target to build an object file
-student.c.obj:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/student.c.obj
-.PHONY : student.c.obj
+main2.c.obj:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/main2.c.obj
+.PHONY : main2.c.obj
 
-student.i: student.c.i
+main2.i: main2.c.i
 
-.PHONY : student.i
+.PHONY : main2.i
 
 # target to preprocess a source file
-student.c.i:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/student.c.i
-.PHONY : student.c.i
+main2.c.i:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/main2.c.i
+.PHONY : main2.c.i
 
-student.s: student.c.s
+main2.s: main2.c.s
 
-.PHONY : student.s
+.PHONY : main2.s
 
 # target to generate assembly for a file
-student.c.s:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/student.c.s
-.PHONY : student.c.s
+main2.c.s:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/main2.c.s
+.PHONY : main2.c.s
 
 # Help Target
 help:
@@ -182,15 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... demo
+	@echo ... main3
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
-	@echo ... student.obj
-	@echo ... student.i
-	@echo ... student.s
+	@echo ... main2.obj
+	@echo ... main2.i
+	@echo ... main2.s
 .PHONY : help
 
 
