@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = E:\c\demo\module
 CMAKE_BINARY_DIR = E:\c\demo\module\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/main2.dir
+# Target rules for target CMakeFiles/main3.dir
 
 # All Build rule for target.
-CMakeFiles/main2.dir/all:
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/depend
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target main2"
-.PHONY : CMakeFiles/main2.dir/all
+CMakeFiles/main3.dir/all:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/depend
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\module\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target main3"
+.PHONY : CMakeFiles/main3.dir/all
 
 # Include target in all.
-all: CMakeFiles/main2.dir/all
+all: CMakeFiles/main3.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/main2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles 3
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/main2.dir/all
+CMakeFiles/main3.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/main3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/main2.dir/rule
+.PHONY : CMakeFiles/main3.dir/rule
 
 # Convenience name for target.
-main2: CMakeFiles/main2.dir/rule
+main3: CMakeFiles/main3.dir/rule
 
-.PHONY : main2
-
-# clean rule for target.
-CMakeFiles/main2.dir/clean:
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/clean
-.PHONY : CMakeFiles/main2.dir/clean
+.PHONY : main3
 
 # clean rule for target.
-clean: CMakeFiles/main2.dir/clean
+CMakeFiles/main3.dir/clean:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/clean
+.PHONY : CMakeFiles/main3.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/main3.dir/clean
 
 .PHONY : clean
 

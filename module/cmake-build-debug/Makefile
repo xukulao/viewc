@@ -110,71 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main2
+# Target rules for targets named main3
 
 # Build rule for target.
-main2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 main2
-.PHONY : main2
+main3: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 main3
+.PHONY : main3
 
 # fast build rule for target.
-main2/fast:
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/build
-.PHONY : main2/fast
+main3/fast:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/build
+.PHONY : main3/fast
 
-main1.obj: main1.c.obj
+main2.obj: main2.c.obj
 
-.PHONY : main1.obj
-
-# target to build an object file
-main1.c.obj:
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/main1.c.obj
-.PHONY : main1.c.obj
-
-main1.i: main1.c.i
-
-.PHONY : main1.i
-
-# target to preprocess a source file
-main1.c.i:
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/main1.c.i
-.PHONY : main1.c.i
-
-main1.s: main1.c.s
-
-.PHONY : main1.s
-
-# target to generate assembly for a file
-main1.c.s:
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/main1.c.s
-.PHONY : main1.c.s
-
-module2.obj: module2.c.obj
-
-.PHONY : module2.obj
+.PHONY : main2.obj
 
 # target to build an object file
-module2.c.obj:
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/module2.c.obj
-.PHONY : module2.c.obj
+main2.c.obj:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/main2.c.obj
+.PHONY : main2.c.obj
 
-module2.i: module2.c.i
+main2.i: main2.c.i
 
-.PHONY : module2.i
+.PHONY : main2.i
 
 # target to preprocess a source file
-module2.c.i:
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/module2.c.i
-.PHONY : module2.c.i
+main2.c.i:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/main2.c.i
+.PHONY : main2.c.i
 
-module2.s: module2.c.s
+main2.s: main2.c.s
 
-.PHONY : module2.s
+.PHONY : main2.s
 
 # target to generate assembly for a file
-module2.c.s:
-	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/module2.c.s
-.PHONY : module2.c.s
+main2.c.s:
+	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/main2.c.s
+.PHONY : main2.c.s
 
 # Help Target
 help:
@@ -182,15 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... main2
+	@echo ... main3
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... main1.obj
-	@echo ... main1.i
-	@echo ... main1.s
-	@echo ... module2.obj
-	@echo ... module2.i
-	@echo ... module2.s
+	@echo ... main2.obj
+	@echo ... main2.i
+	@echo ... main2.s
 .PHONY : help
 
 
