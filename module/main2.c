@@ -23,7 +23,7 @@ int main()
     //scanf("%s",name);
     //scanf("%s",name);
     //fwrite(name,10,1,file);
-    fread(name,10,1,file);
+    fread(name,10,1,file); 
     printf("name=%s\n",name);
     free(name);
     fclose(file);
