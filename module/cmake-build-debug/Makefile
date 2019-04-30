@@ -110,71 +110,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named demo
+# Target rules for targets named main2
 
 # Build rule for target.
-demo: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 demo
-.PHONY : demo
+main2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 main2
+.PHONY : main2
 
 # fast build rule for target.
-demo/fast:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/build
-.PHONY : demo/fast
+main2/fast:
+	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/build
+.PHONY : main2/fast
 
-file.obj: file.c.obj
+main1.obj: main1.c.obj
 
-.PHONY : file.obj
-
-# target to build an object file
-file.c.obj:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/file.c.obj
-.PHONY : file.c.obj
-
-file.i: file.c.i
-
-.PHONY : file.i
-
-# target to preprocess a source file
-file.c.i:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/file.c.i
-.PHONY : file.c.i
-
-file.s: file.c.s
-
-.PHONY : file.s
-
-# target to generate assembly for a file
-file.c.s:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/file.c.s
-.PHONY : file.c.s
-
-main.obj: main.c.obj
-
-.PHONY : main.obj
+.PHONY : main1.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.obj
-.PHONY : main.c.obj
+main1.c.obj:
+	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/main1.c.obj
+.PHONY : main1.c.obj
 
-main.i: main.c.i
+main1.i: main1.c.i
 
-.PHONY : main.i
+.PHONY : main1.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.i
-.PHONY : main.c.i
+main1.c.i:
+	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/main1.c.i
+.PHONY : main1.c.i
 
-main.s: main.c.s
+main1.s: main1.c.s
 
-.PHONY : main.s
+.PHONY : main1.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\demo.dir\build.make CMakeFiles/demo.dir/main.c.s
-.PHONY : main.c.s
+main1.c.s:
+	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/main1.c.s
+.PHONY : main1.c.s
+
+module2.obj: module2.c.obj
+
+.PHONY : module2.obj
+
+# target to build an object file
+module2.c.obj:
+	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/module2.c.obj
+.PHONY : module2.c.obj
+
+module2.i: module2.c.i
+
+.PHONY : module2.i
+
+# target to preprocess a source file
+module2.c.i:
+	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/module2.c.i
+.PHONY : module2.c.i
+
+module2.s: module2.c.s
+
+.PHONY : module2.s
+
+# target to generate assembly for a file
+module2.c.s:
+	$(MAKE) -f CMakeFiles\main2.dir\build.make CMakeFiles/main2.dir/module2.c.s
+.PHONY : module2.c.s
 
 # Help Target
 help:
@@ -182,15 +182,15 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... demo
+	@echo ... main2
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... file.obj
-	@echo ... file.i
-	@echo ... file.s
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... main1.obj
+	@echo ... main1.i
+	@echo ... main1.s
+	@echo ... module2.obj
+	@echo ... module2.i
+	@echo ... module2.s
 .PHONY : help
 
 
