@@ -110,71 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main3
+# Target rules for targets named main5
 
 # Build rule for target.
-main3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 main3
-.PHONY : main3
+main5: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 main5
+.PHONY : main5
 
 # fast build rule for target.
-main3/fast:
-	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/build
-.PHONY : main3/fast
+main5/fast:
+	$(MAKE) -f CMakeFiles\main5.dir\build.make CMakeFiles/main5.dir/build
+.PHONY : main5/fast
 
-file3.obj: file3.c.obj
+main5.obj: main5.c.obj
 
-.PHONY : file3.obj
-
-# target to build an object file
-file3.c.obj:
-	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/file3.c.obj
-.PHONY : file3.c.obj
-
-file3.i: file3.c.i
-
-.PHONY : file3.i
-
-# target to preprocess a source file
-file3.c.i:
-	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/file3.c.i
-.PHONY : file3.c.i
-
-file3.s: file3.c.s
-
-.PHONY : file3.s
-
-# target to generate assembly for a file
-file3.c.s:
-	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/file3.c.s
-.PHONY : file3.c.s
-
-main3.obj: main3.c.obj
-
-.PHONY : main3.obj
+.PHONY : main5.obj
 
 # target to build an object file
-main3.c.obj:
-	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/main3.c.obj
-.PHONY : main3.c.obj
+main5.c.obj:
+	$(MAKE) -f CMakeFiles\main5.dir\build.make CMakeFiles/main5.dir/main5.c.obj
+.PHONY : main5.c.obj
 
-main3.i: main3.c.i
+main5.i: main5.c.i
 
-.PHONY : main3.i
+.PHONY : main5.i
 
 # target to preprocess a source file
-main3.c.i:
-	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/main3.c.i
-.PHONY : main3.c.i
+main5.c.i:
+	$(MAKE) -f CMakeFiles\main5.dir\build.make CMakeFiles/main5.dir/main5.c.i
+.PHONY : main5.c.i
 
-main3.s: main3.c.s
+main5.s: main5.c.s
 
-.PHONY : main3.s
+.PHONY : main5.s
 
 # target to generate assembly for a file
-main3.c.s:
-	$(MAKE) -f CMakeFiles\main3.dir\build.make CMakeFiles/main3.dir/main3.c.s
-.PHONY : main3.c.s
+main5.c.s:
+	$(MAKE) -f CMakeFiles\main5.dir\build.make CMakeFiles/main5.dir/main5.c.s
+.PHONY : main5.c.s
 
 # Help Target
 help:
@@ -182,15 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... main3
+	@echo ... main5
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... file3.obj
-	@echo ... file3.i
-	@echo ... file3.s
-	@echo ... main3.obj
-	@echo ... main3.i
-	@echo ... main3.s
+	@echo ... main5.obj
+	@echo ... main5.i
+	@echo ... main5.s
 .PHONY : help
 
 
