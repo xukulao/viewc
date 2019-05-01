@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int *age(int * ,int *);
+char *city();
 int sum()
 {
     static int n=0;
@@ -31,6 +32,29 @@ int *age(int *a,int *b)
    c = &c1;
    *c=*a+*b;
    return c;
+}
+
+char *address()
+{
+    char *address="china";
+    /**
+     * address的内容是 beijing字符串的地址
+     */
+    return address;
+}
+
+char *city()
+{
+    char *citys[] = {
+            "shanghai",
+            "beijing",
+            "guiyang"
+    };
+    /**
+     * 数组，每个元素均为指针
+     */
+    //citys=&citys[0] citys[0]=&citys[0][0]
+    return *citys;
 }
 int main()
 {
@@ -78,5 +102,34 @@ int main()
     printf("ageNum=%d\n",*ageNum(a,b));
     a1=20;b1=20;
     printf("ageNum=%d\n",*&*ageNum(a,b));
+
+    printf("********************************\n");
+    printf("address=%s\n",address());
+
+    char *(*add)() = address;
+    char *(*adds[2])() = {
+            address,
+            address
+    };
+    /**
+     * adds[2]
+     * char *()
+     */
+    printf("Add=%s\n",add());
+    printf("Adds=%s\n",adds[0]());
+
+    printf("****************************\n");
+    printf("city=%s\n",city());
+    printf("city=%s\n",city()+1);
+
+    char *(*cityss[2])()={
+            city,
+            city
+    };
+    printf("cityss=%s\n",cityss[0]());
+
+
+    printf("********************\n");
+    
     return 0;
 }
