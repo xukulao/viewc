@@ -143,5 +143,6 @@ int main()
     cc[0] = (int *)calloc(2, sizeof(int));
     *cc[0] = 1;
     printf("cc[0]=%d\n",*cc[0]);
+    free(cc);
     return 0;
 }
