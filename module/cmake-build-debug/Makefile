@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main6
+# Target rules for targets named deepen
 
 # Build rule for target.
-main6: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 main6
-.PHONY : main6
+deepen: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 deepen
+.PHONY : deepen
 
 # fast build rule for target.
-main6/fast:
-	$(MAKE) -f CMakeFiles\main6.dir\build.make CMakeFiles/main6.dir/build
-.PHONY : main6/fast
+deepen/fast:
+	$(MAKE) -f CMakeFiles\deepen.dir\build.make CMakeFiles/deepen.dir/build
+.PHONY : deepen/fast
 
-main6.obj: main6.c.obj
+deepen.obj: deepen.c.obj
 
-.PHONY : main6.obj
+.PHONY : deepen.obj
 
 # target to build an object file
-main6.c.obj:
-	$(MAKE) -f CMakeFiles\main6.dir\build.make CMakeFiles/main6.dir/main6.c.obj
-.PHONY : main6.c.obj
+deepen.c.obj:
+	$(MAKE) -f CMakeFiles\deepen.dir\build.make CMakeFiles/deepen.dir/deepen.c.obj
+.PHONY : deepen.c.obj
 
-main6.i: main6.c.i
+deepen.i: deepen.c.i
 
-.PHONY : main6.i
+.PHONY : deepen.i
 
 # target to preprocess a source file
-main6.c.i:
-	$(MAKE) -f CMakeFiles\main6.dir\build.make CMakeFiles/main6.dir/main6.c.i
-.PHONY : main6.c.i
+deepen.c.i:
+	$(MAKE) -f CMakeFiles\deepen.dir\build.make CMakeFiles/deepen.dir/deepen.c.i
+.PHONY : deepen.c.i
 
-main6.s: main6.c.s
+deepen.s: deepen.c.s
 
-.PHONY : main6.s
+.PHONY : deepen.s
 
 # target to generate assembly for a file
-main6.c.s:
-	$(MAKE) -f CMakeFiles\main6.dir\build.make CMakeFiles/main6.dir/main6.c.s
-.PHONY : main6.c.s
+deepen.c.s:
+	$(MAKE) -f CMakeFiles\deepen.dir\build.make CMakeFiles/deepen.dir/deepen.c.s
+.PHONY : deepen.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... main6
 	@echo ... edit_cache
+	@echo ... deepen
 	@echo ... rebuild_cache
-	@echo ... main6.obj
-	@echo ... main6.i
-	@echo ... main6.s
+	@echo ... deepen.obj
+	@echo ... deepen.i
+	@echo ... deepen.s
 .PHONY : help
 
 
