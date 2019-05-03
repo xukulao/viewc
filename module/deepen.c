@@ -13,6 +13,9 @@ typedef struct _STUS
     int num;
 }STU;
 long getFileSize(FILE *file);
+void write(char *fileName,struct _STUS student1);
+void copyTest(char *fileName);
+void test();
 long copy(FILE *sourceFile,long offset,long len,FILE *targetFile,long targetSet);
 int main()
 {
@@ -24,47 +27,16 @@ int main()
     student1.num = 1;
 
     char *fileName = "E:/c/viewc/module/deepen.txt";
-    FILE *file = fopen(fileName,"wb+");
-    if (file!=NULL){
-        int i;
-        for(i=0;i<10;i++){
-            student1.id = i;
-            fwrite(&student1, sizeof(struct _STUS),1,file);
-        }
-    }
 
-    fclose(file);
 
-/***********************************************************/
-//    FILE *readFileHandle = fopen(fileName,"rb+");
-//
-//    FILE *tmpFile = tmpfile();
-//
-//    if (tmpFile==NULL){
-//        printf("无法创建临时文件!\n");
-//        exit(0);
-//    }
-//    copy(readFileHandle,0,5* sizeof(struct _STUS),tmpFile,0);
-//
-//    STU student2;
-//    student2.id = 102;
-//    student2.name[0] = 'k';
-//    student2.age = 18;
-//    student2.num = 1;
-//
-//    fwrite(&student2,sizeof(struct _STUS),1,tmpFile);
-//    copy(readFileHandle,5* sizeof(struct _STUS),-1,tmpFile,5* sizeof(struct _STUS)+sizeof(struct _STUS));
-//
-//
-//     freopen(fileName,"wb+",readFileHandle);
-//    copy(tmpFile,0,-1,readFileHandle,0);
-//
-//    fclose(readFileHandle);
-//    fclose(tmpFile);
-//
-//    getchar();
 
-/***********************************************************/
+
+    return 0;
+}
+
+void test()
+{
+    /***********************************************************/
 //    typedef struct _STU{
 //        int id;  //学号 4
 //        char name[20];  //姓名 20
@@ -80,9 +52,62 @@ int main()
     //int n = ceil((double)((double)a/b));
     //printf("a/b=%d\n",n);
     //printf("stu=%d,float=%d\n", sizeof(struct _STU), sizeof(int));
-    return 0;
 }
 
+void copyTest(char *fileName)
+{
+    FILE *readFileHandle = fopen(fileName,"rb+");
+    if (readFileHandle==NULL){
+        printf("无法打开文件!\n");
+        exit(0);
+    }
+    FILE *tmpFile = fopen("E:/c/viewc/module/deepen1.txt","wb+");
+
+    if (tmpFile==NULL){
+        printf("无法创建临时文件!\n");
+        exit(0);
+    }
+    if(copy(readFileHandle,0,5* sizeof(struct _STUS),tmpFile,0)){
+        printf("first copy to tmpfile ok\n");
+    }
+
+
+    STU student2;
+    student2.id = 102;
+    student2.name[0] = 'k';
+    student2.age = 18;
+    student2.num = 1;
+
+    if(fwrite(&student2,sizeof(struct _STUS),1,tmpFile)){
+        printf("add ok\n");
+    }
+    if(copy(readFileHandle,5* sizeof(struct _STUS),-1,tmpFile,5*sizeof(struct _STUS)+sizeof(struct _STUS))){
+        printf("two copy to tmpfile ok\n");
+    }
+
+
+    freopen(fileName,"wb+",readFileHandle);
+    if(copy(tmpFile,0,-1,readFileHandle,0)){
+        printf("copy to readFileHandle ok\n");
+    }
+
+    fclose(readFileHandle);
+    fclose(tmpFile);
+
+}
+void write(char *fileName,struct _STUS student1)
+{
+        FILE *file = fopen(fileName,"wb+");
+    if (file!=NULL){
+        int i;
+        for(i=0;i<10;i++){
+            student1.id = i;
+            fwrite(&student1, sizeof(struct _STUS),1,file);
+        }
+    }
+
+    fclose(file);
+}
 long getFileSize(FILE *file)
 {
     long fsize;
@@ -107,6 +132,11 @@ long copy(FILE *sourceFile,long offset,long len,FILE *targetFile,long targetSet)
     if (len<0){
         while((readCount=fread(buffer,bufferLen,1,sourceFile))>0){
             fwrite(buffer,bufferLen,1,targetFile);
+            if (readCount){
+                printf("copy ok while\n");
+            }else{
+                printf("copy error while\n");
+            }
             nBytes+=readCount;
         }
     }else{
@@ -115,6 +145,9 @@ long copy(FILE *sourceFile,long offset,long len,FILE *targetFile,long targetSet)
             if(len-nBytes<bufferLen)bufferLen=len-nBytes;
             readCount = fread(buffer,bufferLen,1,sourceFile);
             fwrite(buffer,bufferLen,1,targetFile);
+            if (readCount){
+                printf("copy ok for\n");
+            }
             nBytes+=readCount;
         }
 
