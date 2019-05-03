@@ -27,6 +27,37 @@ int main()
     student1.num = 1;
 
     char *fileName = "E:/c/viewc/module/deepen.txt";
+    char *fileName1 = "E:/c/viewc/module/deepen111.txt";
+
+    //write(fileName,student1);
+    //copyTest(fileName);
+    FILE *readFileHandle = fopen(fileName,"rb+");
+    //FILE *readFileHandle1 = fopen(fileName1,"wb+");
+    if (readFileHandle==NULL){
+        printf("无法打开文件!\n");
+        exit(0);
+    }
+    int k=0;
+    int readCount=0;
+    while((readCount=fread(&student1, sizeof(struct _STUS),1,readFileHandle))>0){
+        printf("student.name[0]=%c\n",student1.name[0]);
+    }
+    fclose(readFileHandle);
+
+//    fseek(readFileHandle,sizeof(struct _STUS),SEEK_END);
+
+//    char *tmp = (char *)malloc(1024*4);
+//    fseek(readFileHandle,5*sizeof(struct _STUS),SEEK_SET);
+//    fseek(readFileHandle1,5*sizeof(struct _STUS),SEEK_SET);
+//    int readCount=0;
+//    for(i=0;i<10;i++){
+//        readCount = fread(tmp,1,1024,readFileHandle);
+//        if(readCount>0){
+//            printf("name=%c\n",student1.name[0]);
+//            fwrite(tmp,readCount,1,readFileHandle1);
+//        }
+//
+//    }
 
 
 
@@ -61,16 +92,17 @@ void copyTest(char *fileName)
         printf("无法打开文件!\n");
         exit(0);
     }
-    FILE *tmpFile = fopen("E:/c/viewc/module/deepen1.txt","wb+");
+    //FILE *tmpFile = fopen("E:/c/viewc/module/deepen1.txt","wb+");
+    FILE *tmpFile = tmpfile();
 
     if (tmpFile==NULL){
         printf("无法创建临时文件!\n");
         exit(0);
     }
+
     if(copy(readFileHandle,0,5* sizeof(struct _STUS),tmpFile,0)){
         printf("first copy to tmpfile ok\n");
     }
-
 
     STU student2;
     student2.id = 102;
@@ -81,7 +113,8 @@ void copyTest(char *fileName)
     if(fwrite(&student2,sizeof(struct _STUS),1,tmpFile)){
         printf("add ok\n");
     }
-    if(copy(readFileHandle,5* sizeof(struct _STUS),-1,tmpFile,5*sizeof(struct _STUS)+sizeof(struct _STUS))){
+    //printf("readFileHandle=%d,tmpFile=%d\n",ftell(readFileHandle),ftell(tmpFile));
+    if(copy(readFileHandle,5* sizeof(struct _STUS),-1,tmpFile,5* sizeof(struct _STUS)+sizeof(struct _STUS))){
         printf("two copy to tmpfile ok\n");
     }
 
@@ -122,7 +155,7 @@ long getFileSize(FILE *file)
 long copy(FILE *sourceFile,long offset,long len,FILE *targetFile,long targetSet)
 {
     int bufferLen = 1024*4;
-    char *buffer = (char *)calloc(bufferLen, sizeof(char));
+    char *buffer = (char *)malloc(bufferLen);
     fseek(sourceFile,offset,SEEK_SET);
     fseek(targetFile,targetSet,SEEK_SET);
     long nBytes=0;
@@ -130,32 +163,21 @@ long copy(FILE *sourceFile,long offset,long len,FILE *targetFile,long targetSet)
 
     int i,n;
     if (len<0){
-        while((readCount=fread(buffer,bufferLen,1,sourceFile))>0){
+        while((readCount=fread(buffer,1,bufferLen,sourceFile))>0){
             fwrite(buffer,bufferLen,1,targetFile);
-            if (readCount){
-                printf("copy ok while\n");
-            }else{
-                printf("copy error while\n");
-            }
             nBytes+=readCount;
         }
     }else{
         n = (int)ceil((double)((double)len/bufferLen));
         for(i=1;i<=n;i++){
             if(len-nBytes<bufferLen)bufferLen=len-nBytes;
-            readCount = fread(buffer,bufferLen,1,sourceFile);
+            readCount = fread(buffer,1,bufferLen,sourceFile);
             fwrite(buffer,bufferLen,1,targetFile);
-            if (readCount){
-                printf("copy ok for\n");
-            }
             nBytes+=readCount;
         }
 
     }
     fflush(targetFile);
     free(buffer);
-    if (nBytes>0&&getFileSize(targetFile)>0){
-        printf("copy success\n");
-    }
     return nBytes;
 }
