@@ -26,8 +26,8 @@ FILE *copyfile;
 int personSize = sizeof(struct _PERSON);
 int main()
 {
-//    if((file=fopen(fileName,"wb+"))!=NULL){
-//       // writeFile(file);
+//    if((file=fopen(fileName,"rb+"))!=NULL){
+//       writeFile(file);
 //    }
 
     copyTest();
@@ -46,12 +46,12 @@ void copyTest()
 
 
     //第一步复制全部
-    //long nBytes=0;
-//    nBytes = fcopy(file,0,-1,copyfile,0);
-//    printf("copy %d bytes\n",nBytes);
-
-    //第二步复制一部分 目标文件从0开始插入  这是复制前半部分
-//    long startOffset = 2*personSize;
+//    long nBytes=0;
+////    nBytes = fcopy(file,0,-1,copyfile,0);
+////    printf("copy %d bytes\n",nBytes);
+//
+//    //第二步复制一部分 目标文件从0开始插入  这是复制前半部分
+//    long startOffset = 1*personSize;
 //
 //    nBytes = fcopy(file,0,startOffset,copyfile,0);
 //    printf("copy %d bytes\n",nBytes);
@@ -60,22 +60,22 @@ void copyTest()
 //    long startOffset = 2*personSize;
 //    long
 //
-//    PERSON daming;
-//    daming.name[0] = 'O';
-//    daming.age = 100;
-//    daming.num = 101;
-//    daming.address[0] = 'n';
-////
-////
+
+//    PERSON person;
+//    scanf("%s",person.name);
+//    scanf("%d",&person.age);
+//    scanf("%d",&person.num);
+//    scanf("%s",person.address);
+//
 //    //往复制的文件上写入一个数据
 //    copyfile=fopen(copyFileName,"rb+");
 //    long fsize = getFileSize(copyfile);
 //    printf("fsize=%d\n",fsize);
 //    fseek(copyfile,fsize,SEEK_SET);//往后面写，免得擦掉前面写的东西了
-//    fwrite(&daming,personSize,1,copyfile);
+//    fwrite(&person,personSize,1,copyfile);
 //fclose(copyfile);
     //复制后半部分
-//    long startOffset = 2*personSize;
+//    long startOffset = 1*personSize;
 //    long nBytes=0;
 //    nBytes = fcopy(file,startOffset,-1,copyfile,startOffset+personSize);
 //    printf("last copy %d bytes\n",nBytes);
@@ -93,41 +93,67 @@ void copyTest()
 void readFile()
 {
     file = fopen(fileName,"rb+");
+
     int readCount=0;
     PERSON person;
-    while((readCount=fread(&person,personSize,1,file))>0){
+    int personNum = getFileSize(file)/personSize;
 
-        if (!person.name[0]){
-            break;
-        }
-        printf("person.name[0]=%c\n",person.name[0]);
+    char *index[personNum];
+
+    int k=0;
+    for(k;k<personNum;k++){
+        index[k] = (char *)malloc(20* sizeof(char));
+        fseek(file,k*personSize,SEEK_SET);
+        fread(index[k], sizeof(char),20,file);
+        printf("%s\n",index[k]);
     }
+
+//    fseek(file,0,SEEK_END);
+//    while((readCount=fread(&person,personSize,1,file))>0){
+//
+////        if (!person.name[0]){
+////            break;
+////        }
+//        printf("person.name[0]=%s\n",person.name);
+//    }
 }
 
 void writeFile(FILE *file)
 {
-    PERSON jack;
-    jack.name[0] = 'j';
-    jack.age = 100;
-    jack.num = 101;
-    jack.address[0] = 'b';
+//    PERSON jack;
+//    jack.name[0] = 'j';
+//    jack.age = 100;
+//    jack.num = 101;
+//    jack.address[0] = 'b';
+//
+//
+//
+//    fwrite(&jack,personSize,1,file);
+//
+//    PERSON tony;
+//    tony.name[0] = 't';
+//    tony.age = 100;
+//    tony.num = 101;
+//    tony.address[0] = 's';
+//    fwrite(&tony,personSize,1,file);
+//    PERSON lucy;
+//    lucy.name[0] = 'l';
+//    lucy.age = 100;
+//    lucy.num = 101;
+//    lucy.address[0] = 't';
+//    fwrite(&lucy,personSize,1,file);
+    PERSON person;
+    int i=0;
+    for(i;i<2;i++){
 
+        scanf("%s",person.name);
+        scanf("%d",&person.age);
+        scanf("%d",&person.num);
+        scanf("%s",person.address);
+        fseek(file,getFileSize(file),SEEK_SET);
+        fwrite(&person,personSize,1,file);
 
-
-    fwrite(&jack,personSize,1,file);
-
-    PERSON tony;
-    tony.name[0] = 't';
-    tony.age = 100;
-    tony.num = 101;
-    tony.address[0] = 's';
-    fwrite(&tony,personSize,1,file);
-    PERSON lucy;
-    lucy.name[0] = 'l';
-    lucy.age = 100;
-    lucy.num = 101;
-    lucy.address[0] = 't';
-    fwrite(&lucy,personSize,1,file);
+    }
     fclose(file);
 }
 long getFileSize(FILE *file)
@@ -155,21 +181,30 @@ long fcopy(FILE *sourceFile,long offset,long len,FILE *targetFile,long targetOff
     int readCount=0;
     int i,n;
 
+    /*****复制调整*****/
+    PERSON person;
 
     if (len<0){
-        while( (readCount=fread(buffer,1,bufferLen,sourceFile)) >0 ){
-            if (buffer){
-                fwrite(buffer,bufferLen,1,targetFile);
+        while( (readCount=fread(&person,personSize,1,sourceFile)) >0 ){
+            if (person.name[0]){
+                fwrite(&person,personSize,1,targetFile);
                 nBtyte+=readCount;
             }
 
         }
     }else{
-        n = (int)ceil((double)((double)len/bufferLen));
+//        n = (int)ceil((double)((double)len/bufferLen));
+//        for(i=1;i<=n;i++){
+//            if (len-nBtyte<bufferLen)bufferLen=len-nBtyte;
+//            readCount = fread(buffer,1,bufferLen,sourceFile);
+//            fwrite(buffer,bufferLen,1,targetFile);
+//            nBtyte+=readCount;
+//        }
+
+        n = len/personSize;
         for(i=1;i<=n;i++){
-            if (len-nBtyte<bufferLen)bufferLen=len-nBtyte;
-            readCount = fread(buffer,1,bufferLen,sourceFile);
-            fwrite(buffer,bufferLen,1,targetFile);
+            readCount = fread(&person,personSize,1,sourceFile);
+            fwrite(&person,personSize,1,targetFile);
             nBtyte+=readCount;
         }
     }
