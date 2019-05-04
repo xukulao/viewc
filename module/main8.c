@@ -6,11 +6,14 @@
 #include <stdio.h>
 #include <math.h>
 #include <conio.h>
+#include <stdarg.h>
 long getFileSize(FILE *file);
 long fcopy(FILE *sourceFile,long offset,long len,FILE *targetFile,long targetOffset);
 void writeFile(FILE *file);
 void copyTest();
 void readFile();
+void printfExample();
+int my_vsnprintf(char *str,int size,const char *fmt,...);
 typedef struct _PERSON
 {
     char name[20];
@@ -30,10 +33,50 @@ int main()
 //       writeFile(file);
 //    }
 
-    copyTest();
+    //copyTest();
+    //printfExample();
+    while(1){
+        printf("hello,world\n");
+        char name[100];
+        my_vsnprintf(name,50,"stop a minute");
+        //printf("hi\n");
+    }
+
     return 0;
 }
 
+int my_vsnprintf(char *str,int size,const char *fmt,...)
+{
+    va_list ap;
+    int n=0;
+    va_start(ap,fmt);
+    n = vsnprintf(str,size,fmt,ap);//按指定大小把内容打印到变量里
+    va_end(ap);
+    printf("%s\n",str);
+    getch();
+    printf("\n");
+    return n;
+}
+
+void printfExample()
+{
+    char *fileName = "E:/c/demo/module/main8_example.txt";
+    file = fopen(fileName,"wb+");
+    if (file==NULL){
+        exit(0);
+    }
+    //fprintf(file,"%s-%d\n","china",100);
+    //char str[100];
+   // sprintf(str,"hello-%s","china");
+    //printf("str=%s\n",str);
+//    char str[100];
+//    snprintf(str,50,"%s","hello,world");
+//    printf("str=%s,str=%d\n",str, sizeof(str));
+
+    char str[100];
+    my_vsnprintf(str,50,"%d-%d-%d-%d-%s",5,6,7,8,"china");
+    printf("str=%s\n",str);
+}
 
 void copyTest()
 {
