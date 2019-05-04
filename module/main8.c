@@ -40,42 +40,45 @@ void copyTest()
 //    if((file=fopen(fileName,"rb+"))==NULL){
 //        exit(0);
 //    }
-//    if ((copyfile=fopen(copyFileName,"wb+"))==NULL){
+//    if ((copyfile=fopen(copyFileName,"rb+"))==NULL){
 //        exit(0);
 //    }
 
 
     //第一步复制全部
-//    long nBytes=0;
+    //long nBytes=0;
 //    nBytes = fcopy(file,0,-1,copyfile,0);
 //    printf("copy %d bytes\n",nBytes);
 
     //第二步复制一部分 目标文件从0开始插入  这是复制前半部分
-    //long startOffset = 2*personSize;
-
-    //nBytes = fcopy(file,0,startOffset,copyfile,0);
-    //printf("copy %d bytes\n",nBytes);
+//    long startOffset = 2*personSize;
+//
+//    nBytes = fcopy(file,0,startOffset,copyfile,0);
+//    printf("copy %d bytes\n",nBytes);
 
     //第三步复制后半部分
 //    long startOffset = 2*personSize;
 //    long
 //
 //    PERSON daming;
-//    daming.name[0] = 'd';
+//    daming.name[0] = 'O';
 //    daming.age = 100;
 //    daming.num = 101;
 //    daming.address[0] = 'n';
 ////
 ////
 //    //往复制的文件上写入一个数据
-    //copyfile=fopen(copyFileName,"rb+");
-//    //fseek(copyfile,getFileSize(copyfile),SEEK_SET);//往后面写，免得擦掉前面写的东西了
+//    copyfile=fopen(copyFileName,"rb+");
+//    long fsize = getFileSize(copyfile);
+//    printf("fsize=%d\n",fsize);
+//    fseek(copyfile,fsize,SEEK_SET);//往后面写，免得擦掉前面写的东西了
 //    fwrite(&daming,personSize,1,copyfile);
-
+//fclose(copyfile);
     //复制后半部分
-    //long startOffset = 2*personSize;
+//    long startOffset = 2*personSize;
+//    long nBytes=0;
 //    nBytes = fcopy(file,startOffset,-1,copyfile,startOffset+personSize);
-//    printf("后半部分复制了 %d bytes\n",nBytes);
+//    printf("last copy %d bytes\n",nBytes);
 
     //复制全部到原文件
 //    file = fopen(fileName,"wb+");
@@ -89,12 +92,15 @@ void copyTest()
 
 void readFile()
 {
-    file = fopen(copyFileName,"rb+");
+    file = fopen(fileName,"rb+");
     int readCount=0;
     PERSON person;
     while((readCount=fread(&person,personSize,1,file))>0){
+
+        if (!person.name[0]){
+            break;
+        }
         printf("person.name[0]=%c\n",person.name[0]);
-        printf("readcount=%d\n",readCount);
     }
 }
 
@@ -129,7 +135,8 @@ long getFileSize(FILE *file)
     long fsize;
     fpos_t fpos;
     fgetpos(file,&fpos);
-    fsize = fseek(file,0,SEEK_END);
+    fseek(file,0,SEEK_END);
+    fsize = ftell(file);
     fsetpos(file,&fpos);
     return fsize;
 }
@@ -138,15 +145,24 @@ long fcopy(FILE *sourceFile,long offset,long len,FILE *targetFile,long targetOff
 {
     int bufferLen = 1024*4;
     char *buffer = (char *)malloc(bufferLen);
+
+
     fseek(sourceFile,offset,SEEK_SET);
     fseek(targetFile,targetOffset,SEEK_SET);
+
+
     long nBtyte=0;
     int readCount=0;
     int i,n;
+
+
     if (len<0){
-        while((readCount=fread(buffer,1,bufferLen,sourceFile))>0){
-            fwrite(buffer,bufferLen,1,targetFile);
-            nBtyte+=readCount;
+        while( (readCount=fread(buffer,1,bufferLen,sourceFile)) >0 ){
+            if (buffer){
+                fwrite(buffer,bufferLen,1,targetFile);
+                nBtyte+=readCount;
+            }
+
         }
     }else{
         n = (int)ceil((double)((double)len/bufferLen));
