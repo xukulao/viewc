@@ -38,19 +38,19 @@ cmake_force:
 SHELL = cmd.exe
 
 # The CMake executable.
-CMAKE_COMMAND = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe"
+CMAKE_COMMAND = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe"
 
 # The command to remove a file.
-RM = "D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E remove -f
+RM = "C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = E:\c\viewc\module
+CMAKE_SOURCE_DIR = E:\c\demo\module
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = E:\c\viewc\module\cmake-build-debug
+CMAKE_BINARY_DIR = E:\c\demo\module\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -58,7 +58,7 @@ CMAKE_BINARY_DIR = E:\c\viewc\module\cmake-build-debug
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,7 +69,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"D:\CLion 2018.3.2\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -79,9 +79,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\module\cmake-build-debug\CMakeFiles E:\c\viewc\module\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles E:\c\demo\module\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\viewc\module\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\module\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named deepen
+# Target rules for targets named main8
 
 # Build rule for target.
-deepen: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 deepen
-.PHONY : deepen
+main8: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 main8
+.PHONY : main8
 
 # fast build rule for target.
-deepen/fast:
-	$(MAKE) -f CMakeFiles\deepen.dir\build.make CMakeFiles/deepen.dir/build
-.PHONY : deepen/fast
+main8/fast:
+	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/build
+.PHONY : main8/fast
 
-deepen.obj: deepen.c.obj
+main8.obj: main8.c.obj
 
-.PHONY : deepen.obj
+.PHONY : main8.obj
 
 # target to build an object file
-deepen.c.obj:
-	$(MAKE) -f CMakeFiles\deepen.dir\build.make CMakeFiles/deepen.dir/deepen.c.obj
-.PHONY : deepen.c.obj
+main8.c.obj:
+	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/main8.c.obj
+.PHONY : main8.c.obj
 
-deepen.i: deepen.c.i
+main8.i: main8.c.i
 
-.PHONY : deepen.i
+.PHONY : main8.i
 
 # target to preprocess a source file
-deepen.c.i:
-	$(MAKE) -f CMakeFiles\deepen.dir\build.make CMakeFiles/deepen.dir/deepen.c.i
-.PHONY : deepen.c.i
+main8.c.i:
+	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/main8.c.i
+.PHONY : main8.c.i
 
-deepen.s: deepen.c.s
+main8.s: main8.c.s
 
-.PHONY : deepen.s
+.PHONY : main8.s
 
 # target to generate assembly for a file
-deepen.c.s:
-	$(MAKE) -f CMakeFiles\deepen.dir\build.make CMakeFiles/deepen.dir/deepen.c.s
-.PHONY : deepen.c.s
+main8.c.s:
+	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/main8.c.s
+.PHONY : main8.c.s
 
 # Help Target
 help:
@@ -156,11 +156,11 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... deepen
+	@echo ... main8
 	@echo ... rebuild_cache
-	@echo ... deepen.obj
-	@echo ... deepen.i
-	@echo ... deepen.s
+	@echo ... main8.obj
+	@echo ... main8.i
+	@echo ... main8.s
 .PHONY : help
 
 
