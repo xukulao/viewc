@@ -132,3 +132,249 @@ void sendpacket(unsigned char *datas, unsigned int length)
 ```
 ![一些寄存器说明](TCR.png)
 ![一些寄存器说明](IMR.png)
+
+读数据驱动
+```c
+//接收数据包
+
+//参数：datas为接收到是数据存储位置（以字节为单位）
+
+//返回值：接收成功返回数据包类型，不成功返回0
+
+unsigned int receivepacket(unsigned char *datas)
+
+{
+
+    unsigned int i, tem;
+
+    unsigned int status, len;
+
+    unsigned char ready;
+
+    ready = 0;//希望读取到“01H”
+
+    status = 0;//数据包状态
+
+     len = 0; //数据包长度
+
+/*以上为有效数据包前的4个状态字节*/
+
+    if(dm9000_reg_read(ISR) & 0x01)
+
+    {
+
+        dm9000_reg_write(ISR, 0x01);
+
+    }
+
+/*清除接收中断标志位*/
+
+/***********************************************************************************/
+
+/*这个地方遇到了问题，下面的黑色字体语句应该替换成成红色字体，也就是说MRCMDX寄存器如果第一次读不到数据，还要读一次才能确定完全没有数据。
+
+在做 PING 实验时证明：每个数据包都是通过第二次的读取MRCMDX寄存器操作而获知为有效数据包的，对初始化的寄存器做了多次修改依然是此结果，但是用如下方法来实现，绝不会漏掉数据包。*/
+
+    ready = dm9000_reg_read(MRCMDX); // 第一次读取，一般读取到的是 00H
+
+    if((ready & 0x0ff) != 0x01)
+
+    {
+
+        ready = dm9000_reg_read(MRCMDX); // 第二次读取，总能获取到数据
+
+        if((ready & 0x01) != 0x01)
+
+         {
+
+            if((ready & 0x01) != 0x00) //若第二次读取到的不是 01H 或 00H ，则表示没有初始化成功
+
+            {
+
+                 dm9000_reg_write(IMR, 0x80);//屏幕网卡中断
+
+                 DM9000_init();//重新初始化
+
+                 dm9000_reg_write(IMR, 0x81);//打开网卡中断
+
+            }
+
+            retrun 0;
+
+         }
+
+    }
+
+/* ready = dm9000_reg_read(MRCMDX); // read a byte without pointer increment
+
+    if(!(ready & 0x01))
+
+    {
+
+         return 0;
+
+    }*/
+
+/***********************************************************************************/
+
+/*以上表示若接收到的第一个字节不是“01H”，则表示没有数据包，返回0*/
+
+    status = dm9000_reg_read(MRCMD);
+
+    udelay(20);
+
+    len = DM_CMD;
+
+    if(!(status & 0xbf00) && (len < 1522))
+
+    {
+
+        for(i=0; i<len; i+=2)// 16 bit mode
+
+        {
+
+            udelay(20);
+
+            tem = DM_CMD;
+
+            datas[i] = tem & 0x0ff;
+
+            datas[i + 1] = (tem >> 8) & 0x0ff;
+
+        }
+
+    }
+
+    else
+
+    {
+        return 0;
+
+    }
+
+/*以上接收数据包，注意的地方与发送数据包的地方相同*/
+
+    if(len > 1000) return 0;
+
+    if( (HON( ETHBUF->type ) != ETHTYPE_ARP) &&
+
+        (HON( ETHBUF->type ) != ETHTYPE_IP) )
+
+    {
+
+        return 0;
+
+    }
+
+    packet_len = len;
+
+/*以上对接收到的数据包作一些必要的限制，去除大数据包，去除非ARP或IP的数据包*/
+    return HON( ETHBUF->type ); //返回数据包的类型，这里只选择是ARP或IP两种类型
+
+}
+```
+
+- 以太网头部结构体
+```c
+unsigned char Buffer[1000];//定义了一个1000字节的接收发送缓冲区
+
+uint16 packet_len;//接收、发送数据包的长度，以字节为单位。
+
+struct eth_hdr //以太网头部结构，为了以后使用方便
+
+{
+
+unsigned char d_mac[6];   //目的地址
+
+unsigned char s_mac[6];   //源地址
+
+uint16 type;     //协议类型
+
+};
+```
+
+ARP头部
+```c
+struct arp_hdr //以太网头部+ARP首部结构
+
+{
+
+struct eth_hdr ethhdr;    //以太网首部
+
+uint16 hwtype;     //硬件类型(1表示传输的是以太网MAC地址)
+
+uint16 protocol;    //协议类型(0x0800表示传输的是IP地址)
+
+unsigned char hwlen;     //硬件地址长度(6)
+
+unsigned char protolen;    //协议地址长度(4)
+
+uint16 opcode;     //操作(1表示ARP请求,2表示ARP应答)
+
+unsigned char smac[6];    //发送端MAC地址
+
+unsigned char sipaddr[4];    //发送端IP地址
+
+unsigned char dmac[6];    //目的端MAC地址
+
+unsigned char dipaddr[4];    //目的端IP地址
+
+};
+```
+
+以太网头部+IP
+```c
+struct ip_hdr //以太网头部+IP首部结构
+
+{
+
+struct eth_hdr ethhdr;    //以太网首部
+
+unsigned char vhl,      //4位版本号4位首部长度(0x45)
+
+tos;     //服务类型(0)
+
+uint16 len,      //整个IP数据报总字节长度
+
+ipid,           //IP标识
+
+ipoffset;     //3位标识13位偏移
+
+unsigned char ttl,             //生存时间(32或64)
+proto;         //协议(1表示ICMP,2表示IGMP,6表示TCP,17表示UDP)
+
+uint16 ipchksum;    //首部校验和
+
+unsigned char srcipaddr[4],    //源IP
+
+             destipaddr[4];   //目的IP
+
+};
+```
+
+-  ARP协议的实现
+   1、ARP协议原理简述
+
+       ARP协议（Address Resolution Protocol 地址解析协议），在局域网中，网络中实际传输的是“
+
+   帧”，帧里面有目标主机的MAC地址。在以太网中，一个注意要和另一个主机进行直接通信，必须要知
+
+   道目标主机的MAC地址。这个MAC地址就是标识我们的网卡芯片唯一性的地址。但这个目标MAC地址是如
+
+   何获得的呢？这就用到了我们这里讲到的地址解析协议。所有“地址解析”，就是主机在发送帧前将目
+
+   标IP地址转换成MAC地址的过程。ARP协议的基本功能就是通过目标设备的IP地址，查询目标设备的MAC
+
+   地址，以保证通信的顺利进行。所以在第一次通信前，我们知道目标机的IP地址，想要获知目标机的
+
+   MAC地址，就要发送ARP报文（即ARP数据包）。它的传输过程简单的说就是：我知道目标机的IP地址，
+
+   那么我就向网络中所有的机器发送一个ARP请求，请求中有目标机的IP地址，请求的意思是目标机要是
+
+   收到了此请求，就把你的MAC地址告诉我。如果目标机不存在，那么此请求自然不会有人回应。若目标
+
+   机接收到了此请求，它就会发送一个ARP应答，这个应答是明确发给请求者的，应答中有MAC地址。我接
+
+   到了这个应答，我就知道了目标机的MAC地址，就可以进行以后的通信了。因为每次通信都要用到MAC地
+
+   址。   
