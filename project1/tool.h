@@ -4,6 +4,6 @@
 
 #ifndef _TOOL_H
 #define _TOOL_H
-void pause(const char *str,...);
-long getFileSize(FILE *file)
+extern void pause(const char *str,...);
+extern long getFileSize(FILE *file);
 #endif //STUDENT_TOOL_H

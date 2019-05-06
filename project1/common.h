@@ -11,4 +11,4 @@
 #define STU_MAX_ZH 150
 #define STU_MAX_EN 150
 
-#endif //STUDENT_COMMON_H
+#endif

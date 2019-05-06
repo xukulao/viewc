@@ -4,8 +4,11 @@
 
 #ifndef _STU_H
 #define _STU_H
-
-#include "common.h"
+int stuCount;
+FILE *file;
+long fileSize;
+int *stuIndex;
+int stuSize;
 typedef struct _STU
 {
     int id;
@@ -17,13 +20,9 @@ typedef struct _STU
     float en;
 }STU;
 
-int stuSize = sizeof(struct _STU);
-int stuCount = 0;
-FILE *file;
-long fileSize=0;
-int *stuIndex;
-void init();
-void updateIndex();
-
-
+extern void init();
+extern void updateIndex();
+extern void addStu();
+extern void getStuId(int *id);
+extern int checkStuId(int stdId);
 #endif //STUDENT_TOOL_H
