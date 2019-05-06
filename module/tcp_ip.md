@@ -577,3 +577,5 @@ unsigned char srcipaddr[4],    //源IP
 
  }
  ```
+ - IPV4头部结构
+ ![ipv4](ip.png)
