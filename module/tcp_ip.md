@@ -1,4 +1,4 @@
-### DM9000EP网卡芯片工作原理说明
+### 网卡芯片工作原理说明
 - [驱动原理](https://blog.csdn.net/b02330224/article/details/7895724)
 - 芯片具体手册
 具体手册可联系本人获取
@@ -377,4 +377,203 @@ unsigned char srcipaddr[4],    //源IP
 
    到了这个应答，我就知道了目标机的MAC地址，就可以进行以后的通信了。因为每次通信都要用到MAC地
 
-   址。   
+   址。
+
+ ![arp](arp.jpg)
+ 注意，以太网的传输存储是“大端格式”，即先发送高字节后发送低字节。例如，两个字节的数据
+
+ ，先发送高8位后发送低8位。所以接收数据的时候要注意存储顺序。
+
+ 整个报文分成两部分，以太网首部和ARP请求/应答。下面挑重点讲述。
+
+ “以太网目的地址”字段：若是发送ARP请求，应填写广播类型的MAC地址FF-FF-FF-FF-FF-FF，意思是
+
+ 让网络上的所有机器接收到；
+
+ “帧类型”字段：填写08-06表示次报文是ARP协议；
+
+ “硬件类型”字段：填写00-01表示以太网地址，即MAC地址；
+
+ “协议类型”字段：填写08-00表示IP，即通过IP地址查询MAC地址；
+
+ “硬件地址长度”字段：MAC地址长度为6（以字节为单位）；
+
+ “协议地址长度”字段：IP地址长度为4（以字节为单位）；
+
+ “操作类型”字段：ARP数据包类型，0表示ARP请求，1表示ARP应答；
+
+ “目的以太网地址”字段：若是发送ARP请求，这里是需要目标机填充的。
+
+ - ARP驱动程序
+ - ARP请求源码
+ ```c
+ unsigned char mac_addr[6] = {*，*，*，*，*，*};
+
+ unsigned char ip_addr[4] = { 192, 168, *, * };
+
+ unsigned char host_ip_addr[4] = { 192, 168, *, * };
+
+ unsigned char host_mac_addr[6]={ 0xff, 0xff, 0xff, 0xff, 0xff, 0xff };
+
+ unsigned char Buffer[1000];
+
+ uint16 packet_len;
+
+ /*这些全局变量，在前面将的文件中有些已经有过定义，这里要注意在前面加上“extern”关键字。“
+
+ *”应该根据自己的机器修改*/
+
+ #define HON(n) ((((uint16)((n) & 0xff)) << 8) | (((n) & 0xff00) >> 8))
+
+ /*此宏定义是将小端格式存储的字（两个字节）转换成大端格式存储*/
+
+ void arp_request(void) //发送ARP请求数据包
+
+ {
+
+ //以太网首部
+
+ memcpy(ARPBUF->ethhdr.d_mac, host_mac_addr, 6);
+
+ /*字符串拷贝函数，文件要包含<string.h>头文件。参数依次是，拷贝目标指针，拷贝数据源指针，拷
+
+ 贝字符数*/
+
+ memcpy(ARPBUF->ethhdr.s_mac, mac_addr, 6);
+
+ ARPBUF->ethhdr.type = HON( 0x0806 );
+
+ /*小端格式的编译器，可以用HON()宏来转换成大端格式，如果你的编译器是大端格式，直接填写
+
+ 0x0806即可*/
+
+ /*就是简单的按照协议格式填充，以下同*/
+
+ //ARP首部
+
+ ARPBUF->hwtype = HON( 1 );
+
+ ARPBUF->protocol = HON( 0x0800 );
+
+ ARPBUF->hwlen = 6;
+
+ ARPBUF->protolen = 4;
+
+ ARPBUF->opcode = HON( 0 );
+
+ memcpy(ARPBUF->smac, mac_addr, 6);
+
+ memcpy(ARPBUF->sipaddr, ip_addr, 4);
+
+ memcpy(ARPBUF->dipaddr, host_ip_addr, 4);
+
+ packet_len = 42;//14+28=42
+
+ sendpacket( Buffer, packet_len );
+
+ }
+ ```
+
+ - ARP响应源码
+ ```c
+ unsigned char arp_process(void)//ARP接收函数，成功返回1，否则返回0
+
+ {
+
+ //简单判断ARP数据包有无损坏,有损坏则丢弃,不予处理
+
+ if( packet_len < 28 )//ARP数据长度为28字节为无效数据
+
+ {
+
+ return 0;
+
+ }
+
+ switch ( HON( ARPBUF->opcode ) )
+
+ {
+
+    case 0    : //处理ARP请求
+
+          if( ARPBUF->dipaddr[0] == ip_addr[0] &&
+
+              ARPBUF->dipaddr[1] == ip_addr[1] &&
+
+              ARPBUF->dipaddr[2] == ip_addr[2] &&
+
+              ARPBUF->dipaddr[3] == ip_addr[3] )//判断是否是自己的IP，是否向自己询问MAC地址
+
+ 。
+
+          {
+              ARPBUF->opcode = HON( 2 );//设置为ARP应答
+
+              memcpy(ARPBUF->dmac, ARPBUF->smac, 6);
+
+              memcpy(ARPBUF->ethhdr.d_mac, ARPBUF->smac, 6);
+
+              memcpy(ARPBUF->smac, mac_addr, 6);
+
+              memcpy(ARPBUF->ethhdr.s_mac, mac_addr, 6);
+
+              memcpy(ARPBUF->dipaddr, ARPBUF->sipaddr, 4);
+
+              memcpy(ARPBUF->sipaddr, ip_addr, 4);
+
+              ARPBUF->ethhdr.type = HON( 0x0806 );
+
+              packet_len = 42;
+
+              sendpacket( Buffer, packet_len );//发送ARP数据包
+
+              return 1;
+
+          }
+
+          else
+
+          {
+
+              return 0;
+
+          }
+
+          break;
+
+    case 1    : //处理ARP应答
+
+          if( ARPBUF->dipaddr[0] == ip_addr[0] &&
+
+              ARPBUF->dipaddr[1] == ip_addr[1] &&
+
+              ARPBUF->dipaddr[2] == ip_addr[2] &&
+
+              ARPBUF->dipaddr[3] == ip_addr[3] )//再次判断IP，是否是给自己的应答
+
+          {
+
+           memcpy(host_mac_addr, ARPBUF->smac, 6);//保存服务器MAC地址
+
+           return 1;
+
+          }
+
+          else
+
+          {
+
+              return 0;
+
+          }
+
+          break;
+
+ default     ://不是ARP协议
+
+          return 0;
+
+ }
+
+ }
+ ```
