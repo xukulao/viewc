@@ -41,3 +41,94 @@ TCP,UDP他们都是用IP协议的，会根据IP头的16位[端口】区分上层
 根据IP16位来区分是TCP,UDP
 根据TCP/UDP的16位端口来区分上层应用程序
 
+- 芯片写时序
+```c
+void dm9000_reg_write(unsigned char reg, unsigned char data)
+
+{
+
+PIO1 = reg;
+
+AEN = 0;
+
+CMD = 0;
+
+IOR = 1;
+
+IOW = 0;
+
+udelay(1);
+
+AEN = 1;
+
+IOW = 1;
+
+udelay(20);
+
+PIO1 = data;
+
+AEN = 0;
+
+CMD = 0;
+
+IOR = 1;
+
+IOW = 0;
+
+udelay(1);
+
+AEN = 1;
+
+IOW = 1;
+
+}
+```
+- 读写数据驱动程序
+```c
+//发送数据包
+
+//参数：datas为要发送的数据缓冲区（以字节为单位），length为要发送的数据长度（两个字节）。
+
+void sendpacket(unsigned char *datas, unsigned int length)
+
+{
+    unsigned int len, i;
+    dm9000_reg_write(IMR, 0x80);//先禁止网卡中断，防止在发送数据时被中断干扰
+    len = length;
+
+    dm9000_reg_write(TXPLH, (len>>8) & 0x0ff);
+
+    dm9000_reg_write(TXPLL, len & 0x0ff);
+
+/*这两句是将要发送数据的长度告诉DM9000的寄存器*/
+
+    DM_ADD = MWCMD;//这里的写法是针对有总线接口的处理器，没有总线接口的处理器要注意加上时序。
+
+    for(i=0; i<len; i+=2)//16 bit mode
+
+    {
+
+        udelay(20);
+
+        DM_CMD = datas[i] | (datas[i+1]<<8);
+
+    }
+
+/*上面是将要发送的数据写到DM9000的内部SRAM中的写FIFO中，注意没有总线接口的处理器要加上适当的时序*/
+
+/*只需要向这个寄存器中写数据即可，MWCMD是DM9000内部SRAM的DMA指针，根据处理器模式，写后自动增加*/
+
+    dm9000_reg_write(TCR, 0x01);//发送数据到以太网上
+
+    while((dm9000_reg_read(NSR) & 0x0c) == 0);//等待数据发送完成
+
+    udelay(20);
+
+    dm9000_reg_write(NSR, 0x2c);//清除状态寄存器，由于发送数据没有设置中断，因此不必处理中断标志位
+
+    dm9000_reg_write(IMR, 0x81);//DM9000网卡的接收中断使能
+
+}
+```
+![一些寄存器说明](TCR.png)
+![一些寄存器说明](IMR.png)
