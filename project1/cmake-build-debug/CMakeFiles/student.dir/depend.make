@@ -9,6 +9,7 @@ CMakeFiles/student.dir/stu.c.obj: ../stu.c
 CMakeFiles/student.dir/stu.c.obj: ../stu.h
 CMakeFiles/student.dir/stu.c.obj: ../tool.h
 
+CMakeFiles/student.dir/tool.c.obj: ../common.h
 CMakeFiles/student.dir/tool.c.obj: ../tool.c
 CMakeFiles/student.dir/tool.c.obj: ../tool.h
 

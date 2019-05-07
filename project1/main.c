@@ -5,6 +5,15 @@
 #include <stdlib.h>
 #include <conio.h>
 #include "stu.h"
+/**
+ *
+ * 文件的复制
+ * 内存复制
+ * readByte=fread(buffer,1,size,file)从文件复制1个大小为size的内容
+ *
+ * fwrite(buffer,size=readByte,1,file)  将1个大小size=readCount的内容插入到文件中
+ */
+
 
 char printfMainMenu();
 int main()
@@ -14,12 +23,11 @@ int main()
     while (1){
        MenuId = printfMainMenu();
        switch (MenuId){
-           case '1':
-                addStu();break;
-           case '2':break;
-           case '3':break;
+           case '1':addStu();break;
+           case '2':removeStu();break;
+           case '3':alterStu();break;
            case '4':break;
-           case '5':break;
+           case '5':showAllStu();break;
            case '0':exit(EXIT_SUCCESS);
        }
     }

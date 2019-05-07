@@ -23,6 +23,21 @@ typedef struct _STU
 extern void init();
 extern void updateIndex();
 extern void addStu();
+extern void removeStu();
+extern void alterStu();
 extern void getStuId(int *id);
 extern int checkStuId(int stdId);
+extern void getStuName(char name[]);
+extern int checkStuName(char name[]);
+extern void getStuAge(int *age);
+extern void getStuSex(char sex[]);
+extern void getStuMath(float *math);
+extern void getStuZh(float *zh);
+extern void getStuEn(float *en);
+extern int checkStuAge(int age);
+extern int checkStuSex(char sex[]);
+extern int checkStuMath(float math);
+extern int checkStuZh(float zh);
+extern int checkStuEn(float en);
+extern void showAllStu();
 #endif //STUDENT_TOOL_H

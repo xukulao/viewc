@@ -6,6 +6,7 @@
 #define _COMMON_H
 #define FILENAME "stu.data"
 #define STU_MAX_ID 99
+#define STU_MAX_NAME 10
 #define STU_MAX_AGE 100
 #define STU_MAX_MATH 150
 #define STU_MAX_ZH 150
