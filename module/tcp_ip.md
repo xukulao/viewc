@@ -600,3 +600,14 @@ unsigned char srcipaddr[4],    //源IP
 
    - TCP头部结构
    ![tcp](tcp_header.png)
+
+   - 观察TCP头部信息
+   ```c
+   tcpdump -i eth0 -nt '(src 127.0.0.1 and dst 127.0.0.1) or (src 127.0.0.1 and dst 127.0.0.1)'
+   ```
+
+   图片
+   ![](tcp_header_test.png)
+
+   分别有源ip端口，目的ip端口，序列号，标志位，窗口大小，长度
+   
