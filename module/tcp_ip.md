@@ -616,3 +616,6 @@ unsigned char srcipaddr[4],    //源IP
 
    tcp 半关闭状态
    ![](tcp_close1.png)
+
+   tcp 超时重连
+   ![](tcp_timeout.png)
