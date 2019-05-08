@@ -610,4 +610,7 @@ unsigned char srcipaddr[4],    //源IP
    ![](tcp_header_test.png)
 
    分别有源ip端口，目的ip端口，序列号，标志位，窗口大小，长度
+
+   tcp 三次握手
+   ![](tcp_three.png)
    
