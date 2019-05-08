@@ -40,4 +40,7 @@ extern int checkStuMath(float math);
 extern int checkStuZh(float zh);
 extern int checkStuEn(float en);
 extern void showAllStu();
+extern void findStuById();
+extern void findStuByName();
+extern void findByScores(int flag);
 #endif //STUDENT_TOOL_H

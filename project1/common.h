@@ -12,4 +12,9 @@
 #define STU_MAX_ZH 150
 #define STU_MAX_EN 150
 
+#define FIND_BY_MATH 1
+#define FIND_BY_ZH 2
+#define FIND_BY_EN 3
+#define FIND_BY_TOTAL 4
+
 #endif

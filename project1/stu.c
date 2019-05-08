@@ -10,7 +10,7 @@
 #include "tool.h"
 void init()
 {
-    if ((file=fopen(FILENAME,"wb+"))==NULL&&(file=fopen(FILENAME,"rb+"))==NULL){
+    if ((file=fopen(FILENAME,"rb+"))==NULL&&(file=fopen(FILENAME,"wb+"))==NULL){
         pause("Error on open %s file",FILENAME);
         exit(EXIT_FAILURE);
     }
@@ -85,7 +85,7 @@ void removeStu()
         }
     }
 
-    if (index<=0){
+    if (index<0){
         pause("没有找到学生...");
         return ;
     }else{
@@ -109,7 +109,7 @@ void alterStu()
         }
     }
 
-    if (index<=0){
+    if (index<0){
         pause("找不到学生哩...");
         return ;
     }else{
@@ -124,6 +124,140 @@ void alterStu()
         fwrite(&stu,stuSize,1,file);
     }
     pause("修改成功！按任意键返回...");
+
+}
+
+void findStuById()
+{
+    STU stu;
+    int i;
+    int index=-1;
+    float allTotal=0;
+    getStuId(&stu.id);
+    for(i=0;i<stuCount;i++){
+        if(stu.id == *(stuIndex+i)){
+            index=i;
+        }else if(stu.id<stuIndex[i]){
+            break;
+        }
+    }
+    if (index<0){
+        pause("没有学生啊...");
+        return ;
+    }else{
+        fseek(file,index*stuSize,SEEK_SET);
+        fread(&stu,stuSize,1,file);
+        allTotal=stu.en+stu.math+stu.zh;
+        printf("--------------------------------------------------------------------\n");
+        printf("  学号  |  姓名  |  年龄  |  性别  |  数学  |  语文  |  英文  |  总成绩  |\n");
+        printf("--------+--------+--------+--------+--------+------------+-------+---------+\n");
+        printf("  %.2d     | %-6s  |  %-3d    |  %-6s | %-6.2f | %-6.2f | %-6.2f | %-6.2f |\n",stu.id,stu.name,stu.age,stu.sex,stu.math,stu.zh,stu.en
+                ,allTotal);
+        printf("--------------------------------------------------------------------\n");
+    }
+
+    pause("按任意键返回...");
+
+
+}
+
+void findStuByName()
+{
+    STU stu;
+    int n=0;
+    float total=0;
+    char name[20];
+    getStuName(name);
+    fseek(file,0,SEEK_SET);
+    while(fread(&stu,stuSize,1,file)){
+        if (strstr(stu.name,name)){
+            n++;
+            total = stu.en+stu.zh+stu.math;
+            if (n==1){
+                printf("--------------------------------------------------------------------\n");
+                printf("  学号  |  姓名  |  年龄  |  性别  |  数学  |  语文  |  英文  |  总成绩  |\n");
+                printf("--------+--------+--------+--------+--------+------------+-------+---------+\n");
+                printf("  %.2d     | %-6s  |  %-3d    |  %-6s | %-6.2f | %-6.2f | %-6.2f | %-6.2f |\n",stu.id,stu.name,stu.age,stu.sex,stu.math,stu.zh,stu.en
+                        ,total);
+                printf("--------------------------------------------------------------------\n");
+            }
+        }
+    }
+    if (n>0){
+        pause("共找到%d条记录，按任意键返回...",n);
+    }else if(n==0){
+        pause("没有任何记录，按任意键返回...");
+    }
+}
+
+/**
+ * 获取分数范围【判断最小值，最大值】
+ *
+ * @param flag
+ */
+void findByScores(int flag)
+{
+    STU stu;
+    float total=0;
+    int n=0;
+    char *courseName = NULL;
+    float *scores = NULL;
+    int MAX = 0;
+    int min=0,max=0;
+    if(flag==FIND_BY_MATH){
+        courseName = "数学";
+        scores = &stu.math;
+        MAX = STU_MAX_MATH;
+    }else if(flag == FIND_BY_ZH){
+        courseName = "中文";
+        scores = &stu.zh;
+        MAX = STU_MAX_ZH;
+    }else if(flag == FIND_BY_EN){
+        courseName = "英文";
+        scores = &stu.zh;
+        MAX = STU_MAX_ZH;
+    }else if(flag == FIND_BY_TOTAL){
+        courseName = "总成绩";
+        scores = &total;
+        MAX = STU_MAX_MATH+STU_MAX_EN+STU_MAX_ZH;
+    }
+
+    while(1){
+        printf("搜索课目 %s \n",courseName);
+        fflush(stdin);
+        scanf("%d %d",&min,&max);
+        if (min<0||min>MAX||max<0||max>MAX){
+            pause("输入的范围错误,%s的范围%d~%d",courseName,min,max);
+            continue ;
+        }
+        if (min>max){
+            pause("最低分超过了最高分,按任意键重新输入...");
+            continue;
+        }
+        break;
+    }
+
+    fseek(file,0,SEEK_SET);
+    while(fread(&stu,stuSize,1,file)){
+        total=stu.math+stu.en+stu.zh;
+        if (min<=*scores&&*scores<=max){
+            n++;
+            if (n==1){
+                printf("--------------------------------------------------------------------\n");
+                printf("  学号  |  姓名  |  年龄  |  性别  |  数学  |  语文  |  英文  |  总成绩  |\n");
+                printf("--------+--------+--------+--------+--------+------------+-------+---------+\n");
+                printf("  %.2d     | %-6s  |  %-3d    |  %-6s | %-6.2f | %-6.2f | %-6.2f | %-6.2f |\n",stu.id,stu.name,stu.age,stu.sex,stu.math,stu.zh,stu.en
+                        ,total);
+                printf("--------------------------------------------------------------------\n");
+            }
+        }
+    }
+
+    if (n>0){
+        pause("找到%d学生,按任意键返回...",n);
+    }else if(n==0){
+        pause("没有找到记录，按任意键返回...");
+    }
 
 }
 void getStuId(int *id)

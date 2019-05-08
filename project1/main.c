@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
+#include "common.h"
 #include "stu.h"
 /**
  *
@@ -16,6 +17,7 @@
 
 
 char printfMainMenu();
+char printfChildMenu();
 int main()
 {
     int MenuId;
@@ -26,7 +28,32 @@ int main()
            case '1':addStu();break;
            case '2':removeStu();break;
            case '3':alterStu();break;
-           case '4':break;
+           case '4':
+                while (1){
+                    MenuId = printfChildMenu();
+                    switch(MenuId){
+                        case '1':
+                            findStuById();
+                            break;
+                        case '2':
+                            findStuByName();
+                            break;
+                        case '3':
+                            findByScores(FIND_BY_MATH);
+                            break;
+                        case '4':
+                            findByScores(FIND_BY_ZH);
+                            break;
+                        case '5':
+                            findByScores(FIND_BY_EN);
+                            break;
+                        case '6':
+                            findByScores(FIND_BY_TOTAL);
+                            break;
+                    }
+                    if (MenuId=='0')break;
+                }
+               break;
            case '5':showAllStu();break;
            case '0':exit(EXIT_SUCCESS);
        }
@@ -38,7 +65,7 @@ char printfMainMenu()
 {
     char MenuId;
     system("cls");
-    printf("*******************weclome to use student management system(there are %d students)*******************\n");
+    printf("*******************weclome to use student management system(there are %d students)*******************\n",stuCount);
     printf("*                                                                                                         *\n");
     printf("*                   ________________________________________                                              *\n");
     printf("*                   |    powered by 1655664358@qq.com      |                                              *\n");
@@ -55,4 +82,22 @@ char printfMainMenu()
     fflush(stdin);
     MenuId = getch();
     return MenuId;
+}
+
+char printfChildMenu()
+{
+    char menuId;
+    system("cls");
+    printf("*********************************************查询信息(共有%d个学生)************************************************\n",stuCount);
+    printf("*                                                                                                              *\n");
+    printf("*                                            1)学号查                                                           *\n");
+    printf("*                                            2)姓名查                                                           *\n");
+    printf("*                                            3)数学分数查                                                           *\n");
+    printf("*                                            4)语文分数查                                                           *\n");
+    printf("*                                            5)英文分数查                                                           *\n");
+    printf("*                                            6)总分查                                                           *\n");
+    printf("*                                            0)退出                                                           *\n");
+    fflush(stdin);
+    menuId = getch();
+    return menuId;
 }
