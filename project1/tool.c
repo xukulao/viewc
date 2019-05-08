@@ -95,10 +95,10 @@ long getFileSize(FILE *file)
 }
 void pause(const char *str,...)
 {
-    va_list ap;
+    va_list ap;//可变参数
     char buffer[50];
     va_start(ap,str);
-    vsnprintf(buffer,500,str,ap);
+    vsnprintf(buffer,500,str,ap);//将变量按照指定大小size和格式format打印到buffer变量里
     va_end(ap);
     printf(buffer);
     getch();

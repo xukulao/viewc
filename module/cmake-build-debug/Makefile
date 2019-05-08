@@ -55,17 +55,6 @@ CMAKE_BINARY_DIR = E:\c\demo\module\cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -76,6 +65,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	"C:\Program Files\JetBrains\CLion 2018.3.4\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available."
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -110,71 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named main8
+# Target rules for targets named test
 
 # Build rule for target.
-main8: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 main8
-.PHONY : main8
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-main8/fast:
-	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/build
-.PHONY : main8/fast
+test/fast:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
-main8.obj: main8.c.obj
+test.obj: test.c.obj
 
-.PHONY : main8.obj
-
-# target to build an object file
-main8.c.obj:
-	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/main8.c.obj
-.PHONY : main8.c.obj
-
-main8.i: main8.c.i
-
-.PHONY : main8.i
-
-# target to preprocess a source file
-main8.c.i:
-	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/main8.c.i
-.PHONY : main8.c.i
-
-main8.s: main8.c.s
-
-.PHONY : main8.s
-
-# target to generate assembly for a file
-main8.c.s:
-	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/main8.c.s
-.PHONY : main8.c.s
-
-tcp_ip.obj: tcp_ip.c.obj
-
-.PHONY : tcp_ip.obj
+.PHONY : test.obj
 
 # target to build an object file
-tcp_ip.c.obj:
-	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/tcp_ip.c.obj
-.PHONY : tcp_ip.c.obj
+test.c.obj:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/test.c.obj
+.PHONY : test.c.obj
 
-tcp_ip.i: tcp_ip.c.i
+test.i: test.c.i
 
-.PHONY : tcp_ip.i
+.PHONY : test.i
 
 # target to preprocess a source file
-tcp_ip.c.i:
-	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/tcp_ip.c.i
-.PHONY : tcp_ip.c.i
+test.c.i:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/test.c.i
+.PHONY : test.c.i
 
-tcp_ip.s: tcp_ip.c.s
+test.s: test.c.s
 
-.PHONY : tcp_ip.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-tcp_ip.c.s:
-	$(MAKE) -f CMakeFiles\main8.dir\build.make CMakeFiles/main8.dir/tcp_ip.c.s
-.PHONY : tcp_ip.c.s
+test.c.s:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/test.c.s
+.PHONY : test.c.s
 
 # Help Target
 help:
@@ -182,15 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... edit_cache
-	@echo ... main8
 	@echo ... rebuild_cache
-	@echo ... main8.obj
-	@echo ... main8.i
-	@echo ... main8.s
-	@echo ... tcp_ip.obj
-	@echo ... tcp_ip.i
-	@echo ... tcp_ip.s
+	@echo ... test
+	@echo ... edit_cache
+	@echo ... test.obj
+	@echo ... test.i
+	@echo ... test.s
 .PHONY : help
 
 
