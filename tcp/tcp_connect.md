@@ -23,3 +23,10 @@
     客户端发送FIN结束报文段的时候，进入FIN_WAIT1状态，如果服务器确认则进入FIN_WAIT2状态
     此时服务器已经是CLOSE_WAIT状态了，当服务器也发送FIN结束报文段的时候，客户端确认后进入TIME_WAIT
     状态
+
+    状态图
+    连接状态
+    ![](tcp_client_connect.png)
+
+    关闭状态
+    ![](tcp_client_close.png)
