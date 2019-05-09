@@ -10,3 +10,16 @@
 
     状态图
     ![status](tcp_status.png)
+
+
+    客户端的状态转移说明
+    客户端通过connect系统调用，connect会发送一个SYN连接报文段，此时进入SYN_SENT状态
+    如果服务器
+    1、目标端口不存在，但没有任何进程监听，此时可能会收到复位RST报文段，或是TIME_WAIT状态
+    2、端口存在，但连接超时，没有收到服务器的确认报文段
+
+    如果连接成功进入ESTABLISHED状态
+
+    客户端发送FIN结束报文段的时候，进入FIN_WAIT1状态，如果服务器确认则进入FIN_WAIT2状态
+    此时服务器已经是CLOSE_WAIT状态了，当服务器也发送FIN结束报文段的时候，客户端确认后进入TIME_WAIT
+    状态
