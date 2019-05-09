@@ -29,6 +29,10 @@
      
    - 树形结构  
      它们之间存在1对多的关系   
-     ![树形结构](datastruct/tree.png)  
+     ![树形结构](datastruct/tree.png)    
+     
+   - 图形结构  
+     它们之间存在多对多的关系  
+     ![图形关系](datastruct/more.png)
      
      
