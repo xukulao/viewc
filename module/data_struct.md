@@ -51,5 +51,6 @@
      
      
 - 结论  
-    ![](datastruct/data_struct1.png)
+    ![](datastruct/data_struct1.png)  
+    ![](datastruct/data_struct2.png)
      
