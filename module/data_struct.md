@@ -21,5 +21,14 @@
  - 逻辑结构  【数据对象中数据元素之间的相互关系】      
    - 集合结构  
      它们同属于一个集合，数据元素之间没有任何关系     
-     ![集合结构](datastruct/collection.png)
+     ![集合结构](datastruct/collection.png)  
+     
+   - 线性结构  
+     它们是之间是1对1的关系   
+     ![线性结构](datastruct/line.png)  
+     
+   - 树形结构  
+     它们之间存在1对多的关系   
+     ![树形结构](datastruct/tree.png)  
+     
      
