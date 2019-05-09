@@ -50,3 +50,6 @@
    ![链式存储](datastruct/chain.png)  
      
      
+- 结论  
+    ![](datastruct/data_struct1.png)
+     
