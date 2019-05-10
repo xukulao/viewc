@@ -12,9 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5870c51-d971-48ad-bce6-a77d5c7f209b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/datastruct.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/datastruct.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/algorithm.md" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project1/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -44,8 +41,8 @@
         <entry file="file://$PROJECT_DIR$/algorithm.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="115">
-                <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <first_editor relative-caret-position="207">
+                <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
               </first_editor>
               <second_editor />
             </state>
@@ -162,12 +159,12 @@
       <option name="presentableId" value="Default" />
       <updated>1557374279940</updated>
       <workItem from="1557374281328" duration="1560000" />
-      <workItem from="1557450814857" duration="2733000" />
+      <workItem from="1557450814857" duration="3357000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4293000" />
+    <option name="totallyTimeSpent" value="4917000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -239,8 +236,8 @@
     <entry file="file://$PROJECT_DIR$/algorithm.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="115">
-            <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <first_editor relative-caret-position="207">
+            <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
           </first_editor>
           <second_editor />
         </state>
