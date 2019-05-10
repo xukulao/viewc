@@ -11,10 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastruct/algorithm.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/algorithm.md" afterDir="false" />
-    </list>
+    <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +67,7 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stu.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7974">
+            <state relative-caret-position="23">
               <caret line="53" selection-start-line="53" selection-end-line="53" />
               <folding>
                 <element signature="e#51#69#0" expanded="true" />
@@ -181,17 +178,18 @@
       <workItem from="1557192452991" duration="14574000" />
       <workItem from="1557278292044" duration="9474000" />
       <workItem from="1557364706965" duration="733000" />
+      <workItem from="1557450810277" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35244000" />
+    <option name="totallyTimeSpent" value="35842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09541578" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.096481875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -288,7 +286,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/stu.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7974">
+        <state relative-caret-position="23">
           <caret line="53" selection-start-line="53" selection-end-line="53" />
           <folding>
             <element signature="e#51#69#0" expanded="true" />
