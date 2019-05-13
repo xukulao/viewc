@@ -14,4 +14,5 @@
     - 事先计算效率【主要是看操作次数，机器指令的执行次数】     
     
 - 算法时间复杂度   
-    ![](datastruct/algorithm_time.png)   
+    ![](datastruct/algorithm_time.png)     
+    

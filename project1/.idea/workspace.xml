@@ -11,7 +11,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="" />
+    <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/algorithm.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/algorithm.md" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +115,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="247" />
     <option name="y" value="86" />
     <option name="width" value="1400" />
@@ -179,17 +182,18 @@
       <workItem from="1557278292044" duration="9474000" />
       <workItem from="1557364706965" duration="733000" />
       <workItem from="1557450810277" duration="598000" />
+      <workItem from="1557710061426" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35842000" />
+    <option name="totallyTimeSpent" value="36440000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.096481875" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09754797" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
