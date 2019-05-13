@@ -34,4 +34,7 @@
     tcp 孤儿连接  
     就是客户端发送了FIN的结束报文段，服务器确认，但是服务器根本没有发送FIN结束报文段，客户端  
     先强行关闭了，导致产生了孤儿连接   
-    ![](tcp_close2.png)
+    ![](tcp_close2.png)  
+    
+    tcp连接到断开的状态转移图  
+    ![](tcp_connect_close_status.png)
