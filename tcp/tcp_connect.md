@@ -40,4 +40,10 @@
     ![](tcp_connect_close_status.png)  
     
 - TIME_WAIT存在的原因   
-    ![time_wait](time_wait.png)
+    ![time_wait](time_wait.png)  
+    
+- RST复位报文段    
+  客户端连接找不到对应的端口时，会重新发起连接请求R报文段  
+  
+- TCP异常终止连接  
+    ![](tcp_exception_close.png)  
