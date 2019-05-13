@@ -13,4 +13,9 @@
 - 线性表的抽象数据类型   
 
     ![line](datastruct/listdefine1.png)
-    ![line](datastruct/listdefine2.png)
+    ![line](datastruct/listdefine2.png)  
+    
+- 线性表的数据存储顺序    
+    线性表的顺序存储结构，指的是用一连续内存存储单元依次存储线性表的数据元素   
+    
+
