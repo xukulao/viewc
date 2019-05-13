@@ -11,3 +11,6 @@
   
   
 - 线性表的抽象数据类型   
+
+    ![line](datastruct/listdefine1.png)
+    ![line](datastruct/listdefine2.png)
