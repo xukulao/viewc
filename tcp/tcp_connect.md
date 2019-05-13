@@ -37,4 +37,7 @@
     ![](tcp_close2.png)  
     
     tcp连接到断开的状态转移图  
-    ![](tcp_connect_close_status.png)
+    ![](tcp_connect_close_status.png)  
+    
+- TIME_WAIT存在的原因   
+    ![time_wait](time_wait.png)
