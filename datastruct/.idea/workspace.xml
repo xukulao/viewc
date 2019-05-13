@@ -53,8 +53,8 @@
         <entry file="file://$PROJECT_DIR$/line.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="46">
-                <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+              <first_editor relative-caret-position="115">
+                <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
               </first_editor>
               <second_editor />
             </state>
@@ -173,12 +173,12 @@
       <updated>1557374279940</updated>
       <workItem from="1557374281328" duration="1560000" />
       <workItem from="1557450814857" duration="5213000" />
-      <workItem from="1557710066302" duration="1707000" />
+      <workItem from="1557710066302" duration="2325000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8480000" />
+    <option name="totallyTimeSpent" value="9098000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -260,8 +260,8 @@
     <entry file="file://$PROJECT_DIR$/line.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="46">
-            <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <first_editor relative-caret-position="115">
+            <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           </first_editor>
           <second_editor />
         </state>
