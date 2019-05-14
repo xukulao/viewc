@@ -27,6 +27,7 @@ SqList test;
 void initList();
 Status getElem(SqList L,int i,ElemType *e);//获取线性表里的元素
 Status insertList(SqList L,int i,ElemType *e);
+Status deleteList(SqList L,int i,ElemType *e);
 
 //线性表的占用存储单元为：c=LOC(ai+1)=LOC(ai)+c
 //LOC(ai)=LOC(a1)+(n-1)*c 第一个元素占用的存储单元+所占用的存储单元为第i个元素所占用的存储单元
@@ -62,8 +63,8 @@ int main()
 //    insertArray(num1,5,0,199);
 
     data = 88;
-    int insert = insertList(test,5,e);
- 
+    //int insert = insertList(test,5,e);
+    int delete = deleteList(test,5,e);
 
     return 0;
 }
@@ -107,6 +108,31 @@ Status insertList(SqList L,int i,ElemType *e)
 
     return OK;
 }
+
+Status deleteList(SqList L,int i,ElemType *e)
+{
+    int k;
+    if (L.length==0){
+        return ERROR;
+    }
+    if (i<1||i>L.length){
+        return ERROR;
+    }
+    *e = L.data[i-1];
+    if(i<L.length){
+        for(k=i;k<L.length;k++){
+            L.data[k-1] = L.data[k];
+        }
+    }
+    L.length--;
+    int j;
+    for(j=0;j<L.length;j++){
+        printf("L.data[%d]=%d\n",j,L.data[j]);
+    }
+    printf("remove elem is %d\n",*e);
+    return OK;
+}
+
 void initList()
 {
     int i=0;
