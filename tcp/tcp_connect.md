@@ -29,4 +29,31 @@
     ![](tcp_client_connect.png)
 
     关闭状态
-    ![](tcp_client_close.png)
+    ![](tcp_client_close.png)  
+    
+    tcp 孤儿连接  
+    就是客户端发送了FIN的结束报文段，服务器确认，但是服务器根本没有发送FIN结束报文段，客户端  
+    先强行关闭了，导致产生了孤儿连接   
+    ![](tcp_close2.png)  
+    
+    tcp连接到断开的状态转移图  
+    ![](tcp_connect_close_status.png)  
+    
+- TIME_WAIT存在的原因   
+    ![time_wait](time_wait.png)  
+    
+- RST复位报文段    
+  客户端连接找不到对应的端口时，会重新发起连接请求R报文段    
+  ![](tcp_rst.png)
+  
+- TCP异常终止连接  
+    ![](tcp_exception_close.png)    
+    
+- TCP半打开状态  
+    客户端或服务器端关闭了或是异常关闭，对方没有收到结束报文段【如网络故障】，而此时  
+    客户端或服务器还是维持原来的连接，即使重启也没有该连接的任何信息了，称为半打开状态  
+    处于此状态，对连接进行写数据时，对方会发起一个复位RST报文段  
+    ![](tcp_open1.png)  
+    
+    测试  【nc工具测试】  
+    ![nctest](tcp_client_sever.png)
