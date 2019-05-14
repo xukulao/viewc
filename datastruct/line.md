@@ -21,4 +21,7 @@
     
     [顺序存储方式](list.c)
 
-    ![](datastruct/line_storage_loc.png)
+    ![](datastruct/line_storage_loc.png)  
+    
+- 线性表的数据元素插入和删除  
+    [数据元素插入和删除](list.c)
