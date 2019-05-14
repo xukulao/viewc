@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/datastruct/main.c
+E:/c/demo/datastruct/list.c
 stdio.h
--
-string.h
 -
 
