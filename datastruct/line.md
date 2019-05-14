@@ -21,3 +21,4 @@
     
     [顺序存储方式](list.c)
 
+    ![](datastruct/line_storage_loc.png)
