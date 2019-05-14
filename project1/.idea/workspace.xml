@@ -13,7 +13,17 @@
   <component name="ChangeListManager">
     <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastruct/data.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/data.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/line.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/line.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -127,7 +137,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,6 +148,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,17 +193,18 @@
       <workItem from="1557364706965" duration="733000" />
       <workItem from="1557450810277" duration="598000" />
       <workItem from="1557710061426" duration="598000" />
+      <workItem from="1557796534955" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36440000" />
+    <option name="totallyTimeSpent" value="37039000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="247" y="86" width="1400" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.09754797" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.098507464" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

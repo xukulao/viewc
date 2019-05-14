@@ -122,32 +122,32 @@ demo1/fast:
 	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/build
 .PHONY : demo1/fast
 
-main.obj: main.c.obj
+list.obj: list.c.obj
 
-.PHONY : main.obj
+.PHONY : list.obj
 
 # target to build an object file
-main.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/main.c.obj
-.PHONY : main.c.obj
+list.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/list.c.obj
+.PHONY : list.c.obj
 
-main.i: main.c.i
+list.i: list.c.i
 
-.PHONY : main.i
+.PHONY : list.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/main.c.i
-.PHONY : main.c.i
+list.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/list.c.i
+.PHONY : list.c.i
 
-main.s: main.c.s
+list.s: list.c.s
 
-.PHONY : main.s
+.PHONY : list.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/main.c.s
-.PHONY : main.c.s
+list.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/list.c.s
+.PHONY : list.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo1
 	@echo ... edit_cache
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... list.obj
+	@echo ... list.i
+	@echo ... list.s
 .PHONY : help
 
 
