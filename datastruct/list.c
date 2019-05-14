@@ -26,6 +26,8 @@ typedef struct
 SqList test;
 void initList();
 Status getElem(SqList L,int i,ElemType *e);//获取线性表里的元素
+Status insertList(SqList L,int i,ElemType *e);
+
 //线性表的占用存储单元为：c=LOC(ai+1)=LOC(ai)+c
 //LOC(ai)=LOC(a1)+(n-1)*c 第一个元素占用的存储单元+所占用的存储单元为第i个元素所占用的存储单元
 int age[10] = {34,23,11,98,43,92,33,87,29,76};
@@ -52,12 +54,16 @@ int main()
     e = &data;
     status = getElem(test,12,e);
     printf("status=%d,e=%d,list of lent =%d\n",status,*e,test.length);
-    printf("*****************************************\n");
-    Bubble();
-    printf("*****************************************\n");
-    int num1[10] = {1,2,3,4,5,6,7,8};
-    //insertArray(num1,5,1,10);
-    insertArray(num1,5,0,199);
+//    printf("*****************************************\n");
+//    Bubble();
+//    printf("*****************************************\n");
+//    int num1[10] = {1,2,3,4,5,6,7,8};
+//    //insertArray(num1,5,1,10);
+//    insertArray(num1,5,0,199);
+
+    data = 88;
+    int insert = insertList(test,5,e);
+ 
 
     return 0;
 }
@@ -71,6 +77,36 @@ Status getElem(SqList L,int i,ElemType *e)
     return OK;
 }
 
+/**
+ * 向线性表里插入数据元素
+ * @param L
+ * @param i
+ * @param e
+ * @return
+ */
+Status insertList(SqList L,int i,ElemType *e)
+{
+    int k;
+    if(L.length==MAXSIZE){
+        return ERROR;
+    }
+    if (i<1||i>L.length){
+        return ERROR;
+    }
+    if (i<L.length){
+        for(k=L.length;k>=i-1;k--){
+            L.data[k+1]=L.data[k];
+        }
+    }
+    L.data[i-1] = *e;
+    L.length++;
+
+    for(i=0;i<L.length;i++){
+        printf("test.data[%d]=%d\n",i,L.data[i]);
+    }
+
+    return OK;
+}
 void initList()
 {
     int i=0;
