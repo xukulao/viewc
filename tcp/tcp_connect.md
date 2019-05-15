@@ -56,4 +56,9 @@
     ![](tcp_open1.png)  
     
     测试  【nc工具测试】  
-    ![nctest](tcp_client_sever.png)
+    ![nctest](tcp_client_sever.png)  
+    
+- TCP交互数据流   
+    交互数据和成块数据    
+      
+- 带外数据 
