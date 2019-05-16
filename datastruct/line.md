@@ -47,5 +47,8 @@
   数据元素按其逻辑次序链接在一起     
   
   链表中的第一个存储位置叫头指针   
-  ![list_chain](datastruct/list_chain2.png)
+  ![list_chain](datastruct/list_chain2.png)  
+  
+  单链表的头结点【存储位置为头指针】  
+  ![chainline](datastruct/line_chain3.png)
   
