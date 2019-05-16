@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5870c51-d971-48ad-bce6-a77d5c7f209b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/line.md" beforeDir="false" afterPath="$PROJECT_DIR$/line.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../project1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project1/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -63,8 +62,8 @@
         <entry file="file://$PROJECT_DIR$/line.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="719">
-                <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+              <first_editor relative-caret-position="696">
+                <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
               </first_editor>
               <second_editor />
             </state>
@@ -190,12 +189,12 @@
       <workItem from="1557710066302" duration="5921000" />
       <workItem from="1557796538047" duration="11061000" />
       <workItem from="1557883216617" duration="2943000" />
-      <workItem from="1557969566431" duration="1252000" />
+      <workItem from="1557969566431" duration="2060000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27950000" />
+    <option name="totallyTimeSpent" value="28758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -281,8 +280,8 @@
     <entry file="file://$PROJECT_DIR$/line.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="719">
-            <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
+          <first_editor relative-caret-position="696">
+            <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
           </first_editor>
           <second_editor />
         </state>
