@@ -54,4 +54,7 @@
   
   
   单链表  
-  ![](datastruct/list_chain3.png)
+  ![](datastruct/list_chain3.png)  
+  
+- 单链表读取   
+

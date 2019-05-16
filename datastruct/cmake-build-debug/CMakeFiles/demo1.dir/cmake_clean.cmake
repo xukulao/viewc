@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/demo1.dir/list.c.obj"
+  "CMakeFiles/demo1.dir/listchain.c.obj"
   "demo1.pdb"
   "demo1.exe"
   "demo1.exe.manifest"

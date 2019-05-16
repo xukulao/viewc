@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/c/demo/datastruct/list.c">
+		<Unit filename="E:/c/demo/datastruct/listchain.c">
 			<Option target="demo1"/>
 		</Unit>
 		<Unit filename="E:/c/demo/datastruct/CMakeLists.txt">
