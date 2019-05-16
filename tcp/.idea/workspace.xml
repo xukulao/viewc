@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb7aa814-157c-4217-bd1c-3a8b99ff5176" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tcp_test.md" beforeDir="false" afterPath="$PROJECT_DIR$/tcp_test.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +68,8 @@
         <entry file="file://$PROJECT_DIR$/tcp_test.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="130">
-                <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+              <first_editor relative-caret-position="286">
+                <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
               </first_editor>
               <second_editor />
             </state>
@@ -156,12 +156,12 @@
       <workItem from="1557413180911" duration="4712000" />
       <workItem from="1557753118246" duration="4043000" />
       <workItem from="1557927865232" duration="3185000" />
-      <workItem from="1558014349084" duration="738000" />
+      <workItem from="1558014349084" duration="1371000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12678000" />
+    <option name="totallyTimeSpent" value="13311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -265,8 +265,8 @@
     <entry file="file://$PROJECT_DIR$/tcp_test.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="130">
-            <caret line="5" column="60" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+          <first_editor relative-caret-position="286">
+            <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           </first_editor>
           <second_editor />
         </state>
