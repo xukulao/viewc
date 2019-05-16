@@ -52,3 +52,6 @@
   单链表的头结点【存储位置为头指针】  
   ![chainline](datastruct/line_chain3.png)
   
+  
+  单链表  
+  ![](datastruct/list_chain3.png)
