@@ -3,6 +3,7 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * 每个结点有数据域和指针域构成
  * 单链表：由N个结点【数据元素映像】链构成，每个结点有指针域指向下一个元素的存储位置，以便将线性表的数据元素按其逻辑次序连接在一起
@@ -23,6 +24,8 @@ typedef struct Node{
 typedef struct Node *LinkList;
 typedef int Status;
 Status GetElem(LinkList L,int i,ElemType *e);
+Status LinkListInsert(LinkList L,int i,ElemType *e);
+Status showAllElem(LinkList L);
 int main()
 {
 //    Node student;
@@ -61,7 +64,27 @@ int main()
     ElemType k;
     e = &k;
     GetElem(L,3,e);
+
+    printf("*************************************\n");
+    int a=10;
+    LinkListInsert(L,3,&a);
+    GetElem(L,4,e);
+
+    showAllElem(L);
     return 0;
+}
+
+Status showAllElem(LinkList L)
+{
+    int k=0;
+    LinkList p;
+    p = L->next;
+    printf("p.data=%d\n",p->data);
+    while(p!=NULL){
+        p = p->next;
+        printf("p.data=%d\n",p->data);
+    }
+    return OK;
 }
 /**
  * 获取单链表的某个结点数据
@@ -85,5 +108,35 @@ Status GetElem(LinkList L,int i,ElemType *e)
     }
     *e = p->data;
     printf("your data is %d\n",*e);
+    return OK;
+}
+
+/**
+ * 单链表插入
+ * @param L
+ * @param i
+ * @param e
+ * @return
+ */
+Status LinkListInsert(LinkList L,int i,ElemType *e)
+{
+    int j;
+    j=1;
+    LinkList p,s;
+    p = L->next;//获取第一个结点
+    while(p&&j<i){
+        p=p->next;
+        j++;
+    }
+    if (!p||j>i){
+        return ERROR;
+    }
+
+    //创建新结点
+    s = (LinkList)malloc(sizeof(Node));
+    s->data = *e;//新结点要保存的数据
+    s->next = p->next;//新结点保存后继数据元素的存储位置
+    p->next = s;//保存当前创建的新结点
+
     return OK;
 }

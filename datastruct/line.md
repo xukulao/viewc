@@ -60,5 +60,6 @@
     不断的循环读取指定位置i的结点  
     
 - 单链表的插入与删除   
- ![insert](datastruct/listchain_insert.png)
+ ![insert](datastruct/listchain_insert.png)  
+ [单链表的展示与插入](listchain.c)
 
