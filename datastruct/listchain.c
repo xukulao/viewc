@@ -25,6 +25,7 @@ typedef struct Node *LinkList;
 typedef int Status;
 Status GetElem(LinkList L,int i,ElemType *e);
 Status LinkListInsert(LinkList L,int i,ElemType *e);
+Status LinkListRemove(LinkList L,int i,ElemType *e);
 Status showAllElem(LinkList L);
 int main()
 {
@@ -49,16 +50,19 @@ int main()
     student4.data = 400;
     student5.data = 500;
 
+
     student1.next = &student2;
     student2.next = &student3;
     student3.next = &student4;
     student4.next = &student5;
-
+    student5.next = NULL;
     LinkList L;//头结点
     Node student0;
+    student0.data = 0;
+    student0.next = &student1;
     L = &student0;
-    L->data = 5;
-    L->next = &student1;
+    //L->data = 5;
+    //L->next = &student1;
 
     ElemType *e;
     ElemType k;
@@ -66,11 +70,15 @@ int main()
     GetElem(L,3,e);
 
     printf("*************************************\n");
-    int a=10;
-    LinkListInsert(L,3,&a);
-    GetElem(L,4,e);
+//    int a=80;
+//    LinkListInsert(L,4,&a);
+//    GetElem(L,4,e);
 
+    //showAllElem(L);
+    printf("**************remove***********************\n");
+    LinkListRemove(L,2,e);
     showAllElem(L);
+
     return 0;
 }
 
@@ -78,11 +86,12 @@ Status showAllElem(LinkList L)
 {
     int k=0;
     LinkList p;
-    p = L->next;
+    p = L;
     printf("p.data=%d\n",p->data);
     while(p!=NULL){
         p = p->next;
         printf("p.data=%d\n",p->data);
+        k++;
     }
     return OK;
 }
@@ -98,7 +107,8 @@ Status GetElem(LinkList L,int i,ElemType *e)
     int j;
     j=1;
     LinkList p;//创建一个结点
-    p = L->next;//得到单链表头结点指向的第一个结点
+    //p = L->next;//得到单链表头结点指向的第一个结点
+    p = L;
     while(p&&j<i){
         p = p->next;//继续得到下一个结点
         j++;
@@ -123,7 +133,8 @@ Status LinkListInsert(LinkList L,int i,ElemType *e)
     int j;
     j=1;
     LinkList p,s;
-    p = L->next;//获取第一个结点
+    //p = L->next;//获取第一个结点
+    p = L;
     while(p&&j<i){
         p=p->next;
         j++;
@@ -139,4 +150,26 @@ Status LinkListInsert(LinkList L,int i,ElemType *e)
     p->next = s;//保存当前创建的新结点
 
     return OK;
+}
+
+Status LinkListRemove(LinkList L,int i,ElemType *e)
+{
+    int j;
+    j=1;
+    LinkList p,q;
+    p = L->next;//得到头结点指向的第一个结点
+    while(p&&j<i){
+        p=p->next;//结点向下循环
+        j++;
+    }
+
+    if (!p||i>j){
+        return ERROR;
+    }
+
+    q = p->next;//当前结点的下一个结点  要删除下一个结点
+    p->next = q->next;//当前结点等于下一个结点的下一个结点
+
+    return OK;
+
 }
