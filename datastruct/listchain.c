@@ -26,7 +26,7 @@ typedef int Status;
 Status GetElem(LinkList L,int i,ElemType *e);
 Status LinkListInsert(LinkList L,int i,ElemType *e);
 Status LinkListRemove(LinkList L,int i,ElemType *e);
-Status showAllElem(LinkList L);
+Status showAllElem(LinkList L,int i);
 int main()
 {
 //    Node student;
@@ -58,7 +58,7 @@ int main()
     student5.next = NULL;
     LinkList L;//头结点
     Node student0;
-    student0.data = 0;
+    student0.data = 6;
     student0.next = &student1;
     L = &student0;
     //L->data = 5;
@@ -70,28 +70,31 @@ int main()
     GetElem(L,3,e);
 
     printf("*************************************\n");
-//    int a=80;
-//    LinkListInsert(L,4,&a);
+    int a=80;
+    LinkListInsert(L,4,&a);
 //    GetElem(L,4,e);
 
-    //showAllElem(L);
+    showAllElem(L,7);
     printf("**************remove***********************\n");
     LinkListRemove(L,2,e);
-    showAllElem(L);
+    showAllElem(L,6);
 
     return 0;
 }
 
-Status showAllElem(LinkList L)
+Status showAllElem(LinkList L,int i)
 {
-    int k=0;
+    int k=1;
     LinkList p;
     p = L;
     printf("p.data=%d\n",p->data);
-    while(p!=NULL){
+    while(p&&k<i){
         p = p->next;
         printf("p.data=%d\n",p->data);
         k++;
+    }
+    if (!p||k>i){
+        return ERROR;
     }
     return OK;
 }
