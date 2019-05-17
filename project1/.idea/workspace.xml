@@ -12,13 +12,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.13.2/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.13.2/CompilerIdC/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/3.13.2/CompilerIdCXX/a.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/feature_tests.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/feature_tests.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/demo1.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/listchain.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/listchain.c.obj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastruct/line.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/line.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastruct/listchain.c" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/listchain.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -121,7 +130,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="247" />
     <option name="y" value="86" />
     <option name="width" value="1400" />
@@ -133,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,7 +154,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -192,17 +201,18 @@
       <workItem from="1557796534955" duration="599000" />
       <workItem from="1557883212325" duration="597000" />
       <workItem from="1557969562539" duration="597000" />
+      <workItem from="1558055850002" duration="597000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38233000" />
+    <option name="totallyTimeSpent" value="38830000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="247" y="86" width="1400" height="1000" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07164179" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.051705755" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />

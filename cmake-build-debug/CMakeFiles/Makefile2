@@ -64,39 +64,39 @@ CMAKE_SOURCE_DIR = E:\c\demo
 CMAKE_BINARY_DIR = E:\c\demo\cmake-build-debug
 
 #=============================================================================
-# Target rules for target CMakeFiles/person.dir
+# Target rules for target CMakeFiles/testmain.dir
 
 # All Build rule for target.
-CMakeFiles/person.dir/all:
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/depend
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2,3 "Built target person"
-.PHONY : CMakeFiles/person.dir/all
+CMakeFiles/testmain.dir/all:
+	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/depend
+	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=E:\c\demo\cmake-build-debug\CMakeFiles --progress-num=1,2 "Built target testmain"
+.PHONY : CMakeFiles/testmain.dir/all
 
 # Include target in all.
-all: CMakeFiles/person.dir/all
+all: CMakeFiles/testmain.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/person.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 3
-	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/person.dir/all
+CMakeFiles/testmain.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 2
+	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/testmain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start E:\c\demo\cmake-build-debug\CMakeFiles 0
-.PHONY : CMakeFiles/person.dir/rule
+.PHONY : CMakeFiles/testmain.dir/rule
 
 # Convenience name for target.
-person: CMakeFiles/person.dir/rule
+testmain: CMakeFiles/testmain.dir/rule
 
-.PHONY : person
-
-# clean rule for target.
-CMakeFiles/person.dir/clean:
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/clean
-.PHONY : CMakeFiles/person.dir/clean
+.PHONY : testmain
 
 # clean rule for target.
-clean: CMakeFiles/person.dir/clean
+CMakeFiles/testmain.dir/clean:
+	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/clean
+.PHONY : CMakeFiles/testmain.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/testmain.dir/clean
 
 .PHONY : clean
 

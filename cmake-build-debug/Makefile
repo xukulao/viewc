@@ -110,71 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named person
+# Target rules for targets named testmain
 
 # Build rule for target.
-person: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 person
-.PHONY : person
+testmain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 testmain
+.PHONY : testmain
 
 # fast build rule for target.
-person/fast:
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/build
-.PHONY : person/fast
+testmain/fast:
+	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/build
+.PHONY : testmain/fast
 
-memory/demo.obj: memory/demo.c.obj
+testmain.obj: testmain.c.obj
 
-.PHONY : memory/demo.obj
-
-# target to build an object file
-memory/demo.c.obj:
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/memory/demo.c.obj
-.PHONY : memory/demo.c.obj
-
-memory/demo.i: memory/demo.c.i
-
-.PHONY : memory/demo.i
-
-# target to preprocess a source file
-memory/demo.c.i:
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/memory/demo.c.i
-.PHONY : memory/demo.c.i
-
-memory/demo.s: memory/demo.c.s
-
-.PHONY : memory/demo.s
-
-# target to generate assembly for a file
-memory/demo.c.s:
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/memory/demo.c.s
-.PHONY : memory/demo.c.s
-
-person.obj: person.c.obj
-
-.PHONY : person.obj
+.PHONY : testmain.obj
 
 # target to build an object file
-person.c.obj:
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/person.c.obj
-.PHONY : person.c.obj
+testmain.c.obj:
+	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/testmain.c.obj
+.PHONY : testmain.c.obj
 
-person.i: person.c.i
+testmain.i: testmain.c.i
 
-.PHONY : person.i
+.PHONY : testmain.i
 
 # target to preprocess a source file
-person.c.i:
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/person.c.i
-.PHONY : person.c.i
+testmain.c.i:
+	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/testmain.c.i
+.PHONY : testmain.c.i
 
-person.s: person.c.s
+testmain.s: testmain.c.s
 
-.PHONY : person.s
+.PHONY : testmain.s
 
 # target to generate assembly for a file
-person.c.s:
-	$(MAKE) -f CMakeFiles\person.dir\build.make CMakeFiles/person.dir/person.c.s
-.PHONY : person.c.s
+testmain.c.s:
+	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/testmain.c.s
+.PHONY : testmain.c.s
 
 # Help Target
 help:
@@ -183,14 +156,11 @@ help:
 	@echo ... clean
 	@echo ... depend
 	@echo ... edit_cache
-	@echo ... person
+	@echo ... testmain
 	@echo ... rebuild_cache
-	@echo ... memory/demo.obj
-	@echo ... memory/demo.i
-	@echo ... memory/demo.s
-	@echo ... person.obj
-	@echo ... person.i
-	@echo ... person.s
+	@echo ... testmain.obj
+	@echo ... testmain.i
+	@echo ... testmain.s
 .PHONY : help
 
 
