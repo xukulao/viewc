@@ -155,6 +155,13 @@ Status LinkListInsert(LinkList L,int i,ElemType *e)
     return OK;
 }
 
+/**
+ * 单链表结点移除
+ * @param L
+ * @param i
+ * @param e
+ * @return
+ */
 Status LinkListRemove(LinkList L,int i,ElemType *e)
 {
     int j;

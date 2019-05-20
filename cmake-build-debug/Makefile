@@ -110,44 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named testmain
+# Target rules for targets named endian
 
 # Build rule for target.
-testmain: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 testmain
-.PHONY : testmain
+endian: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 endian
+.PHONY : endian
 
 # fast build rule for target.
-testmain/fast:
-	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/build
-.PHONY : testmain/fast
+endian/fast:
+	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/build
+.PHONY : endian/fast
 
-testmain.obj: testmain.c.obj
+endian.obj: endian.c.obj
 
-.PHONY : testmain.obj
+.PHONY : endian.obj
 
 # target to build an object file
-testmain.c.obj:
-	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/testmain.c.obj
-.PHONY : testmain.c.obj
+endian.c.obj:
+	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/endian.c.obj
+.PHONY : endian.c.obj
 
-testmain.i: testmain.c.i
+endian.i: endian.c.i
 
-.PHONY : testmain.i
+.PHONY : endian.i
 
 # target to preprocess a source file
-testmain.c.i:
-	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/testmain.c.i
-.PHONY : testmain.c.i
+endian.c.i:
+	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/endian.c.i
+.PHONY : endian.c.i
 
-testmain.s: testmain.c.s
+endian.s: endian.c.s
 
-.PHONY : testmain.s
+.PHONY : endian.s
 
 # target to generate assembly for a file
-testmain.c.s:
-	$(MAKE) -f CMakeFiles\testmain.dir\build.make CMakeFiles/testmain.dir/testmain.c.s
-.PHONY : testmain.c.s
+endian.c.s:
+	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/endian.c.s
+.PHONY : endian.c.s
 
 # Help Target
 help:
@@ -155,12 +155,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... endian
 	@echo ... edit_cache
-	@echo ... testmain
 	@echo ... rebuild_cache
-	@echo ... testmain.obj
-	@echo ... testmain.i
-	@echo ... testmain.s
+	@echo ... endian.obj
+	@echo ... endian.i
+	@echo ... endian.s
 .PHONY : help
 
 
