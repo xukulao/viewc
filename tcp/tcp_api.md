@@ -47,7 +47,8 @@
         SOCKET_CLOEXEC表示创建的socket为非阻塞的，以及  
         调用fork创建子进程时在子进程中关闭该socket   
         
-        
+        socket创建成功返回socket文件描述符，错误返回   
+        -1及设置errno  
     
 - socket 基础API  
 
