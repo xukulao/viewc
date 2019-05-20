@@ -21,8 +21,10 @@
     ![socket](socket_address2.png)  
     
     - 专用 socket 地址  
-    
-        
+        - unix 本地域协议族使用专用的socket地址  
+        ![socket](unix_addr.png)
+        - ipv4,ipv6协议族专用socket地址  
+        ![socket](ipv4_ipv6.png)  
     
 - socket 基础API  
 
