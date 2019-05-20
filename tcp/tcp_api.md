@@ -52,7 +52,10 @@
         
      - 命名socket     
       创建socket成功后，绑定一个socket地址就叫命名  
-      ![socket bind](socket_bind.png)  
+      ![socket bind](socket_bind.png)    
+      
+      - socket 地址绑定函数   
+      ![socket_bind](socket_bind_func.png)  
     
 - socket 基础API  
 
