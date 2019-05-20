@@ -4,6 +4,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include <time.h>
+
 /**
  * 每个结点有数据域和指针域构成
  * 单链表：由N个结点【数据元素映像】链构成，每个结点有指针域指向下一个元素的存储位置，以便将线性表的数据元素按其逻辑次序连接在一起
@@ -27,6 +30,7 @@ Status GetElem(LinkList L,int i,ElemType *e);
 Status LinkListInsert(LinkList L,int i,ElemType *e);
 Status LinkListRemove(LinkList L,int i,ElemType *e);
 Status showAllElem(LinkList L,int i);
+void CreateListHead(LinkList L,int i);
 int main()
 {
 //    Node student;
@@ -38,46 +42,54 @@ int main()
 //    stuList->next = &student2;
 //    printf("stuList.data=%d,stuList.next.data=%d\n",stuList->data,stuList->next->data);
 
-    Node student1;
-    Node student2;
-    Node student3;
-    Node student4;
-    Node student5;
+//    Node student1;
+//    Node student2;
+//    Node student3;
+//    Node student4;
+//    Node student5;
+//
+//    student1.data = 100;
+//    student2.data = 200;
+//    student3.data = 300;
+//    student4.data = 400;
+//    student5.data = 500;
+//
+//
+//    student1.next = &student2;
+//    student2.next = &student3;
+//    student3.next = &student4;
+//    student4.next = &student5;
+//    student5.next = NULL;
+//    LinkList L;//头结点
+//    Node student0;
+//    student0.data = 6;
+//    student0.next = &student1;
+//    L = &student0;
+//    //L->data = 5;
+//    //L->next = &student1;
+//
+//    ElemType *e;
+//    ElemType k;
+//    e = &k;
+//    GetElem(L,3,e);
+//
+//    printf("*************************************\n");
+//    int a=80;
+//    LinkListInsert(L,4,&a);
+////    GetElem(L,4,e);
+//
+//    showAllElem(L,7);
+//    printf("**************remove***********************\n");
+//    LinkListRemove(L,2,e);
+//    showAllElem(L,6);
 
-    student1.data = 100;
-    student2.data = 200;
-    student3.data = 300;
-    student4.data = 400;
-    student5.data = 500;
 
-
-    student1.next = &student2;
-    student2.next = &student3;
-    student3.next = &student4;
-    student4.next = &student5;
-    student5.next = NULL;
-    LinkList L;//头结点
-    Node student0;
-    student0.data = 6;
-    student0.next = &student1;
-    L = &student0;
-    //L->data = 5;
-    //L->next = &student1;
-
-    ElemType *e;
-    ElemType k;
-    e = &k;
-    GetElem(L,3,e);
-
-    printf("*************************************\n");
-    int a=80;
-    LinkListInsert(L,4,&a);
-//    GetElem(L,4,e);
-
-    showAllElem(L,7);
-    printf("**************remove***********************\n");
-    LinkListRemove(L,2,e);
-    showAllElem(L,6);
+    LinkList L;
+    L = (LinkList)malloc(sizeof(Node));
+    L->next = NULL;
+    int n=5;
+    CreateListHead(L,n);
+    showAllElem(L,n);
 
     return 0;
 }
@@ -182,4 +194,31 @@ Status LinkListRemove(LinkList L,int i,ElemType *e)
 
     return OK;
 
+}
+
+/**
+ * 头插法创建整个结点
+ * @param L
+ * @param n
+ */
+void CreateListHead(LinkList L,int n)
+{
+    LinkList p;
+    int i;
+    srand(time(0));
+
+    //L = (LinkList)malloc(sizeof(Node));
+    //(L)->next = NULL;
+
+    /**
+     * 每次创建新结点的指针域都会保存链表的第一个结点
+     * 而新结点都会作为链表的第一个结点
+     */
+    for(i=0;i<n;i++){
+        p = (LinkList)malloc(sizeof(Node));
+        p->data = rand()*100+1;
+        p->next = (L)->next;//L.next = 第一个元素
+        (L)->next = p;//L.next指向的第一元素换成目前插入
+
+    }
 }

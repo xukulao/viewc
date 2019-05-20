@@ -12,14 +12,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/demo1.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/listchain.c.obj" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/listchain.c.obj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/line.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/line.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../datastruct/listchain.c" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/listchain.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -123,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="247" />
     <option name="y" value="86" />
     <option name="width" value="1400" />
@@ -203,7 +201,7 @@
     <option name="totallyTimeSpent" value="40028000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1401919" />
