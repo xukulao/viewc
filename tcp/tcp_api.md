@@ -30,7 +30,11 @@
         ![socketip](ip_addr.png)    
         
     - 创建socket    
-        ![socket_create](socket_create.png)  
+        ![socket_create](socket_create.png)    
+        
+        - socket支持的协议族  
+         linux man socket   
+         ![socket protocal](socket_protocal.png)  
     
 - socket 基础API  
 
