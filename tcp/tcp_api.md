@@ -29,7 +29,8 @@
     - IP地址转换函数     
         ![socketip](ip_addr.png)    
         
-    - 创建socket  
+    - 创建socket    
+        ![socket_create](socket_create.png)  
     
 - socket 基础API  
 
