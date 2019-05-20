@@ -15,7 +15,10 @@
     - socket 地址   
     ![socket](socket_address.png)    
     地址族与协议族  
-    ![socket](socket_address1.png)
+    ![socket](socket_address1.png)  
+    
+    协议族以对应的值  
+    ![socket](socket_address2.png)
         
     
 - socket 基础API  
