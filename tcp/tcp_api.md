@@ -57,7 +57,8 @@
       - socket 地址绑定函数   
       ![socket_bind](socket_bind_func.png)    
       
-    - 监听 socket   
+    - 监听 socket     
+      ![socket_listen](socket_listen.png)  
     
 - socket 基础API  
 
