@@ -12,13 +12,16 @@
     小端机要转换，大端机不用转换  
     数据在发送之前先转换为网络字节序再发送    
     
-    - socket 地址   
+    - 通用 socket 地址   
     ![socket](socket_address.png)    
     地址族与协议族  
     ![socket](socket_address1.png)  
     
     协议族以对应的值  
-    ![socket](socket_address2.png)
+    ![socket](socket_address2.png)  
+    
+    - 专用 socket 地址  
+    
         
     
 - socket 基础API  
