@@ -26,7 +26,8 @@
         - ipv4,ipv6协议族专用socket地址  
         ![socket](ipv4_ipv6.png)  
         
-    - IP地址转换函数   
+    - IP地址转换函数     
+        ![socketip](ip_addr.png)  
     
 - socket 基础API  
 
