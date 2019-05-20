@@ -82,8 +82,8 @@
         <entry file="file://$PROJECT_DIR$/tcp_api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="468">
-                <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+              <first_editor relative-caret-position="508">
+                <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
               </first_editor>
               <second_editor />
             </state>
@@ -173,12 +173,12 @@
       <workItem from="1557927865232" duration="3185000" />
       <workItem from="1558014349084" duration="4093000" />
       <workItem from="1558312620344" duration="435000" />
-      <workItem from="1558358290263" duration="2690000" />
+      <workItem from="1558358290263" duration="3225000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19158000" />
+    <option name="totallyTimeSpent" value="19693000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -295,8 +295,8 @@
     <entry file="file://$PROJECT_DIR$/tcp_api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="468">
-            <caret line="36" column="50" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+          <first_editor relative-caret-position="508">
+            <caret line="49" column="8" selection-start-line="49" selection-start-column="8" selection-end-line="49" selection-end-column="8" />
           </first_editor>
           <second_editor />
         </state>

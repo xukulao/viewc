@@ -34,7 +34,20 @@
         
         - socket支持的协议族  
          linux man socket   
-         ![socket protocal](socket_protocal.png)  
+         ![socket protocal](socket_protocal.png)    
+        - socket 的地址族，协议族，服务类型  
+        ![socket_protocal_type](socket_protocal_type.png)  
+        
+        协议族：PF_UNIX PF_ANET PX_ANET6
+        地址族：AF_UNIX AF_ANET AF_ANET6
+        服务类型：SOCKET_STREAM 字节流  tcp
+                 SOCKET_DGRAM 数据服   udp  
+                 
+        linux 高版本都支持服务类型与上SOCKET_NONBLOCK  
+        SOCKET_CLOEXEC表示创建的socket为非阻塞的，以及  
+        调用fork创建子进程时在子进程中关闭该socket   
+        
+        
     
 - socket 基础API  
 
