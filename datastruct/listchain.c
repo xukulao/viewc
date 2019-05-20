@@ -31,6 +31,7 @@ Status LinkListInsert(LinkList L,int i,ElemType *e);
 Status LinkListRemove(LinkList L,int i,ElemType *e);
 Status showAllElem(LinkList L,int i);
 void CreateListHead(LinkList L,int i);
+void CreateListTail(LinkList L,int i);
 int main()
 {
 //    Node student;
@@ -86,9 +87,11 @@ int main()
 
     LinkList L;
     L = (LinkList)malloc(sizeof(Node));
-    L->next = NULL;
-    int n=5;
-    CreateListHead(L,n);
+   // L->next = NULL;
+    int n=6;
+    //CreateListHead(L,n);
+
+    CreateListTail(L,n);
     showAllElem(L,n);
 
     return 0;
@@ -221,4 +224,25 @@ void CreateListHead(LinkList L,int n)
         (L)->next = p;//L.next指向的第一元素换成目前插入
 
     }
+}
+
+/**
+ * 链表尾插入
+ * @param L
+ * @param n
+ */
+void CreateListTail(LinkList L,int n)
+{
+    LinkList p,r;
+    int i;
+    srand(time(0));
+
+    r = L;
+    for(i=0;i<n;i++){
+        p = (LinkList)calloc(1,sizeof(Node));
+        p->data = i;
+        r->next = p;//单链表的最后一个是新结点p
+        r = p;//表示当前链表的最后一个结点是新插入的p
+    }
+    r->next = NULL;
 }
