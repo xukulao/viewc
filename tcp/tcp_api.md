@@ -27,7 +27,9 @@
         ![socket](ipv4_ipv6.png)  
         
     - IP地址转换函数     
-        ![socketip](ip_addr.png)  
+        ![socketip](ip_addr.png)    
+        
+    - 创建socket  
     
 - socket 基础API  
 
