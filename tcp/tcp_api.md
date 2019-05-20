@@ -50,12 +50,14 @@
         socket创建成功返回socket文件描述符，错误返回   
         -1及设置errno  
         
-     - 命名socket     
+    - 命名socket     
       创建socket成功后，绑定一个socket地址就叫命名  
       ![socket bind](socket_bind.png)    
       
       - socket 地址绑定函数   
-      ![socket_bind](socket_bind_func.png)  
+      ![socket_bind](socket_bind_func.png)    
+      
+    - 监听 socket   
     
 - socket 基础API  
 
