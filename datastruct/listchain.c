@@ -32,6 +32,7 @@ Status LinkListRemove(LinkList L,int i,ElemType *e);
 Status showAllElem(LinkList L,int i);
 void CreateListHead(LinkList L,int i);
 void CreateListTail(LinkList L,int i);
+Status ClearList(LinkList L);
 int main()
 {
 //    Node student;
@@ -94,6 +95,11 @@ int main()
     CreateListTail(L,n);
     showAllElem(L,n);
 
+    printf("will remove list\n");
+    ClearList(L);
+    CreateListTail(L,n);
+    showAllElem(L,n);
+
     return 0;
 }
 
@@ -102,8 +108,12 @@ Status showAllElem(LinkList L,int i)
     int k=1;
     LinkList p;
     p = L;
-    printf("p.data=%d\n",p->data);
+    if (p==NULL||p->next==NULL){
+        printf("null linklist\n");
+        return ERROR;
+    }
     while(p&&k<i){
+        printf("p.data=%d\n",p->data);
         p = p->next;
         printf("p.data=%d\n",p->data);
         k++;
@@ -245,4 +255,22 @@ void CreateListTail(LinkList L,int n)
         r = p;//表示当前链表的最后一个结点是新插入的p
     }
     r->next = NULL;
+}
+
+/**
+ * 清空链表
+ * @param L
+ * @return
+ */
+Status ClearList(LinkList L)
+{
+    LinkList p,q;
+    p = L->next;
+    while(p){
+        q = p->next;//p的第二个节点
+        free(p);//清空刚才的第一个节点
+        p = q;//当前节点为第二个获取到的结点
+    }
+    L->next = NULL;
+    return OK;
 }
