@@ -58,7 +58,10 @@
       ![socket_bind](socket_bind_func.png)    
       
     - 监听 socket     
-      ![socket_listen](socket_listen.png)  
+      ![socket_listen](socket_listen.png)    
+      
+    - 接受连接   
+      ![socket_accpet](socket_accept.png)  
     
 - socket 基础API  
 
