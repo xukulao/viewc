@@ -49,6 +49,8 @@
         
         socket创建成功返回socket文件描述符，错误返回   
         -1及设置errno  
+        
+     - 命名socket   
     
 - socket 基础API  
 
