@@ -13,7 +13,9 @@
     数据在发送之前先转换为网络字节序再发送    
     
     - socket 地址   
-    ![socket](socket_address.png)  
+    ![socket](socket_address.png)    
+    地址族与协议族  
+    ![socket](socket_address1.png)
         
     
 - socket 基础API  
