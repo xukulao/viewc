@@ -63,6 +63,12 @@
  ![insert](datastruct/listchain_insert.png)  
  [单链表的展示与插入](listchain.c)  
  
-- 单链表的整表创建  
+- 单链表的整表创建    
+ [单链表的展示与插入](listchain.c)  
+- 单链表的清空  
+ [单链表的展示与插入](listchain.c)    
+ 
+- 静态链表   
+
 
 
