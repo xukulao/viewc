@@ -1,7 +1,7 @@
 //
 // Created by 1655664358@qq.com on 2019/5/21.
 //
-
+//静态链表
 #include <stdio.h>
 #define MAXSIZE 1000
 typedef int ElemType;
