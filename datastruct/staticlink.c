@@ -17,6 +17,7 @@ typedef struct
 }Component,StaticLinkList[MAXSIZE];
 Status InitList(StaticLinkList space);
 int Malloc_SLL(StaticLinkList space);
+Status ListInsert(StaticLinkList L,int i,ElemType e);
 int main()
 {
 //    Component test;
@@ -32,10 +33,25 @@ int main()
 
     StaticLinkList space;
     InitList(space);
-    printf("%d\n",Malloc_SLL(space));
-    printf("%d\n",Malloc_SLL(space));
-    printf("%d\n",Malloc_SLL(space));
-    printf("%d\n",Malloc_SLL(space));
+//    printf("%d\n",Malloc_SLL(space));
+//    printf("%d\n",Malloc_SLL(space));
+//    printf("%d\n",Malloc_SLL(space));
+//    printf("%d\n",Malloc_SLL(space));
+
+    ListInsert(space,1,100);//
+    ListInsert(space,2,200);//
+    ListInsert(space,3,300);//
+    ListInsert(space,4,400);//
+
+    ListInsert(space,2,999);
+    ListInsert(space,3,888);
+    int k=0;
+    for(k=1;k<=6;k++){
+        if (space[k].data){
+            printf("space[%d]=%d\n",k,space[k].data);
+            //printf("sapce[%d].cur=%d\n",k,space[k].cur);
+        }
+    }
 
     return 0;
 }
@@ -62,4 +78,29 @@ int Malloc_SLL(StaticLinkList space)
         space[0].cur = space[i].cur;//得到第二个元素的下标 假设i为第一个元素，它的cur保存的是第二个元素的下标  space[1].cur=2 space[2].cur=3
     }
     return i;
+}
+
+Status ListInsert(StaticLinkList L,int i,ElemType e) //4 400
+{
+    int j,k,l;
+    k = MAXSIZE-1;//最后一个元素  //999
+    if (i<1){
+        return ERROR;
+    }
+
+    j = Malloc_SLL(L);  // 4
+    //printf("j=%d\n",j);
+    if(j){
+        L[j].data = e;  //L[4].data = 400
+        for(l=1;l<=i-1;l++){
+            k = L[k].cur;  //k=4 L[3].cur=4
+            printf("k=%d,L[%d].cur=%d\n",k,k,L[k].cur);
+
+        }
+        L[j].cur = L[k].cur; // L[4].cur = L[3].cur L[4].cur = 0
+        L[k].cur = j;//L[3].cur = 4
+        return OK;
+    }
+    return ERROR;
+
 }
