@@ -6,6 +6,7 @@
  * 小端模式：数据高位存储高位地址，数据低位存低位地址
  */
 #include <stdio.h>
+#include <winsock.h>
 union{
     int n;//4个字节
     char ch;//一个字节
@@ -20,6 +21,10 @@ void main()
      */
     printf("data.n=%#X,data.n=%#X\n",data.n,&data.n);
     printf("data.ch=%#X,data.ch=%#X\n",data.ch,&data.ch);
-    printf("k=%#X\n",&k);
+   // printf("k=%#X\n",&k);
+
+   printf("data of size =%d\n", sizeof(data));
+
+
 
 }

@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/test.dir/test.c.obj"
+  "CMakeFiles/test.dir/socket1.c.obj"
   "test.pdb"
   "test.exe"
   "test.exe.manifest"
