@@ -1,4 +1,4 @@
-### 网络API接口  
+﻿### 网络API接口  
 - socket 地址API  
     - 主机字节序和网络字节序   
     大端和小端是指数据在内存中的存储模式，它由 CPU 决定：
@@ -122,7 +122,9 @@
           return 0;
       }
 
-      ```
+      ```    
+	结果   
+	![socket api](socket_test.png)
     
 - socket 基础API  
 
