@@ -9,6 +9,8 @@
 E:/c/viewc/tcp/signal.c
 stdio.h
 -
+stdlib.h
+-
 signal.h
 -
 unistd.h
