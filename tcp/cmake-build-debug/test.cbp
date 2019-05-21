@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/c/viewc/tcp/socket1.c">
+		<Unit filename="E:/c/viewc/tcp/signal.c">
 			<Option target="test"/>
 		</Unit>
 		<Unit filename="E:/c/viewc/tcp/CMakeLists.txt">

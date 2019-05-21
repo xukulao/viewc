@@ -56,27 +56,27 @@ include CMakeFiles/test.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/test.dir/flags.make
 
-CMakeFiles/test.dir/socket1.c.obj: CMakeFiles/test.dir/flags.make
-CMakeFiles/test.dir/socket1.c.obj: ../socket1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\viewc\tcp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test.dir/socket1.c.obj"
-	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.dir\socket1.c.obj   -c E:\c\viewc\tcp\socket1.c
+CMakeFiles/test.dir/signal.c.obj: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/signal.c.obj: ../signal.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\viewc\tcp\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/test.dir/signal.c.obj"
+	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\test.dir\signal.c.obj   -c E:\c\viewc\tcp\signal.c
 
-CMakeFiles/test.dir/socket1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.dir/socket1.c.i"
-	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\viewc\tcp\socket1.c > CMakeFiles\test.dir\socket1.c.i
+CMakeFiles/test.dir/signal.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test.dir/signal.c.i"
+	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\viewc\tcp\signal.c > CMakeFiles\test.dir\signal.c.i
 
-CMakeFiles/test.dir/socket1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.dir/socket1.c.s"
-	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\viewc\tcp\socket1.c -o CMakeFiles\test.dir\socket1.c.s
+CMakeFiles/test.dir/signal.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test.dir/signal.c.s"
+	D:\posix\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\viewc\tcp\signal.c -o CMakeFiles\test.dir\signal.c.s
 
 # Object files for target test
 test_OBJECTS = \
-"CMakeFiles/test.dir/socket1.c.obj"
+"CMakeFiles/test.dir/signal.c.obj"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
-test.exe: CMakeFiles/test.dir/socket1.c.obj
+test.exe: CMakeFiles/test.dir/signal.c.obj
 test.exe: CMakeFiles/test.dir/build.make
 test.exe: CMakeFiles/test.dir/linklibs.rsp
 test.exe: CMakeFiles/test.dir/objects1.rsp

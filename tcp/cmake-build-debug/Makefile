@@ -122,32 +122,32 @@ test/fast:
 	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/build
 .PHONY : test/fast
 
-socket1.obj: socket1.c.obj
+signal.obj: signal.c.obj
 
-.PHONY : socket1.obj
+.PHONY : signal.obj
 
 # target to build an object file
-socket1.c.obj:
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/socket1.c.obj
-.PHONY : socket1.c.obj
+signal.c.obj:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/signal.c.obj
+.PHONY : signal.c.obj
 
-socket1.i: socket1.c.i
+signal.i: signal.c.i
 
-.PHONY : socket1.i
+.PHONY : signal.i
 
 # target to preprocess a source file
-socket1.c.i:
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/socket1.c.i
-.PHONY : socket1.c.i
+signal.c.i:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/signal.c.i
+.PHONY : signal.c.i
 
-socket1.s: socket1.c.s
+signal.s: signal.c.s
 
-.PHONY : socket1.s
+.PHONY : signal.s
 
 # target to generate assembly for a file
-socket1.c.s:
-	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/socket1.c.s
-.PHONY : socket1.c.s
+signal.c.s:
+	$(MAKE) -f CMakeFiles\test.dir\build.make CMakeFiles/test.dir/signal.c.s
+.PHONY : signal.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... edit_cache
-	@echo ... socket1.obj
-	@echo ... socket1.i
-	@echo ... socket1.s
+	@echo ... signal.obj
+	@echo ... signal.i
+	@echo ... signal.s
 .PHONY : help
 
 
