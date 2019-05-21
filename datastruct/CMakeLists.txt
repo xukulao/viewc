@@ -1,3 +1,3 @@
 #cmake_minimum_required(VERSION <specify CMake version here>)
 project(demo1)
-add_executable(demo1 listchain.c)
+add_executable(demo1 staticlink.c)
