@@ -16,6 +16,7 @@ typedef struct
     int cur;
 }Component,StaticLinkList[MAXSIZE];
 Status InitList(StaticLinkList space);
+int Malloc_SLL(StaticLinkList space);
 int main()
 {
     Component test;
@@ -31,6 +32,11 @@ int main()
     return 0;
 }
 
+/**
+ * 静态链表初始化  当前元素的下标存储了后继元素的下标即地址
+ * @param space
+ * @return
+ */
 Status InitList(StaticLinkList space)
 {
     int i;
@@ -39,4 +45,9 @@ Status InitList(StaticLinkList space)
     }
     space[MAXSIZE-i].cur = 0;
     return OK;
+}
+
+int Malloc_SLL(StaticLinkList space)
+{
+
 }
