@@ -74,6 +74,33 @@
 - 循环链表  
  让单链表的终端结点的指针域指向头结点弄成一个环  
  简称为循环链表circular linkedlist  
- ![circularlink](datastruct/circularlink.png)
+ ![circularlink](datastruct/circularlink.png)  
+ ```c 
+ void CreateCircularLinkList(LinkList L,int i)
+ {
+     LinkList p,r;
+     p = L;
+     int k;
+     for(k=0;k<i;k++){
+         r = (LinkList)calloc(1, sizeof(Node));
+         r->data = k;
+         r->next = p->next;
+         p->next = r;//链表的头指点一直是当前插入的新结点
+         /**
+          * p->next=r  尾插法
+          * p = r  让链表的头结点等于当前插入的新结点
+          */
+     }
+     int m=0;
+     //让链表的终端结点指向第一个节点
+     while(p&&m<i){
+         p = p->next;
+         m++;
+     }
+ 
+     p->next = L;//让最后一个结点指向头结点
+ 
+ }
+ ```
 
 
