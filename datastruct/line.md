@@ -73,6 +73,7 @@
  
 - 循环链表  
  让单链表的终端结点的指针域指向头结点弄成一个环  
- 简称为循环链表circular linkedlist
+ 简称为循环链表circular linkedlist  
+ ![circularlink](datastruct/circularlink.png)
 
 
