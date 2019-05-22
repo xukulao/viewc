@@ -56,27 +56,27 @@ include CMakeFiles/demo1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/demo1.dir/flags.make
 
-CMakeFiles/demo1.dir/staticlink.c.obj: CMakeFiles/demo1.dir/flags.make
-CMakeFiles/demo1.dir/staticlink.c.obj: ../staticlink.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\datastruct\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo1.dir/staticlink.c.obj"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo1.dir\staticlink.c.obj   -c E:\c\demo\datastruct\staticlink.c
+CMakeFiles/demo1.dir/listchain.c.obj: CMakeFiles/demo1.dir/flags.make
+CMakeFiles/demo1.dir/listchain.c.obj: ../listchain.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\datastruct\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo1.dir/listchain.c.obj"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo1.dir\listchain.c.obj   -c E:\c\demo\datastruct\listchain.c
 
-CMakeFiles/demo1.dir/staticlink.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo1.dir/staticlink.c.i"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\datastruct\staticlink.c > CMakeFiles\demo1.dir\staticlink.c.i
+CMakeFiles/demo1.dir/listchain.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo1.dir/listchain.c.i"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\datastruct\listchain.c > CMakeFiles\demo1.dir\listchain.c.i
 
-CMakeFiles/demo1.dir/staticlink.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo1.dir/staticlink.c.s"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\datastruct\staticlink.c -o CMakeFiles\demo1.dir\staticlink.c.s
+CMakeFiles/demo1.dir/listchain.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo1.dir/listchain.c.s"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\datastruct\listchain.c -o CMakeFiles\demo1.dir\listchain.c.s
 
 # Object files for target demo1
 demo1_OBJECTS = \
-"CMakeFiles/demo1.dir/staticlink.c.obj"
+"CMakeFiles/demo1.dir/listchain.c.obj"
 
 # External object files for target demo1
 demo1_EXTERNAL_OBJECTS =
 
-demo1.exe: CMakeFiles/demo1.dir/staticlink.c.obj
+demo1.exe: CMakeFiles/demo1.dir/listchain.c.obj
 demo1.exe: CMakeFiles/demo1.dir/build.make
 demo1.exe: CMakeFiles/demo1.dir/linklibs.rsp
 demo1.exe: CMakeFiles/demo1.dir/objects1.rsp

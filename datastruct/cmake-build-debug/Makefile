@@ -122,32 +122,32 @@ demo1/fast:
 	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/build
 .PHONY : demo1/fast
 
-staticlink.obj: staticlink.c.obj
+listchain.obj: listchain.c.obj
 
-.PHONY : staticlink.obj
+.PHONY : listchain.obj
 
 # target to build an object file
-staticlink.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/staticlink.c.obj
-.PHONY : staticlink.c.obj
+listchain.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/listchain.c.obj
+.PHONY : listchain.c.obj
 
-staticlink.i: staticlink.c.i
+listchain.i: listchain.c.i
 
-.PHONY : staticlink.i
+.PHONY : listchain.i
 
 # target to preprocess a source file
-staticlink.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/staticlink.c.i
-.PHONY : staticlink.c.i
+listchain.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/listchain.c.i
+.PHONY : listchain.c.i
 
-staticlink.s: staticlink.c.s
+listchain.s: listchain.c.s
 
-.PHONY : staticlink.s
+.PHONY : listchain.s
 
 # target to generate assembly for a file
-staticlink.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/staticlink.c.s
-.PHONY : staticlink.c.s
+listchain.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/listchain.c.s
+.PHONY : listchain.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo1
 	@echo ... edit_cache
-	@echo ... staticlink.obj
-	@echo ... staticlink.i
-	@echo ... staticlink.s
+	@echo ... listchain.obj
+	@echo ... listchain.i
+	@echo ... listchain.s
 .PHONY : help
 
 
