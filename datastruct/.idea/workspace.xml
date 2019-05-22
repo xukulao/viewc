@@ -13,6 +13,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e5870c51-d971-48ad-bce6-a77d5c7f209b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/line.md" beforeDir="false" afterPath="$PROJECT_DIR$/line.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../project1/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../project1/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/listchain.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="319" column="1" lean-forward="true" selection-start-line="295" selection-end-line="319" selection-end-column="1" />
+            <state relative-caret-position="-990">
+              <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
               <folding>
                 <element signature="e#53#71#0" expanded="true" />
               </folding>
@@ -82,8 +83,8 @@
         <entry file="file://$PROJECT_DIR$/line.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="573">
-                <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
+              <first_editor relative-caret-position="398">
+                <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
               </first_editor>
               <second_editor />
             </state>
@@ -210,12 +211,12 @@
       <workItem from="1558055853063" duration="8491000" />
       <workItem from="1558314525170" duration="9251000" />
       <workItem from="1558401370151" duration="8810000" />
-      <workItem from="1558487899716" duration="5327000" />
+      <workItem from="1558487899716" duration="6359000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70517000" />
+    <option name="totallyTimeSpent" value="71549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -298,13 +299,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/staticlink.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -312,10 +306,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/staticlink.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="620">
+          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/listchain.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="319" column="1" lean-forward="true" selection-start-line="295" selection-end-line="319" selection-end-column="1" />
+        <state relative-caret-position="-990">
+          <caret line="120" column="9" lean-forward="true" selection-start-line="120" selection-start-column="9" selection-end-line="120" selection-end-column="9" />
           <folding>
             <element signature="e#53#71#0" expanded="true" />
           </folding>
@@ -325,8 +326,8 @@
     <entry file="file://$PROJECT_DIR$/line.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="573">
-            <caret line="102" column="2" selection-start-line="102" selection-start-column="2" selection-end-line="102" selection-end-column="2" />
+          <first_editor relative-caret-position="398">
+            <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
           </first_editor>
           <second_editor />
         </state>
