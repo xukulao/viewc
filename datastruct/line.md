@@ -110,6 +110,8 @@
    节点插入  
    ![dulink_insert](datastruct/dulink_insert.png) 
    节点移除 
-   ![dulink_remove](datastruct/dullink_remove.png)
+   ![dulink_remove](datastruct/dullink_remove.png)  
+   
+   [双向循环链表测试源码](dulinklist.c)
 
 

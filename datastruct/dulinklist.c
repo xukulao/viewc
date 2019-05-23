@@ -26,7 +26,10 @@ typedef struct Node{
     struct Node *next;
 }Node,*LinkList;
 
+//双向循环链表插入
 Status listInsert(LinkList L,int i,ElemType *e);
+//双向循环链表移除
+Status listRmove(LinkList L,int i);
 void showAllElem(LinkList L);
 int main()
 {
@@ -60,7 +63,12 @@ int main()
     printf("address 4 =%s\n",L->next->next->next->next->address);
 
     listInsert(L,i,"japanese");
-   showAllElem(L);
+    //showAllElem(L);
+
+    listInsert(L,i,"american");
+
+    listRmove(L,1);
+    showAllElem(L);
     return 0;
 }
 
@@ -70,7 +78,7 @@ void showAllElem(LinkList L)
     p = L;
     while(p){
         p = p->next;
-        printf("address=%s\n",p->address);
+        printf("next address=%s\n",p->address);
     }
 }
 Status listInsert(LinkList L,int i,ElemType *e)
@@ -103,4 +111,20 @@ Status listInsert(LinkList L,int i,ElemType *e)
 //    printf("8 p.next.address=%s\n",p->next->next->next->next->next->next->next->next->next->address);
     return OK;
 
+}
+
+Status listRmove(LinkList L,int i)
+{
+    LinkList p;
+    int k=0;
+    p = L;
+    while(p&&k<i){
+        p = p->next;
+        k++;
+    }
+
+    p->piror->next = p->next;//当前结点的前驱结点的下一个结点
+    p->next->piror = p->piror;//当前结点的后继结点的前驱结点
+
+    return OK;
 }
