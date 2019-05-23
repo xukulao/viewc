@@ -122,32 +122,32 @@ demo1/fast:
 	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/build
 .PHONY : demo1/fast
 
-listchain.obj: listchain.c.obj
+dulinklist.obj: dulinklist.c.obj
 
-.PHONY : listchain.obj
+.PHONY : dulinklist.obj
 
 # target to build an object file
-listchain.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/listchain.c.obj
-.PHONY : listchain.c.obj
+dulinklist.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/dulinklist.c.obj
+.PHONY : dulinklist.c.obj
 
-listchain.i: listchain.c.i
+dulinklist.i: dulinklist.c.i
 
-.PHONY : listchain.i
+.PHONY : dulinklist.i
 
 # target to preprocess a source file
-listchain.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/listchain.c.i
-.PHONY : listchain.c.i
+dulinklist.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/dulinklist.c.i
+.PHONY : dulinklist.c.i
 
-listchain.s: listchain.c.s
+dulinklist.s: dulinklist.c.s
 
-.PHONY : listchain.s
+.PHONY : dulinklist.s
 
 # target to generate assembly for a file
-listchain.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/listchain.c.s
-.PHONY : listchain.c.s
+dulinklist.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/dulinklist.c.s
+.PHONY : dulinklist.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo1
 	@echo ... edit_cache
-	@echo ... listchain.obj
-	@echo ... listchain.i
-	@echo ... listchain.s
+	@echo ... dulinklist.obj
+	@echo ... dulinklist.i
+	@echo ... dulinklist.s
 .PHONY : help
 
 
