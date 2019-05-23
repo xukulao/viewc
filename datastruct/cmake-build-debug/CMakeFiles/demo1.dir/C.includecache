@@ -6,13 +6,11 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/datastruct/listchain.c
+E:/c/demo/datastruct/dulinklist.c
 stdio.h
 -
 stdlib.h
 -
 string.h
--
-time.h
 -
 
