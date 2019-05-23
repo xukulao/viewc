@@ -108,6 +108,8 @@
    每个节点两个指针域，一个指针指向后继结点，一个指针指向前驱结点    
    ![dulLink](datastruct/dullink.png)  
    节点插入  
-   ![dulink_insert](datastruct/dulink_insert.png)
+   ![dulink_insert](datastruct/dulink_insert.png) 
+   节点移除 
+   ![dulink_remove](datastruct/dullink_remove.png)
 
 
