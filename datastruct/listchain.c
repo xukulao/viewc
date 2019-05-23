@@ -24,6 +24,12 @@ typedef struct Node{
     struct Node *next;
 }Node;
 
+typedef struct DulNode{
+    ElemType data;
+    struct DulNode *prior;
+    struct DulNode *next;
+}DulNode *DulLinkList;
+
 typedef struct Node *LinkList;
 typedef int Status;
 Status GetElem(LinkList L,int i,ElemType *e);

@@ -14,6 +14,7 @@
     <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../datastruct/line.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/line.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/listchain.c" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/listchain.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -190,17 +191,18 @@
       <workItem from="1558314520345" duration="1198000" />
       <workItem from="1558401365253" duration="597000" />
       <workItem from="1558487896979" duration="599000" />
+      <workItem from="1558574723647" duration="599000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41224000" />
+    <option name="totallyTimeSpent" value="41823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="247" y="86" width="1400" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14402986" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14626865" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
