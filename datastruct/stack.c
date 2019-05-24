@@ -1,7 +1,15 @@
 //
 // Created by 1655664358@qq.com on 2019/5/24.
 //
-
+/**
+ * 栈：即限定在某一端能进行插入和删除【栈顶】表尾操作的线性表
+ * 出栈【弹栈】：删除数据元素
+ * 进栈【入栈，压栈】：插入数据元素
+ * 空栈
+ * 栈顶，栈底
+ * 后进先出Last In First Out LIFO结构
+ *
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #define MAXSIZE 1000
