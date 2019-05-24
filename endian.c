@@ -5,6 +5,10 @@
 typedef int function;
 #define echo(text) printf(text);
 #define ECHO(text) printf(text);
+#define 主程序 int main(){
+#define 结束 }
+#define 格式化打印 printf
+#define 输出一行 puts
 function talk();
 
 
@@ -27,11 +31,11 @@ function talk()
 //{
 //    data.n = 0x20000001;
 //    /**
-//     * 鏁版嵁0x00 楂樹綅
-//     * 鏁版嵁0x01 浣庝綅
+//     * 数据0x00 高位
+//     * 数据0x01 低位
 //     *
-//     * 鍐呭瓨鍦板潃 浠庝綆鍒伴珮
-//     * 灏忕妯″紡锛氭暟鎹綆浣嶄繚瀛樺湪浣庝綅鍦板潃锛屾暟鎹珮浣嶄繚瀛樺湪楂樹綅鍦板潃
+//     * 内存地址 从低到高
+//     * 小端模式：数据低位保存在低位地址，数据高位保存在高位地址
 //     */
 //
 //    printf("k=%d,k=%#X\n",k,&k);

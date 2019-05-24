@@ -12,15 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5870c51-d971-48ad-bce6-a77d5c7f209b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/demo1.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/demo1.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/queue.md" beforeDir="false" afterPath="$PROJECT_DIR$/queue.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stack.c" beforeDir="false" afterPath="$PROJECT_DIR$/stack.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../endian.c" beforeDir="false" afterPath="$PROJECT_DIR$/../endian.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/queue.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
@@ -56,11 +54,14 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stack.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+            <state relative-caret-position="54">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#53#71#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,8 +158,8 @@
         <option value="$PROJECT_DIR$/line.md" />
         <option value="$PROJECT_DIR$/data.md" />
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
-        <option value="$PROJECT_DIR$/stack.c" />
         <option value="$PROJECT_DIR$/queue.md" />
+        <option value="$PROJECT_DIR$/stack.c" />
       </list>
     </option>
   </component>
@@ -235,23 +236,23 @@
       <workItem from="1558401370151" duration="8810000" />
       <workItem from="1558487899716" duration="6359000" />
       <workItem from="1558574726789" duration="10590000" />
-      <workItem from="1558662167143" duration="3832000" />
+      <workItem from="1558662167143" duration="5689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85971000" />
+    <option name="totallyTimeSpent" value="87828000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12953092" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48264644" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41323212" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -360,13 +361,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stack.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/list.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="644">
@@ -381,6 +375,16 @@
             <caret line="15" column="35" lean-forward="true" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stack.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#53#71#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
