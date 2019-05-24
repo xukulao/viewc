@@ -85,6 +85,9 @@
 		<Unit filename="E:/c/demo/endian.c">
 			<Option target="endian"/>
 		</Unit>
+		<Unit filename="E:/c/demo/endian.h">
+			<Option target="endian"/>
+		</Unit>
 		<Unit filename="E:/c/demo/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

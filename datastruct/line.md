@@ -112,6 +112,10 @@
    节点移除 
    ![dulink_remove](datastruct/dullink_remove.png)  
    
-   [双向循环链表测试源码](dulinklist.c)
+   [双向循环链表测试源码](dulinklist.c)   
+  
+  
+- 线性表  
+    ![linklist](datastruct/linklist8.png)
 
 
