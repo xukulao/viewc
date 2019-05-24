@@ -8,4 +8,8 @@
     栈的插入操作称为进栈，压栈，入栈  
     栈的删除操作称为出栈，弹栈  
     
-    ![stack](datastruct/stack.png)
+    ![stack](datastruct/stack.png)  
+    
+- 栈的顺序存储结构  
+    线性表的顺序存储结构特例，栈一样叫顺序栈   
+    
