@@ -13,3 +13,4 @@
 - 栈的顺序存储结构  
     线性表的顺序存储结构特例，栈一样叫顺序栈   
     
+    ![stack](datastruct/stack1.png)

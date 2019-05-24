@@ -56,27 +56,27 @@ include CMakeFiles/demo1.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/demo1.dir/flags.make
 
-CMakeFiles/demo1.dir/dulinklist.c.obj: CMakeFiles/demo1.dir/flags.make
-CMakeFiles/demo1.dir/dulinklist.c.obj: ../dulinklist.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\datastruct\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo1.dir/dulinklist.c.obj"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo1.dir\dulinklist.c.obj   -c E:\c\demo\datastruct\dulinklist.c
+CMakeFiles/demo1.dir/stack.c.obj: CMakeFiles/demo1.dir/flags.make
+CMakeFiles/demo1.dir/stack.c.obj: ../stack.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=E:\c\demo\datastruct\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/demo1.dir/stack.c.obj"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\demo1.dir\stack.c.obj   -c E:\c\demo\datastruct\stack.c
 
-CMakeFiles/demo1.dir/dulinklist.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo1.dir/dulinklist.c.i"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\datastruct\dulinklist.c > CMakeFiles\demo1.dir\dulinklist.c.i
+CMakeFiles/demo1.dir/stack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/demo1.dir/stack.c.i"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E E:\c\demo\datastruct\stack.c > CMakeFiles\demo1.dir\stack.c.i
 
-CMakeFiles/demo1.dir/dulinklist.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo1.dir/dulinklist.c.s"
-	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\datastruct\dulinklist.c -o CMakeFiles\demo1.dir\dulinklist.c.s
+CMakeFiles/demo1.dir/stack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/demo1.dir/stack.c.s"
+	C:\TDM-GCC-64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S E:\c\demo\datastruct\stack.c -o CMakeFiles\demo1.dir\stack.c.s
 
 # Object files for target demo1
 demo1_OBJECTS = \
-"CMakeFiles/demo1.dir/dulinklist.c.obj"
+"CMakeFiles/demo1.dir/stack.c.obj"
 
 # External object files for target demo1
 demo1_EXTERNAL_OBJECTS =
 
-demo1.exe: CMakeFiles/demo1.dir/dulinklist.c.obj
+demo1.exe: CMakeFiles/demo1.dir/stack.c.obj
 demo1.exe: CMakeFiles/demo1.dir/build.make
 demo1.exe: CMakeFiles/demo1.dir/linklibs.rsp
 demo1.exe: CMakeFiles/demo1.dir/objects1.rsp
