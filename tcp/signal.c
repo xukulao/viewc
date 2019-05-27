@@ -21,10 +21,10 @@ int main(int argc,char *argv[])
     int age = atoi(argv[1]);
     printf("age=%d\n",age);
     //getchar();
-   // assert(1);
+   assert(1==2);
     int k=100;
     printf("k=%d\n",*&k);
-    bzero(&k, sizeof(k));//清空
+   // bzero(&k, sizeof(k));//清空
     return 0;
 }
 

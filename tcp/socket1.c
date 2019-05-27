@@ -29,7 +29,7 @@ int main(int argc,char *argv[])
     int port = atoi(argv[2]);//将字符转换为整数
     int backlog = atoi(argv[3]);
     int sock = socket(PF_INET,SOCK_STREAM,0);//创建一个socket PF_INET为协议族  SOCKET_STREAM为服务类型
-    assert(sock>=0);//声明  为false报错
+    assert(sock>=0);//声明  为false报错=
 
     struct sockaddr_in address;//tcp/ipv4地址
 
