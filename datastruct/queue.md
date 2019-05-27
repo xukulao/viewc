@@ -28,4 +28,6 @@
     top2为空时 top2=n  
     
     top1栈满时 top1=n-1  
-    top2栈满时 top2=top1+1   
+    top2栈满时 top2=top1+1     
+    
+    [双栈空间代码实现测试](stack.c)

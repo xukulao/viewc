@@ -26,6 +26,8 @@ typedef struct Node{
     struct Node *next;
 }Node,*LinkList;
 
+
+
 //双向循环链表插入
 Status listInsert(LinkList L,int i,ElemType *e);
 //双向循环链表移除
