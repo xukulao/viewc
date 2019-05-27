@@ -124,72 +124,72 @@
 
       ```    
 	结果   
-	![socket api](socket_test.png)
+	![socket api](socket_test.png)    
     
 	
-	接受连接代码测试  
+	接受连接代码测试     
 	```c 
 	#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <libgen.h>
-#include <netinet/in.h>
-#include <sys/socket.h>
-#include <arpa/inet.h>
-#include <assert.h>
-#include <unistd.h>
-#include <error.h>
-int main(int argc,char *argv[])
-{
+	#include <stdlib.h>
+	#include <string.h>
+	#include <libgen.h>
+	#include <netinet/in.h>
+	#include <sys/socket.h>
+	#include <arpa/inet.h>
+	#include <assert.h>
+	#include <unistd.h>
+	#include <error.h>
+	int main(int argc,char *argv[])
+	{
 
-        if(argc<2){
-                printf("usage:%s ip and port\n",basename(argv[0]));
-        }
+		if(argc<2){
+			printf("usage:%s ip and port\n",basename(argv[0]));
+		}
 
-        const char *ip = argv[1];
-        const int port = atoi(argv[2]);//数据类型转换
+		const char *ip = argv[1];
+		const int port = atoi(argv[2]);//数据类型转换
 
-        struct sockaddr_in address;//tcp/ipv4地址
-        bzero(&address,sizeof(address));//置0
+		struct sockaddr_in address;//tcp/ipv4地址
+		bzero(&address,sizeof(address));//置0
 
-        address.sin_family = AF_INET;//地址族  一般和协议族对应
+		address.sin_family = AF_INET;//地址族  一般和协议族对应
 
-        address.sin_port = htons(port);//host to network short int
-        inet_pton(AF_INET,ip,&address.sin_addr);//地址
+		address.sin_port = htons(port);//host to network short int
+		inet_pton(AF_INET,ip,&address.sin_addr);//地址
 
-        int sock = socket(PF_INET,SOCK_STREAM,0);//创建一个基于tcp/ipv4的字节流sock
+		int sock = socket(PF_INET,SOCK_STREAM,0);//创建一个基于tcp/ipv4的字节流sock
 
-        assert(sock>=0);
+		assert(sock>=0);
 
-        int ret = bind(sock,(struct sockaddr*)&address,sizeof(address));//将地址绑定此sock
+		int ret = bind(sock,(struct sockaddr*)&address,sizeof(address));//将地址绑定此sock
 
-        assert(ret!=-1);
+		assert(ret!=-1);
 
-        ret = listen(sock,5);//监听sock进入LISTEN状态待客户端连接，会进入内核连接等待队列里
-        assert(ret!=-1);
+		ret = listen(sock,5);//监听sock进入LISTEN状态待客户端连接，会进入内核连接等待队列里
+		assert(ret!=-1);
 
-        sleep(30);
+		sleep(30);
 
-        struct sockaddr_in client;//客户端地址
-        socklen_t client_addrlenth = sizeof(client);
-		int confd = accept(sock,(struct sockaddr*)&client,(socklen_t*)&client_addrlenth);//从内核等待队列里取出一个客户端连接
+		struct sockaddr_in client;//客户端地址
+		socklen_t client_addrlenth = sizeof(client);
+			int confd = accept(sock,(struct sockaddr*)&client,(socklen_t*)&client_addrlenth);//从内核等待队列里取出一个客户端连接
 
-        if(confd<0){
-                printf("error is %d\n",error);
-        }else{
-                char remote[INET_ADDRSTRLEN];
-                printf("ip is %s,port is %d\n",inet_ntop(AF_INET,&client.sin_addr,remote,INET_ADDRSTRLEN),ntohs(client.sin_port));
-                close(confd);
-        }
-        close(sock);
+		if(confd<0){
+			printf("error is %d\n",error);
+		}else{
+			char remote[INET_ADDRSTRLEN];
+			printf("ip is %s,port is %d\n",inet_ntop(AF_INET,&client.sin_addr,remote,INET_ADDRSTRLEN),ntohs(client.sin_port));
+			close(confd);
+		}
+		close(sock);
 
 
-        return 0;
-}
+		return 0;
+	}
 
 	```   
 	测试结果【tcpdump工具抓取通信过程】 
-	```c   
+	```text  
 	[root@iz2zegqaeolqftvinr8is3z ~]# tcpdump -ntx -i lo
 tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
 listening on lo, link-type EN10MB (Ethernet), capture size 65535 bytes
@@ -224,9 +224,8 @@ IP 127.0.0.1.8897 > 127.0.0.1.57352: Flags [.], ack 2, win 342, options [nop,nop
         0x0020:  8010 0156 fe28 0000 0101 080a 54f0 1d4b
         0x0030:  54f0 1d4b
 
-
-	```    
-	![socket_accept](socket_accept1.png)  
+	```      
+	![socket_accept](socket_accept1.png)    
 - socket 基础API  
 
 - 网络信息API  
