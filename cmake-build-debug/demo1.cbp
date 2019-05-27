@@ -82,7 +82,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/c/demo/endian.c">
+		<Unit filename="E:/c/demo/chinese.c">
 			<Option target="endian"/>
 		</Unit>
 		<Unit filename="E:/c/demo/CMakeLists.txt">

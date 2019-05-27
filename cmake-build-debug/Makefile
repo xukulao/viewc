@@ -122,32 +122,32 @@ endian/fast:
 	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/build
 .PHONY : endian/fast
 
-endian.obj: endian.c.obj
+chinese.obj: chinese.c.obj
 
-.PHONY : endian.obj
+.PHONY : chinese.obj
 
 # target to build an object file
-endian.c.obj:
-	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/endian.c.obj
-.PHONY : endian.c.obj
+chinese.c.obj:
+	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/chinese.c.obj
+.PHONY : chinese.c.obj
 
-endian.i: endian.c.i
+chinese.i: chinese.c.i
 
-.PHONY : endian.i
+.PHONY : chinese.i
 
 # target to preprocess a source file
-endian.c.i:
-	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/endian.c.i
-.PHONY : endian.c.i
+chinese.c.i:
+	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/chinese.c.i
+.PHONY : chinese.c.i
 
-endian.s: endian.c.s
+chinese.s: chinese.c.s
 
-.PHONY : endian.s
+.PHONY : chinese.s
 
 # target to generate assembly for a file
-endian.c.s:
-	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/endian.c.s
-.PHONY : endian.c.s
+chinese.c.s:
+	$(MAKE) -f CMakeFiles\endian.dir\build.make CMakeFiles/endian.dir/chinese.c.s
+.PHONY : chinese.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... endian
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... endian.obj
-	@echo ... endian.i
-	@echo ... endian.s
+	@echo ... chinese.obj
+	@echo ... chinese.i
+	@echo ... chinese.s
 .PHONY : help
 
 

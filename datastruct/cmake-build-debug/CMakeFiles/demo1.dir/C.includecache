@@ -6,7 +6,9 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/datastruct/staticlink.c
+E:/c/demo/datastruct/stack.c
 stdio.h
+-
+stdlib.h
 -
 

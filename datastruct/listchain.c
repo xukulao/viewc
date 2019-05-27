@@ -24,14 +24,21 @@ typedef struct Node{
     struct Node *next;
 }Node;
 
+typedef struct DulNode{
+    ElemType data;
+    struct DulNode *prior;
+    struct DulNode *next;
+}DulNode *DulLinkList;
+
 typedef struct Node *LinkList;
 typedef int Status;
 Status GetElem(LinkList L,int i,ElemType *e);
 Status LinkListInsert(LinkList L,int i,ElemType *e);
 Status LinkListRemove(LinkList L,int i,ElemType *e);
-Status showAllElem(LinkList L,int i);
+Status showAllElem(LinkList L,int i,int type);
 void CreateListHead(LinkList L,int i);
 void CreateListTail(LinkList L,int i);
+void CreateCircularLinkList(LinkList L,int i);//创建一个循环链表
 Status ClearList(LinkList L);
 int main()
 {
@@ -89,21 +96,25 @@ int main()
     LinkList L;
     L = (LinkList)malloc(sizeof(Node));
    // L->next = NULL;
+   L->data = -1;
     int n=6;
     //CreateListHead(L,n);
 
-    CreateListTail(L,n);
-    showAllElem(L,n);
+    //CreateListTail(L,n);
+   // showAllElem(L,n);
 
-    printf("will remove list\n");
-    ClearList(L);
-    CreateListTail(L,n);
-    showAllElem(L,n);
+     CreateCircularLinkList(L,n);
+     showAllElem(L,n,1);
+
+//    printf("will remove list\n");
+//    ClearList(L);
+//    CreateListTail(L,n);
+//    showAllElem(L,n);
 
     return 0;
 }
 
-Status showAllElem(LinkList L,int i)
+Status showAllElem(LinkList L,int i,int type)
 {
     int k=1;
     LinkList p;
@@ -112,12 +123,20 @@ Status showAllElem(LinkList L,int i)
         printf("null linklist\n");
         return ERROR;
     }
-    while(p&&k<i){
-        printf("p.data=%d\n",p->data);
-        p = p->next;
-        printf("p.data=%d\n",p->data);
-        k++;
+    if (type==1){
+        while(p&&k<=i){//&&p->next->data!=-1
+            p = p->next;
+            printf("p.data=%d\n",p->data);
+            k++;
+        }
+    }else{
+        while(p){//&&p->next->data!=-1
+            p = p->next;
+            printf("p.data=%d\n",p->data);
+            k++;
+        }
     }
+
     if (!p||k>i){
         return ERROR;
     }
@@ -273,4 +292,35 @@ Status ClearList(LinkList L)
     }
     L->next = NULL;
     return OK;
+}
+
+/**
+ * 创建循环链表
+ * @param L
+ * @param i
+ */
+void CreateCircularLinkList(LinkList L,int i)
+{
+    LinkList p,r;
+    p = L;
+    int k;
+    for(k=0;k<i;k++){
+        r = (LinkList)calloc(1, sizeof(Node));
+        r->data = k;
+        r->next = p->next;
+        p->next = r;//链表的头指点一直是当前插入的新结点
+        /**
+         * p->next=r  尾插法
+         * p = r  让链表的头结点等于当前插入的新结点
+         */
+    }
+    int m=0;
+    //让链表的终端结点指向第一个节点
+    while(p&&m<i){
+        p = p->next;
+        m++;
+    }
+
+    p->next = L;//让最后一个结点指向头结点
+
 }

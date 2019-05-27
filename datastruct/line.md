@@ -69,6 +69,53 @@
  [单链表的展示与插入](listchain.c)    
  
 - 静态链表   
- 用数组描述的链表叫静态链表     
+ 用数组描述的链表叫静态链表       
+ 
+- 循环链表  
+ 让单链表的终端结点的指针域指向头结点弄成一个环  
+ 简称为循环链表circular linkedlist  
+ ![circularlink](datastruct/circularlink.png)  
+ ```c 
+ void CreateCircularLinkList(LinkList L,int i)
+ {
+     LinkList p,r;
+     p = L;
+     int k;
+     for(k=0;k<i;k++){
+         r = (LinkList)calloc(1, sizeof(Node));
+         r->data = k;
+         r->next = p->next;
+         p->next = r;//链表的头指点一直是当前插入的新结点
+         /**
+          * p->next=r  尾插法
+          * p = r  让链表的头结点等于当前插入的新结点
+          */
+     }
+     int m=0;
+     //让链表的终端结点指向第一个节点
+     while(p&&m<i){
+         p = p->next;
+         m++;
+     }
+ 
+     p->next = L;//让最后一个结点指向头结点
+ 
+ }
+ ```  
+ 
+ 
+ - 双向链表  
+   每个节点两个指针域，一个指针指向后继结点，一个指针指向前驱结点    
+   ![dulLink](datastruct/dullink.png)  
+   节点插入  
+   ![dulink_insert](datastruct/dulink_insert.png) 
+   节点移除 
+   ![dulink_remove](datastruct/dullink_remove.png)  
+   
+   [双向循环链表测试源码](dulinklist.c)   
+  
+  
+- 线性表  
+    ![linklist](datastruct/linklist8.png)
 
 
