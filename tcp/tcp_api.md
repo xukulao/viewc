@@ -223,10 +223,8 @@ IP 127.0.0.1.8897 > 127.0.0.1.57352: Flags [.], ack 2, win 342, options [nop,nop
         0x0010:  7f00 0001 22c1 e008 fa92 edf7 6727 ebbf  
         0x0020:  8010 0156 fe28 0000 0101 080a 54f0 1d4b  
         0x0030:  54f0 1d4b  
-
-	```       
-	
-	
+	```      
+	-------------------------
 	![socket_accept](socket_accept1.png)    
 - socket 基础API  
 
