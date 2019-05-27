@@ -18,4 +18,14 @@
     [进栈与出栈测试源码](stack.c)  
     
 - 两栈共享空间    
-    ![stack](datastruct/stack2.png)
+    ![stack](datastruct/stack2.png) 
+    
+    n【9】 +1=10
+    m【9】
+    
+    栈底 -1 0 1 2 3 4 5 top1| top2 6 7 8 9 10 栈底  
+    top1为空时 top1=-1  
+    top2为空时 top2=n  
+    
+    top1栈满时 top1=n-1  
+    top2栈满时 top2=top1+1   
