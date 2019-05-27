@@ -23,11 +23,11 @@
     n【9】 +1=10
     m【9】
     
-    栈底 -1 0 1 2 3 4 5 top1| top2 6 7 8 9 10 栈底  
+    栈底 -1 0 1 2 3 4 5 top1| top2 1 2 3 4 5 栈底  
     top1为空时 top1=-1  
     top2为空时 top2=n  
     
     top1栈满时 top1=n-1  
-    top2栈满时 top2=top1+1     
+    top2栈满时 top2=top1+1 【top2=0】    
     
     [双栈空间代码实现测试](stack.c)
