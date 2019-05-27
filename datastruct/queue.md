@@ -15,4 +15,6 @@
     
     ![stack](datastruct/stack1.png)  
     
-    [进栈与出栈测试源码](stack.c)
+    [进栈与出栈测试源码](stack.c)  
+    
+- 两栈共享空间  
