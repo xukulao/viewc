@@ -37,4 +37,6 @@
    ![stack](datastruct/stack3.png)
 
    进栈操作  
-   ![pushstack](datastruct/linkstack.png)
+   ![pushstack](datastruct/linkstack.png)  
+   
+   [链栈操作测试源码](linkstack.c)
