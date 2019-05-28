@@ -124,8 +124,108 @@
 
       ```    
 	结果   
-	![socket api](socket_test.png)
+	![socket api](socket_test.png)    
     
+	
+	接受连接代码测试     
+	```c 
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include <string.h>
+	#include <libgen.h>
+	#include <netinet/in.h>
+	#include <sys/socket.h>
+	#include <arpa/inet.h>
+	#include <assert.h>
+	#include <unistd.h>
+	#include <error.h>
+	int main(int argc,char *argv[])
+	{
+
+		if(argc<2){
+			printf("usage:%s ip and port\n",basename(argv[0]));
+		}
+
+		const char *ip = argv[1];
+		const int port = atoi(argv[2]);//数据类型转换
+
+		struct sockaddr_in address;//tcp/ipv4地址
+		bzero(&address,sizeof(address));//置0
+
+		address.sin_family = AF_INET;//地址族  一般和协议族对应
+
+		address.sin_port = htons(port);//host to network short int
+		inet_pton(AF_INET,ip,&address.sin_addr);//地址
+
+		int sock = socket(PF_INET,SOCK_STREAM,0);//创建一个基于tcp/ipv4的字节流sock
+
+		assert(sock>=0);
+
+		int ret = bind(sock,(struct sockaddr*)&address,sizeof(address));//将地址绑定此sock
+
+		assert(ret!=-1);
+
+		ret = listen(sock,5);//监听sock进入LISTEN状态待客户端连接，会进入内核连接等待队列里
+		assert(ret!=-1);
+
+		sleep(30);
+
+		struct sockaddr_in client;//客户端地址
+		socklen_t client_addrlenth = sizeof(client);
+			int confd = accept(sock,(struct sockaddr*)&client,(socklen_t*)&client_addrlenth);//从内核等待队列里取出一个客户端连接
+
+		if(confd<0){
+			printf("error is %d\n",error);
+		}else{
+			char remote[INET_ADDRSTRLEN];
+			printf("ip is %s,port is %d\n",inet_ntop(AF_INET,&client.sin_addr,remote,INET_ADDRSTRLEN),ntohs(client.sin_port));
+			close(confd);
+		}
+		close(sock);
+
+
+		return 0;
+	}
+
+	```   
+	测试结果【tcpdump工具抓取通信过程】 
+	```php 
+	[root@iz2zegqaeolqftvinr8is3z ~]# tcpdump -ntx -i lo      
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode    
+listening on lo, link-type EN10MB (Ethernet), capture size 65535 bytes     
+IP 127.0.0.1.57352 > 127.0.0.1.8897: Flags [S], seq 1730669501, win 43690, options [mss 65495,sackOK,TS val 1425002453 ec                                               r 0,nop,wscale 7], length 0   
+        0x0000:  4510 003c 2468 4000 4006 1842 7f00 0001   
+        0x0010:  7f00 0001 e008 22c1 6727 ebbd 0000 0000  
+        0x0020:  a002 aaaa fe30 0000 0204 ffd7 0402 080a  
+        0x0030:  54ef cfd5 0000 0000 0103 0307   
+IP 127.0.0.1.8897 > 127.0.0.1.57352: Flags [S.], seq 4203933173, ack 1730669502, win 43690, options [mss 65495,sackOK,TS                                                val 1425002453 ecr 1425002453,nop,wscale 7], length 0   
+        0x0000:  4500 003c 0000 4000 4006 3cba 7f00 0001  
+        0x0010:  7f00 0001 22c1 e008 fa92 edf5 6727 ebbe  
+        0x0020:  a012 aaaa fe30 0000 0204 ffd7 0402 080a   
+        0x0030:  54ef cfd5 54ef cfd5 0103 0307  
+IP 127.0.0.1.57352 > 127.0.0.1.8897: Flags [.], ack 1, win 342, options [nop,nop,TS val 1425002453 ecr 1425002453], lengt                                               h 0   
+        0x0000:  4510 0034 2469 4000 4006 1849 7f00 0001  
+        0x0010:  7f00 0001 e008 22c1 6727 ebbe fa92 edf6  
+        0x0020:  8010 0156 fe28 0000 0101 080a 54ef cfd5  
+        0x0030:  54ef cfd5   
+IP 127.0.0.1.8897 > 127.0.0.1.57352: Flags [F.], seq 1, ack 1, win 342, options [nop,nop,TS val 1425022283 ecr 1425002453                                               ], length 0   
+        0x0000:  4500 0034 2223 4000 4006 1a9f 7f00 0001  
+        0x0010:  7f00 0001 22c1 e008 fa92 edf6 6727 ebbe  
+        0x0020:  8011 0156 fe28 0000 0101 080a 54f0 1d4b  
+        0x0030:  54ef cfd5
+IP 127.0.0.1.57352 > 127.0.0.1.8897: Flags [F.], seq 1, ack 2, win 342, options [nop,nop,TS val 1425022283 ecr 1425022283                                               ], length 0  
+        0x0000:  4510 0034 246a 4000 4006 1848 7f00 0001  
+        0x0010:  7f00 0001 e008 22c1 6727 ebbe fa92 edf7  
+        0x0020:  8011 0156 fe28 0000 0101 080a 54f0 1d4b  
+        0x0030:  54f0 1d4b
+IP 127.0.0.1.8897 > 127.0.0.1.57352: Flags [.], ack 2, win 342, options [nop,nop,TS val 1425022283 ecr 1425022283], lengt                                               h 0   
+        0x0000:  4500 0034 2224 4000 4006 1a9e 7f00 0001   
+        0x0010:  7f00 0001 22c1 e008 fa92 edf7 6727 ebbf  
+        0x0020:  8010 0156 fe28 0000 0101 080a 54f0 1d4b  
+        0x0030:  54f0 1d4b  
+	```      
+	-------------------------
+	![socket_accept](socket_accept1.png)    
 - socket 基础API  
 
 - 网络信息API  
