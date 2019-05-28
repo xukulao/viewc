@@ -35,3 +35,6 @@
 - 栈的链式存储结构   
    栈的链式存储结构称为链栈    
    ![stack](datastruct/stack3.png)
+
+   进栈操作  
+   ![pushstack](datastruct/linkstack.png)

@@ -122,32 +122,32 @@ demo1/fast:
 	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/build
 .PHONY : demo1/fast
 
-stack.obj: stack.c.obj
+linkstack.obj: linkstack.c.obj
 
-.PHONY : stack.obj
+.PHONY : linkstack.obj
 
 # target to build an object file
-stack.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/stack.c.obj
-.PHONY : stack.c.obj
+linkstack.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/linkstack.c.obj
+.PHONY : linkstack.c.obj
 
-stack.i: stack.c.i
+linkstack.i: linkstack.c.i
 
-.PHONY : stack.i
+.PHONY : linkstack.i
 
 # target to preprocess a source file
-stack.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/stack.c.i
-.PHONY : stack.c.i
+linkstack.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/linkstack.c.i
+.PHONY : linkstack.c.i
 
-stack.s: stack.c.s
+linkstack.s: linkstack.c.s
 
-.PHONY : stack.s
+.PHONY : linkstack.s
 
 # target to generate assembly for a file
-stack.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/stack.c.s
-.PHONY : stack.c.s
+linkstack.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/linkstack.c.s
+.PHONY : linkstack.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo1
 	@echo ... edit_cache
-	@echo ... stack.obj
-	@echo ... stack.i
-	@echo ... stack.s
+	@echo ... linkstack.obj
+	@echo ... linkstack.i
+	@echo ... linkstack.s
 .PHONY : help
 
 
