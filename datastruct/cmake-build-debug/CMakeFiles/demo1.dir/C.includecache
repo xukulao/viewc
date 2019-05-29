@@ -6,9 +6,7 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/datastruct/linkstack.c
+E:/c/demo/datastruct/fbi.c
 stdio.h
--
-stdlib.h
 -
 

@@ -40,3 +40,7 @@
    ![pushstack](datastruct/linkstack.png)  
    
    [链栈操作测试源码](linkstack.c)
+   
+- 栈的作用  
+    斐波那契数列   
+    ![测试源码](fbi.c)
