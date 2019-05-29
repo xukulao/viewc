@@ -43,7 +43,7 @@
    
 - 栈的作用  
     斐波那契数列   
-    ![测试源码](fbi.c)  
+    [测试源码](fbi.c)  
     
     
 - 队列定义   
@@ -51,3 +51,5 @@
     
     队列【queue】是一种先进先出的线性表，first in first out 简称FIFO  
     允许插入的那一端为队尾，允许删除的那一端为队头  
+    
+    ![queue](datastruct/queue1.png)
