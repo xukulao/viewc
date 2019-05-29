@@ -230,7 +230,112 @@ IP 127.0.0.1.8897 > 127.0.0.1.57352: Flags [.], ack 2, win 342, options [nop,nop
 	
 	
 TCP连接与发送和接受数据及发送/接收标志位   
-![tcp](tcp_connect1.png) 
+![tcp](tcp_connect1.png)   
+服务器端源码  
+```c 
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <libgen.h>
+#include <sys/socket.h>
+#include <assert.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <error.h>
+#include <unistd.h>
+#define BUF_SIZE 1024
+int main(int argc,char *argv[])
+{
+        if(argc<2){
+                printf("usage:%s port and port_number\n",basename(argv[0]));
+        }
+
+        const char *ip=argv[1];
+        const int port=atoi(argv[2]);
+
+        struct sockaddr_in address;
+        bzero(&address,sizeof(address));
+
+        address.sin_family = AF_INET;
+        address.sin_port = htons(port);
+        inet_pton(AF_INET,ip,&address.sin_addr);
+
+        int sock = socket(PF_INET,SOCK_STREAM,0);
+        assert(sock>0);
+
+        int ret = bind(sock,(struct sockaddr*)&address,sizeof(address));
+        assert(ret!=1);
+        ret = listen(sock,5);
+        assert(ret!=-1);
+        struct sockaddr_in client;
+        socklen_t client_addrlen = sizeof(client);
+        int confd = accept(sock,(struct sockaddr*)&client,&client_addrlen);
+        if(confd<0){
+                printf("error is %s\n",error);
+        }else{
+                char buffer[BUF_SIZE];
+                memset(buffer,'\0',BUF_SIZE);
+                int ret = recv(confd,buffer,BUF_SIZE-1,0);
+                printf("normal data of sizeof is %d,data is %s\n",ret,buffer);
+                memset(buffer,0,BUF_SIZE);
+                ret = recv(confd,buffer,BUF_SIZE-1,MSG_OOB);
+                printf("msg_oob data of sizeof is %d,data is %s\n",ret,buffer);
+                memset(buffer,0,BUF_SIZE);
+                ret = recv(confd,buffer,BUF_SIZE-1,0);
+                printf("normal_data of sizeof is %d,data is %s\n",ret,buffer);
+
+                close(confd);
+        }
+        close(sock);
+
+        return 0;
+}
+
+```   
+
+客户端源码   
+```c 
+#include <stdio.h>
+#include <stdlib.h>
+#include <libgen.h>
+#include <sys/socket.h>
+#include <arpa/inet.h>
+#include <netinet/in.h>
+#include <assert.h>
+#include <string.h>
+int main(int argc,char *argv[])
+{
+        if(argc<2){
+                printf("usage:%s ip and port_number\n",basename(argv[0]));
+        }
+
+        const char *ip = argv[1];
+        const int port = atoi(argv[2]);
+
+        struct sockaddr_in server_address;
+        bzero(&server_address,sizeof(server_address));
+
+        server_address.sin_family = AF_INET;
+        server_address.sin_port = htons(port);
+        inet_pton(AF_INET,ip,&server_address.sin_addr);
+
+        int sock = socket(PF_INET,SOCK_STREAM,0);
+        assert(sock>0);
+
+        if(connect(sock,(struct sockaddr *)&server_address,sizeof(server_address))<0){
+                printf("connect failed\n");
+        }else{
+                const char *oob_data="abc";
+                const char *normal_data="123";
+                send(sock,normal_data,strlen(normal_data),0);
+                send(sock,oob_data,strlen(oob_data),MSG_OOB);
+                send(sock,normal_data,strlen(normal_data),0);
+        }
+        close(sock);
+        return 0;
+}
+
+```    
 	
 - socket 基础API  
 
