@@ -47,7 +47,7 @@ int main(int argc,char *argv[])
     socklen_t client_addrlenth = sizeof(client);
 
     int confd = accept(sock,(struct sockaddr*)&client,(socklen_t*)&client_addrlenth);
-
+ets
     if(confd<0){
         printf("error is %d\n",error);
     }else{

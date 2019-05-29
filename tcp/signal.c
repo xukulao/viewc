@@ -18,13 +18,25 @@ int main(int argc,char *argv[])
 //        sleep(1);
 //    }
 
-    int age = atoi(argv[1]);
-    printf("age=%d\n",age);
+    //int age = atoi(argv[1]);
+    //printf("age=%d\n",age);
     //getchar();
-   assert(1==2);
-    int k=100;
-    printf("k=%d\n",*&k);
+   //assert(1==2);
+    //int k=100;
+    //printf("k=%d\n",*&k);
    // bzero(&k, sizeof(k));//清空
+
+//   int a[100];
+//   a[2] = 100;
+//   memset(a,1, sizeof(a));
+//   printf("a[0]=%d",a[2]);
+    char a[10];
+    char *str = a;
+    printf("str=%s\n",str);
+    memset(str,'\0', sizeof(str));
+    printf("%s\n",str);
+
+    printf("BUF_SIZE=%d\n",BUF_SIZ);
     return 0;
 }
 

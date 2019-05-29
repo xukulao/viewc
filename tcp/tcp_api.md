@@ -226,7 +226,12 @@ IP 127.0.0.1.8897 > 127.0.0.1.57352: Flags [.], ack 2, win 342, options [nop,nop
 
 
 	```    
-	![socket_accept](socket_accept1.png)  
+	![socket_accept](socket_accept1.png)       
+	
+	
+TCP连接与发送和接受数据及发送/接收标志位   
+![tcp](tcp_connect1.png) 
+	
 - socket 基础API  
 
 - 网络信息API  
