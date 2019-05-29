@@ -56,4 +56,12 @@
     
     ![入队列和出队列](datastruct/queue2.png)  
     
-    ![队头和队尾](datastruct/queue3.png)
+    ![队头和队尾](datastruct/queue3.png)  
+    
+- 队列顺序存储结构  
+    问题太多，性能low  
+    
+    
+- 队列链式存储结构  
+    链队列  
+    
