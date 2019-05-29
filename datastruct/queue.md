@@ -52,4 +52,6 @@
     队列【queue】是一种先进先出的线性表，first in first out 简称FIFO  
     允许插入的那一端为队尾，允许删除的那一端为队头  
     
-    ![queue](datastruct/queue1.png)
+    ![queue](datastruct/queue1.png)  
+    
+    ![入队列和出队列](datastruct/queue2.png)
