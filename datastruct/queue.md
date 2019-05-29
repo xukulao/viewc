@@ -54,4 +54,6 @@
     
     ![queue](datastruct/queue1.png)  
     
-    ![入队列和出队列](datastruct/queue2.png)
+    ![入队列和出队列](datastruct/queue2.png)  
+    
+    ![队头和队尾](datastruct/queue3.png)
