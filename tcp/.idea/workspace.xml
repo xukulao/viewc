@@ -12,6 +12,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb7aa814-157c-4217-bd1c-3a8b99ff5176" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/fbi.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/linkstack.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/queue.c.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/datastruct/linkstack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/datastruct/queue1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/datastruct/queue2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/datastruct/queue3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/datastruct/stack3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/fbi.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/linkstack.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../datastruct/queue.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chinese.c" beforeDir="false" afterPath="$PROJECT_DIR$/../chinese.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/stack.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/queue.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/queue.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tcp_api.md" beforeDir="false" afterPath="$PROJECT_DIR$/tcp_api.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -115,8 +142,8 @@
         <entry file="file://$PROJECT_DIR$/tcp_api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="330">
-                <caret line="336" lean-forward="true" selection-start-line="336" selection-end-line="336" />
+              <first_editor relative-caret-position="160">
+                <caret line="226" column="27" lean-forward="true" selection-start-line="226" selection-start-column="27" selection-end-line="226" selection-end-column="27" />
               </first_editor>
               <second_editor />
             </state>
@@ -222,12 +249,12 @@
       <workItem from="1558443911020" duration="5389000" />
       <workItem from="1558616730511" duration="3303000" />
       <workItem from="1558844481902" duration="1388000" />
-      <workItem from="1559136779744" duration="5277000" />
+      <workItem from="1559136779744" duration="5493000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37018000" />
+    <option name="totallyTimeSpent" value="37234000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -409,8 +436,8 @@
     <entry file="file://$PROJECT_DIR$/tcp_api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="330">
-            <caret line="336" lean-forward="true" selection-start-line="336" selection-end-line="336" />
+          <first_editor relative-caret-position="160">
+            <caret line="226" column="27" lean-forward="true" selection-start-line="226" selection-start-column="27" selection-end-line="226" selection-end-column="27" />
           </first_editor>
           <second_editor />
         </state>

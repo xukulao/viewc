@@ -30,4 +30,39 @@
     top1栈满时 top1=n-1  
     top2栈满时 top2=top1+1 【top2=0】    
     
-    [双栈空间代码实现测试](stack.c)
+    [双栈空间代码实现测试](stack.c)  
+    
+- 栈的链式存储结构   
+   栈的链式存储结构称为链栈    
+   ![stack](datastruct/stack3.png)
+
+   进栈操作  
+   ![pushstack](datastruct/linkstack.png)  
+   
+   [链栈操作测试源码](linkstack.c)
+   
+- 栈的作用  
+    斐波那契数列   
+    [测试源码](fbi.c)  
+    
+    
+- 队列定义   
+    队列是只允许一端进行插入，另一端删除的线性表 
+    
+    队列【queue】是一种先进先出的线性表，first in first out 简称FIFO  
+    允许插入的那一端为队尾，允许删除的那一端为队头  
+    
+    ![queue](datastruct/queue1.png)  
+    
+    ![入队列和出队列](datastruct/queue2.png)  
+    
+    ![队头和队尾](datastruct/queue3.png)  
+    
+- 队列顺序存储结构  
+    问题太多，性能low  
+    
+    
+- 队列链式存储结构  
+    链队列  
+    
+    [链队测试源码](queue.c)
