@@ -9,12 +9,12 @@ typedef int SElemType;
 typedef int Status;
 #define ERROR 0
 #define OK 1
-//链栈结构
+//栈结点
 typedef struct stackNode{
     SElemType data;
     struct stackNode *next;
 }stackNode,*LinkStackPtr;
-
+//栈链结构
 typedef struct linkStack{
     LinkStackPtr top;
     int count;
