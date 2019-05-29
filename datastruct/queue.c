@@ -42,6 +42,8 @@ int main()
     int k;
     DeQueue(&Q,&k);
     printf("k=%d\n",k);
+    DeQueue(&Q,&k);
+    printf("k=%d\n",k);
     return 0;
 }
 
