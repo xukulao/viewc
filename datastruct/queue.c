@@ -51,16 +51,23 @@ int main()
     printf("a=%d\n",(int)a);
 
     printf("*******************************\n");
-    char *str = "php is best language in the world!";
-    char *temp;
-    //removeStr(str,temp);
-    //strcat(temp,str+2);
-    //strcat(temp,str+5);
-    //printf("str=%s\n",temp);
-
-    //temp = strrchr(str,str+1);
-   // free(str+3);
-    printf("str=%s\n",str+1);
+   char bstr[100] = "china and 5sdfasdf23532523 japanese";
+   char temp[100];
+    printf("str=%s\n",bstr);
+    printf("bstr[1]=%c\n",bstr[1]);
+    temp[0] = bstr[2];
+    temp[1] = bstr[6];
+    temp[2] = '\0';
+    int jj=0;
+    char temps[100];
+    int mm=0;
+    for(jj=0;jj<strlen(bstr);jj++){
+        if ((int)bstr[jj]<48||(int)bstr[jj]>57){
+            temps[mm++]=bstr[jj];
+        }
+    }
+    temps[mm] = '\0';
+    printf("temps=%s\n",temps);
     return 0;
 }
 
