@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef int QElemType;
 typedef int Status;
@@ -24,6 +25,8 @@ typedef struct
 
 Status EnQueue(LinkQueue *Q,QElemType e);
 Status DeQueue(LinkQueue *Q,QElemType *e);
+
+Status removeStr(char *str,char *temp);
 int main()
 {
     LinkQueue Q;
@@ -33,18 +36,44 @@ int main()
     Q.rear = Qnode;
 
     QElemType data = 100;
-    EnQueue(&Q,data);
+    EnQueue(&Q,data);//入队
     data = 200;
     EnQueue(&Q,data);
     data = 300;
     EnQueue(&Q,data);
 
     int k;
-    DeQueue(&Q,&k);
+    DeQueue(&Q,&k);//从链队队头出队列
     printf("k=%d\n",k);
     DeQueue(&Q,&k);
     printf("k=%d\n",k);
+    char a='0';
+    printf("a=%d\n",(int)a);
+
+    printf("*******************************\n");
+    char *str = "php is best language in the world!";
+    char *temp;
+    //removeStr(str,temp);
+    //strcat(temp,str+2);
+    //strcat(temp,str+5);
+    //printf("str=%s\n",temp);
+
+    temp = strrchr(str,str+1);
+    printf("str=%s\n",temp);
     return 0;
+}
+
+
+Status removeStr(char *str,char *temp)
+{
+    int i;
+    for(i=0;i<strlen(str);i++){
+        if((int)str[i]>=48||(int)str[i]<=57){
+
+        }else{
+            temp[i] = str[i];
+        }
+    }
 }
 
 /**

@@ -3,3 +3,4 @@
 - [算法](algorithm.md)  
 - [线性表](line.md) 
 - [栈和队列](queue.md)
+- [串](string.md)
