@@ -58,8 +58,9 @@ int main()
     //strcat(temp,str+5);
     //printf("str=%s\n",temp);
 
-    temp = strrchr(str,str+1);
-    printf("str=%s\n",temp);
+    //temp = strrchr(str,str+1);
+   // free(str+3);
+    printf("str=%s\n",str+1);
     return 0;
 }
 
