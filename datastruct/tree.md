@@ -9,4 +9,8 @@
     ![tree](datastruct/tree1.png)  
 - 结点分类   
 
-    ![tree](datastruct/tree_type.png)
+    ![tree](datastruct/tree_type.png)   
+    
+    子结点的子树数称为节点的度，节点的度为0则是终端节点或叶节点  
+    节点度不为0的分支结点或非终端节点，分支结点也称为内部结点  
+    树的度是指树内各结点度的最大值   
