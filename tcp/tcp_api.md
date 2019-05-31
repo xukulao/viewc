@@ -332,8 +332,63 @@ int main(int argc,char *argv[])
 ```    
 	
 
-![socket_accept](socket_accept1.png)    
+![socket_accept](socket_accept1.png)      
 
+  - socket API  
+    主机字节序和网络字节序【大端和小端】转换函数   
+    ![socket](hosttonet.png)  
+    
+    通用sockaddr地址结构体  
+    ![sockaddr](sockaddr.png)  
+    
+    专用sockaddr_unix地址结构体  
+    ![sockaddr_unix](sockaddr_un.png)  
+    
+    专用sockaddr_in地址结构体  
+    ![sockaddr_in](sockaddr_in.png)  
+    
+    专用sockaddr_in6地址结构体   
+    ![sockaddr_in6](sockaddr_in6.png)
+
+    IP地址转换函数  
+    ![socket](ipto.png)  
+    
+    sock创建函数  
+    ![sock_create](sock_create.png)  
+    
+    sock命名函数  
+    ![sock_bind](sock_bind.png)  
+    
+    sock监听函数  
+    ![sock_listen](sock_listen.png)   
+    
+    sock接收函数  
+    ![sock_accept](sock_accept.png)  
+    
+    socket连接函数   
+    ![sock_connect](connect.png)  
+    
+    sock关闭连接函数  
+    ![sock_close](sock_close.png)   
+    
+    数据读写函数  
+    tcp数据读写函数  
+    ![sock_read_write](tcp_read_send.png)  
+    
+    udp数据读写函数  
+    ![udp_read_write](udp_read_send.png)   
+    
+    通用数据读写函数  
+    ![sock_read_wirete](sock_read_write.png)  
+    
+    外带标记函数  
+    ![sock_mark](sock_mark.png)  
+    
+    地址信息函数  
+    ![sock_address](address_sock.png)    
+    
+    sock选项函数  
+    ![sock_option](tcp_open1.png)
 - socket 基础API  
 
 - 网络信息API  

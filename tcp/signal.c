@@ -30,13 +30,15 @@ int main(int argc,char *argv[])
 //   a[2] = 100;
 //   memset(a,1, sizeof(a));
 //   printf("a[0]=%d",a[2]);
-    char a[10];
-    char *str = a;
-    printf("str=%s\n",str);
-    memset(str,'\0', sizeof(str));
-    printf("%s\n",str);
+//    char a[10];
+//    char *str = a;
+//    printf("str=%s\n",str);
+//    memset(str,'\0', sizeof(str));
+//    printf("%s\n",str);
+//
+//    printf("BUF_SIZE=%d\n",BUF_SIZ);
 
-    printf("BUF_SIZE=%d\n",BUF_SIZ);
+    printf("%s\n",("1234567"+1));
     return 0;
 }
 
