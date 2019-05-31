@@ -3,6 +3,7 @@
 //
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 typedef int QElemType;
 typedef int Status;
@@ -24,6 +25,8 @@ typedef struct
 
 Status EnQueue(LinkQueue *Q,QElemType e);
 Status DeQueue(LinkQueue *Q,QElemType *e);
+
+Status removeStr(char *str,char *temp);
 int main()
 {
     LinkQueue Q;
@@ -33,18 +36,52 @@ int main()
     Q.rear = Qnode;
 
     QElemType data = 100;
-    EnQueue(&Q,data);
+    EnQueue(&Q,data);//入队
     data = 200;
     EnQueue(&Q,data);
     data = 300;
     EnQueue(&Q,data);
 
     int k;
-    DeQueue(&Q,&k);
+    DeQueue(&Q,&k);//从链队队头出队列
     printf("k=%d\n",k);
     DeQueue(&Q,&k);
     printf("k=%d\n",k);
+    char a='0';
+    printf("a=%d\n",(int)a);
+
+    printf("*******************************\n");
+   char bstr[100] = "china and 5sdfasdf23532523 japanese";
+   char temp[100];
+    printf("str=%s\n",bstr);
+    printf("bstr[1]=%c\n",bstr[1]);
+    temp[0] = bstr[2];
+    temp[1] = bstr[6];
+    temp[2] = '\0';
+    int jj=0;
+    char temps[100];
+    int mm=0;
+    for(jj=0;jj<strlen(bstr);jj++){
+        if ((int)bstr[jj]<48||(int)bstr[jj]>57){
+            temps[mm++]=bstr[jj];
+        }
+    }
+    temps[mm] = '\0';
+    printf("temps=%s\n",strupr(temps));
     return 0;
+}
+
+
+Status removeStr(char *str,char *temp)
+{
+    int i;
+    for(i=0;i<strlen(str);i++){
+        if((int)str[i]>=48||(int)str[i]<=57){
+
+        }else{
+            temp[i] = str[i];
+        }
+    }
 }
 
 /**
