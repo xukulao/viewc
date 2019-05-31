@@ -36,4 +36,8 @@
     ![tree](datastruct/tree6.png)  
     
     
-- 
+- 孩子表示法   
+    每个结点有多个指针域，每个指针指向一棵了树的根结点  
+    又叫双重链表表示法   
+    
+    ![tree](datastruct/tree7.png)
