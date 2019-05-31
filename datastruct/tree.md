@@ -26,4 +26,14 @@
     
 - 双亲表示法  
     
-    ![tree](datastruct/tree4.png)
+    ![tree](datastruct/tree4.png)  
+    节点结构存在双亲域，长子域，兄弟域    
+    
+    长子域  
+    ![tree](datastruct/tree5.png)   
+    
+    兄弟域  
+    ![tree](datastruct/tree6.png)  
+    
+    
+- 
