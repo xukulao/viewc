@@ -67,7 +67,7 @@ int main()
         }
     }
     temps[mm] = '\0';
-    printf("temps=%s\n",temps);
+    printf("temps=%s\n",strupr(temps));
     return 0;
 }
 

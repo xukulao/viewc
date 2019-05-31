@@ -6,4 +6,7 @@
     【Substree】  
     
     图示  
-    ![tree](datastruct/tree1.png)
+    ![tree](datastruct/tree1.png)  
+- 结点分类   
+
+    ![tree](datastruct/tree_type.png)
