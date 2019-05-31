@@ -19,4 +19,8 @@
     ![tree](datastruct/tree2.png)  
     
 - 树的层次  
-    ![tree](datastruct/tree3.png)
+    ![tree](datastruct/tree3.png)  
+    
+- 树的存储结构  
+    双亲表示法，孩子表示法，孩子兄弟表示法  
+    
