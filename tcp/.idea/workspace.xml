@@ -13,11 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cb7aa814-157c-4217-bd1c-3a8b99ff5176" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Progress/count.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/test.dir/objects.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/signal.c" beforeDir="false" afterPath="$PROJECT_DIR$/signal.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tcp_api.md" beforeDir="false" afterPath="$PROJECT_DIR$/tcp_api.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -121,8 +116,8 @@
         <entry file="file://$PROJECT_DIR$/tcp_api.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="508">
-                <caret line="390" column="32" selection-start-line="390" selection-start-column="32" selection-end-line="390" selection-end-column="32" />
+              <first_editor relative-caret-position="248">
+                <caret line="386" column="12" lean-forward="true" selection-start-line="386" selection-start-column="12" selection-end-line="386" selection-end-column="12" />
               </first_editor>
               <second_editor />
             </state>
@@ -230,12 +225,12 @@
       <workItem from="1558844481902" duration="1388000" />
       <workItem from="1559136779744" duration="5656000" />
       <workItem from="1559223130284" duration="1757000" />
-      <workItem from="1559307860966" duration="1777000" />
+      <workItem from="1559307860966" duration="2678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40931000" />
+    <option name="totallyTimeSpent" value="41832000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -417,8 +412,8 @@
     <entry file="file://$PROJECT_DIR$/tcp_api.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="508">
-            <caret line="390" column="32" selection-start-line="390" selection-start-column="32" selection-end-line="390" selection-end-column="32" />
+          <first_editor relative-caret-position="248">
+            <caret line="386" column="12" lean-forward="true" selection-start-line="386" selection-start-column="12" selection-end-line="386" selection-end-column="12" />
           </first_editor>
           <second_editor />
         </state>

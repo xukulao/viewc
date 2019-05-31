@@ -388,7 +388,7 @@ int main(int argc,char *argv[])
     ![sock_address](address_sock.png)    
     
     sock选项函数  
-    ![sock_option](tcp_open1.png)
+    ![sock_option](tcp_option.png)
 - socket 基础API  
 
 - 网络信息API  
