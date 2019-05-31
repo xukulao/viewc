@@ -44,4 +44,6 @@
     
     每个结点多出了一个度域+多个指针域，度域个数决定指针域个数
     指针指向每棵子树的根结点  
-    ![tree](datastruct/tree8.png)
+    ![tree](datastruct/tree8.png)  
+    
+    ![tree](datastruct/tree9.png)
