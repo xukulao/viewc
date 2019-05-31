@@ -26,4 +26,4 @@
     
 - 双亲表示法  
     
-    
+    ![tree](datastruct/tree4.png)
