@@ -16,4 +16,7 @@
     树的度是指树内各结点度的最大值     
     
 - 结点间的关系  
-    ![tree](datastruct/tree2.png)
+    ![tree](datastruct/tree2.png)  
+    
+- 树的层次  
+    ![tree](datastruct/tree3.png)
