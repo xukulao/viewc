@@ -33,7 +33,9 @@
     ![tree](datastruct/tree5.png)   
     
     兄弟域  
-    ![tree](datastruct/tree6.png)  
+    ![tree](datastruct/tree6.png)    
+    
+    [测试源码](tree1.c)
     
     
 - 孩子表示法   

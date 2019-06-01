@@ -43,6 +43,28 @@ int main()
     tree.nodes[tree.r] = node;
 
     printf("%c\n",tree.nodes[tree.r].data);
+
+    /**
+     * A[B,C]  0 1 2
+     * B[D]    1 3
+     * C[E,F]  2 4 5
+     * D[G,H,I] 3 6 7 8
+     * E[J] 4 9
+     *
+     */
+    insetNode(&tree,'B',0,3);//1
+    insetNode(&tree,'C',0,4);//2
+    insetNode(&tree,'D',1,6);//3
+    insetNode(&tree,'E',2,9);//4
+    insetNode(&tree,'F',2,-1);//5
+    insetNode(&tree,'G',3,-1);//6
+    insetNode(&tree,'H',3,-1);//7
+    insetNode(&tree,'I',3,-1);//8
+    insetNode(&tree,'J',4,-1);//9
+    showAllNode(&tree);
+
+    printf("%c %c %c,%d\n",tree.nodes[1].data,tree.nodes[tree.nodes[1].parent].data,tree.nodes[tree.nodes[1].firstChild].data,tree.nodes[1].firstChild);
+    printf("%c\n",tree.nodes[3].data);
     return 0;
 }
 
@@ -111,6 +133,7 @@ Status insetNode(PTree *tree,char data,int parent,int fisrtChild)
     PTNode node;
     node.data = data;
     node.parent = parent;
+    node.firstChild = fisrtChild;
     tree->nodes[tree->n++] = node;
     return OK;
 }
@@ -119,7 +142,7 @@ Status showAllNode(PTree *tree)
 {
     int i=0;
     for(i=0;i<tree->n;i++){
-        printf("Me is %c,Parent is %c\n",tree->nodes[i].data,tree->nodes[tree->nodes[i].parent].data);
+        printf("Me is %c,Parent is %c,firstChild is %c\n",tree->nodes[i].data,tree->nodes[tree->nodes[i].parent].data,tree->nodes[tree->nodes[i].firstChild].data);
     }
 }
 
