@@ -48,4 +48,7 @@
     指针指向每棵子树的根结点  
     ![tree](datastruct/tree8.png)  
     
-    ![tree](datastruct/tree9.png)
+    ![tree](datastruct/tree9.png)  
+    
+    树的双亲表示法+孩子表示法   
+    ![tree](datastruct/tree10.png)
