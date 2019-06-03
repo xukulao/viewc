@@ -51,4 +51,6 @@
     ![tree](datastruct/tree9.png)  
     
     树的双亲表示法+孩子表示法   
-    ![tree](datastruct/tree10.png)
+    ![tree](datastruct/tree10.png)     
+    
+    [测试源码](tree2.c)
