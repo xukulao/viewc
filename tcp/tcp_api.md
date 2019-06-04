@@ -394,7 +394,128 @@ int main(int argc,char *argv[])
     ![reuse_addr](so_reuseaddr.png)    
     
     SO_RCVBUF和SO_SNDBUF发送接受缓冲区选项说明     
-    ![sock_buffer](sock_buffer.png)
+    ![sock_buffer](sock_buffer.png)  
+    ```c   
+        //服务器端源码  
+        #include <stdio.h>
+        #include <stdlib.h>
+        #include <string.h>
+        #include <assert.h>
+        #include <libgen.h>
+        #include <sys/socket.h>
+        #include <netinet/in.h>
+        #include <arpa/inet.h>
+        #include <error.h>
+        #define BUF_SIZE 1024
+        
+        int main(int argc,char *argv[])
+        {
+                if(argc<2){
+                        printf("useage:%s ip and port \n",basename(argv[0]));
+                        return 1;
+                }
+                const char *ip = argv[1];
+                const int port = atoi(argv[2]);
+        
+                int rcvbuf = atoi(argv[3]);
+                int rcvbuf_len = sizeof(rcvbuf);
+        //      setsockopt(sock,SOL_SOCKET,SO_RCVBUF,&rcvbuf,rcvbuf_len);
+        //      getsockopt(sock,SOL_SOCKET,SO_RCVBUF,&rcbuf,(socklen_t*)&rcvbuf_len);
+        
+                printf("rcvbuf is %d\n",rcvbuf);
+        
+                struct sockaddr_in server;
+                bzero(&server,sizeof(server));
+                server.sin_family = AF_INET;
+                server.sin_port = htons(port);
+                inet_pton(AF_INET,ip,&server.sin_addr);
+        
+                int sock = socket(PF_INET,SOCK_STREAM,0);
+                assert(sock>0);
+                setsockopt(sock,SOL_SOCKET,SO_RCVBUF,&rcvbuf,rcvbuf_len);
+                getsockopt(sock,SOL_SOCKET,SO_RCVBUF,&rcvbuf,(socklen_t*)&rcvbuf_len);
+        
+                int ret = bind(sock,(struct sockaddr*)&server,sizeof(server));
+                assert(ret!=-1);
+        
+                ret = listen(sock,5);
+              struct sockaddr_in client;
+                    bzero(&client,sizeof(client));
+                    socklen_t client_addrlen = sizeof(client);
+            
+                    int connfd = accept(sock,(struct sockaddr*)&client,(socklen_t*)&client_addrlen);
+                    if(connfd>0){
+                            char buffer[BUF_SIZE];
+                            memset(buffer,'\0',BUF_SIZE);
+            
+                            while(recv(connfd,buffer,BUF_SIZE-1,0)>0){
+                                    printf("recv data is %s\n",buffer);
+                            }
+                            close(connfd);
+                    }else{
+                            printf("faild %d\n",error);
+                    }
+                    close(sock);
+                    return 0;
+            }
+  
+  
+  //客户端源码  
+  
+  #include <stdio.h>
+  #include <stdlib.h>
+  #include <string.h>
+  #include <error.h>
+  #include <libgen.h>
+  #include <assert.h>
+  #include <sys/socket.h>
+  #include <netinet/in.h>
+  #include <arpa/inet.h>
+  #define BUF_SIZE 512
+  int main(int argc,char *argv[])
+  {
+          if(argc<2){
+                  printf("useage:%s ip and port\n",basename(argv[0]));
+                  return 1;
+          }
+  
+          const char *ip = argv[1];
+          const int port = atoi(argv[2]);
+  
+          struct sockaddr_in client;
+          bzero(&client,sizeof(client));
+  
+          client.sin_family = AF_INET;
+          client.sin_port = htons(port);
+          inet_pton(AF_INET,ip,&client.sin_addr);
+  
+          int sock = socket(PF_INET,SOCK_STREAM,0);
+          assert(sock>0);
+  
+          int sendbuf = atoi(argv[3]);
+          int len = sizeof(sendbuf);
+  
+          setsockopt(sock,SOL_SOCKET,SO_SNDBUF,&sendbuf,len);
+          getsockopt(sock,SOL_SOCKET,SO_SNDBUF,&sendbuf,(socklen_t*)&len);
+  
+          printf("sendbuf is %d\n",sendbuf);
+  
+  
+          if(connect(sock,(struct sockaddr*)&client,sizeof(client))!=-1){
+                  char buffer[BUF_SIZE];
+                  memset(buffer,'a',BUF_SIZE);
+                  printf("send some data %s to server\n",buffer);
+                    printf("send some data %s to server\n",buffer);
+                send(sock,buffer,BUF_SIZE,0);
+        }
+        close(sock);
+        return 0;
+}
+
+    ```    
+![测试过程](tcp_send_recv.png)
+    
+    
 - socket 基础API  
 
 - 网络信息API  
