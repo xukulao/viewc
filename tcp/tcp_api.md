@@ -388,7 +388,10 @@ int main(int argc,char *argv[])
     ![sock_address](address_sock.png)    
     
     sock选项函数  
-    ![sock_option](tcp_option.png)
+    ![sock_option](tcp_option.png)   
+    
+    SO_REUSEADDR 选项说明  
+    ![reuse_addr](so_reuseaddr.png)
 - socket 基础API  
 
 - 网络信息API  
