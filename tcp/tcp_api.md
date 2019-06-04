@@ -458,10 +458,7 @@ int main(int argc,char *argv[])
                     close(sock);
                     return 0;
             }
-  
-  
   //客户端源码  
-  
   #include <stdio.h>
   #include <stdlib.h>
   #include <string.h>
@@ -511,8 +508,8 @@ int main(int argc,char *argv[])
         close(sock);
         return 0;
 }
+```         
 
-    ```    
 ![测试过程](tcp_send_recv.png)
     
     
