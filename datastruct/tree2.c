@@ -36,9 +36,11 @@ typedef struct {  //树结点
 }CTree;
 
 Status insertNode(CTree *tree,int data,int parent,ChildPtr firstChild);
+Status removeNode(CTree *tree,int i,CTBox *box);
 Status insertChildLink(ChildPtr firstChild,int i,int data);
 Status removeChildLink(ChildPtr firstChild,int i,int *data);
 Status showAllChildNode(ChildPtr firstChild);
+
 void createNodeTree(CTree *tree);
 void test();
 int main()
@@ -80,6 +82,11 @@ int main()
             printf("\n");
         }
     }
+
+    printf("attempt remove a elem\n");
+    CTBox box;
+    removeNode(&tree,9,&box);
+    printf("box.data=%d\n",box.data);
     return 0;
 }
 
@@ -213,6 +220,19 @@ Status insertNode(CTree *tree,int data,int parent,ChildPtr firstChild)
     box.firstChild = firstChild;
     tree->nodes[tree->n++] = box;
 
+    return OK;
+}
+
+Status removeNode(CTree *tree,int i,CTBox *box)
+{
+    if(tree->n==0){
+        return ERROR;
+    }
+    int k;
+    box = &tree->nodes[i];
+    for(k=i;k<tree->n-1;k++){
+        tree->nodes[k-1] = tree->nodes[k];
+    }
     return OK;
 }
 
