@@ -33,7 +33,9 @@
     ![tree](datastruct/tree5.png)   
     
     兄弟域  
-    ![tree](datastruct/tree6.png)  
+    ![tree](datastruct/tree6.png)    
+    
+    [测试源码](tree1.c)
     
     
 - 孩子表示法   
@@ -46,4 +48,19 @@
     指针指向每棵子树的根结点  
     ![tree](datastruct/tree8.png)  
     
-    ![tree](datastruct/tree9.png)
+    ![tree](datastruct/tree9.png)  
+    
+    树的双亲表示法+孩子表示法   
+    ![tree](datastruct/tree10.png)     
+    
+    [测试源码](tree2.c)  
+    
+- 孩子兄弟表示    
+
+    ![兄弟表示法](datastruct/tree11.png)   
+    
+    二叉树  
+    ![二叉树](datastruct/tree12.png)  
+    
+    [treetest](tree3.c)
+    
