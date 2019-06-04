@@ -391,7 +391,10 @@ int main(int argc,char *argv[])
     ![sock_option](tcp_option.png)   
     
     SO_REUSEADDR 选项说明  
-    ![reuse_addr](so_reuseaddr.png)
+    ![reuse_addr](so_reuseaddr.png)    
+    
+    SO_RCVBUF和SO_SNDBUF发送接受缓冲区选项说明     
+    ![sock_buffer](sock_buffer.png)
 - socket 基础API  
 
 - 网络信息API  
