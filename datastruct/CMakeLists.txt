@@ -1,3 +1,3 @@
 #cmake_minimum_required(VERSION <specify CMake version here>)
 project(demo1)
-add_executable(demo1 tree2.c)
+add_executable(demo1 tree3.c)

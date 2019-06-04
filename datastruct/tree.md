@@ -60,5 +60,7 @@
     ![兄弟表示法](datastruct/tree11.png)   
     
     二叉树  
-    ![二叉树](datastruct/tree12.png)
+    ![二叉树](datastruct/tree12.png)  
+    
+    [treetest](tree3.c)
     
