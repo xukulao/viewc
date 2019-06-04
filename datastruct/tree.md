@@ -57,5 +57,8 @@
     
 - 孩子兄弟表示    
 
-    ![兄弟表示法](datastruct/tree11.png)
+    ![兄弟表示法](datastruct/tree11.png)   
+    
+    二叉树  
+    ![二叉树](datastruct/tree12.png)
     
