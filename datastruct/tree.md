@@ -65,5 +65,11 @@
     [treetest](tree3.c)  
     
     折半查找法  
-    ![tree](datastruct/tree13.png)
+    ![tree](datastruct/tree13.png)  
+    
+- 二叉树【Binary Tree】  
+    由N个结点组成的有限集合，由根结点和两棵互不相交，分别称为根结点的左子树和右子树的二叉树组成   
+    
+    ![binary_tree](datastruct/binary_tree.png) 
+    
     

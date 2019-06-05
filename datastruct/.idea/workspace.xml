@@ -13,7 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e5870c51-d971-48ad-bce6-a77d5c7f209b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/tree.md" beforeDir="false" afterPath="$PROJECT_DIR$/tree.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree3.c" beforeDir="false" afterPath="$PROJECT_DIR$/tree3.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +28,8 @@
         <entry file="file://$PROJECT_DIR$/tree.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="509">
-                <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+              <first_editor relative-caret-position="472">
+                <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
               </first_editor>
               <second_editor />
             </state>
@@ -236,12 +235,12 @@
       <workItem from="1559351892125" duration="8226000" />
       <workItem from="1559524951917" duration="18392000" />
       <workItem from="1559611278530" duration="10391000" />
-      <workItem from="1559697977557" duration="1623000" />
+      <workItem from="1559697977557" duration="2135000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="169798000" />
+    <option name="totallyTimeSpent" value="170310000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -462,8 +461,8 @@
     <entry file="file://$PROJECT_DIR$/tree.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="509">
-            <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+          <first_editor relative-caret-position="472">
+            <caret line="72" column="45" selection-start-line="72" selection-start-column="45" selection-end-line="72" selection-end-column="45" />
           </first_editor>
           <second_editor />
         </state>
