@@ -88,7 +88,10 @@
    特殊的二叉树  
    1、斜树   
    所有结点只有左子树的称为左斜树  所有结点只有右子树的称为右斜树     
-   ![tree](datastruct/tree14.png)
+   ![tree](datastruct/tree14.png)  
+   2、满二叉树   
+   所有结点都有左子树和右子树，并且在同一层上【树的层次】     
+   ![tree](datastruct/tree15.png)
    
    
     
