@@ -49,6 +49,21 @@ int main()
     return 0;
 }
 
+Status getNode(CSTree tree,int i,CSTree node)
+{
+    CSTree p,t;
+    t = tree;
+    int k=1;
+    while(t&&k<i){
+        t = t->firstChild;
+        k++;
+    }
+    if(!t||k>i){
+        return ERROR;
+    }
+    node = t;
+    return OK;
+}
 Status insertFirstChildNode(CSTree tree,int i,char data,int type)
 {
     CSTree p,t;

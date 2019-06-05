@@ -62,5 +62,8 @@
     二叉树  
     ![二叉树](datastruct/tree12.png)  
     
-    [treetest](tree3.c)
+    [treetest](tree3.c)  
+    
+    折半查找法  
+    ![tree](datastruct/tree13.png)
     
