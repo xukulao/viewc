@@ -93,6 +93,8 @@
    所有结点都有左子树和右子树，并且在同一层上【树的层次】     
    ![tree](datastruct/tree15.png)
    
+   3、完全二叉树  
+   ![tree](datastruct/tree16.png)
    
     
     
