@@ -103,7 +103,10 @@
    ![tree](datastruct/tree17.png)  
    
    二叉树的链表存储  
-   ![tree](datastruct/tree18.png)
+   ![tree](datastruct/tree18.png)  
+   
+   二叉树的定义   
+   ![tree](datastruct/tree19.png)
    
     
     
