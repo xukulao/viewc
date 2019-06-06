@@ -123,7 +123,14 @@
    
    3、后序遍历   
    先左到右叶结点遍历左右子树，再访问根结点   【左，右，根】  
-   ![tree](datastruct/tree22.png)
+   ![tree](datastruct/tree22.png)  
+   
+   4、层序遍历   
+   逐层遍历，每层遍历时从左到右方式遍历   
+   ![tree](datastruct/tree23.png)   
+   
+   以上遍历方式目的是连成一条线【线性方式】方便遍历查找    
+   
    
    
     
