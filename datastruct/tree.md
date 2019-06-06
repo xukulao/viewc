@@ -115,7 +115,11 @@
    1、前序遍历  
    先访问根结点，再遍历左子树，然后再遍历右子树   
    遍历图示   
-   ![tree](datastruct/tree20.png)
+   ![tree](datastruct/tree20.png)  
+   
+   2、中序遍历  
+   从根结点的左子树开始，中序遍历，再访问根结点，再中序遍历右结点   
+   ![tree](datastruct/tree21.png)
    
    
     
