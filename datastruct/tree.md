@@ -94,7 +94,13 @@
    ![tree](datastruct/tree15.png)
    
    3、完全二叉树  
-   ![tree](datastruct/tree16.png)
+   ![tree](datastruct/tree16.png)  
+   
+   二叉树的性质     
+   1、在二叉树的第i层上有2i-1(i>=1)个结点     
+   
+   二叉树的顺序存储结构   
+   ![tree](datastruct/tree17.png)
    
     
     
