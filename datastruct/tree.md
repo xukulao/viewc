@@ -100,7 +100,10 @@
    1、在二叉树的第i层上有2i-1(i>=1)个结点     
    
    二叉树的顺序存储结构   
-   ![tree](datastruct/tree17.png)
+   ![tree](datastruct/tree17.png)  
+   
+   二叉树的链表存储  
+   ![tree](datastruct/tree18.png)
    
     
     

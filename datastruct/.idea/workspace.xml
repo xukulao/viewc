@@ -12,7 +12,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e5870c51-d971-48ad-bce6-a77d5c7f209b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tree.md" beforeDir="false" afterPath="$PROJECT_DIR$/tree.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -29,8 +28,8 @@
         <entry file="file://$PROJECT_DIR$/tree.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="673">
-                <caret line="97" column="3" lean-forward="true" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
+              <first_editor relative-caret-position="719">
+                <caret line="105" column="32" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
               </first_editor>
               <second_editor />
             </state>
@@ -237,12 +236,12 @@
       <workItem from="1559524951917" duration="18392000" />
       <workItem from="1559611278530" duration="10391000" />
       <workItem from="1559697977557" duration="5649000" />
-      <workItem from="1559784273246" duration="1817000" />
+      <workItem from="1559784273246" duration="2171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="175641000" />
+    <option name="totallyTimeSpent" value="175995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -463,8 +462,8 @@
     <entry file="file://$PROJECT_DIR$/tree.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="673">
-            <caret line="97" column="3" lean-forward="true" selection-start-line="97" selection-start-column="3" selection-end-line="97" selection-end-column="3" />
+          <first_editor relative-caret-position="719">
+            <caret line="105" column="32" selection-start-line="105" selection-start-column="32" selection-end-line="105" selection-end-column="32" />
           </first_editor>
           <second_editor />
         </state>
