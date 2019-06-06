@@ -106,7 +106,15 @@
    ![tree](datastruct/tree18.png)  
    
    二叉树的定义   
-   ![tree](datastruct/tree19.png)
+   ![tree](datastruct/tree19.png)  
+   
+   二叉树的遍历  
+   按照某种次序从根结点开始遍历所有结点且只遍历一次   
+   
+   二叉树的遍历方法   
+   1、前序遍历  
+   先访问根结点，再遍历左子树，然后再遍历右子树   
+   
    
     
     
