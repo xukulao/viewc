@@ -19,6 +19,7 @@ typedef struct BiTNode{
 Status createBinaryTree(BiTree tree);
 void PreOrderTraverse(BiTree tree);
 void InOrderTraverse(BiTree tree);
+void PostOrderTraverse(BiTree tree);
 int main()
 {
     BiTree tree = malloc(sizeof(BiTNode));
@@ -28,6 +29,8 @@ int main()
     PreOrderTraverse(tree);
     printf("\n**************************\n");
     InOrderTraverse(tree);
+    printf("\n**************************\n");
+    PostOrderTraverse(tree);
     return 0;
 }
 
@@ -60,6 +63,21 @@ void InOrderTraverse(BiTree tree)
     PreOrderTraverse(tree->lchild);
     printf("%c",tree->data);
     PreOrderTraverse(tree->rchild);
+}
+
+/**
+ * 后序遍历  【左，右，根】
+ * @param tree
+ */
+void PostOrderTraverse(BiTree tree)
+{
+    if (tree==NULL){
+        return ;
+    }
+
+    PreOrderTraverse(tree->lchild);
+    PreOrderTraverse(tree->rchild);
+    printf("%c",tree->data);
 }
 
 Status createBinaryTree(BiTree tree)
