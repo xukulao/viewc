@@ -17,20 +17,25 @@ typedef struct BiTNode{
 }BiTNode,*BiTree;
 
 Status createBinaryTree(BiTree tree);
+void createBiTree(BiTree tree);
 void PreOrderTraverse(BiTree tree);
 void InOrderTraverse(BiTree tree);
 void PostOrderTraverse(BiTree tree);
 int main()
 {
-    BiTree tree = malloc(sizeof(BiTNode));
-    //构建一个二叉链树
-    createBinaryTree(tree);
-    printf("**************************\n");
+//    BiTree tree = malloc(sizeof(BiTNode));
+    BiTree tree;
+//    //构建一个二叉链树
+//    createBinaryTree(tree);
+//    printf("**************************\n");
+//    PreOrderTraverse(tree);
+//    printf("\n**************************\n");
+//    InOrderTraverse(tree);
+//    printf("\n**************************\n");
+//    PostOrderTraverse(tree);
+
+    createBiTree(tree);
     PreOrderTraverse(tree);
-    printf("\n**************************\n");
-    InOrderTraverse(tree);
-    printf("\n**************************\n");
-    PostOrderTraverse(tree);
     return 0;
 }
 
@@ -152,4 +157,22 @@ Status createBinaryTree(BiTree tree)
     nodeG->rchild = nodeJ;
 
 
+}
+
+void createBiTree(BiTree tree)
+{
+    TElemType ch;
+    scanf("%c",&ch);
+    if (ch=='#'){
+        tree = NULL;
+    }else{
+        tree = (BiTree)malloc(sizeof(BiTNode));
+        if (!tree){
+            exit(0);
+        }
+        tree->data = ch;
+        printf("%c",tree->data);
+        createBiTree(tree->lchild);
+        createBiTree(tree->rchild);
+    }
 }
