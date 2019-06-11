@@ -10,4 +10,9 @@
     
 - 各种图的定义  
     - 无向图、有向图，无向边，有向边  
-    ![grap](datastruct/graph2.png)
+    ![grap](datastruct/graph2.png)  
+    
+    - 网  
+    图的边或弧有数字表示距离或耗费【相关的数叫做权weight】，这种图带有权的称为网Network  
+    
+    ![network](datastruct/graph3.png)
