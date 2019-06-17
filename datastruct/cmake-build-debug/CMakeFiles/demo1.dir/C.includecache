@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/datastruct/tree8.c
-stdio.h
--
-string.h
--
+E:/c/demo/datastruct/table1_c.c
 stdlib.h
+-
+stdio.h
 -
 

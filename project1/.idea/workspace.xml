@@ -13,7 +13,16 @@
   <component name="ChangeListManager">
     <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../datastruct/graph.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/graph.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/data_struct.md" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/data_struct.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,11 +34,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="667">
-              <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+            <state relative-caret-position="251">
+              <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
                 <element signature="e#51#69#0" expanded="true" />
               </folding>
@@ -67,11 +76,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stu.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9959">
-              <caret line="433" column="14" selection-start-line="433" selection-start-column="14" selection-end-line="433" selection-end-column="14" />
+            <state relative-caret-position="138">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="e#51#69#0" expanded="true" />
               </folding>
@@ -115,7 +124,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="247" />
     <option name="y" value="86" />
     <option name="width" value="1400" />
@@ -127,7 +136,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -139,6 +147,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -193,17 +202,18 @@
       <workItem from="1558574723647" duration="635000" />
       <workItem from="1560138218627" duration="1383000" />
       <workItem from="1560215531095" duration="598000" />
+      <workItem from="1560749142396" duration="1203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43840000" />
+    <option name="totallyTimeSpent" value="45043000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.10660981" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.077292114" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -252,8 +262,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="667">
-          <caret line="33" column="35" selection-start-line="33" selection-start-column="35" selection-end-line="33" selection-end-column="35" />
+        <state relative-caret-position="251">
+          <caret line="27" column="23" lean-forward="true" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
           <folding>
             <element signature="e#51#69#0" expanded="true" />
           </folding>
@@ -284,16 +294,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/stu.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9959">
-          <caret line="433" column="14" selection-start-line="433" selection-start-column="14" selection-end-line="433" selection-end-column="14" />
-          <folding>
-            <element signature="e#51#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/common.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="391">
@@ -305,6 +305,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="53" selection-start-line="2" selection-start-column="53" selection-end-line="2" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#51#69#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
