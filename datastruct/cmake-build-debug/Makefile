@@ -122,32 +122,32 @@ demo1/fast:
 	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/build
 .PHONY : demo1/fast
 
-table1_c.obj: table1_c.c.obj
+table_c1.obj: table_c1.c.obj
 
-.PHONY : table1_c.obj
+.PHONY : table_c1.obj
 
 # target to build an object file
-table1_c.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/table1_c.c.obj
-.PHONY : table1_c.c.obj
+table_c1.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/table_c1.c.obj
+.PHONY : table_c1.c.obj
 
-table1_c.i: table1_c.c.i
+table_c1.i: table_c1.c.i
 
-.PHONY : table1_c.i
+.PHONY : table_c1.i
 
 # target to preprocess a source file
-table1_c.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/table1_c.c.i
-.PHONY : table1_c.c.i
+table_c1.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/table_c1.c.i
+.PHONY : table_c1.c.i
 
-table1_c.s: table1_c.c.s
+table_c1.s: table_c1.c.s
 
-.PHONY : table1_c.s
+.PHONY : table_c1.s
 
 # target to generate assembly for a file
-table1_c.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/table1_c.c.s
-.PHONY : table1_c.c.s
+table_c1.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/table_c1.c.s
+.PHONY : table_c1.c.s
 
 # Help Target
 help:
@@ -158,9 +158,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo1
 	@echo ... edit_cache
-	@echo ... table1_c.obj
-	@echo ... table1_c.i
-	@echo ... table1_c.s
+	@echo ... table_c1.obj
+	@echo ... table_c1.i
+	@echo ... table_c1.s
 .PHONY : help
 
 

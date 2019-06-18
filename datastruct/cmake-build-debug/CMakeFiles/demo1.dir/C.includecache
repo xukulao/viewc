@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/datastruct/table1_c.c
+E:/c/demo/datastruct/table_c1.c
 stdlib.h
 -
 stdio.h
