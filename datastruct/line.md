@@ -116,6 +116,9 @@
   
   
 - 线性表  
-    ![linklist](datastruct/linklist8.png)
+    ![linklist](datastruct/linklist8.png)  
+    
+- 静态链表   
+    通过数组+游标方式存储线性表的数据元素  
 
 
