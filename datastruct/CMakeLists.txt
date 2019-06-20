@@ -1,3 +1,3 @@
 #cmake_minimum_required(VERSION <specify CMake version here>)
 project(demo1)
-add_executable(demo1 table_c1.c)
+add_executable(demo1 table_c2.c)
