@@ -122,32 +122,59 @@ demo1/fast:
 	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/build
 .PHONY : demo1/fast
 
-table_c2.obj: table_c2.c.obj
+score.obj: score.c.obj
 
-.PHONY : table_c2.obj
+.PHONY : score.obj
 
 # target to build an object file
-table_c2.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/table_c2.c.obj
-.PHONY : table_c2.c.obj
+score.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/score.c.obj
+.PHONY : score.c.obj
 
-table_c2.i: table_c2.c.i
+score.i: score.c.i
 
-.PHONY : table_c2.i
+.PHONY : score.i
 
 # target to preprocess a source file
-table_c2.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/table_c2.c.i
-.PHONY : table_c2.c.i
+score.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/score.c.i
+.PHONY : score.c.i
 
-table_c2.s: table_c2.c.s
+score.s: score.c.s
 
-.PHONY : table_c2.s
+.PHONY : score.s
 
 # target to generate assembly for a file
-table_c2.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/table_c2.c.s
-.PHONY : table_c2.c.s
+score.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/score.c.s
+.PHONY : score.c.s
+
+scores.obj: scores.c.obj
+
+.PHONY : scores.obj
+
+# target to build an object file
+scores.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/scores.c.obj
+.PHONY : scores.c.obj
+
+scores.i: scores.c.i
+
+.PHONY : scores.i
+
+# target to preprocess a source file
+scores.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/scores.c.i
+.PHONY : scores.c.i
+
+scores.s: scores.c.s
+
+.PHONY : scores.s
+
+# target to generate assembly for a file
+scores.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/scores.c.s
+.PHONY : scores.c.s
 
 # Help Target
 help:
@@ -158,9 +185,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo1
 	@echo ... edit_cache
-	@echo ... table_c2.obj
-	@echo ... table_c2.i
-	@echo ... table_c2.s
+	@echo ... score.obj
+	@echo ... score.i
+	@echo ... score.s
+	@echo ... scores.obj
+	@echo ... scores.i
+	@echo ... scores.s
 .PHONY : help
 
 

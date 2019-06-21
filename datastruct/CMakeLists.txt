@@ -1,3 +1,5 @@
 #cmake_minimum_required(VERSION <specify CMake version here>)
 project(demo1)
-add_executable(demo1 table_c2.c)
+#add_executable(demo1 score.c scores.c)
+aux_source_directory(. DIRS)
+add_executable(demo1,${DIRS})
