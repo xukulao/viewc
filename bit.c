@@ -23,7 +23,7 @@ int main()
 
     printf("m=%#X,n=%X,k=%c,led=%d,h=%d\n",a.m,a.n,a.k,a.led,a.h);
 
-    a.m = 9;//1001
+    a.m = 9;//100
     printf("%d\n",a.m);
 
     struct {

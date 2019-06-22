@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
-E:/c/demo/datastruct/tree3.c
+E:/c/demo/datastruct/score.c
 stdio.h
--
-string.h
 -
 stdlib.h
 -
+scores.h
+E:/c/demo/datastruct/scores.h
+
+E:/c/demo/datastruct/scores.c
+stdio.h
+-
+
+E:/c/demo/datastruct/scores.h
 

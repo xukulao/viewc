@@ -12,9 +12,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ad5bd22-c300-4fd4-bc4b-2547b3562066" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../cmake-build-debug/demo1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../endian.c" beforeDir="false" afterPath="$PROJECT_DIR$/../endian.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/C.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/objects1.rsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/demo1.dir/table_c2.c.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" beforeDir="false" afterPath="$PROJECT_DIR$/../datastruct/cmake-build-debug/demo1.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -30,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="621">
+              <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
               <folding>
                 <element signature="e#51#69#0" expanded="true" />
               </folding>
@@ -51,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tool.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2300">
-              <caret line="100" column="69" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="69" />
+            <state relative-caret-position="2047">
+              <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
               <folding>
                 <element signature="e#51#70#0" expanded="true" />
               </folding>
@@ -72,8 +89,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/stu.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
-              <caret line="53" selection-start-line="53" selection-end-line="53" />
+            <state relative-caret-position="138">
+              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
               <folding>
                 <element signature="e#51#69#0" expanded="true" />
               </folding>
@@ -117,7 +134,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="247" />
     <option name="y" value="86" />
     <option name="width" value="1400" />
@@ -145,7 +162,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../StuInfoData" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
@@ -193,17 +210,24 @@
       <workItem from="1558401365253" duration="597000" />
       <workItem from="1558487896979" duration="599000" />
       <workItem from="1558574723647" duration="635000" />
+      <workItem from="1560138218627" duration="1383000" />
+      <workItem from="1560215531095" duration="598000" />
+      <workItem from="1560749142396" duration="1203000" />
+      <workItem from="1560820729679" duration="598000" />
+      <workItem from="1560907535461" duration="599000" />
+      <workItem from="1560993985992" duration="598000" />
+      <workItem from="1561079232680" duration="596000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41859000" />
+    <option name="totallyTimeSpent" value="47434000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="247" y="86" width="1400" height="1000" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.104477614" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07985075" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -250,10 +274,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding>
+            <element signature="e#51#69#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stu.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="759">
+          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/tool.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2300">
-          <caret line="100" column="69" selection-start-line="100" selection-start-column="69" selection-end-line="100" selection-end-column="69" />
+        <state relative-caret-position="2047">
+          <caret line="89" column="24" selection-start-line="89" selection-start-column="24" selection-end-line="89" selection-end-column="24" />
           <folding>
             <element signature="e#51#70#0" expanded="true" />
           </folding>
@@ -281,27 +322,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-          <folding>
-            <element signature="e#51#69#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/stu.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="36" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/stu.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
+        <state relative-caret-position="138">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
           <folding>
             <element signature="e#51#69#0" expanded="true" />
           </folding>

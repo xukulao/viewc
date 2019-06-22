@@ -122,32 +122,59 @@ demo1/fast:
 	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/build
 .PHONY : demo1/fast
 
-tree3.obj: tree3.c.obj
+score.obj: score.c.obj
 
-.PHONY : tree3.obj
+.PHONY : score.obj
 
 # target to build an object file
-tree3.c.obj:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/tree3.c.obj
-.PHONY : tree3.c.obj
+score.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/score.c.obj
+.PHONY : score.c.obj
 
-tree3.i: tree3.c.i
+score.i: score.c.i
 
-.PHONY : tree3.i
+.PHONY : score.i
 
 # target to preprocess a source file
-tree3.c.i:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/tree3.c.i
-.PHONY : tree3.c.i
+score.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/score.c.i
+.PHONY : score.c.i
 
-tree3.s: tree3.c.s
+score.s: score.c.s
 
-.PHONY : tree3.s
+.PHONY : score.s
 
 # target to generate assembly for a file
-tree3.c.s:
-	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/tree3.c.s
-.PHONY : tree3.c.s
+score.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/score.c.s
+.PHONY : score.c.s
+
+scores.obj: scores.c.obj
+
+.PHONY : scores.obj
+
+# target to build an object file
+scores.c.obj:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/scores.c.obj
+.PHONY : scores.c.obj
+
+scores.i: scores.c.i
+
+.PHONY : scores.i
+
+# target to preprocess a source file
+scores.c.i:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/scores.c.i
+.PHONY : scores.c.i
+
+scores.s: scores.c.s
+
+.PHONY : scores.s
+
+# target to generate assembly for a file
+scores.c.s:
+	$(MAKE) -f CMakeFiles\demo1.dir\build.make CMakeFiles/demo1.dir/scores.c.s
+.PHONY : scores.c.s
 
 # Help Target
 help:
@@ -158,9 +185,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... demo1
 	@echo ... edit_cache
-	@echo ... tree3.obj
-	@echo ... tree3.i
-	@echo ... tree3.s
+	@echo ... score.obj
+	@echo ... score.i
+	@echo ... score.s
+	@echo ... scores.obj
+	@echo ... scores.i
+	@echo ... scores.s
 .PHONY : help
 
 
