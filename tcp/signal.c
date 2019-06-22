@@ -38,7 +38,12 @@ int main(int argc,char *argv[])
 //
 //    printf("BUF_SIZE=%d\n",BUF_SIZ);
 
-    printf("%s\n",("1234567"+1));
+    //printf("%s\n",("1234567"+1));
+    int *p;
+
+    while(0.1){//-1,'a',"china",12,sigHandler,&p,main函数
+        printf("s");
+    }
     return 0;
 }
 
