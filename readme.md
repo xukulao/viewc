@@ -9,3 +9,6 @@ interested in it!!!   let me fall in love with it
 [tcp/ip](tcp/tcp.md)  
 
 - [数据结构和算法实战](datastruct/data.md)
+
+<video src="https://github.com/immortalChensm/viewc/blob/master/cpu/cpu.mp4" width="320" height="180"
+controls="controls"></video>
