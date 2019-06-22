@@ -10,7 +10,7 @@ interested in it!!!   let me fall in love with it
 
 - [数据结构和算法实战](datastruct/data.md)
 
-<video id="video" controls="" preload="none" poster="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.jpg">
+<video id="video" controls="" preload="none" src="https://www.itkucode.com/cpu.mp4" poster="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.jpg">
       <source id="mp4" src="https://www.itkucode.com/cpu.mp4" type="video/mp4">
       </video>
 
