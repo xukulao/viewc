@@ -10,10 +10,8 @@ interested in it!!!   let me fall in love with it
 
 - [数据结构和算法实战](datastruct/data.md)
 
+<video id="video" controls="" preload="none" poster="http://om2bks7xs.bkt.clouddn.com/2017-08-26-Markdown-Advance-Video.jpg">
+      <source id="mp4" src="https://github.com/immortalChensm/viewc/blob/master/cpu/cpu.mp4" type="video/mp4">
+      </video>
 
-<iframe
-                        style="margin-left: 2px; margin-bottom:-5px;"
-                        frameborder="0" scrolling="0" width="100px" height="20px"
-                        src="https://github.com/immortalChensm/viewc/blob/master/cpu/cpu.mp4" >
-                    </iframe>
 
