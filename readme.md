@@ -10,5 +10,10 @@ interested in it!!!   let me fall in love with it
 
 - [数据结构和算法实战](datastruct/data.md)
 
-<video src="https://github.com/immortalChensm/viewc/blob/master/cpu/cpu.mp4" width="320" height="180"
-controls="controls"></video>
+
+<iframe
+                        style="margin-left: 2px; margin-bottom:-5px;"
+                        frameborder="0" scrolling="0" width="100px" height="20px"
+                        src="https://github.com/immortalChensm/viewc/blob/master/cpu/cpu.mp4" >
+                    </iframe>
+
