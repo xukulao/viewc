@@ -1,4 +1,4 @@
-Cannot generate into E:\c\demo\datastruct
-It was created with incompatible generator 'NMake Makefiles'
+Cannot generate into E:\c\viewc\datastruct
+It is already used for project E:\c\demo\datastruct
 
 Please either delete it manually or select another generation directory
