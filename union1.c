@@ -28,6 +28,5 @@ int main()
     //共用体指针
     union data *which = &who;
     printf("which.a=%d,which.age=%d,which.height=%.2f\n",which->a,which->age,which->height);
-
     return 0;
 }
