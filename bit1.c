@@ -17,7 +17,7 @@ int main()
      */
 
 
-    printf("a=%#X\n",a);
+    printf("a=%#X\n",a)
 
 
     //测试5-9的结果 = 5+(-9)
