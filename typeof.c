@@ -20,7 +20,7 @@ typedef struct person{
 //二维数组指针
 typedef int (*AGE)[2];
 //函数指针 返回值为指针
-typedef int *(*function)(int ,int);
+typedef int *(*function)(int ,int)
 
 int *max(int a,int b);
 int main()
