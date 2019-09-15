@@ -4,10 +4,9 @@
 #include <stdio.h>
 #include "demo_data_type.h"
 int age = 99999;
-char name[100] = "jackchensm";
+char name[100] = "jackchensm"
 
 /********************define******************************/
-
 #define M 120
 //#define 打印 printf("hello")
 #define PI 3.1415926
