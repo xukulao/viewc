@@ -39,5 +39,5 @@ int main()
     p2 = &d;
 
     p3 = &c;
-    return 0;
+    
 }
