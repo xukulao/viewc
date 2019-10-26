@@ -25,9 +25,7 @@ int main()
     //int readcount = fread(buffer,1024,4,file);
     //int readcount = fread(buffer,1024,4,file);
     //int readcount = fread(buffer,1,4,file);
-//    int readcount = fread(buffer,7,1,file);
-
-
+//    int readcount = fread(buffer,7,1,file)
     fseek(file,2,SEEK_SET);
 
     printf("pos=%d\n",ftell(file));
