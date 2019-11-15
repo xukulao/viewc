@@ -34,5 +34,5 @@ int main()
     }else{
         printf("read success!");
     }
-    return 0;
+    return 0
 }
