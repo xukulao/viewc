@@ -18,7 +18,7 @@ int main()
 
     }a = {0xffffffff,0xE,'@',1,3};//0xffffffff 正好32位  0xE正好4位 0100 0011 0010 0001
 
-    //
+    
 
     printf("m=%#X,n=%X,k=%c,led=%d,h=%d\n",a.m,a.n,a.k,a.led,a.h);
 
