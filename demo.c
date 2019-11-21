@@ -19,7 +19,7 @@ typedef int *PINT2;
 #define MAX(a,b) a>b?a:b
 
 #define SQ(y) ((y)*(y))
-#define CON(a,b) a##b##100
+#define CON(a,b) a##b##10
 
 /********************define******************************/
 
