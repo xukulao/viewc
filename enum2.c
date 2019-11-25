@@ -11,7 +11,7 @@ int main()
     enum week day;
     enum week d = MON;
     enum week d1 = 200;
-    //NOTHING = 100;  不支持
+    //NOTHING = 100;  不支
     enum week d2 = NOTHING;
 
     //enum week d2 = "china";//枚举变量不支持字符串
