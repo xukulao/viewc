@@ -12,7 +12,7 @@ char name[100] = "jackchensm"
 #define PI 3.1415926
 #define S PI+100
 #define UINT unsigned int
-#define PIN int *
+#define PIN int 
 typedef int *PINT2;
 
 #define J(y) y+100
