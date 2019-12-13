@@ -12,7 +12,7 @@ int main()
 {
 
     char *fileName = "E:/c/demo/hello10.txt";
-    char *targetFileName = "E:/c/demo/hello100.txt";
+    char *targetFileName = "E:/c/demo/hello10.txt";
 
     FILE *file = fopen(fileName,"rb");
     int bufferLen = 1024*4;
