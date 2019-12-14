@@ -1,7 +1,5 @@
 //
 // Created by Administrator on 2019/4/1.
-//
-
 #include <stdio.h>
 
 int main()
