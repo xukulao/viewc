@@ -18,7 +18,7 @@ int main()
         fputc(ch,file);
     }
 
-    fclose(file);
+    fclose(file)
 
     printf("write it ok!");
     return 0;
