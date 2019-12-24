@@ -89,7 +89,6 @@ int main()
     printf("students[0]=%s\n",(p[2]+2)->name);
     printf("students[0]=%s\n",(p[2]+3)->name);
     printf("students[0]=%s\n",(p[2]+4)->name);
-
     return 0;
 
 }
