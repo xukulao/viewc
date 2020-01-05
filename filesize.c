@@ -32,4 +32,5 @@ long filesize(FILE *file)
     fsetpos(file,&f_pos);//重置回原来的位置
 
     return n;
+    2
 }
