@@ -192,8 +192,7 @@ void char_array_pointer();
 void char_array_pointer1();
 
 //指针测试
-void pointer_test();
-
+void pointer_test()
 //二维数组指针
 void array_two_dimesion_pointer();
 
