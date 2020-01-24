@@ -10,7 +10,7 @@ int main()
 
     char buffer[9];
     char *text = "hello,world";
-    char *key = "123456";
+    char *key = "12345";
 
     printf("%#X\n",*text ^ *key);
     int encodeText = (*text ^ *key);
