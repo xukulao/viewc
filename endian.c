@@ -1,14 +1,14 @@
 //
-// Created by 1655664358@qq.com on 2019/5/20.
+// Created by 1655664358@qq.com on 2015/5/20.
 //
 #include <stdio.h>
 typedef int function;
 #define echo(text) printf(text);
 #define ECHO(text) printf(text);
-#define Ö÷³ÌĞò int main(){
-#define ½áÊø }
-#define ¸ñÊ½»¯´òÓ¡ printf
-#define Êä³öÒ»ĞĞ puts
+#define ä¸»ç¨‹åº int main(){
+#define ç»“æŸ }
+#define æ ¼å¼åŒ–æ‰“å° printf
+#define è¾“å‡ºä¸€è¡Œ puts
 function talk();
 
 
@@ -31,11 +31,11 @@ function talk()
 //{
 //    data.n = 0x20000001;
 //    /**
-//     * Êı¾İ0x00 ¸ßÎ»
-//     * Êı¾İ0x01 µÍÎ»
+//     * æ•°æ®0x00 é«˜ä½
+//     * æ•°æ®0x01 ä½ä½
 //     *
-//     * ÄÚ´æµØÖ· ´ÓµÍµ½¸ß
-//     * Ğ¡¶ËÄ£Ê½£ºÊı¾İµÍÎ»±£´æÔÚµÍÎ»µØÖ·£¬Êı¾İ¸ßÎ»±£´æÔÚ¸ßÎ»µØÖ·
+//     * å†…å­˜åœ°å€ ä»ä½åˆ°é«˜
+//     * å°ç«¯æ¨¡å¼ï¼šæ•°æ®ä½ä½ä¿å­˜åœ¨ä½ä½åœ°å€ï¼Œæ•°æ®é«˜ä½ä¿å­˜åœ¨é«˜ä½åœ°å€
 //     */
 //
 //    printf("k=%d,k=%#X\n",k,&k);
