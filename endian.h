@@ -1,6 +1,5 @@
 //
 // Created by 1655664358@qq.com on 2019/5/2
-//
 
 #ifndef __ENDIAN__
 #define __ENDIAN__
