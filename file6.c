@@ -1,6 +1,5 @@
 //
 // Created by Administrator on 2016/4/18.
-//
 
 #include <stdio.h>
 #define N 10
