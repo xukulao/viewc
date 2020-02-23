@@ -1,6 +1,6 @@
 //
-// Created by Administrator on 2019/4/16.
-//
+// Created by Administrator on 2019/4/16
+
 
 #include <stdio.h>
 struct stu {
