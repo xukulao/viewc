@@ -1,5 +1,5 @@
 //
-// Created by Administrator on 2019/4/25.
+// Created by Administrator on 2019/4/2
 //
 #include <stdio.h>
 int a = 100;//全局变量  位于全局数据区
