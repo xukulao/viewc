@@ -1,6 +1,5 @@
 //
 // Created by Administrator on 2015/4/1
-//
 
 #include <stdio.h>
 int main(int argc,char *argv[])
