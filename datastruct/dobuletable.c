@@ -1,10 +1,6 @@
 //
 // Created by 1655664358@qq.com on 2019/6/23.
 //
-
-//
-// Created by 1655664358@qq.com on 2019/6/23.
-//
 #include <stdlib.h>
 #include <stdio.h>
 /**
