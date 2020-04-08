@@ -11,6 +11,7 @@ int main(void)
     strcpy(str,"I am chinese man");
     puts(str);
     free(str);
+     free(str);
     if (str){
         puts(str);
     }
