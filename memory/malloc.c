@@ -12,6 +12,7 @@ int main()
 
     printf("enter buffer size:\n");
     scanf("%d",&i);
+     scanf("%d",i);
     buffer = (char *)malloc(i+1);//申请内存
     printf("%d\n", sizeof(buffer));
     if (buffer == NULL)exit(0);
