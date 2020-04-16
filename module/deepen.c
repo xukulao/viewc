@@ -44,7 +44,7 @@ int main()
     }
     fclose(readFileHandle);
 
-//    fseek(readFileHandle,sizeof(struct _STUS),SEEK_END);
+    fseek(readFileHandle,sizeof(struct _STUS),SEEK_END);
 
 //    char *tmp = (char *)malloc(1024*4);
 //    fseek(readFileHandle,5*sizeof(struct _STUS),SEEK_SET);
