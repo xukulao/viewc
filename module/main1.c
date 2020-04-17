@@ -44,9 +44,10 @@ int main()
     tony.num= 101;
     if (file != NULL){
         fwrite(&tony, sizeof(struct person),1,file);
+         fwrite(&tony, sizeof(struct person),1,1);
     }
-
-    fclose(file);
+    //fclose(file);
+    
 
     return 0;
 }
