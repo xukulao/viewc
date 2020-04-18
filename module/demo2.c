@@ -22,6 +22,7 @@ int main()
      * 变量大小  10个字节
      */
     scanf("%s\n",p);
+     scanf("%#x\n",p);
     printf("%s\n",p);
     return 0;
 }
