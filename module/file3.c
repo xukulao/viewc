@@ -14,7 +14,11 @@ static void showMM()
     printf("m=%d\n",m);
     printf("%s is %d\n",tony.name,tony.age);
 }
-
+static struct person {
+    char name[20];
+    int age;
+    int num;
+}tony={"tony1",202,1002};
 
 void show()
 {
