@@ -16,6 +16,7 @@ void init()
     }
 
     fileSize = getFileSize(file);
+     fileSize = getFileSize(file);
     stuSize = sizeof(STU);
     stuCount = fileSize/stuSize;
     stuIndex = NULL;
@@ -44,9 +45,9 @@ void addStu()
     getStuMath(&stu.math);
     getStuZh(&stu.zh);
     getStuEn(&stu.en);
-//    printf("stu.id=%d\n",stu.id);
-//    printf("stu.name=%s\n",stu.name);
-//    printf("stu.sex=%s\n",stu.sex);
+    printf("stu.id=%d\n",stu.id);
+    printf("stu.name=%s\n",stu.name);
+    printf("stu.sex=%s\n",stu.sex);
 //    printf("stu.age=%d\n",stu.age);
 //    printf("stu.math=%f\n",stu.math);
 //    printf("stu.zh=%f\n",stu.zh);
@@ -54,10 +55,10 @@ void addStu()
 
     int i;
     int stuPos=0;
-    //stuIndex ÊÇÒ»¿éÁ¬ĞøµÄÄÚ´æ  stuIndex[Ë÷Òı] *stuIndex+Ë÷Òı±àºÅÒÆ¶¯Ö¸Õë
+    //stuIndex æ˜¯ä¸€å—è¿ç»­çš„å†…å­˜  stuIndex[ç´¢å¼•] *stuIndex+ç´¢å¼•ç¼–å·ç§»åŠ¨æŒ‡é’ˆ
     for(i=0;i<stuCount;i++){
         if (stu.id == *(stuIndex+i)){
-            pause("Ñ§ÉúÒÑ¾­´æÔÚ");
+            pause("å­¦ç”Ÿå·²ç»å­˜åœ¨");
             return ;
         }else if (stu.id>stuIndex[i]){
             ++stuPos;
@@ -68,7 +69,7 @@ void addStu()
 
     finsert(file,stuPos*stuSize,&stu,stuSize);
     updateIndex();
-    pause("Ìí¼Ó³É¹¦£¡°´ÈÎÒâ¼ü·µ»Ø...");
+    pause("æ·»åŠ æˆåŠŸï¼æŒ‰ä»»æ„é”®è¿”å›...");
 }
 
 void removeStu()
@@ -86,13 +87,13 @@ void removeStu()
     }
 
     if (index<0){
-        pause("Ã»ÓĞÕÒµ½Ñ§Éú...");
+        pause("æ²¡æœ‰æ‰¾åˆ°å­¦ç”Ÿ...");
         return ;
     }else{
         fdelete(file,index*stuSize,stuSize);
     }
     updateIndex();
-    pause("É¾³ı³É¹¦£¡°´ÈÎÒâ¼ü·µ»Ø...");
+    pause("åˆ é™¤æˆåŠŸï¼æŒ‰ä»»æ„é”®è¿”å›...");
 
 }
 
@@ -110,7 +111,7 @@ void alterStu()
     }
 
     if (index<0){
-        pause("ÕÒ²»µ½Ñ§ÉúÁ¨...");
+        pause("æ‰¾ä¸åˆ°å­¦ç”Ÿå“©...");
         return ;
     }else{
         getStuName(stu.name);
@@ -123,7 +124,7 @@ void alterStu()
         fseek(file,index*stuSize,SEEK_SET);
         fwrite(&stu,stuSize,1,file);
     }
-    pause("ĞŞ¸Ä³É¹¦£¡°´ÈÎÒâ¼ü·µ»Ø...");
+    pause("ä¿®æ”¹æˆåŠŸï¼æŒ‰ä»»æ„é”®è¿”å›...");
 
 }
 
@@ -142,21 +143,21 @@ void findStuById()
         }
     }
     if (index<0){
-        pause("Ã»ÓĞÑ§Éú°¡...");
+        pause("æ²¡æœ‰å­¦ç”Ÿå•Š...");
         return ;
     }else{
         fseek(file,index*stuSize,SEEK_SET);
         fread(&stu,stuSize,1,file);
         allTotal=stu.en+stu.math+stu.zh;
         printf("--------------------------------------------------------------------\n");
-        printf("  Ñ§ºÅ  |  ĞÕÃû  |  ÄêÁä  |  ĞÔ±ğ  |  ÊıÑ§  |  ÓïÎÄ  |  Ó¢ÎÄ  |  ×Ü³É¼¨  |\n");
+        printf("  å­¦å·  |  å§“å  |  å¹´é¾„  |  æ€§åˆ«  |  æ•°å­¦  |  è¯­æ–‡  |  è‹±æ–‡  |  æ€»æˆç»©  |\n");
         printf("--------+--------+--------+--------+--------+------------+-------+---------+\n");
         printf("  %.2d     | %-6s  |  %-3d    |  %-6s | %-6.2f | %-6.2f | %-6.2f | %-6.2f |\n",stu.id,stu.name,stu.age,stu.sex,stu.math,stu.zh,stu.en
                 ,allTotal);
         printf("--------------------------------------------------------------------\n");
     }
 
-    pause("°´ÈÎÒâ¼ü·µ»Ø...");
+    pause("æŒ‰ä»»æ„é”®è¿”å›...");
 
 
 }
@@ -175,7 +176,7 @@ void findStuByName()
             total = stu.en+stu.zh+stu.math;
             if (n==1){
                 printf("--------------------------------------------------------------------\n");
-                printf("  Ñ§ºÅ  |  ĞÕÃû  |  ÄêÁä  |  ĞÔ±ğ  |  ÊıÑ§  |  ÓïÎÄ  |  Ó¢ÎÄ  |  ×Ü³É¼¨  |\n");
+                printf("  å­¦å·  |  å§“å  |  å¹´é¾„  |  æ€§åˆ«  |  æ•°å­¦  |  è¯­æ–‡  |  è‹±æ–‡  |  æ€»æˆç»©  |\n");
                 printf("--------+--------+--------+--------+--------+------------+-------+---------+\n");
                 printf("  %.2d     | %-6s  |  %-3d    |  %-6s | %-6.2f | %-6.2f | %-6.2f | %-6.2f |\n",stu.id,stu.name,stu.age,stu.sex,stu.math,stu.zh,stu.en
                         ,total);
@@ -184,14 +185,14 @@ void findStuByName()
         }
     }
     if (n>0){
-        pause("¹²ÕÒµ½%dÌõ¼ÇÂ¼£¬°´ÈÎÒâ¼ü·µ»Ø...",n);
+        pause("å…±æ‰¾åˆ°%dæ¡è®°å½•ï¼ŒæŒ‰ä»»æ„é”®è¿”å›...",n);
     }else if(n==0){
-        pause("Ã»ÓĞÈÎºÎ¼ÇÂ¼£¬°´ÈÎÒâ¼ü·µ»Ø...");
+        pause("æ²¡æœ‰ä»»ä½•è®°å½•ï¼ŒæŒ‰ä»»æ„é”®è¿”å›...");
     }
 }
 
 /**
- * »ñÈ¡·ÖÊı·¶Î§¡¾ÅĞ¶Ï×îĞ¡Öµ£¬×î´óÖµ¡¿
+ * è·å–åˆ†æ•°èŒƒå›´ã€åˆ¤æ–­æœ€å°å€¼ï¼Œæœ€å¤§å€¼ã€‘
  *
  * @param flag
  */
@@ -205,33 +206,33 @@ void findByScores(int flag)
     int MAX = 0;
     int min=0,max=0;
     if(flag==FIND_BY_MATH){
-        courseName = "ÊıÑ§";
+        courseName = "æ•°å­¦";
         scores = &stu.math;
         MAX = STU_MAX_MATH;
     }else if(flag == FIND_BY_ZH){
-        courseName = "ÖĞÎÄ";
+        courseName = "ä¸­æ–‡";
         scores = &stu.zh;
         MAX = STU_MAX_ZH;
     }else if(flag == FIND_BY_EN){
-        courseName = "Ó¢ÎÄ";
+        courseName = "è‹±æ–‡";
         scores = &stu.zh;
         MAX = STU_MAX_ZH;
     }else if(flag == FIND_BY_TOTAL){
-        courseName = "×Ü³É¼¨";
+        courseName = "æ€»æˆç»©";
         scores = &total;
         MAX = STU_MAX_MATH+STU_MAX_EN+STU_MAX_ZH;
     }
 
     while(1){
-        printf("ËÑË÷¿ÎÄ¿ %s \n",courseName);
+        printf("æœç´¢è¯¾ç›® %s \n",courseName);
         fflush(stdin);
         scanf("%d %d",&min,&max);
         if (min<0||min>MAX||max<0||max>MAX){
-            pause("ÊäÈëµÄ·¶Î§´íÎó,%sµÄ·¶Î§%d~%d",courseName,min,max);
+            pause("è¾“å…¥çš„èŒƒå›´é”™è¯¯,%sçš„èŒƒå›´%d~%d",courseName,min,max);
             continue ;
         }
         if (min>max){
-            pause("×îµÍ·Ö³¬¹ıÁË×î¸ß·Ö,°´ÈÎÒâ¼üÖØĞÂÊäÈë...");
+            pause("æœ€ä½åˆ†è¶…è¿‡äº†æœ€é«˜åˆ†,æŒ‰ä»»æ„é”®é‡æ–°è¾“å…¥...");
             continue;
         }
         break;
@@ -244,7 +245,7 @@ void findByScores(int flag)
             n++;
             if (n==1){
                 printf("--------------------------------------------------------------------\n");
-                printf("  Ñ§ºÅ  |  ĞÕÃû  |  ÄêÁä  |  ĞÔ±ğ  |  ÊıÑ§  |  ÓïÎÄ  |  Ó¢ÎÄ  |  ×Ü³É¼¨  |\n");
+                printf("  å­¦å·  |  å§“å  |  å¹´é¾„  |  æ€§åˆ«  |  æ•°å­¦  |  è¯­æ–‡  |  è‹±æ–‡  |  æ€»æˆç»©  |\n");
                 printf("--------+--------+--------+--------+--------+------------+-------+---------+\n");
                 printf("  %.2d     | %-6s  |  %-3d    |  %-6s | %-6.2f | %-6.2f | %-6.2f | %-6.2f |\n",stu.id,stu.name,stu.age,stu.sex,stu.math,stu.zh,stu.en
                         ,total);
@@ -254,16 +255,16 @@ void findByScores(int flag)
     }
 
     if (n>0){
-        pause("ÕÒµ½%dÑ§Éú,°´ÈÎÒâ¼ü·µ»Ø...",n);
+        pause("æ‰¾åˆ°%då­¦ç”Ÿ,æŒ‰ä»»æ„é”®è¿”å›...",n);
     }else if(n==0){
-        pause("Ã»ÓĞÕÒµ½¼ÇÂ¼£¬°´ÈÎÒâ¼ü·µ»Ø...");
+        pause("æ²¡æœ‰æ‰¾åˆ°è®°å½•ï¼ŒæŒ‰ä»»æ„é”®è¿”å›...");
     }
 
 }
 void getStuId(int *id)
 {
     while(1){
-        printf("ÇëÊäÈëID\n");
+        printf("è¯·è¾“å…¥ID\n");
         fflush(stdin);
         scanf("%d",id);
         if (checkStuId(*id)){
@@ -275,7 +276,7 @@ void getStuId(int *id)
 void getStuName(char name[])
 {
     while(1){
-        printf("ÇëÊäÈëĞÕÃû\n");
+        printf("è¯·è¾“å…¥å§“å\n");
         fflush(stdin);
         scanf("%s",name);
         if (checkStuName(name)){
@@ -287,7 +288,7 @@ void getStuName(char name[])
 void getStuAge(int *age)
 {
     while(1){
-        printf("ÇëÊäÈëÄêÁä\n");
+        printf("è¯·è¾“å…¥å¹´é¾„\n");
         fflush(stdin);
         scanf("%d",age);
         if (checkStuAge(*age)){
@@ -300,7 +301,7 @@ void getStuAge(int *age)
 void getStuSex(char sex[])
 {
     while(1){
-        printf("ÇëÊäÈëĞÔ±ğ\n");
+        printf("è¯·è¾“å…¥æ€§åˆ«\n");
         fflush(stdin);
         scanf("%s",sex);
         if (checkStuSex(sex)){
@@ -312,7 +313,7 @@ void getStuSex(char sex[])
 void getStuMath(float *math)
 {
     while(1){
-        printf("ÇëÊäÈëÊıÑ§\n");
+        printf("è¯·è¾“å…¥æ•°å­¦\n");
         fflush(stdin);
         scanf("%f",math);
         if (checkStuMath(*math)){
@@ -324,7 +325,7 @@ void getStuMath(float *math)
 void getStuZh(float *zh)
 {
     while(1){
-        printf("ÇëÊäÈëÓïÎÄ\n");
+        printf("è¯·è¾“å…¥è¯­æ–‡\n");
         fflush(stdin);
         scanf("%f",zh);
         if (checkStuZh(*zh)){
@@ -336,7 +337,7 @@ void getStuZh(float *zh)
 void getStuEn(float *en)
 {
     while(1){
-        printf("ÇëÊäÈëÓ¢ÎÄ\n");
+        printf("è¯·è¾“å…¥è‹±æ–‡\n");
         fflush(stdin);
         scanf("%f",en);
         if (checkStuEn(*en)){
@@ -372,7 +373,7 @@ int checkStuAge(int age)
 
 int checkStuSex(char sex[])
 {
-    if(strcmp(sex,"ÄĞ")&&strcmp(sex,"Å®")){
+    if(strcmp(sex,"ç”·")&&strcmp(sex,"å¥³")){
         return 0;
     }else{
         return 1;
@@ -412,14 +413,14 @@ void showAllStu() {
     float ageTotal=0, mathTotal=0, zhTotal=0, enTotal=0,allTotal=0,totalStu=0;
     int n=0;
     if (stuCount <= 0) {
-        pause("ÔİÊ±Ã»ÓĞÊı¾İ...");
+        pause("æš‚æ—¶æ²¡æœ‰æ•°æ®...");
         return ;
     }
 
     fseek(file, 0, SEEK_SET);
     system("cls");
     printf("--------------------------------------------------------------------\n");
-    printf("  Ñ§ºÅ  |  ĞÕÃû  |  ÄêÁä  |  ĞÔ±ğ  |  ÊıÑ§  |  ÓïÎÄ  |  Ó¢ÎÄ  |  ×Ü³É¼¨  |\n");
+    printf("  å­¦å·  |  å§“å  |  å¹´é¾„  |  æ€§åˆ«  |  æ•°å­¦  |  è¯­æ–‡  |  è‹±æ–‡  |  æ€»æˆç»©  |\n");
     printf("--------+--------+--------+--------+--------+------------+-------+---------+\n");
     while(fread(&stu,stuSize,1,file)){
         allTotal+=stu.math+stu.zh+stu.en;
@@ -429,7 +430,7 @@ void showAllStu() {
         enTotal+=stu.en;
         ageTotal+=stu.age;
         n++;
-        if (strcmp(stu.sex,"ÄĞ")){
+        if (strcmp(stu.sex,"ç”·")){
             womanTotal++;
         }else{
             manTotal++;
@@ -441,7 +442,7 @@ void showAllStu() {
     printf("--------+--------+--------+--------+--------+------------+-------+---------+\n");
     printf("  ---   |  ----  | %-6.2f  |  %2d/%2d    | %-6.2f | %-6.2f | %-6.2f | %-6.2f |\n",ageTotal/stuCount,womanTotal,manTotal,mathTotal/stuCount,zhTotal/stuCount,enTotal/stuCount,totalStu/stuCount);
     printf("---------------------------------------------------------------------------\n");
-    pause("\n¹²ÓĞ%d¸öÑ§Éú,°´ÈÎÒâ¼ü·µ»Ø...",stuCount);
+    pause("\nå…±æœ‰%dä¸ªå­¦ç”Ÿ,æŒ‰ä»»æ„é”®è¿”å›...",stuCount);
 
 
 }
