@@ -56,7 +56,7 @@ int main()
 
 
     int i=1;
-    //listInsert(L,i,"shanghai");
+    listInsert(L,i,"shanghai");
 
     printf("address=%s\n",L->address);
     printf("address 1 =%s\n",L->next->address);
