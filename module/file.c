@@ -7,5 +7,6 @@ int k=10;
 int b=100;
 void test()
 {
-    printf("k=%d\n",k);
+    //printf("k=%d\n",k);
+printf("%#x\n",&b+&k);
 }
