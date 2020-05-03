@@ -13,6 +13,7 @@ int main()
     for(i=2;i<40;i++){
         a[i] = a[i-1]+a[i-2];//1+0 a[2]=1 1+1
         printf("%d\n",a[i]);
+        printf("%#x\n",a[i]);
     }
     return 0;
 }
