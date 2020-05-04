@@ -16,5 +16,5 @@
 #define FIND_BY_ZH 2
 #define FIND_BY_EN 3
 #define FIND_BY_TOTAL 4
-
+#define FIND_BY_TOTAL_ALL 5
 #endif
