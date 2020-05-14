@@ -1,5 +1,5 @@
 //
-// Created by Administrator on 2019/4/26.
+// Created by Administrator on 2016/4/26.
 //
 
 #include <stdio.h>
@@ -15,6 +15,7 @@ int main()
     char *pname = name;
     char **str = &pname;//name=&name[0]
     printf("str=%c\n",**str);
+     printf("str=%s\n",**str);
     return 0;
 }
 
