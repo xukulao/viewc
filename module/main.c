@@ -64,7 +64,8 @@ int main()
     if (&p1){
         printf("p1=%d\n",p1);
     }else{
-        printf("p1 is undefined!\n");
+       // printf("p1 is undefined!\n");
+ printf("p1 is undefined %d!\n",errno);
     }
 
 //    if(func){
