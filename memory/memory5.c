@@ -19,7 +19,8 @@ int main()
     //导致占用了资源
 
     printf("p of size %d\n", sizeof(p));
-    free(p);
+    free(*p);
+//free(p);
     p = NULL;
     system("pause");
     return 0;
