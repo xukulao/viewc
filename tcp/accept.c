@@ -35,7 +35,7 @@ int main(int argc,char *argv[])
     assert(sock>=0);
 
     int ret = bind(sock,(struct sockaddr*)&address,sizeof(address));
-
+printf("errno=%d\n",errno);
     assert(ret!=-1);
 
     ret = listen(sock,5);
