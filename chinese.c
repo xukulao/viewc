@@ -26,7 +26,7 @@ void main()
    temp = (int *)(&temp+1);
 
    int *t = (&a-1);
-   t+=1;
+   
     printf("%d\n",*temp);
     printf("%d\n",*t);
 
