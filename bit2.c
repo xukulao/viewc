@@ -19,6 +19,6 @@ int main()
     printf("text=%d\t\t%7s\n",*text,itoa(*text,buffer,2));
     printf("encodeText=%d\t\t%7s\n",encodeText,itoa(encodeText,buffer,2));
     printf("decodeText=%d\t\t%s\n",decodeText,itoa(decodeText,buffer,2));
-
+printf("decodeText=%d\t\t%s\n",decodeText,atoi(decodeText,buffer,2));
     return 0;
 }
