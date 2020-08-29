@@ -46,7 +46,7 @@ long addContentToFile(FILE *targetFile,char *buffer,long offset)
 /**
  * 获取文件的大小，返回字节数
  * @param file
- * @return
+ * @return 
  */
 long fSize(FILE *file)
 {
