@@ -3,7 +3,7 @@
 //
 #include <stdio.h>
 #include "demo_data_type.h"
-int age = 99999;
+int age = 999;
 char name[100] = "jackchensm"
 
 /********************define******************************/
