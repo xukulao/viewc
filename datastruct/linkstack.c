@@ -81,5 +81,6 @@ Status pop(linkStack *S,SElemType *e)
     S->top = S->top->next;//栈顶向下移动
     S->count--;
     free(p);
+    p=NULL;
     return OK;
 }
