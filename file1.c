@@ -19,7 +19,7 @@ int main()
 //    FILE_TEST *file_test = &f;
 //    printf("f.name=%s\n",file_test->name);
 
-    FILE *file=fopen("E:/c/demo/hello.txt","rb");
+    FILE *file=fopen("E:/c/demo/hello.txt","rb+");
     if(file == NULL){
         printf("Error,not found this file!");
         //getche();
