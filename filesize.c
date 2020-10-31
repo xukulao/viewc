@@ -16,7 +16,7 @@ int main()
     }
 
     printf("file size =%ld bytes!\n",filesize(file));
-    return 0;
+    return 1;
 }
 
 long filesize(FILE *file)
