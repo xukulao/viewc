@@ -12,5 +12,6 @@ int main()
 
     printf("c=%d,c=%#X\n",c,&c);
     printf("c=%p,c=%#X\n",c,&c);
+    printf("c=%dd,c=%#X\n",c,&c);
     return 0;
 }
