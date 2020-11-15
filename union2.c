@@ -39,7 +39,7 @@ int main()
 
     for(i=0;i<TOTAL;i++){
         if (bodys[i].professional == 's'){
-            printf("%s\t%d\t%c\t%c\t%f\n",bodys[i].name,bodys[i].num,bodys[i].sex,bodys[i].professional,bodys[i].s.score);
+            printf("%s\t%d\t%cc\t%c\t%f\n",bodys[i].name,bodys[i].num,bodys[i].sex,bodys[i].professional,bodys[i].s.score);
         }else{
             printf("%s\t%d\t%c\t%c\t%s\n",bodys[i].name,bodys[i].num,bodys[i].sex,bodys[i].professional,bodys[i].s.course);
         }
