@@ -20,7 +20,7 @@ int main()
     p1 = &a;
     printf("p1=%d\n",*p1);
     p2 = &a;
-    //p3 = &a;
+    p3 = &a;
     int b = 100;
     p1 = &b;
 
