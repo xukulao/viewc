@@ -14,6 +14,7 @@ struct{
         float score;
         char course[20];
     } sc;
+    int rank;
 } bodys[TOTAL];
 int main(){
     int i;
