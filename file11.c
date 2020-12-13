@@ -48,7 +48,7 @@ int copyFile(char *readFile,char *writeFile)
         printf("readfile or writefile not exists!");
     }
 
-    int bufferLen = 1024*4;
+    int bufferLen = 1024*8;
     int readCount;
     char *buffer = (char*)malloc(bufferLen);
 
