@@ -84,7 +84,7 @@ char printfMainMenu()
     return MenuId;
 }
 
-char printfChildMenu()
+int printfChildMenu()
 {
     char menuId;
     system("cls");
