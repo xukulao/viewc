@@ -23,7 +23,7 @@ int main(){
     char *hi = test();//位于栈区
     char *name = "php";//字符串位于常量 区  name位于栈区
     char address[1] = "china";//全部位于栈区
-
+ char address[10] = "china";//全部位于栈区
     printf("a=%#X\n",&a);
     printf("str1=%#X\n",str1);
     printf("&str1=%#X\n",&str1);
