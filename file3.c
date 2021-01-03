@@ -8,7 +8,7 @@ int main()
 
     FILE *file;
     char *Filename = "E:/c/demo/hello1.txt";
-    file = fopen(Filename,"wt+");
+    file = fopen(Filename,"wt+-");
     if (file == NULL){
         printf("not found file!");
     }
