@@ -16,7 +16,7 @@ int main()
         unsigned int led:1;//1位
         unsigned char h:2;//只能是2位 0000 00001 0010 0011
 
-    }a = {0xffffffff,0xE,'@',1,3};//0xffffffff 正好32位  0xE正好4位 0100 0011 0010 0001
+    }a = {0xfffffff,0xE,'@',1,3};//0xffffffff 正好32位  0xE正好4位 0100 0011 0010 0001
 
     
 
