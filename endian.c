@@ -8,7 +8,7 @@ typedef int function;
 #define 主程序 int main(){
 #define 结束 }
 #define 格式化打印 printf
-#define 输出一行 puts
+#define 输出一行 put
 function talk();
 
 
