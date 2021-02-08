@@ -19,7 +19,8 @@ void init()
      fileSize = getFileSize(file);
     stuSize = sizeof(STU);
     stuCount = fileSize/stuSize;
-    stuIndex = NULL;
+    //stuIndex = NULL;
+     stuIndex = (void*)(0);
     updateIndex();
 }
 
