@@ -48,7 +48,7 @@ void address();
 //getchar 测试
 void getchar_test();
 
-//getche测试
+
 void getche_test();
 
 //getch测试
