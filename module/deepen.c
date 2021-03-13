@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <math.h>
 #include <conio.h>
+#include <stdarg.h>
 typedef struct _STUS
 {
     int id;
