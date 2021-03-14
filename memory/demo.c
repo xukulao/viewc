@@ -134,7 +134,7 @@ int main(void)
 //     char m='c';
 //     int n=2;
 //     printf("%d,%d,%d\n", sizeof(k), sizeof(m), sizeof(n));
-//     printf("%#X,%#X,%#X\n",&k,&m,&n);
+     printf("%#X,%#X,%#X\n",&k,&m,&n);
 
         char *p = (char *)0XFFF00000FFF00000;//虚拟地址为0XFFF000001 cpu运行时会找到其对应的物理内存
         printf("p=%s\n",p);//打印虚拟地址上的数据
